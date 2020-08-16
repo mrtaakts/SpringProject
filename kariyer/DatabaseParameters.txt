@@ -1,0 +1,43 @@
+/* Position Tablosu */
+
+
+INSERT INTO `tez`.`position` (`id`, `positions`) VALUES ('1', 'Şoför/Sürücü');
+INSERT INTO `tez`.`position` (`id`, `positions`) VALUES ('2', 'Satış Danışmanı');
+INSERT INTO `tez`.`position` (`id`, `positions`) VALUES ('3', 'Sekreter');
+INSERT INTO `tez`.`position` (`id`, `positions`) VALUES ('4', 'İnşaat Mühendisi');
+INSERT INTO `tez`.`position` (`id`, `positions`) VALUES ('5', 'Makine Mühendisi');
+INSERT INTO `tez`.`position` (`id`, `positions`) VALUES ('6', 'Bilgisayar Mühendisi');
+INSERT INTO `tez`.`position` (`id`, `positions`) VALUES ('7', 'Elektrik Elektronik Mühendisi');
+INSERT INTO `tez`.`position` (`id`, `positions`) VALUES ('8', 'Ön Muhasebe Elemanı');
+INSERT INTO `tez`.`position` (`id`, `positions`) VALUES ('9', 'Satış Temsilcisi');
+INSERT INTO `tez`.`position` (`id`, `positions`) VALUES ('10', 'Özel Şoför');
+
+
+/* Way of Work Tablosu */
+
+INSERT INTO `tez`.`way_of_work` (`id`, `way_of_work`) VALUES ('1', 'Tam Zamanlı');
+INSERT INTO `tez`.`way_of_work` (`id`, `way_of_work`) VALUES ('2', 'Stajyer');
+INSERT INTO `tez`.`way_of_work` (`id`, `way_of_work`) VALUES ('3', 'Yarı Zamanlı');
+INSERT INTO `tez`.`way_of_work` (`id`, `way_of_work`) VALUES ('4', 'Dönemsel/Proje Bazlı');
+INSERT INTO `tez`.`way_of_work` (`id`, `way_of_work`) VALUES ('5', 'Serbest Zamanlı');
+
+
+/* Driver Licence Tablosu */
+
+INSERT INTO `tez`.`driver_license` (`id`, `licence`) VALUES ('1', 'A1');
+INSERT INTO `tez`.`driver_license` (`id`, `licence`) VALUES ('2', 'A2');
+INSERT INTO `tez`.`driver_license` (`id`, `licence`) VALUES ('3', 'A');
+INSERT INTO `tez`.`driver_license` (`id`, `licence`) VALUES ('4', 'M');
+INSERT INTO `tez`.`driver_license` (`id`, `licence`) VALUES ('5', 'B1');
+INSERT INTO `tez`.`driver_license` (`id`, `licence`) VALUES ('6', 'B');
+INSERT INTO `tez`.`driver_license` (`id`, `licence`) VALUES ('7', 'BE');
+INSERT INTO `tez`.`driver_license` (`id`, `licence`) VALUES ('8', 'C1');
+INSERT INTO `tez`.`driver_license` (`id`, `licence`) VALUES ('9', 'C1E');
+INSERT INTO `tez`.`driver_license` (`id`, `licence`) VALUES ('10', 'C');
+INSERT INTO `tez`.`driver_license` (`id`, `licence`) VALUES ('11', 'CE');
+INSERT INTO `tez`.`driver_license` (`id`, `licence`) VALUES ('12', 'D1');
+INSERT INTO `tez`.`driver_license` (`id`, `licence`) VALUES ('13', 'D1E');
+INSERT INTO `tez`.`driver_license` (`id`, `licence`) VALUES ('14', 'D');
+INSERT INTO `tez`.`driver_license` (`id`, `licence`) VALUES ('15', 'DE');
+INSERT INTO `tez`.`driver_license` (`id`, `licence`) VALUES ('16', 'F');
+INSERT INTO `tez`.`driver_license` (`id`, `licence`) VALUES ('17', 'G');
