@@ -23,6 +23,6 @@ public class EducationInfo {
 
     private Date startDate;
     private Date finishDate;
-     
+
 
 }
