@@ -1,5 +1,6 @@
 package com.tez.kariyer.model.entity;
 
+import com.tez.kariyer.model.entity.parameterTable.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -28,5 +29,19 @@ public class JobPosting {
     @OneToOne
     protected Position position;
 
+    @OneToOne
+    protected CompanySector companySector;
+
+    @OneToOne
+    protected BusinessArea businessArea;
+
+    @OneToOne
+    protected SummaryInfo summaryInfo;
+
+    @OneToOne
+    protected WorkExperience workExperience;
+
+    @OneToOne
+    protected DriverLicense driverLicense;
 
 }
