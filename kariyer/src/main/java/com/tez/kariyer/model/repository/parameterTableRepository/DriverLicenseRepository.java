@@ -1,6 +1,6 @@
-package com.tez.kariyer.model.repository;
+package com.tez.kariyer.model.repository.parameterTableRepository;
 
-import com.tez.kariyer.model.entity.DriverLicense;
+import com.tez.kariyer.model.entity.parameterTable.DriverLicense;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 

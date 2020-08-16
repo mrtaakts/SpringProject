@@ -1,4 +1,4 @@
-package com.tez.kariyer.model.entity;
+package com.tez.kariyer.model.entity.parameterTable;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

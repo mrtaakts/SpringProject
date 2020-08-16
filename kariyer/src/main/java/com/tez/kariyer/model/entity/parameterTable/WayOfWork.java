@@ -1,4 +1,4 @@
-package com.tez.kariyer.model.entity;
+package com.tez.kariyer.model.entity.parameterTable;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -11,14 +11,14 @@ import javax.persistence.Id;
 
 @Entity
 @Data
-@AllArgsConstructor
 @NoArgsConstructor
-public class Position  {
+@AllArgsConstructor
+public class WayOfWork {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
 
-    private String positions;
+    private String wayOfWork;
 
 }

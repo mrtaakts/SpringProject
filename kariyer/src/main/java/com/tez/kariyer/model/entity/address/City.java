@@ -1,4 +1,4 @@
-package com.tez.kariyer.model.entity;
+package com.tez.kariyer.model.entity.address;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -10,14 +10,15 @@ import javax.persistence.*;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class SummaryInfo {
+public class City {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
 
-    private String target;
+    private String city;
 
-    @OneToOne
-    protected User user;
+    @ManyToOne(fetch = FetchType.LAZY)
+    protected Country country;
+
 }
