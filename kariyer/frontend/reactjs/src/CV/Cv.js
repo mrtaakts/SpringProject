@@ -12,7 +12,7 @@ class Cv extends Component{
         }
       } 
     componentDidMount(){ // didmount ilk yüklendiginde get olacak veriyi ayarlamaya yarayan function
-        axios.get("http://localhost:8443/fake/getAll").then(response=> this.setState({volkan:response.data}))
+        axios.post("http://localhost:8443/fake/getAll").then(response=> this.setState({volkan:response.data}))
         .catch(er=> console.log(er))
     }
    

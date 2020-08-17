@@ -10,6 +10,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.RequestEntity;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.servlet.ModelAndView;
 
 @RestController
 @RequestMapping(value = "/cv")
@@ -31,6 +32,12 @@ public class CvController {
         ResponseItem responseItem = new ResponseItem();
         responseItem = cvService.saveUserPrivateInfo(userPrivateInfo);
         return ResponseEntity.ok(responseItem);
+    }
+
+    @GetMapping("/mert")
+    public ModelAndView Show(){
+        ModelAndView modelAndView= new ModelAndView("KayitOl");
+        return modelAndView;
     }
 
     @PostMapping("/ozet")
