@@ -22,11 +22,7 @@ public class User {
 
     private String name;
     private String surname;
-    private Date birthDate;
-    private String phone;
-    private String tittle;
     private String email;
-
     private String username;
     private String password;
 

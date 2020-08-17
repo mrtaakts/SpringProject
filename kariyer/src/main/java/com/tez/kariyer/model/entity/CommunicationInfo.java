@@ -1,6 +1,6 @@
 package com.tez.kariyer.model.entity;
 
-import com.tez.kariyer.model.entity.parameterTable.EducationStatus;
+import com.tez.kariyer.model.entity.address.Country;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -12,18 +12,24 @@ import java.util.Date;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class EducationInfo {
+public class CommunicationInfo {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
 
-    @OneToOne
-    protected EducationStatus educationStatus;
+    private String name;
+    private String surname;
+    private String tittle;
+    private String email;
+    private Date birthDate;
+    private String phone;
 
-    private Date startDate;
-    private Date finishDate;
+    @OneToOne
+    protected Country country;
+
 
     @OneToOne
     protected User user;
+
 }
