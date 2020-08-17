@@ -1,0 +1,271 @@
+
+!function ($) {
+    "use strict";
+
+    var FormWizard = function() {};
+
+    FormWizard.prototype.createBasic = function($form_container) {
+        $form_container.children("div").steps({
+            headerTag: "h3",
+            bodyTag: "section",
+            transitionEffect: "slideLeft"
+        });
+        return $form_container;
+    },
+    //creates form with validation
+    FormWizard.prototype.createValidatorForm = function($form_container) {
+        $form_container.validate({
+            errorPlacement: function errorPlacement(error, element) {
+                element.after(error);
+            },
+          rules: {
+
+                     "firmaAdi": {
+                         required: true,
+                     },
+                     "firmaUnvan": {
+                         required: true,
+                     },
+                     "firmaYetkiliAd": {
+                         required: true,
+                     },
+                     "firmaYetkiliSoyad": {
+                         required: true,
+                     },
+                     "iller": {
+                         required: true,
+                     },
+                     "ilce": {
+                         required: true,
+                     },
+                     "firmaYetkilisiTelefon": {
+                         required: true,
+                     },
+                     "email": {
+                         required: true,
+                     },
+                     // "vdai": {
+                     //     bosaltmaulke: true,
+                     // },
+                     "vergiNo": {
+                         required: true,
+                     },
+                     "adresAcikla": {
+                         required: true,
+                     },
+                     "postaKodu": {
+                         required: true,
+                     },
+                     // "kullaniciSayisiId": {
+                     //     required: true,
+                     // },
+                 },
+                 messages: {
+
+                     "firmaAdi": {
+                         required: "Şöför Alanını Seçiniz",
+                     },
+                     "firmaUnvan": {
+                         required: "Sefer başlangıç ülkesini seçiniz",
+                     },
+                     "firmaYetkiliAd": {
+                         required: "Başlangıç ulkesi Türkiye olan seferler için zorunlu alan",
+                     },
+                     "firmaYetkiliSoyad": {
+                         required: "Başlangıç ulkesi Türkiye olan seferler için zorunlu alan",
+                     },
+                     "iller": {
+                         required: "Tasima Sekli Seç"
+                     },
+                     "ilce": {
+                         required: "Sefer başlangıc tarihi alanını doldurunuz",
+                     },
+                     "firmaYetkilisiTelefon": {
+                         required: "Sefer başlangıc saati alanını doldurunuz",
+                     },
+                     "email": {
+                         required: "Sefer bitiş ülkesini seçiniz",
+                     },
+                     // "vdai": {
+                     //     bosaltmaulke: "Başlangıç ulkesi Türkiye olan seferler için zorunlu alan",
+                     // },
+                     "vergiNo": {
+                         required: "Başlangıç ulkesi Türkiye olan seferler için zorunlu alan",
+                     },
+                     "adresAcikla": {
+                         required: "Sefer bitiş tarihi alanını doldurunuz"
+                     },
+                     "postaKodu": {
+                         required: "Sefer bitiş saati alanını doldurunuz",
+                     },
+                     // "kullaniciSayisiId": {
+                     //     required: "denemeee",
+                     // },
+                 }
+
+             });
+        $form_container.children("div").steps({
+            headerTag: "h3",
+            bodyTag: "section",
+            transitionEffect: "slideLeft",
+            labels: {
+                cancel: "Cancel",
+                current: "current step:",
+                pagination: "Pagination",
+                finish: "Gönder",
+                next: "İleri",
+                previous: "Geri",
+                loading: "Yükleniyor ..."
+            },
+
+            onStepChanging: function (event, currentIndex, newIndex) {
+                //sayfa geri tuşu validasyona takılmaz
+                // if(currentIndex>newIndex){
+                //     return true;
+                // }
+                //sayfa 1 den 2 ye gecerken ki alan
+                // if(currentIndex==0 && newIndex==1){
+                //
+                //     $form_container.validate().settings.ignore = ":disabled,:hidden";
+                //     return $form_container.valid();
+                // }
+
+
+                console.log("currenIndex: ", currentIndex, "NexIndex: ", newIndex);
+                //repeater olan 2.sayfamız için yazılan validation
+                if (newIndex == 2) {
+                    // gets all descendent of ancestor
+                    var i, e, d;
+                    var durum = true;
+                    let basarili = 0;
+
+                    var ozet_table = "" +
+                        "<table class='table table-checkable'>\n" +
+                        "  <tr>\n" +
+                        "    <th>Firma:</th>\n" +
+                        "    <td>\n" + $("#firmaAdi").val() + " - " + $("#firmaUnvan").val() + "</td>\n" +
+                        "  </tr>\n" +
+                        "  <tr>\n" +
+                        "    <th>Firma Yetkilisi:</th>\n" +
+                        "    <td>" + $("#firmaYetkiliAd").val() + " - " + $("#firmaYetkiliSoyad").val() + "</td>\n" +
+                        "  </tr>\n" +
+                        "  <tr>\n" +
+                        "    <th>Telefon - Email</th>\n" +
+                        "    <td>" + $("#firmaYetkilisiTelefon").val() + " - " + $("#email").val() + "</td>\n" +
+                        "  </tr>\n" +
+                        "  <tr>\n" +
+                        "    <th>Firma Ayrıntıları:</th>\n" +
+                        "    <td>" + $("#vergiDai").val() + " / " + $("#vergiNo").val() + "</td>\n" +
+                        "  </tr>\n" +
+                        "  <tr>\n" +
+                        "    <th>Adresi:</th>\n" +
+                        "    <td>" + $("#il option:selected").text() + " / " + $("#ilce option:selected").text() + " - " + $("#postaKodu").val() + "</td>\n" +
+                        "  </tr>\n" +
+                        "  <tr>\n" +
+                        "    <th></th>\n" +
+                        "    <td>" + $("#adresAcikla").val() + "</td>\n" +
+                        "  </tr>\n" +
+                        "</table>";
+
+                    $("r#s_sefe").html(ozet_table);
+
+                    var odeme_table = "" +
+                        "<table class='table'>\n" +
+                        "  <tr>\n" +
+                        "    <th>Paket:</th>\n" +
+                        "    <td>\n" + $("#paketadi option:selected").text() + " - Yıllık " + pakucret + "₺" +  "</td>\n" +
+                        "  </tr>\n" +
+                        "  <tr>\n" +
+                        "    <th>Paket Ayrıntıları:</th>\n" +
+                        "    <td>" + kullanicisay + "</td>\n" +
+                        "  </tr>\n" +
+                        "  <tr>\n" +
+                        "    <th>Ara Toplam:</th>\n" +
+                        "    <td>"  + toplamucret + "₺ +  KDV (%18)" + "</td>\n" +
+                        "  </tr>\n" +
+                        "  <tr>\n" +
+                        "    <th>Toplam Tutar :</th>\n" +
+                        "    <td>"+ toplamtutar + "₺" + "</td>\n" +
+                        "  </tr>\n" +
+                        "</table>";
+
+                    $("#odeme").html(odeme_table);
+                }
+                return true;
+            }
+            ,
+                onFinishing: function (event, currentIndex) {
+                    //$form_container.validate().settings.ignore = ":disabled";
+                    //return $form_container.valid();
+                    return true;
+                }
+            ,
+                onFinished: function (event, currentIndex) {
+                    //en son submit edilen kısım
+                    var postData = $('#wizard-validation-form').serializeJSON();
+                    console.log(postData)
+
+                    $.ajax({
+                    type: "POST",
+                    url: "/iyzico/odemePopupAc",
+                    data:postData,
+                    contentType: "application/json",
+                    datatype:'json',
+                    cache: false,
+                    timeout: 600000,
+
+                    success: function (data) {
+                        $('#loading-screen').fadeOut('slow');
+                            console.log(data);
+                            success_noti();
+                            setTimeout(function() {
+                                window.location.replace("/iyzico/odemePopupSayfasiAc");
+                            }, 1000);
+                    },
+
+                    error: function (e) {
+
+                        console.log("ERROR : ", e);
+                        $("#btn-login").prop("disabled", false);
+
+                    }
+                });
+
+                return false; // required to block normal submit since you used ajax
+
+            }
+        });
+
+        return $form_container;
+    },
+        //creates vertical form
+        FormWizard.prototype.createVertical = function($form_container) {
+         $form_container.steps({
+             headerTag: "h3",
+             bodyTag: "section",
+             transitionEffect: "fade",
+             stepsOrientation: "vertical"
+         });
+         return $form_container;
+     },
+     FormWizard.prototype.init = function() {
+         //initialzing various forms
+
+         //basic form
+         this.createBasic($("#basic-form"));
+
+         //form with validation
+         this.createValidatorForm($("#wizard-validation-form"));
+
+         //vertical form
+         this.createVertical($("#wizard-vertical"));
+     },
+     //init
+     $.FormWizard = new FormWizard, $.FormWizard.Constructor = FormWizard
+ }(window.jQuery),
+
+ //initializing
+ function($) {
+     "use strict";
+     $.FormWizard.init()
+ }(window.jQuery);

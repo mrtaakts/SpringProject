@@ -1,0 +1,23 @@
+table tr {
+    height: 15px;
+    line-height: 10px;
+}
+table td.Col1 {
+    color:#000000;
+    width: 80px;
+    padding-left: 20px;
+    font-weight: bold;
+    background-image: url("../../img/Mixed/CircleList.png");
+    background-repeat: no-repeat;
+    background-position: 5px 0px;
+    vertical-align:top;
+}
+table td.Col2 {
+    width: 10px;
+    padding-left: 5px;
+    text-align: center;
+}
+table td.Col3 {
+    width: auto;
+    font-weight: bold;
+}
