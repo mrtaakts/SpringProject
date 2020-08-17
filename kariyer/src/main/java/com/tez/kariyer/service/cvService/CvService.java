@@ -1,14 +1,12 @@
 package com.tez.kariyer.service.cvService;
 
-import com.tez.kariyer.model.entity.CommunicationInfo;
-import com.tez.kariyer.model.entity.SummaryInfo;
-import com.tez.kariyer.model.entity.UserPrivateInfo;
-import com.tez.kariyer.model.entity.WorkExperience;
+import com.tez.kariyer.model.entity.*;
 import com.tez.kariyer.model.repository.CommunicationInfoRepository;
 import com.tez.kariyer.model.repository.SummaryInfoRepository;
 import com.tez.kariyer.model.repository.UserPrivateInfoRepository;
 import com.tez.kariyer.model.repository.WorkExperienceRepository;
 import com.tez.kariyer.response.ResponseItem;
+import com.tez.kariyer.security.SessionInfo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -55,7 +53,7 @@ public class CvService {
 
     public ResponseItem saveSummaryInfo(SummaryInfo summaryInfo){
         ResponseItem responseItem = new ResponseItem();
-
+        User user = SessionInfo.getInstance().getUser();
         try {
             responseItem.setResult(true);
             responseItem.setMessage("İşlem Başarılı!");
