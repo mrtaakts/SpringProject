@@ -19,6 +19,7 @@ public class District {
 
 
 /*
+
 1 . Analiz ve db (entity) tasarımı
 2. Db tasarımı ve servis
 3. Front end
@@ -29,6 +30,4 @@ public class District {
 3. algoritmanın özelleştirilmesi eğitimi vs
 4. test ve hataların giderilmesi
 
-
-
-    */
+*/

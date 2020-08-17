@@ -5,10 +5,10 @@ class Tablet extends Component{
     constructor(props) {  
         super(props)  
         this.state = {
-            volkan:[]   
+            volkan:[]
         }
       } 
-    componentDidMount(){
+    componentDidMount(){ // didmount ilk yüklendiginde get olacak veriyi ayarlamaya yarayan function
         axios.get("http://localhost:8443/fake/getAll").then(response=> this.setState({volkan:response.data}))
         .catch(er=> console.log(er))
     }
@@ -19,6 +19,10 @@ class Tablet extends Component{
     
     //axios.post("http://localhost:8443/fake/getAll/",obje).then()
  }
+
+
+
+
 
     render(){
         let x = this.state.volkan.map(mert=> {
@@ -45,7 +49,15 @@ class Tablet extends Component{
                     </tr>
                     </thead>
                     <tbody>
-                    {x}
+
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">{this.state.volkan.name}</th>
+                        <th scope="col">{this.state.volkan.name}</th>
+                        <th scope="col">{this.state.volkan.name}</th>
+
+                    </tr>
+
                     </tbody>
                 </table>
             </div>
