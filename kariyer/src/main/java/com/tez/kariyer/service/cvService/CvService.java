@@ -57,6 +57,7 @@ public class CvService {
         try {
             responseItem.setResult(true);
             responseItem.setMessage("İşlem Başarılı!");
+            summaryInfo.setUser(user);
             summaryInfoRepository.save(summaryInfo);
         }catch (Exception e){
             responseItem.setResult(false);
