@@ -9,6 +9,7 @@ import com.tez.kariyer.service.cvService.CvService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.RequestEntity;
 import org.springframework.http.ResponseEntity;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 
@@ -19,6 +20,13 @@ public class CvController {
 
     @Autowired
     protected CvService cvService;
+
+    @GetMapping("/duzenle")
+    public ModelAndView showCv(Model model){
+        ModelAndView modelAndView =new ModelAndView("Cv");
+
+        return modelAndView;
+    }
 
     @PostMapping("/iletisim")
     public ResponseEntity<ResponseItem> saveCommunicationInfo(@RequestParam CommunicationInfo communicationInfo){
