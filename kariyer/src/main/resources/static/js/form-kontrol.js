@@ -20,36 +20,15 @@ $(document).ready(function () {
 
         submitHandler: function (form) {
             $('#loading-screen').fadeIn();
-            var id = getUrlParameter('id');
+             var id = getUrlParameter('id');
             if(id==null){
                 var formData = {
-                    "adi": $("#adi").val(),
-                    "soyadi" : $("#soyAdi").val(),
-                    "tcKimlikPasaportNo":$("#tcPasaport").val(),
-                    "email":$("#email").val(),
-                    "telefon":$("#telefon").val(),
-                    "adres":$("#adres").val()+" "+$('#selectCity option:selected').html()+"/"+$('#selectDistrict option:selected').html(),
-                    "cinsiyet":$("#cinsiyet").val(),
-                    "dt":$("#autoclose-datepicker").val(),
-                    "postaKodu":$("#posta").val(),
-                    "durum":$('input[name="durum"]:checked').val(),
-                    "personTur":{
-                        "id":$("#persontur").val(),
-                        "personelTur":$('#persontur option:selected:enabled').html()
-                    },
-                    "uyrukUlke":{
-                        "id":$("#ulke").val(),
-                        "ulke":$('#ulke option:selected').html()
-                    },
-                    "ilce":
-                        {
-                            "id": $("#selectDistrict").val(),
-                            "ilce": $('#selectDistrict option:selected').html(),
-                            "il": {
-                                "id": $("#selectCity").val(),
-                                "il": $('#selectCity option:selected').html()
-                            }
-                        }
+                    "name": $("#ad").val(),
+                    "surname": $("#soyAdi").val(),
+                    "email": $("#email").val(),
+                    "username": $("#username").val(),
+                    "password": $("#password").val(),
+
                 }
 
             }
@@ -57,7 +36,7 @@ $(document).ready(function () {
            $.ajax({
                 type: "POST",
                 contentType: "application/json",
-                url: "/uyelik/olustur",
+                url: "/uyelik/save",
                 data: JSON.stringify(formData),
                 dataType: 'json',
                 cache: false,
