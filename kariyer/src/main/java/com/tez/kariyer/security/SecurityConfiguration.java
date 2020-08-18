@@ -52,7 +52,7 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
                 .formLogin().loginPage("/index.html")
                 .loginProcessingUrl("/signin")
                 .loginPage("/login").permitAll()
-                .defaultSuccessUrl("/anasayfa/dash", true)
+                .defaultSuccessUrl("/anasayfa", true)
                 .failureUrl("/index.html?error=true")
                 .usernameParameter("txtUsername")
                 .passwordParameter("txtPassword")

@@ -15,4 +15,10 @@ public class HomeController {
         return modelAndView;
     }
 
+    @GetMapping("/anasayfa")
+    public ModelAndView showMainPAage(){
+        ModelAndView modelAndView = new ModelAndView("index");
+
+        return modelAndView;
+    }
 }
