@@ -48,7 +48,7 @@ $(document).ready(function () {
                         console.log(data);
                         success_noti_custom(data.message);
                         setTimeout(function() {
-                            window.location.replace("/personel/personeller");
+                            window.location.replace("/login");
                         }, 2000);
                     }
                     else{

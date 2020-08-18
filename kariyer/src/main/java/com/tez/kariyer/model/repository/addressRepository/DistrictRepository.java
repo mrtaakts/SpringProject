@@ -1,13 +1,13 @@
 package com.tez.kariyer.model.repository.addressRepository;
 
-import com.tez.kariyer.model.entity.address.City;
+import com.tez.kariyer.model.entity.address.District;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
 @Repository
-public interface CityRepository extends CrudRepository<City, Integer> {
+public interface DistrictRepository extends CrudRepository<District,Integer> {
 
-    List<City> findByCountryId(Integer id);
+    List<District> findByCity_Id(Integer id);
 }

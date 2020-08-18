@@ -6,27 +6,12 @@ class Cv extends Component{
     constructor(props) {
         super(props)
         this.state = {
-             userData: {
-                 gender:1,
-                 driverLicense:"A",
-                 salaryExpectation:"1000",
-                 salaryExpectationDate:"10.10.1968"
-            }
 
         }
       }
 
-    function AddCustomer(){
-        const submit=()=>{
-            let gender = e.target[0].value;
-            let dob = e.target[1].value;
-            let creditlimit = e.target[2].value;
-        }
-        let data = {
-            gender, dob,creditlimit
-        }
-        console.log(data)
-    };
+
+
     componentDidMount(){ // didmount ilk yüklendiginde get olacak veriyi ayarlamaya yarayan function
         let userData;
         userData =this.state.userData
@@ -63,10 +48,8 @@ class Cv extends Component{
             </div>
             <div className="card-body">
               <h5 className="card-title">Özel Bilgiler</h5>
-                <form onSubmit={e =>{
-                    e.preventDefault();
-                    submit(e);
-                }}>
+                <form
+                >
                     <div className="form-group">
                         <div className="container">
                          <div className="row">

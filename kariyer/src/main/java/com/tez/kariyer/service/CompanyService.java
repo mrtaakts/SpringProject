@@ -26,6 +26,7 @@ public class CompanyService {
             company.setFoundationYear(companyDTO.getFoundationYear());
             company.setSektor(companyDTO.getSektor());
             company.setWebsite(companyDTO.getWebsite());
+
             companyRepository.save(company);
             responseItem.setResult(true);
             responseItem.setMessage("İşlem Başarılı");

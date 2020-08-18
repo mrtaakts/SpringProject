@@ -4,8 +4,7 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 @Entity
 @NoArgsConstructor
@@ -13,21 +12,13 @@ import javax.persistence.Id;
 @Data
 public class District {
     @Id
-    private  long id;
+    @GeneratedValue(strategy=GenerationType.IDENTITY)
+    private  int id;
+    private String district;
+
+    @ManyToOne(fetch = FetchType.LAZY)
+    private City city;
+
+
+
 }
-
-
-
-/*
-
-1 . Analiz ve db (entity) tasarımı
-2. Db tasarımı ve servis
-3. Front end
-4. Test ve hataların giderimi
-
-1. kurulumlar ve Veri seti eğitim videoları
-2.  algoritmanın seçimi ve config ayarları ?
-3. algoritmanın özelleştirilmesi eğitimi vs
-4. test ve hataların giderilmesi
-
-*/
