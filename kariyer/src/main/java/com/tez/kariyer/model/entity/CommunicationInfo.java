@@ -24,11 +24,8 @@ public class CommunicationInfo {
     private String email;
     private Date birthDate;
     private String phone;
-
     @OneToOne
     protected Country country;
-
-
     @OneToOne
     protected User user;
 

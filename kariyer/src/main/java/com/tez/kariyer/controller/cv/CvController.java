@@ -1,10 +1,8 @@
 package com.tez.kariyer.controller.cv;
 
-import com.tez.kariyer.model.entity.CommunicationInfo;
-import com.tez.kariyer.model.entity.SummaryInfo;
-import com.tez.kariyer.model.entity.UserPrivateInfo;
-import com.tez.kariyer.model.entity.WorkExperience;
+import com.tez.kariyer.model.entity.*;
 import com.tez.kariyer.response.ResponseItem;
+import com.tez.kariyer.security.SessionInfo;
 import com.tez.kariyer.service.cvService.CvService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.RequestEntity;
@@ -22,9 +20,8 @@ public class CvController {
     protected CvService cvService;
 
     @GetMapping("/duzenle")
-    public ModelAndView showCv(Model model){
-        ModelAndView modelAndView =new ModelAndView("Cv");
-
+    public ModelAndView showCv(Model model, int id){
+        ModelAndView modelAndView =new ModelAndView("CvDuzenle");
         return modelAndView;
     }
 

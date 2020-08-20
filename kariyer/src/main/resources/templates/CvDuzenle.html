@@ -113,70 +113,101 @@
                                     <div className="row">
 
                                         <div className="col-sm">
-                                            <label>İsim</label>
-                                            <input placeholder='İsim' type="text" className="form-control">
+                                            <label for="isim" class="">İsim </label>
+
+                                            <input type="text" class="form-control"
+                                                   id="isim" name="isim"
+                                                   placeholder="İsim giriniz" required>
 
                                         </div>
                                         <div className="col-sm">
-                                            <label>Soyisim</label>
-                                            <input placeholder='Soyisim' type="text" className="form-control">
-                                            </input>
+                                            <label for="soyisim" class="">Soyisim </label>
+
+                                            <input type="text" class="form-control"
+                                                   id="soyisim" name="soyisim"
+                                                   placeholder="Soyisim giriniz" required>
                                         </div>
                                     </div>
                                     <div className="row">
                                         <div className="col-sm-6">
-                                            <label>Unvan</label>
-                                            <input placeholder='Unvan' type="text" className="form-control"></input>
+                                            <label for="unvan" class="">Unvan </label>
+
+                                            <input type="text" class="form-control"
+                                                   id="unvan" name="unvan"
+                                                   placeholder="Unvan giriniz" required>
                                         </div>
                                     </div>
                                     <div className="row">
                                         <div className="col-sm">
-                                            <label>E-posta adresi</label>
-                                            <input placeholder='E-posta Adresi' type="email" className="form-control"></input>
+                                            <label for="unvan" class="">Email </label>
+
+                                            <input type="text" class="form-control"
+                                                   id="email" name="email"
+                                                   placeholder="Email giriniz" required>
                                         </div>
                                         <div className="col-sm">
-                                            <label>Doğum Tarihi</label>
-                                            <input placeholder='Dogum Tarihi' type="date" className="form-control"></input>
+                                            <label>Doğum Tarİhİ</label>
+                                            <span class="fa fa-calendar"></span>
+                                            <input type="text" id="autoclose-datepicker" name="dogumT"
+                                                   class="form-control" placeholder="Varsa Doğum Tarihi Alanını Giriniz">
                                         </div>
                                     </div>
                                     <div className="row">
                                         <div className="col-sm-6">
-                                            <label>Telefon</label>
-                                            <input placeholder='Telefon No' type="tel" className="form-control"></input>
+                                            <label for="telefon" class="">Telefon </label>
+
+                                            <input type="text" class="form-control"
+                                                   id="telefon" name="telefon"
+                                                   placeholder="Telefon giriniz" required>
                                         </div>
 
                                     </div>
-
-                                    <div>
-                                        <label>Ülke</label>
-                                        <select placeholder='Ülke' className="form-control">
-                                            <option></option>
-                                        </select>
-                                    </div>
-
-                                    <div>
-                                        <label>Şehir</label>
-                                        <select placeholder='Şehir' className="form-control">
-                                            <option></option>
-                                        </select>
-                                    </div>
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="form-group" th:if="${personel == null}">
+                                                        <label for="selectCity" class="">İl</label>
+                                                        <select class="form-control" id="selectCity">
+                                                            <option disabled="disabled" selected="selected"> ----- Şehir
+                                                                Seçiniz -----
+                                                            </option>
+                                                            <option th:each="city : ${citys}" th:value="${city.id}"
+                                                                    th:text="${city.il}"
+                                                            ></option>
+                                                        </select>
+                                                    </div>
+                                            </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-group" th:if="${personel == null}">
+                                                        <label for="selectDistrict" style="text-align: center" class="">İlçe</label>
+                                                        <select class="form-control"
+                                                                id="selectDistrict">
+                                                            <option disabled="disabled" selected="selected"> ----- İlçe
+                                                                Seçiniz -----
+                                                            </option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
 
                                     <div className="row">
                                         <div className="col-sm-6">
-                                            <label>Web Sayfam</label>
-                                            <input placeholder='Telefon No' type="tel" className="form-control"></input>
+                                            <label for="web" class="">Web Sayfam </label>
+
+                                            <input type="text" class="form-control"
+                                                   id="web" name="web"
+                                                   placeholder="Web Sayfanızı giriniz" required>
                                         </div>
 
                                     </div>
 
                                 </div>
                             </div>
+                            <br>
 
-                            <a href="/anasayfa" class="btn btn-success"><i
+                            <button type="submit" class="btn btn-success"><i
                                     class="fa fa-check-square-o"></i>
                                 Kaydet
-
-                            </a>
+                            </button>
                             <a href="/anasayfa" class="btn btn-danger"><i
                                     class="zmdi zmdi-block-alt"></i>
                                 İptal
@@ -397,11 +428,6 @@
         }
     });
 </script>
-<!--<script th:inline="javascript">-->
-<!--    var kontrol = /*[[${personel}]]*/;-->
-<!--    console.log(kontrol);-->
-<!--    if (kontrol != null){-->
-<!--    }-->
-<!--</script>-->
+
 </body>
 </html>

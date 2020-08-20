@@ -1,5 +1,8 @@
 package com.tez.kariyer.controller;
 
+import com.tez.kariyer.model.entity.User;
+import com.tez.kariyer.security.SessionInfo;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.ModelAndView;
@@ -16,9 +19,8 @@ public class HomeController {
     }
 
     @GetMapping("/anasayfa")
-    public ModelAndView showMainPAage(){
-        ModelAndView modelAndView = new ModelAndView("CvDuzenle");
-
+    public ModelAndView showMainPAage(Model model){
+        ModelAndView modelAndView = new ModelAndView("index");
         return modelAndView;
     }
 }

@@ -1,5 +1,8 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/extras/spring-security"
+>
 <head>
     <meta charset="UTF-8">
 </head>
@@ -12,21 +15,21 @@
         <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav">
-            <a class="nav-link active" href="/anasayfa">AnaSayfa <span class="sr-only">(current)</span></a>
-            <a class="nav-link" href="#">İş Ara</a>
-
-            <div style="position:absolute;right: 0" class="dropdown">
-                <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Buraya dinamik isim
-                </button>
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                    <a class="dropdown-item" href="#">Ayarlar</a>
-                    <a class="dropdown-item" href="#">Yardım</a>
-                    <a class="dropdown-item" href="#">Çıkış</a>
+        <div style="position:absolute;right: 0" class="dropdown">
+            <a href="/cv/duzenle">
+                <div class="media">
+                    <div class="avatar"><img class="align-self-start mr-3" src="https://via.placeholder.com/110X110" alt="user avatar"></div>
+                    <div class="media-body">
+                        <h6 class="mt-2 user-title"><span sec:authentication="name" ></span></h6>
+                        <!--                                        <p class="user-subtitle"><span sec:authentication="email"></span></p>-->
+                    </div>
                 </div>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">Ayarlar</a>
+                <a class="dropdown-item" href="#">Yardım</a>
+                <a class="dropdown-item" href="#">Çıkış</a>
             </div>
-
         </div>
     </div>
 </nav>

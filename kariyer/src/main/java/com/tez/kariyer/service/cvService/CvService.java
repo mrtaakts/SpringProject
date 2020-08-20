@@ -1,10 +1,7 @@
 package com.tez.kariyer.service.cvService;
 
 import com.tez.kariyer.model.entity.*;
-import com.tez.kariyer.model.repository.CommunicationInfoRepository;
-import com.tez.kariyer.model.repository.SummaryInfoRepository;
-import com.tez.kariyer.model.repository.UserPrivateInfoRepository;
-import com.tez.kariyer.model.repository.WorkExperienceRepository;
+import com.tez.kariyer.model.repository.*;
 import com.tez.kariyer.response.ResponseItem;
 import com.tez.kariyer.security.SessionInfo;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,11 +18,14 @@ public class CvService {
     protected SummaryInfoRepository summaryInfoRepository;
     @Autowired
     protected WorkExperienceRepository workExperienceRepository;
+    @Autowired
+    protected UserRepository userRepository;
 
     public ResponseItem saveCommunicationInfo(CommunicationInfo communicationInfo){
         ResponseItem responseItem = new ResponseItem();
-
+        User user = SessionInfo.getInstance().getUser();
         try {
+            communicationInfo.setUser(user);
             responseItem.setResult(true);
             responseItem.setMessage("İşlem Başarılı!");
             communicationInfoRepository.save(communicationInfo);
