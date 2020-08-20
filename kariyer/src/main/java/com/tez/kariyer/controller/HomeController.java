@@ -17,7 +17,7 @@ public class HomeController {
 
     @GetMapping("/anasayfa")
     public ModelAndView showMainPAage(){
-        ModelAndView modelAndView = new ModelAndView("index");
+        ModelAndView modelAndView = new ModelAndView("CvDuzenle");
 
         return modelAndView;
     }

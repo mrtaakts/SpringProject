@@ -54,7 +54,7 @@
     </div>
 
     <!--Start sidebar-topbar-wrapper-->
-    <div th:replace="SideBar :: navbar"/>
+    <div th:replace="navbar :: navbar"> </div>
     <!--End sidebar-topbar-wrapper-->
 
 
@@ -104,354 +104,187 @@
         <div class="row">
             <div class="col-lg-12">
                 <div class="card">
-                    <div class="card-header gradient-deepblue text-white  text-uppercase">Personel Oluştur</div>
+                    <div class="card-header gradient-deepblue text-white  text-uppercase">İletişim Bilgileri</div>
                     <div class="ribbon-content"></div>
                     <div class="card-body">
-                        <form id="FormSave">
-                            <div>
-                                <!--                                <h3>Personel Oluştur</h3>-->
-                                <div class="form-group row">
-                                    <div class="col-md-12 ">
-                                        <div class="form-group">
-                                            <div class="row">
-                                                <div class="col-md-6">
-                                                    <label for="adi" class="">Ad </label>
+                        <form>
+                            <div className="form-group">
+                                <div className="container">
+                                    <div className="row">
 
-                                                    <input th:if="${personel != null}" type="text" class="form-control"
-                                                           id="adi" name="ad" th:value="${personel.adi}"
-                                                           placeholder="Ad giriniz" required>
+                                        <div className="col-sm">
+                                            <label>İsim</label>
+                                            <input placeholder='İsim' type="text" className="form-control">
 
-                                                    <input th:if="${personel == null}" type="text"
-                                                           class="form-control form-control-sm" id="adi"
-                                                           name="ad" placeholder="Ad Giriniz" required/>
-
-                                                </div>
-                                                <div class="col-md-6">
-                                                    <label for="soyAdi" class="">Soyad </label>
-                                                    <input th:if="${personel != null}" type="text"
-                                                           th:value="${personel.soyadi}"
-                                                           class="form-control form-control-sm" id="soyAdi"
-                                                           name="soyad"
-                                                           placeholder="SOYAD" required>
-                                                    <input th:if="${personel == null}" type="text"
-                                                           class="form-control form-control-sm" id="soyAdi"
-                                                           name="soyad"
-                                                           placeholder="Soyadı Giriniz" required>
-                                                </div>
-                                            </div>
+                                        </div>
+                                        <div className="col-sm">
+                                            <label>Soyisim</label>
+                                            <input placeholder='Soyisim' type="text" className="form-control">
+                                            </input>
                                         </div>
                                     </div>
-
-                                    <div class="col-md-12 ">
-                                        <div class="form-group">
-                                            <div class="row">
-                                                <div class="col-md-6">
-                                                    <label for="tcPasaport" class="">TC Kİmlİk Numarası </label>
-
-                                                    <input th:if="${personel != null}"
-                                                           th:value="${personel.tcKimlikPasaportNo}"
-                                                           class="form-control form-control-sm"
-                                                           id="tcPasaport" placeholder="Kimlik No Giriniz" name="tc"
-                                                           maxlength="11" required>
-
-                                                    <input th:if="${personel == null}"
-                                                           class="form-control form-control-sm" maxlength="11"
-                                                           id="tcPasaport"
-                                                           placeholder="Kimlik No Giriniz" name="tc" required>
-                                                </div>
-
-
-                                                <div class="col-md-6">
-                                                    <div class="form-group" th:if="${personel == null}">
-                                                        <label for="cinsiyet" class="">Cİnsİyet</label>
-                                                        <select class="form-control form-control-sm" id="cinsiyet"
-                                                                name="cinsiyet" required>
-                                                            <option disabled="disabled" selected="selected"> -----
-                                                                Cinsiyet Seçiniz -----
-                                                            </option>
-                                                            <option value="1">Erkek</option>
-                                                            <option value="0">Kadın</option>
-                                                        </select>
-                                                    </div>
-
-
-                                                    <div class="form-group" th:if="${personel != null}">
-                                                        <label for="cinsiyet" class="">Cinsiyet</label>
-                                                        <select class="form-control form-control-sm" id="cinsiyet"
-                                                                name="cinsiyet" required>
-                                                            <option value="1" th:selected="1==${personel.cinsiyet}">
-                                                                Erkek
-                                                            </option>
-                                                            <option value="0" th:selected="0==${personel.cinsiyet}">
-                                                                Kadın
-                                                            </option>
-                                                        </select>
-                                                    </div>
-                                                </div>
-                                            </div>
+                                    <div className="row">
+                                        <div className="col-sm-6">
+                                            <label>Unvan</label>
+                                            <input placeholder='Unvan' type="text" className="form-control"></input>
                                         </div>
                                     </div>
-
-
-                                    <div class="col-md-12 ">
-                                        <div class="form-group">
-                                            <div class="row">
-                                                <div class="col-md-6">
-
-                                                    <div class="form-group" th:if="${personel == null}">
-                                                        <label for="ulke" class="">Uyruk</label>
-                                                        <select class="form-control form-control-sm" id="ulke"
-                                                                name="uyruk" required>
-                                                            <option disabled="disabled" selected="selected"> ----- Uyruk
-                                                                Seçiniz -----
-                                                            </option>
-                                                            <option th:each="ulke : ${listUlke}" th:value="${ulke.id}"
-                                                                    th:text="${ulke.ulke}"></option>
-                                                        </select>
-                                                    </div>
-
-                                                    <div class="form-group" th:if="${personel != null}">
-                                                        <label for="ulke" class="">Uyruk</label>
-                                                        <select class="form-control form-control-sm" id="ulke"
-                                                                name="uyruk" required>
-                                                            <option th:each="ulke : ${listUlke}" th:value="${ulke.id}"
-                                                                    th:text="${ulke.ulke}"
-                                                                    th:selected="${ulke.id}==${personel.uyrukUlke.id}"></option>
-                                                        </select>
-                                                    </div>
-
-                                                </div>
-                                                <div class="col-md-6">
-                                                    <div class="form-group" th:if="${personel == null}">
-                                                        <label for="persontur" class="">Personel Tür</label>
-                                                        <select class="form-control form-control-sm" id="persontur"
-                                                                name="pTur" required>
-                                                            <option disabled="disabled" selected="selected"> -----
-                                                                Personel Tür Seçiniz -----
-                                                            </option>
-                                                            <option th:each="tur : ${Tur}" th:value="${tur.id}"
-                                                                    th:text="${tur.personelTur}"></option>
-                                                        </select>
-                                                    </div>
-
-                                                    <div class="form-group" th:if="${personel != null}">
-                                                        <label for="persontur" class="">Personel Türü</label>
-                                                        <select class="form-control form-control-sm" id="persontur"
-                                                                name="pTur" required>
-                                                            <option th:each="tur : ${Tur}" th:value="${tur.id}"
-                                                                    th:text="${tur.personelTur}"
-                                                                    th:selected="${tur.id} == ${personel.personTur.id}"></option>
-                                                        </select>
-                                                    </div>
-                                                </div>
-                                            </div>
+                                    <div className="row">
+                                        <div className="col-sm">
+                                            <label>E-posta adresi</label>
+                                            <input placeholder='E-posta Adresi' type="email" className="form-control"></input>
+                                        </div>
+                                        <div className="col-sm">
+                                            <label>Doğum Tarihi</label>
+                                            <input placeholder='Dogum Tarihi' type="date" className="form-control"></input>
                                         </div>
                                     </div>
-
-
-                                    <div class="col-md-12 ">
-                                        <div class="form-group">
-                                            <div class="row">
-                                                <div class="col-md-6">
-                                                    <label for="email" class="">E-Mail </label>
-                                                    <input type="email" th:if="${personel == null}"
-                                                           class="form-control form-control-sm" id="email" name="email"
-                                                           placeholder="Varsa Mail Adresini Giriniz">
-                                                    <input type="email" th:if="${personel != null}"
-                                                           class="form-control form-control-sm" id="email" name="email"
-                                                           th:value="${personel.email}"
-                                                           placeholder="Varsa Mail Adresini Giriniz">
-                                                </div>
-
-
-                                                <div class="col-md-6">
-                                                    <label for="telefon" class="">Telefon Numarası</label>
-                                                    <input th:if="${personel == null}" type="number"
-                                                           class="form-control form-control-sm"
-                                                           id="telefon" name="telefon" required
-                                                           placeholder="Telefon No Alanını Giriniz" maxlength="10">
-                                                    <input th:if="${personel != null}" type="number"
-                                                           class="form-control form-control-sm"
-                                                           id="telefon" name="telefon" th:value="${personel.telefon}"
-                                                           required placeholder="Telefon No Alanını Giriniz"
-                                                           maxlength="10">
-                                                </div>
-                                            </div>
+                                    <div className="row">
+                                        <div className="col-sm-6">
+                                            <label>Telefon</label>
+                                            <input placeholder='Telefon No' type="tel" className="form-control"></input>
                                         </div>
+
                                     </div>
 
-                                    <div class="col-md-12 ">
-                                        <div class="form-group">
-                                            <div class="row">
-                                                <div class="col-md-6">
-                                                    <div class="form-group" th:if="${personel == null}">
-                                                        <label for="selectCity" class="">İl</label>
-                                                        <select class="form-control form-control-sm" id="selectCity">
-                                                            <option disabled="disabled" selected="selected"> ----- Şehir
-                                                                Seçiniz -----
-                                                            </option>
-                                                            <option th:each="city : ${citys}" th:value="${city.id}"
-                                                                    th:text="${city.il}"
-                                                            ></option>
-                                                        </select>
-                                                    </div>
-
-                                                    <div class="form-group" th:if="${personel != null}">
-                                                        <label for="selectCity" class="">İl</label>
-                                                        <select class="form-control form-control-sm" id="selectCity">
-                                                            <option th:each="city : ${citys}" th:value="${city.id}"
-                                                                    th:text="${city.il}"
-                                                                    th:selected="${city.id} == ${personel.ilce.il.id}"
-                                                            ></option>
-                                                        </select>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-6">
-                                                    <div class="form-group" th:if="${personel == null}">
-                                                        <label for="selectDistrict" class="">İlçe</label>
-                                                        <select class="form-control form-control-sm"
-                                                                id="selectDistrict">
-                                                            <option disabled="disabled" selected="selected"> ----- İlçe
-                                                                Seçiniz -----
-                                                            </option>
-                                                        </select>
-                                                    </div>
-
-                                                    <div class="form-group" th:if="${personel != null}">
-                                                        <label for="selectDistrict" class="">İlçe</label>
-                                                        <select class="form-control form-control-sm"
-                                                                id="selectDistrict">
-                                                            <option th:each="ilceList: ${ilceLists}"
-                                                                    th:value="${ilceList.getId()}"
-                                                                    th:text="${ilceList.getIlce()}"
-                                                                    th:selected="${ilceList.getId()} == ${personel.ilce.id}">
-                                                            </option>
-                                                        </select>
-                                                    </div>
-
-                                                </div>
-                                            </div>
-                                        </div>
+                                    <div>
+                                        <label>Ülke</label>
+                                        <select placeholder='Ülke' className="form-control">
+                                            <option></option>
+                                        </select>
                                     </div>
 
-
-                                    <div class="col-md-12 ">
-                                        <div class="form-group">
-                                            <div class="row">
-                                                <div class="col-md-12">
-                                                    <label class="control-label">Adres </label>
-                                                    <textarea th:if="${personel == null}" rows="4" class="form-control"
-                                                              id="adres" name="adres"
-                                                              required placeholder="Adres Alanını Giriniz"></textarea>
-                                                    <textarea th:if="${personel != null}" rows="4" class="form-control"
-                                                              id="adres" name="adres" th:text="${personel.adres}"
-                                                              required placeholder="Adres Alanını Giriniz"></textarea>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-12">
-                                        <div class="form-group">
-                                            <div class="row">
-                                                <div class="col-md-6">
-                                                    <div class="form-group">
-                                                        <div class="card-body">
-                                                            <label>Doğum Tarİhİ</label>
-                                                            <span class="fa fa-calendar"></span>
-                                                            <input th:if="${personel == null}" type="text"
-                                                                   id="autoclose-datepicker" name="dogumT"
-                                                                   class="form-control"
-                                                                   placeholder="Varsa Doğum Tarihi Alanını Giriniz">
-                                                            <input th:if="${personel != null}" type="text"
-                                                                   id="autoclose-datepicker2" name="dogumT"
-                                                                   th:value="${personel.dt}" class="form-control"
-                                                                   placeholder="Varsa Doğum Tarihi Alanını Giriniz">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-6">
-                                                    <div class="form-group">
-                                                        <div class="card-body">
-                                                            <label>Posta Kodu</label>
-                                                            <input th:if="${personel == null}" type="text" id="posta"
-                                                                   name="posta" maxlength="5" class="form-control"
-                                                                   placeholder="Varsa Posta Kodu Giriniz">
-                                                            <input th:if="${personel!= null}" type="text" id="posta"
-                                                                   name="posta" maxlength="5"
-                                                                   th:value="${personel.postaKodu}" class="form-control"
-                                                                   placeholder="Varsa Posta Kodu Giriniz">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
+                                    <div>
+                                        <label>Şehir</label>
+                                        <select placeholder='Şehir' className="form-control">
+                                            <option></option>
+                                        </select>
                                     </div>
 
-                                    <div class="col-md-12">
-                                        <div class="form-group">
-                                            <div class="row">
-
-                                                <label>&emsp; &nbsp;&nbsp;</label>
-                                                <div class="col-md-6">
-                                                    <div class="form-group" th:if="${personel == null}">
-
-                                                        <div class="icheck-material-success icheck-inline">
-                                                            <input type="radio" id="inline-radio-success" name="durum"
-                                                                   checked value=1>
-                                                            <label for="inline-radio-success">Aktİf</label>
-                                                        </div>
-                                                        <div class="icheck-material-primary icheck-inline">
-                                                            <input type="radio" id="inline-radio-primary" name="durum"
-                                                                   value=2>
-                                                            <label for="inline-radio-primary">Pasİf</label>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                                <div class="form-group" th:if="${personel != null}">
-
-                                                    <div class="icheck-material-success icheck-inline">
-                                                        <input type="radio" th:checked="${personel.durum == 1}"
-                                                               id="inline-radio-success" name="durum" checked value=1>
-                                                        <label for="inline-radio-success">Aktİf</label>
-                                                    </div>
-                                                    <div class="icheck-material-primary icheck-inline">
-                                                        <input type="radio" th:checked="${personel.durum == 2}"
-                                                               id="inline-radio-primary" name="durum" value=0>
-                                                        <label for="inline-radio-primary">Pasİf</label>
-                                                    </div>
-
-                                                </div>
-                                                <div class="col-md-5">
-                                                    <div class="btn-group" th:if="${personel == null}">
-                                                        <div class="card-body">
-                                                            <button type="submit" class="btn btn-success"><i
-                                                                    class="fa fa-check-square-o"></i>
-                                                                Kaydet
-                                                            </button>
-                                                            <label>&emsp; &nbsp;&nbsp;&nbsp;</label>
-                                                            <a href="/anasayfa/dash/" class="btn btn-danger"><i
-                                                                    class="zmdi zmdi-block-alt"></i>
-                                                                İptal
-
-                                                            </a>
-
-                                                        </div>
-                                                    </div>
-                                                    <div class="form-group" th:if="${personel != null}">
-                                                        <div class="card-body">
-                                                            <button type="submit" class="btn btn-success"><i
-                                                                    class="fa fa-check-square-o"></i>
-                                                                Güncelle
-                                                            </button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
+                                    <div className="row">
+                                        <div className="col-sm-6">
+                                            <label>Web Sayfam</label>
+                                            <input placeholder='Telefon No' type="tel" className="form-control"></input>
                                         </div>
+
                                     </div>
+
                                 </div>
                             </div>
+
+                            <a href="/anasayfa" class="btn btn-success"><i
+                                    class="fa fa-check-square-o"></i>
+                                Kaydet
+
+                            </a>
+                            <a href="/anasayfa" class="btn btn-danger"><i
+                                    class="zmdi zmdi-block-alt"></i>
+                                İptal
+
+                            </a>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <!--start overlay-->
+            <div class="overlay toggle-menu"></div>
+            <!--end overlay-->
+        </div><!-- End container-fluid-->
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="card">
+                    <div class="card-header gradient-deepblue text-white  text-uppercase">Özel Bilgiler</div>
+                    <div class="ribbon-content"></div>
+                    <div class="card-body">
+                        <form>
+                            <div className="form-group">
+                                <div className="container">
+                                    <div className="row">
+                                        <div className="col-sm-6">
+                                            <div className="col-sm-3">
+                                                <label>Cinsiyet </label>
+                                            </div>
+                                            <div className="form check form-check-inline">
+                                                <input className="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"></input>
+                                                <label className="form-check-label" name="inlineRadioOptions" id="inlineRadio2" value="option2">Erkek</label>
+                                            </div>
+                                            <div className="form check form-check-inline">
+                                                <input className="form-check-input" type="radio"></input>
+                                                <label className="form-check-label">Kadın</label>
+                                            </div>
+                                        </div>
+                                        <div className="col-sm-6">
+                                            <label>Sürücü Belgesi Sınıfı</label>
+                                            <select placeholder='Sürücü Belgesi' className="form-control">
+                                                <option></option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div className="row">
+                                        <div className="col-sm-6">
+                                            <label>Uyruk</label>
+                                            <select placeholder='Uyruk' className="form-control">
+                                                <option></option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div className="row">
+                                        <div className="col-sm-6">
+                                            <label>Net Maaş Beklentisi</label>
+                                            <select placeholder='Net Maaş' className="form-control">
+                                                <option></option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div className="row">
+                                        <div className="col-sm-6">
+                                            <label>Askerlik Durumu</label>
+                                            <select placeholder='Askerlik Durumu' className="form-control">
+                                                <option></option>
+                                            </select>
+                                        </div>
+
+                                    </div>
+
+                                    <div className="row">
+                                        <div className="col-sm-6">
+                                            <label>Tecil Tarihi</label>
+                                            <input placeholder='Tecil Tarihi' type="date" className="form-control"></input>                                                                    </div>
+
+                                    </div>
+                                    <div className="row">
+                                        <div id="engellabel">
+                                            <label >Engelliyseniz lütfen bunu belirtin. Böylece size sağlanan ayrıcalıklı istihdam olanaklarından faydalanabilirsiniz.</label>
+                                        </div>
+
+
+                                    </div>
+                                    <div className="form-check">
+                                        <input className="form-check-input" type="checkbox" value="" id="defaultCheck1">
+
+                                        </input>
+                                        <label className="form-check-label" for="defaultCheck1">
+                                            Engelliyim
+                                        </label>
+                                    </div>
+
+
+
+
+                                </div>
+                            </div>
+                            <a href="/anasayfa" class="btn btn-success"><i
+                                    class="fa fa-check-square-o"></i>
+                                Kaydet
+
+                            </a>
+                            <a href="/anasayfa" class="btn btn-danger"><i
+                                    class="zmdi zmdi-block-alt"></i>
+                                İptal
+
+                            </a>
                         </form>
                     </div>
                 </div>
@@ -466,9 +299,7 @@
     <a href="javaScript:void(0);" class="back-to-top"><i class="fa fa-angle-double-up"></i> </a>
     <!--End Back To Top Button-->
 </div><!--End wrapper-->
-<!--Start footer wrapper-->
-<div th:replace="Footer :: footer"/>
-<!--End footer-wrapper-->
+
 
 
 <!-- Bootstrap core JavaScript-->
