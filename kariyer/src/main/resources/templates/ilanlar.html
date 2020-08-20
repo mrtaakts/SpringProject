@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en
+" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>İş İlanları</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">  <img style="width: 40px;height: 40px" th:src="@{/images/logo.png}" alt="IMG">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+            <a class="nav-link active" href="/anasayfa">AnaSayfa <span class="sr-only">(current)</span></a>
+            <a class="nav-link"href="/login">Giriş Yap</a>
+            <a class="nav-link" href="#">İş Ara</a>
+
+            <span style="position: absolute;right: 1vh">
+        <a style="margin-left: 3vh" class="btn btn-primary" href="/login" role="button">Giriş Yap</a>
+        <a class="btn btn-primary" href="/uyelik/olustur" role="button">Kayıt Ol</a>
+        </span>
+
+        </div>
+    </div>
+</nav>
+
+<form>
+
+    <div class="col-md-12">
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8">
+                <div class="list-group">
+                    <a href="#" class="list-group-item list-group-item-action flex-column align-items-start" th:each="jobposting : ${job}">
+                        <div class="d-flex w-100 justify-content-between">
+                            <h5 class="mb-1" th:text="${jobposting.getTittle()}"></h5>
+                            <!--/*@thymesVar id="date" type=""*/-->
+                            <small th:value="${jobposting.date}"></small>
+                        </div>
+                        <p class="mb-1" th:text="${jobposting.firm}"></p>
+                        <small th:text="${jobposting.getCity()}"></small>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+    </div>
+</form>
+
+</body>
+</html>

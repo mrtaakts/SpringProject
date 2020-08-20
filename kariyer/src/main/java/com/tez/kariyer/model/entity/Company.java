@@ -1,13 +1,11 @@
 package com.tez.kariyer.model.entity;
 
+import com.tez.kariyer.model.entity.address.City;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 @Entity
 @Data
@@ -32,6 +30,9 @@ public class Company {
     private String website;
 
     private String about;
+
+    @OneToOne
+    protected City city;
 
 
 }

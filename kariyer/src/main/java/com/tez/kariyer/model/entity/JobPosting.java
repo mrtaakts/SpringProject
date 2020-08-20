@@ -1,5 +1,6 @@
 package com.tez.kariyer.model.entity;
 
+import com.tez.kariyer.model.entity.address.City;
 import com.tez.kariyer.model.entity.parameterTable.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -45,5 +46,11 @@ public class JobPosting {
     @OneToOne
     protected DriverLicense driverLicense;
 
+    @OneToOne
+    protected City city;
+
+    private String tittle;
+
+    private Date startDate;
 
 }
