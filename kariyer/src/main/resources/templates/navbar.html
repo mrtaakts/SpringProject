@@ -4,7 +4,37 @@
       xmlns:sec="http://www.thymeleaf.org/extras/spring-security"
 >
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content=" initial-scale=1, maximum-scale-1, shrink-to-fit=yes"/>
+    <meta name="description" content=""/>
+    <meta name="author" content=""/>
+    <title>U-ETDS | Personel Ekle</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <link rel="stylesheet" th:href="@{/css/pace.min.css}"/>
+    <script th:src="@{/js/pace.min.js}"></script>
+    <!--favicon-->
+    <link rel="icon" th:href="@{/images/favicon.ico}" type="image/x-icon">
+    <!-- simplebar CSS-->
+    <link th:href="@{/plugins/simplebar/css/simplebar.css}" rel="stylesheet"/>
+    <!-- Bootstrap core CSS-->
+    <link th:href="@{/css/bootstrap.min.css}" rel="stylesheet"/>
+    <!-- animate CSS-->
+    <link th:href="@{/css/animate.css}" rel="stylesheet" type="text/css"/>
+    <!-- Icons CSS-->
+    <link th:href="@{/css/icons.css}" rel="stylesheet" type="text/css"/>
+    <!-- Sidebar CSS-->
+    <link th:href="@{/css/sidebar-menu.css}" rel="stylesheet"/>
+    <!-- Custom Style-->
+    <link th:href="@{/css/app-style_edit.css}" rel="stylesheet"/>
+    <!-- skins CSS-->
+    <link th:href="@{/css/skins.css}" rel="stylesheet"/>
+    <!--Bootstrap Datepicker-->
+    <link th:href="@{/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css}" rel="stylesheet" type="text/css">
+
+    <link rel="stylesheet" th:href="@{/plugins/notifications/css/lobibox.min.css}"/>
+
 </head>
 <body>
 <!-- Navigation -->
@@ -15,22 +45,22 @@
         <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div style="position:absolute;right: 0;margin:auto" class="dropdown">
-            <a href="/cv/duzenle">
-                <div class="media">
-                    <div class="media-body">
-                        <h6 class="mt-2 user-title"><span sec:authentication="name" ></span></h6>
-                        <!--                                        <p class="user-subtitle"><span sec:authentication="email"></span></p>-->
-                    </div>
-                </div>
-            </a>
+        <div class="dropdown" style="position: absolute;right: 1vh">
+            <button style="background-color: #82503f" class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span sec:authentication="name" ></span>
+            </button>
             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <a class="dropdown-item" href="#">Ayarlar</a>
-                <a class="dropdown-item" href="#">Yardım</a>
+                <a class="dropdown-item" href="/cv/duzenle">Profil</a>
                 <a class="dropdown-item" href="#">Çıkış</a>
             </div>
         </div>
     </div>
+
+
+
+
+
+
 </nav>
 </body>
 </html>

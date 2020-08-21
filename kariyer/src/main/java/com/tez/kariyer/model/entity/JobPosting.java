@@ -37,8 +37,7 @@ public class JobPosting {
     @OneToOne
     protected BusinessArea businessArea;
 
-    @OneToOne
-    protected SummaryInfo summaryInfo;
+    protected String Information;
 
     @OneToOne
     protected WorkExperience workExperience;

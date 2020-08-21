@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en
+" xmlns:th="http://www.thymeleaf.org"
+>
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content=" initial-scale=1, maximum-scale-1, shrink-to-fit=yes"/>
+    <meta name="description" content=""/>
+    <meta name="author" content=""/>
+    <title>İş İlanı Oluşturma</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <link rel="stylesheet" th:href="@{/css/pace.min.css}"/>
+    <script th:src="@{/js/pace.min.js}"></script>
+    <!--favicon-->
+    <link rel="icon" th:href="@{/images/favicon.ico}" type="image/x-icon">
+    <!-- simplebar CSS-->
+    <link th:href="@{/plugins/simplebar/css/simplebar.css}" rel="stylesheet"/>
+    <!-- Bootstrap core CSS-->
+    <link th:href="@{/css/bootstrap.min.css}" rel="stylesheet"/>
+    <!-- animate CSS-->
+    <link th:href="@{/css/animate.css}" rel="stylesheet" type="text/css"/>
+    <!-- Icons CSS-->
+    <link th:href="@{/css/icons.css}" rel="stylesheet" type="text/css"/>
+    <!-- Sidebar CSS-->
+    <link th:href="@{/css/sidebar-menu.css}" rel="stylesheet"/>
+    <!-- Custom Style-->
+    <link th:href="@{/css/app-style_edit.css}" rel="stylesheet"/>
+    <!-- skins CSS-->
+    <link th:href="@{/css/skins.css}" rel="stylesheet"/>
+    <!--Bootstrap Datepicker-->
+    <link th:href="@{/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css}" rel="stylesheet" type="text/css">
+
+    <link rel="stylesheet" th:href="@{/plugins/notifications/css/lobibox.min.css}"/>
+
+    <style>
+        .nopad{
+            padding: 1vh;
+        }
+
+
+    </style>
+
+
+</head>
+<body>
+
+<div th:replace="navbar :: navbar"> </div>
+
+
+<div class="row" style="margin-top: 5vh">
+    <div class="col-lg-12">
+        <div class="card">
+            <div class="card-header gradient-deepblue text-white  text-uppercase">İş İlanı</div>
+            <div class="ribbon-content"></div>
+            <div class="card-body">
+                <form>
+                    <div className="form-group">
+                        <div className="container">
+                            <div className="row">
+
+                                <div className="col-sm">
+                                    <label for="title" class="">İlan Başlığı </label>
+
+                                    <input type="text" class="form-control"
+                                           id="title" name="title"
+                                           placeholder="İlan Başlığını giriniz" required>
+
+                                </div>
+
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 nopad">
+                                    <div class="form-group">
+                                        <label for="selectCountry" class="">Ülke</label>
+                                        <select class="form-control" id="selectCountry">
+                                            <option disabled="disabled" selected="selected"> ----- Ülke
+                                                Seçiniz -----
+                                            </option>
+
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 nopad">
+                                    <div class="form-group" >
+                                        <label for="selectCity" style="text-align: center" class="">İl</label>
+                                        <select class="form-control"
+                                                id="selectCity">
+                                            <option disabled="disabled" selected="selected"> ----- Şehir
+                                                Seçiniz -----
+                                            </option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="row">
+                                <div class="col-md-6 nopad">
+                                    <div class="form-group">
+                                        <label for="selectCompanySector" class="">Sektör</label>
+                                        <select class="form-control" id="selectCompanySector">
+                                            <option disabled="disabled" selected="selected"> ----- Firma
+                                                Sektörü Seçiniz-----
+                                            </option>
+
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 nopad">
+                                    <div class="form-group" >
+                                        <label for="selectBusinessArea" style="text-align: center" class="">İş Alanı</label>
+                                        <select class="form-control"
+                                                id="selectBusinessArea">
+                                            <option disabled="disabled" selected="selected"> ----- İş
+                                                Alanını Seçiniz -----
+                                            </option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-6 nopad">
+                                    <div class="form-group">
+                                        <label for="selectPosition" class="">Pozisyon</label>
+                                        <select class="form-control" id="selectPosition">
+                                            <option disabled="disabled" selected="selected"> ----- Pozisyonu
+                                                Seçiniz-----
+                                            </option>
+
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 nopad">
+                                    <div class="form-group" >
+                                        <label for="selectWayOfWork" style="text-align: center" class="">Çalışma Şekli</label>
+                                        <select class="form-control"
+                                                id="selectWayOfWork">
+                                            <option disabled="disabled" selected="selected"> ----- Çalışma
+                                                Şeklini Seçiniz -----
+                                            </option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-6 nopad">
+                                    <div class="form-group">
+                                        <label for="selectWorkExperience" class="">İş Deneyimi</label>
+                                        <select class="form-control" id="selectWorkExperience">
+                                            <option disabled="disabled" selected="selected"> ----- İş Deneyimini
+                                                Seçiniz-----
+                                            </option>
+
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 nopad">
+                                    <div class="form-group" >
+                                        <label for="selectDriverLicense" style="text-align: center" class="">Sürücü Belgesi</label>
+                                        <select class="form-control"
+                                                id="selectDriverLicense">
+                                            <option disabled="disabled" selected="selected"> ----- Sürücü
+                                                Belgesini Seçiniz -----
+                                            </option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div className="row">
+                                <div className="col-sm-6 ">
+                                    <div class="form-group">
+                                        <label for="information">İş Hakkında Ek Bilgi</label>
+                                        <textarea class="form-control" id="information" rows="3"></textarea>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+</body>
+</html>
