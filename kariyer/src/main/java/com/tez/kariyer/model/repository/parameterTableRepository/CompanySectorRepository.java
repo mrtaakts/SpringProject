@@ -6,4 +6,6 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface CompanySectorRepository extends CrudRepository<CompanySector, Integer> {
+
+    CompanySector findByCompanySector(String CompanySector);
 }

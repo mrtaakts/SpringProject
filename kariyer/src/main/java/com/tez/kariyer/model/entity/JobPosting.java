@@ -35,8 +35,7 @@ public class JobPosting {
 
     protected String Information;
 
-    @OneToOne
-    protected WorkExperience workExperience;
+    private String workexp;
 
     @OneToOne
     protected DriverLicense driverLicense;

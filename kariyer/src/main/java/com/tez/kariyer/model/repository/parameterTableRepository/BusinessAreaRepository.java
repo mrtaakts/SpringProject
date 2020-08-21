@@ -6,4 +6,6 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface BusinessAreaRepository extends CrudRepository<BusinessArea, Integer> {
+
+    BusinessArea findByBusinessArea(String businessarea);
 }

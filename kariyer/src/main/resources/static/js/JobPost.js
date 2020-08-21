@@ -8,11 +8,17 @@ $(document).ready(function () {
             var id = getUrlParameter('id');
             if(id==null){
                 var formData = {
-                    "name": $("#ad").val(),
-                    "surname": $("#soyAdi").val(),
-                    "email": $("#email").val(),
-                    "username": $("#username").val(),
-                    "password": $("#password").val(),
+                    "title": $("#tittle").val(),
+                    "country": $('#selectCountry option:selected').html(),
+                    "city": $('#selectCity option:selected').html(),
+                    "companySector": $('#selectCompanySector option:selected').html(),
+                    "businessArea": $('#selectBusinessArea option:selected').html(),
+                    "position": $('#selectPosition option:selected').html(),
+                    "wayOfWork": $('#selectWayOfWork option:selected').html(),
+                    "workExperience": $('#selectWorkExperience option:selected').html(),
+                    "DriverLicence": $('#selectDriverLicense option:selected').html(),
+                    "Information": $("#information").val()
+
 
                 }
 
@@ -21,7 +27,7 @@ $(document).ready(function () {
             $.ajax({
                 type: "POST",
                 contentType: "application/json",
-                url: "/uyelik/save",
+                url: "/uyelik/save", // buraya kendi path'in gelecek
                 data: JSON.stringify(formData),
                 dataType: 'json',
                 cache: false,

@@ -10,4 +10,6 @@ import org.springframework.stereotype.Repository;
 public interface PositionRepository extends CrudRepository<Position, Integer> {
     @Query("select position from Position position where position.id =:id")
     Position findByIdd(@Param("id") Integer id);
+
+    Position findByPositions(String Position);
 }

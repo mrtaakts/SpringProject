@@ -61,10 +61,10 @@
                             <div className="row">
 
                                 <div className="col-sm">
-                                    <label for="title" class="">İlan Başlığı </label>
+                                    <label for="tittle" class="">İlan Başlığı </label>
 
                                     <input type="text" class="form-control"
-                                           id="title" name="title"
+                                           id="tittle" name="tittle"
                                            placeholder="İlan Başlığını giriniz" required>
 
                                 </div>
@@ -78,6 +78,8 @@
                                             <option disabled="disabled" selected="selected"> ----- Ülke
                                                 Seçiniz -----
                                             </option>
+                                            <option th:each="ulke : ${country}" th:value="${ulke.id}"
+                                                    th:text="${ulke.ulke}"></option>
 
                                         </select>
                                     </div>
@@ -90,6 +92,8 @@
                                             <option disabled="disabled" selected="selected"> ----- Şehir
                                                 Seçiniz -----
                                             </option>
+                                            <option th:each="sehir : ${city}" th:value="${sehir.id}"
+                                                    th:text="${sehir.il}"></option>
                                         </select>
                                     </div>
                                 </div>
@@ -166,6 +170,8 @@
                                             <option disabled="disabled" selected="selected"> ----- Sürücü
                                                 Belgesini Seçiniz -----
                                             </option>
+                                            <option th:each="lisans : ${licence}" th:value="${lisans.id}"
+                                                    th:text="${lisans.licence}"></option>
                                         </select>
                                     </div>
                                 </div>
@@ -189,7 +195,7 @@
             </div>
         </div>
     </div>
-</div>                   
+</div>
 
 
 </body>

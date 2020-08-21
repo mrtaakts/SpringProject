@@ -6,4 +6,6 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface WayOfWorkRepository extends CrudRepository<WayOfWork,Integer> {
+
+    WayOfWork findByWayOfWork(String wayofwork);
 }

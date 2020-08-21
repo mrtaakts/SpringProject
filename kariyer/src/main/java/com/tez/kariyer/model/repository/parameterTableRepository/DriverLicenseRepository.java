@@ -6,4 +6,6 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface DriverLicenseRepository extends CrudRepository<DriverLicense,Integer> {
+
+    DriverLicense findByLicence(String DriverLicense);
 }
