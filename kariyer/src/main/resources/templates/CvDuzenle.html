@@ -350,8 +350,8 @@
                                                 <option disabled="disabled" selected="selected"> ----- Pozisyon
                                                     Seçiniz -----
                                                 </option>
-                                                <option th:each="city : ${citys}" th:value="${city.id}"
-                                                        th:text="${city.il}"
+                                                <option th:each="position : ${position}" th:value="${position.id}"
+                                                        th:text="${position.positions}"
                                                 ></option>
                                             </select>
                                         </div>
@@ -378,23 +378,18 @@
                                         </div>
                                     </div>
                                     <div class="row">
-                                        <div class="col-sm"-6>
+                                        <div class="col-sm">
                                             <label for="companySector" class="">Firma Sektörü</label>
                                             <select class="form-control" id="companySector">
                                                 <option disabled="disabled" selected="selected"> ----- Firma Sektörü
                                                     Seçiniz -----
                                                 </option>
-                                                <option th:each="city : ${citys}" th:value="${city.id}"
-                                                        th:text="${city.il}"
+                                                <option th:each="companySector : ${companySector}" th:value="${companySector.id}"
+                                                        th:text="${companySector.companySector}"
                                                 ></option>
                                             </select>
                                         </div>
-                                        <div class="col-sm"-6>
-                                            <label>Doğum Tarİhİ</label>
-                                            <span class="fa fa-calendar"></span>
-                                            <input type="text" id="businessarea" name="businessarea"
-                                                   class="form-control" placeholder="Varsa Doğum Tarihi Alanını Giriniz">
-                                        </div>
+
                                     </div>
                                     <div className="row">
                                         <div className="col-sm-6">
@@ -404,8 +399,8 @@
                                                 <option disabled="disabled" selected="selected"> ----- Çalışma Şekli
                                                     Seçiniz -----
                                                 </option>
-                                                <option th:each="city : ${citys}" th:value="${city.id}"
-                                                        th:text="${city.il}"
+                                                <option th:each="wayOfWork : ${wayOfWork}" th:value="${wayOfWork.id}"
+                                                        th:text="${wayOfWork.wayOfWork}"
                                                 ></option>
                                             </select>
                                         </div>
@@ -413,7 +408,7 @@
                                     </div>
                                     <div class="row">
                                         <div class="col-md-6">
-                                            <div class="form-group" th:if="${personel == null}">
+                                            <div class="form-group">
                                                 <label for="selectCity" class="">İl</label>
                                                 <select class="form-control" id="selectCity">
                                                     <option disabled="disabled" selected="selected"> ----- Şehir

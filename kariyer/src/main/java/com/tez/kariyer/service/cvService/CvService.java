@@ -1,7 +1,11 @@
 package com.tez.kariyer.service.cvService;
 
+import com.tez.kariyer.dto.WorkExperienceDTO;
 import com.tez.kariyer.model.entity.*;
+import com.tez.kariyer.model.entity.parameterTable.Position;
+import com.tez.kariyer.model.entity.parameterTable.WayOfWork;
 import com.tez.kariyer.model.repository.*;
+import com.tez.kariyer.model.repository.parameterTableRepository.PositionRepository;
 import com.tez.kariyer.response.ResponseItem;
 import com.tez.kariyer.security.SessionInfo;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,6 +24,8 @@ public class CvService {
     protected WorkExperienceRepository workExperienceRepository;
     @Autowired
     protected UserRepository userRepository;
+    @Autowired
+    protected PositionRepository positionRepository;
 
     public ResponseItem saveCommunicationInfo(CommunicationInfo communicationInfo){
         ResponseItem responseItem = new ResponseItem();
@@ -67,10 +73,11 @@ public class CvService {
         return responseItem;
     }
 
-    public ResponseItem saveWorkExperience(WorkExperience workExperience){
+    public ResponseItem saveWorkExperience(WorkExperienceDTO workExperienceDTO){
         ResponseItem responseItem = new ResponseItem();
-
+        WorkExperience workExperience = new WorkExperience();
         try {
+            workExperience.setPosition(positionRepository.findByIdd(workExperienceDTO.getPosition()));
             responseItem.setResult(true);
             responseItem.setMessage("İşlem Başarılı!");
             workExperienceRepository.save(workExperience);

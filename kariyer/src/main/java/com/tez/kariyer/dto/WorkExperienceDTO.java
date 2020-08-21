@@ -17,13 +17,13 @@ public class WorkExperienceDTO {
     private int id;
 
     private String firmsName;
-    private String  position;
+    private int  position;
     private Date startDate;
     private Date finishDate;
     private Byte workStatus;
-    protected CompanySector companySector;
-    protected WayOfWork wayOfWork;
-    protected Ulke count;
+    protected int companySector;
+    protected int wayOfWork;
+    protected int district;
     private String jopDescription;
 
 }

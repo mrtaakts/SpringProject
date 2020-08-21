@@ -34,7 +34,7 @@ public class JobAdvertiController {
         for (JobPosting jobPosting1 : jobPosting){
             JobAdvertiDTO jobAdvertiDTO = new JobAdvertiDTO();
             jobAdvertiDTO.setFirm(jobPosting1.getCompany().getCompanyName());
-            jobAdvertiDTO.setCity(jobPosting1.getCompany().getCity().getCity());
+            jobAdvertiDTO.setCity(jobPosting1.getCompany().getCity().getIl());
             jobAdvertiDTO.setDate(dateFormat.format(jobPosting1.getStartDate()));
             jobAdvertiDTO.setTittle(jobPosting1.getTittle());
             jobAdvertiDTOs.add(jobAdvertiDTO);
