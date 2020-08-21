@@ -2,13 +2,7 @@ package com.tez.kariyer.controller;
 
 import com.tez.kariyer.dto.JobAdvertiDTO;
 import com.tez.kariyer.model.entity.JobPosting;
-import com.tez.kariyer.model.entity.SummaryInfo;
-import com.tez.kariyer.model.entity.User;
-import com.tez.kariyer.model.repository.CompanyRepository;
 import com.tez.kariyer.model.repository.JobPostingRepository;
-import com.tez.kariyer.model.repository.SummaryInfoRepository;
-import com.tez.kariyer.model.repository.UserRepository;
-import com.tez.kariyer.security.SessionInfo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -30,7 +24,7 @@ public class JobAdvertiController {
 
     @GetMapping("/ilanlari")
     public ModelAndView show(Model model){
-        ModelAndView modelAndView = new ModelAndView("ilanlar");
+        ModelAndView modelAndView = new ModelAndView("JobPosting");
         DateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy");
         List<JobPosting> jobPosting = (List<JobPosting>) jobPostingRepository.findAll();
 

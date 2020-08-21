@@ -20,7 +20,7 @@ public class CvController {
     protected CvService cvService;
 
     @GetMapping("/duzenle")
-    public ModelAndView showCv(Model model, int id){
+    public ModelAndView showCv(Model model){
         ModelAndView modelAndView =new ModelAndView("CvDuzenle");
         return modelAndView;
     }
