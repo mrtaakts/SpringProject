@@ -1,8 +1,7 @@
 package com.tez.kariyer.service.addressService;
 
-import com.tez.kariyer.model.entity.address.City;
-import com.tez.kariyer.model.entity.address.Country;
-import com.tez.kariyer.model.entity.address.District;
+import com.tez.kariyer.model.entity.address.Il;
+import com.tez.kariyer.model.entity.address.Ilce;
 import com.tez.kariyer.model.repository.addressRepository.CityRepository;
 import com.tez.kariyer.model.repository.addressRepository.CountryRepository;
 import com.tez.kariyer.model.repository.addressRepository.DistrictRepository;
@@ -21,20 +20,20 @@ public class AddressService {
     @Autowired
     DistrictRepository districtRepository;
 
-    public List<City> showcities(Integer countryid)
+    public List<Il> showcities(Integer countryid)
     {
-        List<City> cities= cityRepository.findByCountryId(countryid);
+        List<Il> cities= cityRepository.findByUlke(countryid);
 
 
         return cities;
     }
 
-    public List<District> showdistricts(Integer cityid)
+    public List<Ilce> showdistricts(Integer cityid)
     {
-        List<District>districts= districtRepository.findByCity_Id(cityid);
+        List<Ilce> ilces = districtRepository.findByCity_Id(cityid);
 
 
-        return districts;
+        return ilces;
     }
 
 }

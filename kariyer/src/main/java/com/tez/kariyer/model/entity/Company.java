@@ -1,6 +1,6 @@
 package com.tez.kariyer.model.entity;
 
-import com.tez.kariyer.model.entity.address.City;
+import com.tez.kariyer.model.entity.address.Il;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -32,7 +32,7 @@ public class Company {
     private String about;
 
     @OneToOne
-    protected City city;
+    protected Il city;
 
 
 }

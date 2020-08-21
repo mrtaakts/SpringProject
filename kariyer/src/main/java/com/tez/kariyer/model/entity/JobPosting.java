@@ -1,16 +1,12 @@
 package com.tez.kariyer.model.entity;
 
-import com.tez.kariyer.model.entity.address.City;
+import com.tez.kariyer.model.entity.address.Il;
 import com.tez.kariyer.model.entity.parameterTable.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.OneToOne;
+import javax.persistence.*;
 import java.util.Date;
 
 @Entity
@@ -46,7 +42,7 @@ public class JobPosting {
     protected DriverLicense driverLicense;
 
     @OneToOne
-    protected City city;
+    protected Il city;
 
     private String tittle;
 

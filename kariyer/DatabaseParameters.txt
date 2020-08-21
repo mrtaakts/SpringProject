@@ -41,3 +41,9740 @@ INSERT INTO `tez`.`driver_license` (`id`, `licence`) VALUES ('14', 'D');
 INSERT INTO `tez`.`driver_license` (`id`, `licence`) VALUES ('15', 'DE');
 INSERT INTO `tez`.`driver_license` (`id`, `licence`) VALUES ('16', 'F');
 INSERT INTO `tez`.`driver_license` (`id`, `licence`) VALUES ('17', 'G');
+
+/* Education Status */
+
+INSERT INTO `tez`.`education_status` (`id`, `education_status`) VALUES ('1', 'Lise Mezunu');
+INSERT INTO `tez`.`education_status` (`id`, `education_status`) VALUES ('2', 'Lisans');
+INSERT INTO `tez`.`education_status` (`id`, `education_status`) VALUES ('3', 'ÖnLisans');
+INSERT INTO `tez`.`education_status` (`id`, `education_status`) VALUES ('4', 'Yüksek Lisans');
+INSERT INTO `tez`.`education_status` (`id`, `education_status`) VALUES ('5', 'Doktora');
+
+/* Country */
+
+/* INSERT QUERY NO: 1 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+1, 'TR', 'Türkiye'
+);
+
+/* INSERT QUERY NO: 2 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+2, 'OA', 'Abd Minor Outlying Adaları'
+);
+
+/* INSERT QUERY NO: 3 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+3, 'AF', 'Afganistan'
+);
+
+/* INSERT QUERY NO: 4 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+4, 'DE', 'Almanya'
+);
+
+/* INSERT QUERY NO: 5 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+5, 'US', ' Amerika Birleşik Devletleri  '
+);
+
+/* INSERT QUERY NO: 6 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+6, 'AS', ' Amerika Samoası  '
+);
+
+/* INSERT QUERY NO: 7 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+7, 'OC', ' Amerikan Okyanusyası  '
+);
+
+/* INSERT QUERY NO: 8 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+8, 'AD', ' Andorra  '
+);
+
+/* INSERT QUERY NO: 9 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+9, 'AO', ' Angola  '
+);
+
+/* INSERT QUERY NO: 10 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+10, 'AI', ' Anguılla  '
+);
+
+/* INSERT QUERY NO: 11 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+11, 'AQ', 'Antartika'
+);
+
+/* INSERT QUERY NO: 12 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+12, 'AG', ' Antıgua Ve Bermuda  '
+);
+
+/* INSERT QUERY NO: 13 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+13, 'AR', ' Arjantin  '
+);
+
+/* INSERT QUERY NO: 14 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+14, 'AL', 'Arnavutluk'
+);
+
+/* INSERT QUERY NO: 15 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+15, 'AW', ' Aruba  '
+);
+
+/* INSERT QUERY NO: 16 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+16, 'AU', ' Avustralya  '
+);
+
+/* INSERT QUERY NO: 17 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+17, 'UO', ' Avustralya Okyanusu  '
+);
+
+/* INSERT QUERY NO: 18 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+18, 'AT', 'Avusturya'
+);
+
+/* INSERT QUERY NO: 19 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+19, 'AZ', 'Azerbaycan - Nahçıvan'
+);
+
+/* INSERT QUERY NO: 20 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+20, 'BS', ' Bahamalar  '
+);
+
+/* INSERT QUERY NO: 21 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+21, 'BH', 'Bahreyn'
+);
+
+/* INSERT QUERY NO: 22 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+22, 'BD', ' Bangladeş  '
+);
+
+/* INSERT QUERY NO: 23 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+23, 'BB', ' Barbados  '
+);
+
+/* INSERT QUERY NO: 24 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+24, 'BE', 'Belçika'
+);
+
+/* INSERT QUERY NO: 25 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+25, 'BZ', ' Belize  '
+);
+
+/* INSERT QUERY NO: 26 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+26, 'BJ', 'Benin'
+);
+
+/* INSERT QUERY NO: 27 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+27, 'BM', ' Bermuda  '
+);
+
+/* INSERT QUERY NO: 28 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+28, 'BY', 'Beyaz Rusya'
+);
+
+/* INSERT QUERY NO: 29 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+29, 'BT', ' Bhutan  '
+);
+
+/* INSERT QUERY NO: 30 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+30, 'B', ' Bilinemeyen Ülke Ve Topraklar  '
+);
+
+/* INSERT QUERY NO: 31 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+31, 'AE', 'Birleşik Arap Emirlikleri'
+);
+
+/* INSERT QUERY NO: 32 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+32, 'BAC', ' Bismark Archipelago  '
+);
+
+/* INSERT QUERY NO: 33 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+33, 'BO', ' Bolivya  '
+);
+
+/* INSERT QUERY NO: 34 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+34, 'BA', 'Bosna -Hersek'
+);
+
+/* INSERT QUERY NO: 35 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+35, 'BW', 'Bostvana'
+);
+
+/* INSERT QUERY NO: 36 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+36, 'BVA', 'Bouvet Adası'
+);
+
+/* INSERT QUERY NO: 37 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+37, 'BR', ' Brezilya  '
+);
+
+/* INSERT QUERY NO: 38 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+38, 'BN', ' Brunei  '
+);
+
+/* INSERT QUERY NO: 39 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+39, 'BG', 'Bulgaristan'
+);
+
+/* INSERT QUERY NO: 40 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+40, 'BF', ' Burkina Faso  '
+);
+
+/* INSERT QUERY NO: 41 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+41, 'BI', ' Burundi  '
+);
+
+/* INSERT QUERY NO: 42 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+42, 'CV', ' Cape Verde  '
+);
+
+/* INSERT QUERY NO: 43 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+43, 'KY', ' Cayman Adaları  '
+);
+
+/* INSERT QUERY NO: 44 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+44, 'GI', ' Cebeli Tarık  '
+);
+
+/* INSERT QUERY NO: 45 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+45, 'DZ', ' Cezayir  '
+);
+
+/* INSERT QUERY NO: 46 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+46, 'CX', ' Chrıstmas Adaları  '
+);
+
+/* INSERT QUERY NO: 47 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+47, 'DJ', ' Cibuti  '
+);
+
+/* INSERT QUERY NO: 48 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+48, 'CC', 'Cocos Adaları'
+);
+
+/* INSERT QUERY NO: 49 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+49, 'CK', ' Cook Adaları  '
+);
+
+/* INSERT QUERY NO: 50 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+50, 'TD', ' Çad  '
+);
+
+/* INSERT QUERY NO: 51 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+51, 'CC', ' Çeçen Cumhuriyeti  '
+);
+
+/* INSERT QUERY NO: 52 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+52, 'CZ', 'Çek Cumhuriyeti'
+);
+
+/* INSERT QUERY NO: 53 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+53, 'CN', 'Çin Halk Cumhuriyeti'
+);
+
+/* INSERT QUERY NO: 54 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+54, 'DC', ' Dağıstan Cumhuriyeti  '
+);
+
+/* INSERT QUERY NO: 55 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+55, 'DK', 'Danimarka'
+);
+
+/* INSERT QUERY NO: 56 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+56, 'DT', 'Doğu Timor'
+);
+
+/* INSERT QUERY NO: 57 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+57, 'DO', ' Dominik Cumhuriyeti  '
+);
+
+/* INSERT QUERY NO: 58 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+58, 'DM', ' Dominika  '
+);
+
+/* INSERT QUERY NO: 59 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+59, 'DB', ' Dubai  '
+);
+
+/* INSERT QUERY NO: 60 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+60, 'EC', ' Ekvator  '
+);
+
+/* INSERT QUERY NO: 61 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+61, 'GQ', ' Ekvator Ginesi  '
+);
+
+/* INSERT QUERY NO: 62 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+62, 'SV', ' El Salvador  '
+);
+
+/* INSERT QUERY NO: 63 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+63, 'ID', ' Endonezya  '
+);
+
+/* INSERT QUERY NO: 64 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+64, 'ER', 'Eritre'
+);
+
+/* INSERT QUERY NO: 65 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+65, 'AM', 'Ermenistan'
+);
+
+/* INSERT QUERY NO: 66 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+66, 'EE', 'Estonya'
+);
+
+/* INSERT QUERY NO: 67 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+67, 'ET', ' Etiyopya  '
+);
+
+/* INSERT QUERY NO: 68 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+68, 'FK', ' Falkland Adaları  '
+);
+
+/* INSERT QUERY NO: 69 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+69, 'FO', ' Faroe Adaları  '
+);
+
+/* INSERT QUERY NO: 70 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+70, 'MA', ' Fas  '
+);
+
+/* INSERT QUERY NO: 71 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+71, 'FJ', ' Fiji  '
+);
+
+/* INSERT QUERY NO: 72 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+72, 'CI', ' Fildişi Sahili  '
+);
+
+/* INSERT QUERY NO: 73 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+73, 'PH', ' Filipinler  '
+);
+
+/* INSERT QUERY NO: 74 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+74, 'FI', 'Finlandiya'
+);
+
+/* INSERT QUERY NO: 75 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+75, 'FR', 'Fransa'
+);
+
+/* INSERT QUERY NO: 76 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+76, 'GF', ' Fransız Guyanası  '
+);
+
+/* INSERT QUERY NO: 77 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+77, 'PF', ' Fransız Polinezyası  '
+);
+
+/* INSERT QUERY NO: 78 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+78, 'GA', ' Gabon  '
+);
+
+/* INSERT QUERY NO: 79 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+79, 'GM', ' Gambiya  '
+);
+
+/* INSERT QUERY NO: 80 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+80, 'GH', 'Gana'
+);
+
+/* INSERT QUERY NO: 81 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+81, 'GN', 'Gine'
+);
+
+/* INSERT QUERY NO: 82 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+82, 'GW', 'Gine-Bissau'
+);
+
+/* INSERT QUERY NO: 83 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+83, 'GD', 'Grenada'
+);
+
+/* INSERT QUERY NO: 84 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+84, 'GL', ' Grönland  '
+);
+
+/* INSERT QUERY NO: 85 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+85, 'GP', ' Guadelup  '
+);
+
+/* INSERT QUERY NO: 86 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+86, 'GU', 'Guam'
+);
+
+/* INSERT QUERY NO: 87 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+87, 'GT', ' Guatemala  '
+);
+
+/* INSERT QUERY NO: 88 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+88, 'GY', 'Guyana'
+);
+
+/* INSERT QUERY NO: 89 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+89, 'ZA', ' Güney Afrika Cumhuriyeti  '
+);
+
+/* INSERT QUERY NO: 90 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+90, 'GFR', 'Güney Fransız Toprakları'
+);
+
+/* INSERT QUERY NO: 91 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+91, 'GGS', ' Güney Georgıa Ve Güney Sandwıch Adaları  '
+);
+
+/* INSERT QUERY NO: 92 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+92, 'KR', ' Güney Kore Cumhuriyeti  '
+);
+
+/* INSERT QUERY NO: 93 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+93, 'GE', 'Gürcistan'
+);
+
+/* INSERT QUERY NO: 94 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+94, 'HT', ' Haiti  '
+);
+
+/* INSERT QUERY NO: 95 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+95, 'HAD', ' Heard Adaları Ve Mc Donald Adaları  '
+);
+
+/* INSERT QUERY NO: 96 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+96, 'HR', 'Hırvatistan'
+);
+
+/* INSERT QUERY NO: 97 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+97, 'IN', ' Hindistan  '
+);
+
+/* INSERT QUERY NO: 98 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+98, 'NL', 'Hollanda'
+);
+
+/* INSERT QUERY NO: 99 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+99, 'AN', 'Hollanda Antilleri'
+);
+
+/* INSERT QUERY NO: 100 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+100, 'HN', ' Honduras  '
+);
+
+/* INSERT QUERY NO: 101 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+101, 'HK', ' Hong Kong  '
+);
+
+/* INSERT QUERY NO: 102 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+102, 'IQ', 'Irak'
+);
+
+/* INSERT QUERY NO: 103 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+103, 'IO', ' İngiliz Hint Oky.Toprakları  '
+);
+
+/* INSERT QUERY NO: 104 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+104, 'VG', ' İngiliz Virjin Adaları  '
+);
+
+/* INSERT QUERY NO: 105 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+105, 'GB', 'İngiltere'
+);
+
+/* INSERT QUERY NO: 106 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+106, 'IR', 'İran'
+);
+
+/* INSERT QUERY NO: 107 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+107, 'IE', 'İrlanda'
+);
+
+/* INSERT QUERY NO: 108 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+108, 'ES', 'İspanya'
+);
+
+/* INSERT QUERY NO: 109 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+109, 'IL', 'İsrail'
+);
+
+/* INSERT QUERY NO: 110 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+110, 'SE', 'İsveç'
+);
+
+/* INSERT QUERY NO: 111 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+111, 'CH', 'İsviçre'
+);
+
+/* INSERT QUERY NO: 112 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+112, 'PS', ' İşgal Altındaki Filistin Toprağı  '
+);
+
+/* INSERT QUERY NO: 113 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+113, 'IT', 'İtalya'
+);
+
+/* INSERT QUERY NO: 114 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+114, 'IS', 'İzlanda'
+);
+
+/* INSERT QUERY NO: 115 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+115, 'JM', ' Jamaika  '
+);
+
+/* INSERT QUERY NO: 116 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+116, 'JP', ' Japonya  '
+);
+
+/* INSERT QUERY NO: 117 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+117, 'KH', ' Kamboçya  '
+);
+
+/* INSERT QUERY NO: 118 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+118, 'CM', ' Kamerun  '
+);
+
+/* INSERT QUERY NO: 119 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+119, 'CA', 'Kanada'
+);
+
+/* INSERT QUERY NO: 120 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+120, 'MW', 'Karadağ'
+);
+
+/* INSERT QUERY NO: 121 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+121, 'QA', 'Katar'
+);
+
+/* INSERT QUERY NO: 122 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+122, 'KZ', 'Kazakistan'
+);
+
+/* INSERT QUERY NO: 123 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+123, 'KE', ' Kenya  '
+);
+
+/* INSERT QUERY NO: 124 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+124, 'CY', ' Kıbrıs Rum Kesimi  '
+);
+
+/* INSERT QUERY NO: 125 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+125, 'KG', 'Kırgızistan'
+);
+
+/* INSERT QUERY NO: 126 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+126, 'KI', ' Kiribati  '
+);
+
+/* INSERT QUERY NO: 127 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+127, 'CO', 'Kolombiya'
+);
+
+/* INSERT QUERY NO: 128 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+128, 'KM', ' Komoro Adaları  '
+);
+
+/* INSERT QUERY NO: 129 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+129, 'CG', ' Kongo  '
+);
+
+/* INSERT QUERY NO: 130 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+130, 'K', 'Kosova'
+);
+
+/* INSERT QUERY NO: 131 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+131, 'CR', 'Kosta Rika'
+);
+
+/* INSERT QUERY NO: 132 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+132, 'KB', ' Kutup Bölgeleri  '
+);
+
+/* INSERT QUERY NO: 133 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+133, 'KW', 'Kuveyt'
+);
+
+/* INSERT QUERY NO: 134 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+134, 'KKTC', 'Kuzey Kıbrıs Türk Cumhuriyeti'
+);
+
+/* INSERT QUERY NO: 135 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+135, 'KP', ' Kuzey Kore Demokratik Halk Cum.  '
+);
+
+/* INSERT QUERY NO: 136 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+136, 'MP', ' Kuzey Mariana Adaları  '
+);
+
+/* INSERT QUERY NO: 137 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+137, 'CU', ' Küba  '
+);
+
+/* INSERT QUERY NO: 138 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+138, 'LA', ' Laos  '
+);
+
+/* INSERT QUERY NO: 139 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+139, 'LS', 'Lesotho'
+);
+
+/* INSERT QUERY NO: 140 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+140, 'LV', 'Letonya'
+);
+
+/* INSERT QUERY NO: 141 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+141, 'LR', ' Liberya  '
+);
+
+/* INSERT QUERY NO: 142 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+142, 'LY', ' Libya  '
+);
+
+/* INSERT QUERY NO: 143 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+143, 'LI', 'Lihteştayn'
+);
+
+/* INSERT QUERY NO: 144 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+144, 'LT', 'Litvanya'
+);
+
+/* INSERT QUERY NO: 145 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+145, 'LB', 'Lübnan'
+);
+
+/* INSERT QUERY NO: 146 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+146, 'LU', 'Lüksemburg'
+);
+
+/* INSERT QUERY NO: 147 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+147, 'HU', 'Macaristan'
+);
+
+/* INSERT QUERY NO: 148 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+148, 'MG', ' Madagaskar  '
+);
+
+/* INSERT QUERY NO: 149 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+149, 'MO', ' Makao  '
+);
+
+/* INSERT QUERY NO: 150 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+150, 'MK', 'Makedonya'
+);
+
+/* INSERT QUERY NO: 151 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+151, 'MI', ' Malavi  '
+);
+
+/* INSERT QUERY NO: 152 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+152, 'MV', ' Maldiv Adaları  '
+);
+
+/* INSERT QUERY NO: 153 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+153, 'MY', ' Malezya  '
+);
+
+/* INSERT QUERY NO: 154 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+154, 'ML', ' Mali  '
+);
+
+/* INSERT QUERY NO: 155 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+155, 'MT', 'Malta'
+);
+
+/* INSERT QUERY NO: 156 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+156, 'MH', 'Marshall Adaları'
+);
+
+/* INSERT QUERY NO: 157 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+157, 'MQ', ' Martinik  '
+);
+
+/* INSERT QUERY NO: 158 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+158, 'MU', ' Mauritius  '
+);
+
+/* INSERT QUERY NO: 159 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+159, 'YT', ' Mayotte  '
+);
+
+/* INSERT QUERY NO: 160 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+160, 'MX', 'Meksika'
+);
+
+/* INSERT QUERY NO: 161 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+161, 'CS', 'Melilla'
+);
+
+/* INSERT QUERY NO: 162 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+162, 'EG', 'Mısır'
+);
+
+/* INSERT QUERY NO: 163 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+163, 'FM', ' Mikronezya  '
+);
+
+/* INSERT QUERY NO: 164 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+164, 'MN', 'Moğolistan'
+);
+
+/* INSERT QUERY NO: 165 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+165, 'MD', 'Moldova'
+);
+
+/* INSERT QUERY NO: 166 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+166, 'MC', 'Monaka'
+);
+
+/* INSERT QUERY NO: 167 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+167, 'MS', 'Montserrat'
+);
+
+/* INSERT QUERY NO: 168 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+168, 'MR', ' Moritanya  '
+);
+
+/* INSERT QUERY NO: 169 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+169, 'MZ', ' Mozambik  '
+);
+
+/* INSERT QUERY NO: 170 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+170, 'MM', ' Myanmar  '
+);
+
+/* INSERT QUERY NO: 171 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+171, 'NA', ' Namibya  '
+);
+
+/* INSERT QUERY NO: 172 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+172, 'NR', ' Nauru  '
+);
+
+/* INSERT QUERY NO: 173 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+173, 'NP', ' Nepal  '
+);
+
+/* INSERT QUERY NO: 174 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+174, 'NE', ' Nijer  '
+);
+
+/* INSERT QUERY NO: 175 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+175, 'NG', ' Nijerya  '
+);
+
+/* INSERT QUERY NO: 176 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+176, 'NI', ' Nikaragua  '
+);
+
+/* INSERT QUERY NO: 177 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+177, 'NU', 'Niue'
+);
+
+/* INSERT QUERY NO: 178 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+178, 'NF', 'Norfolk Adası'
+);
+
+/* INSERT QUERY NO: 179 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+179, 'NO', 'Norveç'
+);
+
+/* INSERT QUERY NO: 180 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+180, 'CF', 'Orta Afrika Cumhuriyeti'
+);
+
+/* INSERT QUERY NO: 181 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+181, 'UZ', 'Özbekistan'
+);
+
+/* INSERT QUERY NO: 182 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+182, 'PK', 'Pakistan'
+);
+
+/* INSERT QUERY NO: 183 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+183, 'PW', 'Palau'
+);
+
+/* INSERT QUERY NO: 184 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+184, 'PA', ' Panama  '
+);
+
+/* INSERT QUERY NO: 185 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+185, 'PG', ' Papua Yeni Gine  '
+);
+
+/* INSERT QUERY NO: 186 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+186, 'PY', ' Paraguay  '
+);
+
+/* INSERT QUERY NO: 187 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+187, 'PE', ' Peru  '
+);
+
+/* INSERT QUERY NO: 188 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+188, 'PN', ' Pitcairn  '
+);
+
+/* INSERT QUERY NO: 189 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+189, 'PL', 'Polonya'
+);
+
+/* INSERT QUERY NO: 190 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+190, 'PT', 'Portekiz'
+);
+
+/* INSERT QUERY NO: 191 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+191, 'RE', ' Reunion  '
+);
+
+/* INSERT QUERY NO: 192 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+192, 'RO', 'Romanya'
+);
+
+/* INSERT QUERY NO: 193 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+193, 'RW', ' Ruanda  '
+);
+
+/* INSERT QUERY NO: 194 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+194, 'RU', 'Rusya Federasyonu'
+);
+
+/* INSERT QUERY NO: 195 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+195, 'WS', 'Samoa'
+);
+
+/* INSERT QUERY NO: 196 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+196, 'SM', 'San Marino'
+);
+
+/* INSERT QUERY NO: 197 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+197, 'ST', ' Sao Tome And Prıncıpe  '
+);
+
+/* INSERT QUERY NO: 198 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+198, 'SN', ' Senegal  '
+);
+
+/* INSERT QUERY NO: 199 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+199, 'SP', ' Septe  '
+);
+
+/* INSERT QUERY NO: 200 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+200, 'SAB', ' Seyşel Adaları Ve Bağlantıları  '
+);
+
+/* INSERT QUERY NO: 201 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+201, 'SL', ' Sıerra Leone  '
+);
+
+/* INSERT QUERY NO: 202 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+202, 'XS', 'Sırbistan'
+);
+
+/* INSERT QUERY NO: 203 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+203, 'SG', ' Singapur  '
+);
+
+/* INSERT QUERY NO: 204 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+204, 'SK', 'Slovakya'
+);
+
+/* INSERT QUERY NO: 205 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+205, 'SI', 'Slovenya'
+);
+
+/* INSERT QUERY NO: 206 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+206, 'SB', ' Solomon Adaları  '
+);
+
+/* INSERT QUERY NO: 207 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+207, 'SO', ' Somali  '
+);
+
+/* INSERT QUERY NO: 208 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+208, 'LK', ' Sri Lanka  '
+);
+
+/* INSERT QUERY NO: 209 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+209, 'HB', ' St. Helena Ve Bağlantıları  '
+);
+
+/* INSERT QUERY NO: 210 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+210, 'LC', ' St. Lucia  '
+);
+
+/* INSERT QUERY NO: 211 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+211, 'PM', ' St. Pierre Ve Miquelon  '
+);
+
+/* INSERT QUERY NO: 212 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+212, 'VC', ' St Vincent Ve Grenadinler  '
+);
+
+/* INSERT QUERY NO: 213 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+213, 'KN', ' St.Kıtts   Nevis  '
+);
+
+/* INSERT QUERY NO: 214 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+214, 'SD', 'Sudan'
+);
+
+/* INSERT QUERY NO: 215 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+215, 'SR', ' Surinam  '
+);
+
+/* INSERT QUERY NO: 216 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+216, 'SY', 'Suriye'
+);
+
+/* INSERT QUERY NO: 217 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+217, 'SA', 'Suudi Arabistan'
+);
+
+/* INSERT QUERY NO: 218 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+218, 'CL', ' Şili  '
+);
+
+/* INSERT QUERY NO: 219 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+219, 'TJ', 'Tacikistan'
+);
+
+/* INSERT QUERY NO: 220 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+220, 'TZ', ' Tanzanya  '
+);
+
+/* INSERT QUERY NO: 221 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+221, 'TS', ' Tataristan  '
+);
+
+/* INSERT QUERY NO: 222 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+222, 'TH', ' Tayland  '
+);
+
+/* INSERT QUERY NO: 223 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+223, 'TW', ' Tayvan  '
+);
+
+/* INSERT QUERY NO: 224 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+224, 'TG', ' Togo  '
+);
+
+/* INSERT QUERY NO: 225 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+225, 'TK', 'Tokelau'
+);
+
+/* INSERT QUERY NO: 226 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+226, 'TO', ' Tonga  '
+);
+
+/* INSERT QUERY NO: 227 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+227, 'TT', ' Trinidad Ve Tobago  '
+);
+
+/* INSERT QUERY NO: 228 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+228, 'TN', 'Tunus'
+);
+
+/* INSERT QUERY NO: 229 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+229, 'TC', ' Turks Ve Caicos Adası  '
+);
+
+/* INSERT QUERY NO: 230 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+230, 'TV', ' Tuvalu  '
+);
+
+/* INSERT QUERY NO: 231 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+231, 'TM', 'Türkmenistan'
+);
+
+/* INSERT QUERY NO: 232 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+232, 'UG', ' Uganda  '
+);
+
+/* INSERT QUERY NO: 233 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+233, 'UA', 'Ukrayna'
+);
+
+/* INSERT QUERY NO: 234 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+234, 'OM', 'Umman'
+);
+
+/* INSERT QUERY NO: 235 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+235, 'UY', ' Uruguay  '
+);
+
+/* INSERT QUERY NO: 236 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+236, 'JO', 'Ürdün'
+);
+
+/* INSERT QUERY NO: 237 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+237, 'VU', ' Vanuatu  '
+);
+
+/* INSERT QUERY NO: 238 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+238, 'VA', 'Vatikan'
+);
+
+/* INSERT QUERY NO: 239 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+239, 'VE', 'Venezuella'
+);
+
+/* INSERT QUERY NO: 240 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+240, 'VN', ' Vietnam  '
+);
+
+/* INSERT QUERY NO: 241 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+241, 'VI', 'Virgin Adaları'
+);
+
+/* INSERT QUERY NO: 242 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+242, 'WF', ' Wallis Ve Futuna Adaları  '
+);
+
+/* INSERT QUERY NO: 243 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+243, 'YK', 'Yakutistan'
+);
+
+/* INSERT QUERY NO: 244 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+244, 'YE', 'Yemen'
+);
+
+/* INSERT QUERY NO: 245 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+245, 'NC', ' Yeni Kalodenya Ve Bağlantıları  '
+);
+
+/* INSERT QUERY NO: 246 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+246, 'NZ', ' Yeni Zelanda  '
+);
+
+/* INSERT QUERY NO: 247 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+247, 'NZO', ' Yeni Zelanda Okyanusu  '
+);
+
+/* INSERT QUERY NO: 248 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+248, 'YU', ' Yugoslavya  '
+);
+
+/* INSERT QUERY NO: 249 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+249, 'GR', 'Yunanistan'
+);
+
+/* INSERT QUERY NO: 250 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+250, 'CD', ' Zaire  '
+);
+
+/* INSERT QUERY NO: 251 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+251, 'ZM', ' Zambia  '
+);
+
+/* INSERT QUERY NO: 252 */
+INSERT INTO tez.ulke(ulke_id, ulke_kod, ulke)
+VALUES
+(
+252, 'ZW', ' Zimbabve  '
+);
+
+
+/* ----- City ------ */
+
+
+/* INSERT QUERY NO: 1 */
+INSERT INTO tez.il(il_id, il, ulke_id)
+VALUES
+(
+1, 'ADANA', 1
+);
+
+/* INSERT QUERY NO: 2 */
+INSERT INTO tez.il(il_id, il, ulke_id)
+VALUES
+(
+2, 'ADIYAMAN', 1
+);
+
+/* INSERT QUERY NO: 3 */
+INSERT INTO tez.il(il_id, il, ulke_id)
+VALUES
+(
+3, 'AFYONKARAHİSAR', 1
+);
+
+/* INSERT QUERY NO: 4 */
+INSERT INTO tez.il(il_id, il, ulke_id)
+VALUES
+(
+4, 'AĞRI', 1
+);
+
+/* INSERT QUERY NO: 5 */
+INSERT INTO tez.il(il_id, il, ulke_id)
+VALUES
+(
+5, 'AMASYA', 1
+);
+
+/* INSERT QUERY NO: 6 */
+INSERT INTO tez.il(il_id, il, ulke_id)
+VALUES
+(
+6, 'ANKARA', 1
+);
+
+/* INSERT QUERY NO: 7 */
+INSERT INTO tez.il(il_id, il, ulke_id)
+VALUES
+(
+7, 'ANTALYA', 1
+);
+
+/* INSERT QUERY NO: 8 */
+INSERT INTO tez.il(il_id, il, ulke_id)
+VALUES
+(
+8, 'ARTVİN', 1
+);
+
+/* INSERT QUERY NO: 9 */
+INSERT INTO tez.il(il_id, il, ulke_id)
+VALUES
+(
+9, 'AYDIN', 1
+);
+
+/* INSERT QUERY NO: 10 */
+INSERT INTO tez.il(il_id, il, ulke_id)
+VALUES
+(
+10, 'BALIKESİR', 1
+);
+
+/* INSERT QUERY NO: 11 */
+INSERT INTO tez.il(il_id, il, ulke_id)
+VALUES
+(
+11, 'BİLECİK', 1
+);
+
+/* INSERT QUERY NO: 12 */
+INSERT INTO tez.il(il_id, il, ulke_id)
+VALUES
+(
+12, 'BİNGÖL', 1
+);
+
+/* INSERT QUERY NO: 13 */
+INSERT INTO tez.il(il_id, il, ulke_id)
+VALUES
+(
+13, 'BİTLİS', 1
+);
+
+/* INSERT QUERY NO: 14 */
+INSERT INTO tez.il(il_id, il, ulke_id)
+VALUES
+(
+14, 'BOLU', 1
+);
+
+/* INSERT QUERY NO: 15 */
+INSERT INTO tez.il(il_id, il, ulke_id)
+VALUES
+(
+15, 'BURDUR', 1
+);
+
+/* INSERT QUERY NO: 16 */
+INSERT INTO tez.il(il_id, il, ulke_id)
+VALUES
+(
+16, 'BURSA', 1
+);
+
+/* INSERT QUERY NO: 17 */
+INSERT INTO tez.il(il_id, il, ulke_id)
+VALUES
+(
+17, 'ÇANAKKALE', 1
+);
+
+/* INSERT QUERY NO: 18 */
+INSERT INTO tez.il(il_id, il, ulke_id)
+VALUES
+(
+18, 'ÇANKIRI', 1
+);
+
+/* INSERT QUERY NO: 19 */
+INSERT INTO tez.il(il_id, il, ulke_id)
+VALUES
+(
+19, 'ÇORUM', 1
+);
+
+/* INSERT QUERY NO: 20 */
+INSERT INTO tez.il(il_id, il, ulke_id)
+VALUES
+(
+20, 'DENİZLİ', 1
+);
+
+/* INSERT QUERY NO: 21 */
+INSERT INTO tez.il(il_id, il, ulke_id)
+VALUES
+(
+21, 'DİYARBAKIR', 1
+);
+
+/* INSERT QUERY NO: 22 */
+INSERT INTO tez.il(il_id, il, ulke_id)
+VALUES
+(
+22, 'EDİRNE', 1
+);
+
+/* INSERT QUERY NO: 23 */
+INSERT INTO tez.il(il_id, il, ulke_id)
+VALUES
+(
+23, 'ELAZIĞ', 1
+);
+
+/* INSERT QUERY NO: 24 */
+INSERT INTO tez.il(il_id, il, ulke_id)
+VALUES
+(
+24, 'ERZİNCAN', 1
+);
+
+/* INSERT QUERY NO: 25 */
+INSERT INTO tez.il(il_id, il, ulke_id)
+VALUES
+(
+25, 'ERZURUM', 1
+);
+
+/* INSERT QUERY NO: 26 */
+INSERT INTO tez.il(il_id, il, ulke_id)
+VALUES
+(
+26, 'ESKİŞEHİR', 1
+);
+
+/* INSERT QUERY NO: 27 */
+INSERT INTO tez.il(il_id, il, ulke_id)
+VALUES
+(
+27, 'GAZİANTEP', 1
+);
+
+/* INSERT QUERY NO: 28 */
+INSERT INTO tez.il(il_id, il, ulke_id)
+VALUES
+(
+28, 'GİRESUN', 1
+);
+
+/* INSERT QUERY NO: 29 */
+INSERT INTO tez.il(il_id, il, ulke_id)
+VALUES
+(
+29, 'GÜMÜŞHANE', 1
+);
+
+/* INSERT QUERY NO: 30 */
+INSERT INTO tez.il(il_id, il, ulke_id)
+VALUES
+(
+30, 'HAKKARİ', 1
+);
+
+/* INSERT QUERY NO: 31 */
+INSERT INTO tez.il(il_id, il, ulke_id)
+VALUES
+(
+31, 'HATAY', 1
+);
+
+/* INSERT QUERY NO: 32 */
+INSERT INTO tez.il(il_id, il, ulke_id)
+VALUES
+(
+32, 'ISPARTA', 1
+);
+
+/* INSERT QUERY NO: 33 */
+INSERT INTO tez.il(il_id, il, ulke_id)
+VALUES
+(
+33, 'MERSİN', 1
+);
+
+/* INSERT QUERY NO: 34 */
+INSERT INTO tez.il(il_id, il, ulke_id)
+VALUES
+(
+34, 'İSTANBUL', 1
+);
+
+/* INSERT QUERY NO: 35 */
+INSERT INTO tez.il(il_id, il, ulke_id)
+VALUES
+(
+35, 'İZMİR', 1
+);
+
+/* INSERT QUERY NO: 36 */
+INSERT INTO tez.il(il_id, il, ulke_id)
+VALUES
+(
+36, 'KARS', 1
+);
+
+/* INSERT QUERY NO: 37 */
+INSERT INTO tez.il(il_id, il, ulke_id)
+VALUES
+(
+37, 'KASTAMONU', 1
+);
+
+/* INSERT QUERY NO: 38 */
+INSERT INTO tez.il(il_id, il, ulke_id)
+VALUES
+(
+38, 'KAYSERİ', 1
+);
+
+/* INSERT QUERY NO: 39 */
+INSERT INTO tez.il(il_id, il, ulke_id)
+VALUES
+(
+39, 'KIRKLARELİ', 1
+);
+
+/* INSERT QUERY NO: 40 */
+INSERT INTO tez.il(il_id, il, ulke_id)
+VALUES
+(
+40, 'KIRŞEHİR', 1
+);
+
+/* INSERT QUERY NO: 41 */
+INSERT INTO tez.il(il_id, il, ulke_id)
+VALUES
+(
+41, 'KOCAELİ', 1
+);
+
+/* INSERT QUERY NO: 42 */
+INSERT INTO tez.il(il_id, il, ulke_id)
+VALUES
+(
+42, 'KONYA', 1
+);
+
+/* INSERT QUERY NO: 43 */
+INSERT INTO tez.il(il_id, il, ulke_id)
+VALUES
+(
+43, 'KÜTAHYA', 1
+);
+
+/* INSERT QUERY NO: 44 */
+INSERT INTO tez.il(il_id, il, ulke_id)
+VALUES
+(
+44, 'MALATYA', 1
+);
+
+/* INSERT QUERY NO: 45 */
+INSERT INTO tez.il(il_id, il, ulke_id)
+VALUES
+(
+45, 'MANİSA', 1
+);
+
+/* INSERT QUERY NO: 46 */
+INSERT INTO tez.il(il_id, il, ulke_id)
+VALUES
+(
+46, 'KAHRAMANMARAŞ', 1
+);
+
+/* INSERT QUERY NO: 47 */
+INSERT INTO tez.il(il_id, il, ulke_id)
+VALUES
+(
+47, 'MARDİN', 1
+);
+
+/* INSERT QUERY NO: 48 */
+INSERT INTO tez.il(il_id, il, ulke_id)
+VALUES
+(
+48, 'MUĞLA', 1
+);
+
+/* INSERT QUERY NO: 49 */
+INSERT INTO tez.il(il_id, il, ulke_id)
+VALUES
+(
+49, 'MUŞ', 1
+);
+
+/* INSERT QUERY NO: 50 */
+INSERT INTO tez.il(il_id, il, ulke_id)
+VALUES
+(
+50, 'NEVŞEHİR', 1
+);
+
+/* INSERT QUERY NO: 51 */
+INSERT INTO tez.il(il_id, il, ulke_id)
+VALUES
+(
+51, 'NİĞDE', 1
+);
+
+/* INSERT QUERY NO: 52 */
+INSERT INTO tez.il(il_id, il, ulke_id)
+VALUES
+(
+52, 'ORDU', 1
+);
+
+/* INSERT QUERY NO: 53 */
+INSERT INTO tez.il(il_id, il, ulke_id)
+VALUES
+(
+53, 'RİZE', 1
+);
+
+/* INSERT QUERY NO: 54 */
+INSERT INTO tez.il(il_id, il, ulke_id)
+VALUES
+(
+54, 'SAKARYA', 1
+);
+
+/* INSERT QUERY NO: 55 */
+INSERT INTO tez.il(il_id, il, ulke_id)
+VALUES
+(
+55, 'SAMSUN', 1
+);
+
+/* INSERT QUERY NO: 56 */
+INSERT INTO tez.il(il_id, il, ulke_id)
+VALUES
+(
+56, 'SİİRT', 1
+);
+
+/* INSERT QUERY NO: 57 */
+INSERT INTO tez.il(il_id, il, ulke_id)
+VALUES
+(
+57, 'SİNOP', 1
+);
+
+/* INSERT QUERY NO: 58 */
+INSERT INTO tez.il(il_id, il, ulke_id)
+VALUES
+(
+58, 'SİVAS', 1
+);
+
+/* INSERT QUERY NO: 59 */
+INSERT INTO tez.il(il_id, il, ulke_id)
+VALUES
+(
+59, 'TEKİRDAĞ', 1
+);
+
+/* INSERT QUERY NO: 60 */
+INSERT INTO tez.il(il_id, il, ulke_id)
+VALUES
+(
+60, 'TOKAT', 1
+);
+
+/* INSERT QUERY NO: 61 */
+INSERT INTO tez.il(il_id, il, ulke_id)
+VALUES
+(
+61, 'TRABZON', 1
+);
+
+/* INSERT QUERY NO: 62 */
+INSERT INTO tez.il(il_id, il, ulke_id)
+VALUES
+(
+62, 'TUNCELİ', 1
+);
+
+/* INSERT QUERY NO: 63 */
+INSERT INTO tez.il(il_id, il, ulke_id)
+VALUES
+(
+63, 'ŞANLIURFA', 1
+);
+
+/* INSERT QUERY NO: 64 */
+INSERT INTO tez.il(il_id, il, ulke_id)
+VALUES
+(
+64, 'UŞAK', 1
+);
+
+/* INSERT QUERY NO: 65 */
+INSERT INTO tez.il(il_id, il, ulke_id)
+VALUES
+(
+65, 'VAN', 1
+);
+
+/* INSERT QUERY NO: 66 */
+INSERT INTO tez.il(il_id, il, ulke_id)
+VALUES
+(
+66, 'YOZGAT', 1
+);
+
+/* INSERT QUERY NO: 67 */
+INSERT INTO tez.il(il_id, il, ulke_id)
+VALUES
+(
+67, 'ZONGULDAK', 1
+);
+
+/* INSERT QUERY NO: 68 */
+INSERT INTO tez.il(il_id, il, ulke_id)
+VALUES
+(
+68, 'AKSARAY', 1
+);
+
+/* INSERT QUERY NO: 69 */
+INSERT INTO tez.il(il_id, il, ulke_id)
+VALUES
+(
+69, 'BAYBURT', 1
+);
+
+/* INSERT QUERY NO: 70 */
+INSERT INTO tez.il(il_id, il, ulke_id)
+VALUES
+(
+70, 'KARAMAN', 1
+);
+
+/* INSERT QUERY NO: 71 */
+INSERT INTO tez.il(il_id, il, ulke_id)
+VALUES
+(
+71, 'KIRIKKALE', 1
+);
+
+/* INSERT QUERY NO: 72 */
+INSERT INTO tez.il(il_id, il, ulke_id)
+VALUES
+(
+72, 'BATMAN', 1
+);
+
+/* INSERT QUERY NO: 73 */
+INSERT INTO tez.il(il_id, il, ulke_id)
+VALUES
+(
+73, 'ŞIRNAK', 1
+);
+
+/* INSERT QUERY NO: 74 */
+INSERT INTO tez.il(il_id, il, ulke_id)
+VALUES
+(
+74, 'BARTIN', 1
+);
+
+/* INSERT QUERY NO: 75 */
+INSERT INTO tez.il(il_id, il, ulke_id)
+VALUES
+(
+75, 'ARDAHAN', 1
+);
+
+/* INSERT QUERY NO: 76 */
+INSERT INTO tez.il(il_id, il, ulke_id)
+VALUES
+(
+76, 'IĞDIR', 1
+);
+
+/* INSERT QUERY NO: 77 */
+INSERT INTO tez.il(il_id, il, ulke_id)
+VALUES
+(
+77, 'YALOVA', 1
+);
+
+/* INSERT QUERY NO: 78 */
+INSERT INTO tez.il(il_id, il, ulke_id)
+VALUES
+(
+78, 'KARABÜK', 1
+);
+
+/* INSERT QUERY NO: 79 */
+INSERT INTO tez.il(il_id, il, ulke_id)
+VALUES
+(
+79, 'KİLİS', 1
+);
+
+/* INSERT QUERY NO: 80 */
+INSERT INTO tez.il(il_id, il, ulke_id)
+VALUES
+(
+80, 'OSMANİYE', 1
+);
+
+/* INSERT QUERY NO: 81 */
+INSERT INTO tez.il(il_id, il, ulke_id)
+VALUES
+(
+81, 'DÜZCE', 1
+);
+
+
+
+/* -- District -- */
+
+
+/* INSERT QUERY NO: 1 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+1, 99133, 1, 'Şakirpaşa Havalimanı'
+);
+
+/* INSERT QUERY NO: 2 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+2, 2033, 1, 'ÇUKUROVA'
+);
+
+/* INSERT QUERY NO: 3 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+3, 2032, 1, 'SARIÇAM'
+);
+
+/* INSERT QUERY NO: 4 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+4, 1806, 1, 'İMAMOĞLU'
+);
+
+/* INSERT QUERY NO: 5 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+5, 1757, 1, 'ALADAĞ'
+);
+
+/* INSERT QUERY NO: 6 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+6, 1748, 1, 'YÜREĞİR'
+);
+
+/* INSERT QUERY NO: 7 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+7, 1734, 1, 'YUMURTALIK'
+);
+
+/* INSERT QUERY NO: 8 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+8, 1687, 1, 'TUFANBEYLİ'
+);
+
+/* INSERT QUERY NO: 9 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+9, 1588, 1, 'SAİMBEYLİ'
+);
+
+/* INSERT QUERY NO: 10 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+10, 1580, 1, 'POZANTI'
+);
+
+/* INSERT QUERY NO: 11 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+11, 1486, 1, 'KOZAN'
+);
+
+/* INSERT QUERY NO: 12 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+12, 1443, 1, 'KARATAŞ'
+);
+
+/* INSERT QUERY NO: 13 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+13, 1437, 1, 'KARAİSALI'
+);
+
+/* INSERT QUERY NO: 14 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+14, 1329, 1, 'FEKE'
+);
+
+/* INSERT QUERY NO: 15 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+15, 1219, 1, 'CEYHAN'
+);
+
+/* INSERT QUERY NO: 16 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+16, 1104, 1, 'SEYHAN'
+);
+
+/* INSERT QUERY NO: 17 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+17, 99139, 2, 'Adıyaman Havalimanı'
+);
+
+/* INSERT QUERY NO: 18 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+18, 1989, 2, 'TUT'
+);
+
+/* INSERT QUERY NO: 19 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+19, 1985, 2, 'SİNCİK'
+);
+
+/* INSERT QUERY NO: 20 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+20, 1592, 2, 'SAMSAT'
+);
+
+/* INSERT QUERY NO: 21 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+21, 1425, 2, 'KAHTA'
+);
+
+/* INSERT QUERY NO: 22 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+22, 1354, 2, 'GÖLBAŞI'
+);
+
+/* INSERT QUERY NO: 23 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+23, 1347, 2, 'GERGER'
+);
+
+/* INSERT QUERY NO: 24 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+24, 1246, 2, 'ÇELİKHAN'
+);
+
+/* INSERT QUERY NO: 25 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+25, 1182, 2, 'BESNİ'
+);
+
+/* INSERT QUERY NO: 26 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+26, 1105, 2, 'MERKEZ'
+);
+
+/* INSERT QUERY NO: 27 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+27, 99132, 3, 'Afyon Havalimanı'
+);
+
+/* INSERT QUERY NO: 28 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+28, 1961, 3, 'KIZILÖREN'
+);
+
+/* INSERT QUERY NO: 29 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+29, 1944, 3, 'HOCALAR'
+);
+
+/* INSERT QUERY NO: 30 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+30, 1923, 3, 'EVCİLER'
+);
+
+/* INSERT QUERY NO: 31 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+31, 1906, 3, 'ÇOBANLAR'
+);
+
+/* INSERT QUERY NO: 32 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+32, 1809, 3, 'İSCEHİSAR'
+);
+
+/* INSERT QUERY NO: 33 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+33, 1773, 3, 'BAYAT'
+);
+
+/* INSERT QUERY NO: 34 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+34, 1771, 3, 'BAŞMAKÇI'
+);
+
+/* INSERT QUERY NO: 35 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+35, 1664, 3, 'ŞUHUT'
+);
+
+/* INSERT QUERY NO: 36 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+36, 1639, 3, 'SULTANDAĞI'
+);
+
+/* INSERT QUERY NO: 37 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+37, 1626, 3, 'SİNANPAŞA'
+);
+
+/* INSERT QUERY NO: 38 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+38, 1594, 3, 'SANDIKLI'
+);
+
+/* INSERT QUERY NO: 39 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+39, 1404, 3, 'İHSANİYE'
+);
+
+/* INSERT QUERY NO: 40 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+40, 1306, 3, 'EMİRDAĞ'
+);
+
+/* INSERT QUERY NO: 41 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+41, 1281, 3, 'DİNAR'
+);
+
+/* INSERT QUERY NO: 42 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+42, 1267, 3, 'DAZKIRI'
+);
+
+/* INSERT QUERY NO: 43 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+43, 1239, 3, 'ÇAY'
+);
+
+/* INSERT QUERY NO: 44 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+44, 1200, 3, 'BOLVADİN'
+);
+
+/* INSERT QUERY NO: 45 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+45, 1108, 3, 'MERKEZ'
+);
+
+/* INSERT QUERY NO: 46 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+46, 99140, 4, 'Ağrı Ahmed-i Hani Havalimanı'
+);
+
+/* INSERT QUERY NO: 47 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+47, 1691, 4, 'TUTAK'
+);
+
+/* INSERT QUERY NO: 48 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+48, 1667, 4, 'TAŞLIÇAY'
+);
+
+/* INSERT QUERY NO: 49 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+49, 1568, 4, 'PATNOS'
+);
+
+/* INSERT QUERY NO: 50 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+50, 1379, 4, 'HAMUR'
+);
+
+/* INSERT QUERY NO: 51 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+51, 1301, 4, 'ELEŞKİRT'
+);
+
+/* INSERT QUERY NO: 52 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+52, 1287, 4, 'DOĞUBAYAZIT'
+);
+
+/* INSERT QUERY NO: 53 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+53, 1283, 4, 'DİYADİN'
+);
+
+/* INSERT QUERY NO: 54 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+54, 1111, 4, 'MERKEZ'
+);
+
+/* INSERT QUERY NO: 55 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+55, 99166, 5, 'Amasya Merzifon Havalimanı'
+);
+
+/* INSERT QUERY NO: 56 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+56, 1938, 5, 'HAMAMÖZÜ'
+);
+
+/* INSERT QUERY NO: 57 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+57, 1668, 5, 'TAŞOVA'
+);
+
+/* INSERT QUERY NO: 58 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+58, 1641, 5, 'SULUOVA'
+);
+
+/* INSERT QUERY NO: 59 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+59, 1524, 5, 'MERZİFON'
+);
+
+/* INSERT QUERY NO: 60 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+60, 1368, 5, 'GÜMÜŞHACIKÖY'
+);
+
+/* INSERT QUERY NO: 61 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+61, 1363, 5, 'GÖYNÜCEK'
+);
+
+/* INSERT QUERY NO: 62 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+62, 1134, 5, 'MERKEZ'
+);
+
+/* INSERT QUERY NO: 63 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+63, 99134, 6, 'Ankara Esenboğa Havalimanı'
+);
+
+/* INSERT QUERY NO: 64 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+64, 2034, 6, 'PURSAKLAR'
+);
+
+/* INSERT QUERY NO: 65 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+65, 1924, 6, 'EVREN'
+);
+
+/* INSERT QUERY NO: 66 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+66, 1922, 6, 'ETİMESGUT'
+);
+
+/* INSERT QUERY NO: 67 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+67, 1872, 6, 'AKYURT'
+);
+
+/* INSERT QUERY NO: 68 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+68, 1815, 6, 'KAHRAMANKAZAN'
+);
+
+/* INSERT QUERY NO: 69 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+69, 1747, 6, 'SİNCAN'
+);
+
+/* INSERT QUERY NO: 70 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+70, 1746, 6, 'MAMAK'
+);
+
+/* INSERT QUERY NO: 71 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+71, 1745, 6, 'KEÇİÖREN'
+);
+
+/* INSERT QUERY NO: 72 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+72, 1744, 6, 'GÖLBAŞI'
+);
+
+/* INSERT QUERY NO: 73 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+73, 1723, 6, 'YENİMAHALLE'
+);
+
+/* INSERT QUERY NO: 74 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+74, 1658, 6, 'ŞEREFLİKOÇHİSAR'
+);
+
+/* INSERT QUERY NO: 75 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+75, 1578, 6, 'POLATLI'
+);
+
+/* INSERT QUERY NO: 76 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+76, 1539, 6, 'NALLIHAN'
+);
+
+/* INSERT QUERY NO: 77 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+77, 1473, 6, 'KIZILCAHAMAM'
+);
+
+/* INSERT QUERY NO: 78 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+78, 1427, 6, 'KALECİK'
+);
+
+/* INSERT QUERY NO: 79 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+79, 1387, 6, 'HAYMANA'
+);
+
+/* INSERT QUERY NO: 80 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+80, 1365, 6, 'GÜDÜL'
+);
+
+/* INSERT QUERY NO: 81 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+81, 1302, 6, 'ELMADAĞ'
+);
+
+/* INSERT QUERY NO: 82 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+82, 1260, 6, 'ÇUBUK'
+);
+
+/* INSERT QUERY NO: 83 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+83, 1231, 6, 'ÇANKAYA'
+);
+
+/* INSERT QUERY NO: 84 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+84, 1227, 6, 'ÇAMLIDERE'
+);
+
+/* INSERT QUERY NO: 85 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+85, 1187, 6, 'BEYPAZARI'
+);
+
+/* INSERT QUERY NO: 86 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+86, 1167, 6, 'BALA'
+);
+
+/* INSERT QUERY NO: 87 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+87, 1157, 6, 'AYAŞ'
+);
+
+/* INSERT QUERY NO: 88 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+88, 1130, 6, 'ALTINDAĞ'
+);
+
+/* INSERT QUERY NO: 89 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+89, 99141, 7, 'Gazipaşa Havalimanı'
+);
+
+/* INSERT QUERY NO: 90 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+90, 99135, 7, 'Antalya Havalimanı'
+);
+
+/* INSERT QUERY NO: 91 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+91, 2039, 7, 'MURATPAŞA'
+);
+
+/* INSERT QUERY NO: 92 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+92, 2038, 7, 'KONYAALTI'
+);
+
+/* INSERT QUERY NO: 93 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+93, 2037, 7, 'KEPEZ'
+);
+
+/* INSERT QUERY NO: 94 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+94, 2036, 7, 'DÖŞEMEALTI'
+);
+
+/* INSERT QUERY NO: 95 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+95, 2035, 7, 'AKSU'
+);
+
+/* INSERT QUERY NO: 96 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+96, 1959, 7, 'KEMER'
+);
+
+/* INSERT QUERY NO: 97 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+97, 1946, 7, 'İBRADI'
+);
+
+/* INSERT QUERY NO: 98 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+98, 1811, 7, 'DEMRE'
+);
+
+/* INSERT QUERY NO: 99 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+99, 1616, 7, 'SERİK'
+);
+
+/* INSERT QUERY NO: 100 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+100, 1512, 7, 'MANAVGAT'
+);
+
+/* INSERT QUERY NO: 101 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+101, 1492, 7, 'KUMLUCA'
+);
+
+/* INSERT QUERY NO: 102 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+102, 1483, 7, 'KORKUTELİ'
+);
+
+/* INSERT QUERY NO: 103 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+103, 1451, 7, 'KAŞ'
+);
+
+/* INSERT QUERY NO: 104 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+104, 1370, 7, 'GÜNDOĞMUŞ'
+);
+
+/* INSERT QUERY NO: 105 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+105, 1337, 7, 'GAZİPAŞA'
+);
+
+/* INSERT QUERY NO: 106 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+106, 1333, 7, 'FİNİKE'
+);
+
+/* INSERT QUERY NO: 107 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+107, 1303, 7, 'ELMALI'
+);
+
+/* INSERT QUERY NO: 108 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+108, 1138, 7, 'MERKEZ'
+);
+
+/* INSERT QUERY NO: 109 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+109, 1126, 7, 'ALANYA'
+);
+
+/* INSERT QUERY NO: 110 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+110, 1121, 7, 'AKSEKİ'
+);
+
+/* INSERT QUERY NO: 111 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+111, 2105, 8, 'KEMALPAŞA'
+);
+
+/* INSERT QUERY NO: 112 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+112, 1828, 8, 'MURGUL'
+);
+
+/* INSERT QUERY NO: 113 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+113, 1736, 8, 'YUSUFELİ'
+);
+
+/* INSERT QUERY NO: 114 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+114, 1653, 8, 'ŞAVŞAT'
+);
+
+/* INSERT QUERY NO: 115 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+115, 1395, 8, 'HOPA'
+);
+
+/* INSERT QUERY NO: 116 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+116, 1202, 8, 'BORÇKA'
+);
+
+/* INSERT QUERY NO: 117 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+117, 1152, 8, 'MERKEZ'
+);
+
+/* INSERT QUERY NO: 118 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+118, 1147, 8, 'ARHAVİ'
+);
+
+/* INSERT QUERY NO: 119 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+119, 1145, 8, 'ARDANUÇ'
+);
+
+/* INSERT QUERY NO: 120 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+120, 2076, 9, 'EFELER'
+);
+
+/* INSERT QUERY NO: 121 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+121, 2000, 9, 'DİDİM'
+);
+
+/* INSERT QUERY NO: 122 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+122, 1968, 9, 'KÖŞK'
+);
+
+/* INSERT QUERY NO: 123 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+123, 1957, 9, 'KARPUZLU'
+);
+
+/* INSERT QUERY NO: 124 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+124, 1807, 9, 'İNCİRLİOVA'
+);
+
+/* INSERT QUERY NO: 125 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+125, 1781, 9, 'BUHARKENT'
+);
+
+/* INSERT QUERY NO: 126 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+126, 1724, 9, 'YENİPAZAR'
+);
+
+/* INSERT QUERY NO: 127 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+127, 1640, 9, 'SULTANHİSAR'
+);
+
+/* INSERT QUERY NO: 128 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+128, 1637, 9, 'SÖKE'
+);
+
+/* INSERT QUERY NO: 129 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+129, 1542, 9, 'NAZİLLİ'
+);
+
+/* INSERT QUERY NO: 130 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+130, 1498, 9, 'KUYUCAK'
+);
+
+/* INSERT QUERY NO: 131 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+131, 1497, 9, 'KUŞADASI'
+);
+
+/* INSERT QUERY NO: 132 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+132, 1479, 9, 'KOÇARLI'
+);
+
+/* INSERT QUERY NO: 133 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+133, 1435, 9, 'KARACASU'
+);
+
+/* INSERT QUERY NO: 134 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+134, 1348, 9, 'GERMENCİK'
+);
+
+/* INSERT QUERY NO: 135 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+135, 1256, 9, 'ÇİNE'
+);
+
+/* INSERT QUERY NO: 136 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+136, 1206, 9, 'BOZDOĞAN'
+);
+
+/* INSERT QUERY NO: 137 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+137, 1159, 9, 'MERKEZ'
+);
+
+/* INSERT QUERY NO: 138 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+138, 99142, 10, 'Balıkesir Merkez Havalimanı'
+);
+
+/* INSERT QUERY NO: 139 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+139, 99107, 10, 'Balıkesir Koca Seyit Havalimanı'
+);
+
+/* INSERT QUERY NO: 140 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+140, 2078, 10, 'KARESİ'
+);
+
+/* INSERT QUERY NO: 141 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+141, 2077, 10, 'ALTIEYLÜL'
+);
+
+/* INSERT QUERY NO: 142 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+142, 1928, 10, 'GÖMEÇ'
+);
+
+/* INSERT QUERY NO: 143 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+143, 1824, 10, 'MARMARA'
+);
+
+/* INSERT QUERY NO: 144 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+144, 1644, 10, 'SUSURLUK'
+);
+
+/* INSERT QUERY NO: 145 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+145, 1619, 10, 'SINDIRGI'
+);
+
+/* INSERT QUERY NO: 146 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+146, 1608, 10, 'SAVAŞTEPE'
+);
+
+/* INSERT QUERY NO: 147 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+147, 1514, 10, 'MANYAS'
+);
+
+/* INSERT QUERY NO: 148 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+148, 1462, 10, 'KEPSUT'
+);
+
+/* INSERT QUERY NO: 149 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+149, 1418, 10, 'İVRİNDİ'
+);
+
+/* INSERT QUERY NO: 150 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+150, 1384, 10, 'HAVRAN'
+);
+
+/* INSERT QUERY NO: 151 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+151, 1360, 10, 'GÖNEN'
+);
+
+/* INSERT QUERY NO: 152 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+152, 1310, 10, 'ERDEK'
+);
+
+/* INSERT QUERY NO: 153 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+153, 1294, 10, 'EDREMİT'
+);
+
+/* INSERT QUERY NO: 154 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+154, 1291, 10, 'DURSUNBEY'
+);
+
+/* INSERT QUERY NO: 155 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+155, 1216, 10, 'BURHANİYE'
+);
+
+/* INSERT QUERY NO: 156 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+156, 1191, 10, 'BİGADİÇ'
+);
+
+/* INSERT QUERY NO: 157 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+157, 1171, 10, 'BANDIRMA'
+);
+
+/* INSERT QUERY NO: 158 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+158, 1169, 10, 'BALYA'
+);
+
+/* INSERT QUERY NO: 159 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+159, 1168, 10, 'MERKEZ'
+);
+
+/* INSERT QUERY NO: 160 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+160, 1161, 10, 'AYVALIK'
+);
+
+/* INSERT QUERY NO: 161 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+161, 1948, 11, 'İNHİSAR'
+);
+
+/* INSERT QUERY NO: 162 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+162, 1857, 11, 'YENİPAZAR'
+);
+
+/* INSERT QUERY NO: 163 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+163, 1636, 11, 'SÖĞÜT'
+);
+
+/* INSERT QUERY NO: 164 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+164, 1571, 11, 'PAZARYERİ'
+);
+
+/* INSERT QUERY NO: 165 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+165, 1559, 11, 'OSMANELİ'
+);
+
+/* INSERT QUERY NO: 166 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+166, 1359, 11, 'GÖLPAZARI'
+);
+
+/* INSERT QUERY NO: 167 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+167, 1210, 11, 'BOZÜYÜK'
+);
+
+/* INSERT QUERY NO: 168 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+168, 1192, 11, 'MERKEZ'
+);
+
+/* INSERT QUERY NO: 169 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+169, 99167, 12, 'Bingöl Havalimanı'
+);
+
+/* INSERT QUERY NO: 170 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+170, 1996, 12, 'YEDİSU'
+);
+
+/* INSERT QUERY NO: 171 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+171, 1855, 12, 'YAYLADERE'
+);
+
+/* INSERT QUERY NO: 172 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+172, 1750, 12, 'ADAKLI'
+);
+
+/* INSERT QUERY NO: 173 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+173, 1633, 12, 'SOLHAN'
+);
+
+/* INSERT QUERY NO: 174 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+174, 1475, 12, 'KİĞI'
+);
+
+/* INSERT QUERY NO: 175 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+175, 1446, 12, 'KARLIOVA'
+);
+
+/* INSERT QUERY NO: 176 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+176, 1344, 12, 'GENÇ'
+);
+
+/* INSERT QUERY NO: 177 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+177, 1193, 12, 'MERKEZ'
+);
+
+/* INSERT QUERY NO: 178 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+178, 1798, 13, 'GÜROYMAK'
+);
+
+/* INSERT QUERY NO: 179 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+179, 1669, 13, 'TATVAN'
+);
+
+/* INSERT QUERY NO: 180 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+180, 1537, 13, 'MUTKİ'
+);
+
+/* INSERT QUERY NO: 181 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+181, 1394, 13, 'HİZAN'
+);
+
+/* INSERT QUERY NO: 182 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+182, 1196, 13, 'MERKEZ'
+);
+
+/* INSERT QUERY NO: 183 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+183, 1112, 13, 'AHLAT'
+);
+
+/* INSERT QUERY NO: 184 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+184, 1106, 13, 'ADİLCEVAZ'
+);
+
+/* INSERT QUERY NO: 185 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+185, 1997, 14, 'YENİÇAĞA'
+);
+
+/* INSERT QUERY NO: 186 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+186, 1916, 14, 'DÖRTDİVAN'
+);
+
+/* INSERT QUERY NO: 187 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+187, 1610, 14, 'SEBEN'
+);
+
+/* INSERT QUERY NO: 188 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+188, 1531, 14, 'MUDURNU'
+);
+
+/* INSERT QUERY NO: 189 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+189, 1522, 14, 'MENGEN'
+);
+
+/* INSERT QUERY NO: 190 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+190, 1466, 14, 'KIBRISCIK'
+);
+
+/* INSERT QUERY NO: 191 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+191, 1364, 14, 'GÖYNÜK'
+);
+
+/* INSERT QUERY NO: 192 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+192, 1346, 14, 'GEREDE'
+);
+
+/* INSERT QUERY NO: 193 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+193, 1199, 14, 'MERKEZ'
+);
+
+/* INSERT QUERY NO: 194 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+194, 1903, 15, 'ÇELTİKÇİ'
+);
+
+/* INSERT QUERY NO: 195 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+195, 1899, 15, 'ÇAVDIR'
+);
+
+/* INSERT QUERY NO: 196 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+196, 1874, 15, 'ALTINYAYLA'
+);
+
+/* INSERT QUERY NO: 197 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+197, 1816, 15, 'KEMER'
+);
+
+/* INSERT QUERY NO: 198 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+198, 1813, 15, 'KARAMANLI'
+);
+
+/* INSERT QUERY NO: 199 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+199, 1728, 15, 'YEŞİLOVA'
+);
+
+/* INSERT QUERY NO: 200 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+200, 1672, 15, 'TEFENNİ'
+);
+
+/* INSERT QUERY NO: 201 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+201, 1357, 15, 'GÖLHİSAR'
+);
+
+/* INSERT QUERY NO: 202 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+202, 1215, 15, 'MERKEZ'
+);
+
+/* INSERT QUERY NO: 203 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+203, 1211, 15, 'BUCAK'
+);
+
+/* INSERT QUERY NO: 204 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+204, 1109, 15, 'AĞLASUN'
+);
+
+/* INSERT QUERY NO: 205 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+205, 99124, 16, 'Bursa Yenişehir Havalimanı'
+);
+
+/* INSERT QUERY NO: 206 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+206, 1960, 16, 'KESTEL'
+);
+
+/* INSERT QUERY NO: 207 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+207, 1935, 16, 'GÜRSU'
+);
+
+/* INSERT QUERY NO: 208 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+208, 1859, 16, 'YILDIRIM'
+);
+
+/* INSERT QUERY NO: 209 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+209, 1832, 16, 'OSMANGAZİ'
+);
+
+/* INSERT QUERY NO: 210 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+210, 1829, 16, 'NİLÜFER'
+);
+
+/* INSERT QUERY NO: 211 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+211, 1799, 16, 'HARMANCIK'
+);
+
+/* INSERT QUERY NO: 212 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+212, 1783, 16, 'BÜYÜKORHAN'
+);
+
+/* INSERT QUERY NO: 213 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+213, 1725, 16, 'YENİŞEHİR'
+);
+
+/* INSERT QUERY NO: 214 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+214, 1554, 16, 'ORHANGAZİ'
+);
+
+/* INSERT QUERY NO: 215 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+215, 1553, 16, 'ORHANELİ'
+);
+
+/* INSERT QUERY NO: 216 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+216, 1535, 16, 'MUSTAFAKEMALPAŞA'
+);
+
+/* INSERT QUERY NO: 217 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+217, 1530, 16, 'MUDANYA'
+);
+
+/* INSERT QUERY NO: 218 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+218, 1457, 16, 'KELES'
+);
+
+/* INSERT QUERY NO: 219 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+219, 1434, 16, 'KARACABEY'
+);
+
+/* INSERT QUERY NO: 220 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+220, 1420, 16, 'İZNİK'
+);
+
+/* INSERT QUERY NO: 221 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+221, 1411, 16, 'İNEGÖL'
+);
+
+/* INSERT QUERY NO: 222 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+222, 1343, 16, 'GEMLİK'
+);
+
+/* INSERT QUERY NO: 223 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+223, 99168, 17, 'Çanakkale Havalimanı'
+);
+
+/* INSERT QUERY NO: 224 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+224, 99128, 17, 'Gökçeada Havalimanı'
+);
+
+/* INSERT QUERY NO: 225 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+225, 1722, 17, 'YENİCE'
+);
+
+/* INSERT QUERY NO: 226 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+226, 1503, 17, 'LAPSEKİ'
+);
+
+/* INSERT QUERY NO: 227 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+227, 1408, 17, 'GÖKÇEADA'
+);
+
+/* INSERT QUERY NO: 228 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+228, 1340, 17, 'GELİBOLU'
+);
+
+/* INSERT QUERY NO: 229 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+229, 1326, 17, 'EZİNE'
+);
+
+/* INSERT QUERY NO: 230 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+230, 1293, 17, 'ECEABAT'
+);
+
+/* INSERT QUERY NO: 231 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+231, 1230, 17, 'MERKEZ'
+);
+
+/* INSERT QUERY NO: 232 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+232, 1229, 17, 'ÇAN'
+);
+
+/* INSERT QUERY NO: 233 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+233, 1205, 17, 'BOZCAADA'
+);
+
+/* INSERT QUERY NO: 234 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+234, 1190, 17, 'BİGA'
+);
+
+/* INSERT QUERY NO: 235 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+235, 1180, 17, 'BAYRAMİÇ'
+);
+
+/* INSERT QUERY NO: 236 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+236, 1160, 17, 'AYVACIK'
+);
+
+/* INSERT QUERY NO: 237 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+237, 1963, 18, 'KORGUN'
+);
+
+/* INSERT QUERY NO: 238 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+238, 1885, 18, 'BAYRAMÖREN'
+);
+
+/* INSERT QUERY NO: 239 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+239, 1817, 18, 'KIZILIRMAK'
+);
+
+/* INSERT QUERY NO: 240 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+240, 1765, 18, 'ATKARACALAR'
+);
+
+/* INSERT QUERY NO: 241 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+241, 1718, 18, 'YAPRAKLI'
+);
+
+/* INSERT QUERY NO: 242 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+242, 1649, 18, 'ŞABANÖZÜ'
+);
+
+/* INSERT QUERY NO: 243 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+243, 1555, 18, 'ORTA'
+);
+
+/* INSERT QUERY NO: 244 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+244, 1494, 18, 'KURŞUNLU'
+);
+
+/* INSERT QUERY NO: 245 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+245, 1399, 18, 'ILGAZ'
+);
+
+/* INSERT QUERY NO: 246 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+246, 1300, 18, 'ELDİVAN'
+);
+
+/* INSERT QUERY NO: 247 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+247, 1248, 18, 'ÇERKEŞ'
+);
+
+/* INSERT QUERY NO: 248 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+248, 1232, 18, 'MERKEZ'
+);
+
+/* INSERT QUERY NO: 249 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+249, 1976, 19, 'OĞUZLAR'
+);
+
+/* INSERT QUERY NO: 250 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+250, 1972, 19, 'LAÇİN'
+);
+
+/* INSERT QUERY NO: 251 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+251, 1911, 19, 'DODURGA'
+);
+
+/* INSERT QUERY NO: 252 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+252, 1850, 19, 'UĞURLUDAĞ'
+);
+
+/* INSERT QUERY NO: 253 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+253, 1778, 19, 'BOĞAZKALE'
+);
+
+/* INSERT QUERY NO: 254 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+254, 1642, 19, 'SUNGURLU'
+);
+
+/* INSERT QUERY NO: 255 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+255, 1558, 19, 'OSMANCIK'
+);
+
+/* INSERT QUERY NO: 256 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+256, 1556, 19, 'ORTAKÖY'
+);
+
+/* INSERT QUERY NO: 257 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+257, 1520, 19, 'MECİTÖZÜ'
+);
+
+/* INSERT QUERY NO: 258 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+258, 1445, 19, 'KARGI'
+);
+
+/* INSERT QUERY NO: 259 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+259, 1414, 19, 'İSKİLİP'
+);
+
+/* INSERT QUERY NO: 260 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+260, 1259, 19, 'MERKEZ'
+);
+
+/* INSERT QUERY NO: 261 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+261, 1177, 19, 'BAYAT'
+);
+
+/* INSERT QUERY NO: 262 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+262, 1124, 19, 'ALACA'
+);
+
+/* INSERT QUERY NO: 263 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+263, 99143, 20, 'Denizli Çardak Havalimanı'
+);
+
+/* INSERT QUERY NO: 264 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+264, 2079, 20, 'MERKEZEFENDİ'
+);
+
+/* INSERT QUERY NO: 265 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+265, 1889, 20, 'BOZKURT'
+);
+
+/* INSERT QUERY NO: 266 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+266, 1888, 20, 'BEYAĞAÇ'
+);
+
+/* INSERT QUERY NO: 267 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+267, 1881, 20, 'BAKLAN'
+);
+
+/* INSERT QUERY NO: 268 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+268, 1871, 20, 'PAMUKKALE'
+);
+
+/* INSERT QUERY NO: 269 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+269, 1840, 20, 'SERİNHİSAR'
+);
+
+/* INSERT QUERY NO: 270 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+270, 1803, 20, 'HONAZ'
+);
+
+/* INSERT QUERY NO: 271 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+271, 1774, 20, 'BEKİLLİ'
+);
+
+/* INSERT QUERY NO: 272 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+272, 1769, 20, 'BABADAĞ'
+);
+
+/* INSERT QUERY NO: 273 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+273, 1670, 20, 'TAVAS'
+);
+
+/* INSERT QUERY NO: 274 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+274, 1597, 20, 'SARAYKÖY'
+);
+
+/* INSERT QUERY NO: 275 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+275, 1426, 20, 'KALE'
+);
+
+/* INSERT QUERY NO: 276 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+276, 1371, 20, 'GÜNEY'
+);
+
+/* INSERT QUERY NO: 277 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+277, 1271, 20, 'MERKEZ'
+);
+
+/* INSERT QUERY NO: 278 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+278, 1257, 20, 'ÇİVRİL'
+);
+
+/* INSERT QUERY NO: 279 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+279, 1233, 20, 'ÇARDAK'
+);
+
+/* INSERT QUERY NO: 280 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+280, 1226, 20, 'ÇAMELİ'
+);
+
+/* INSERT QUERY NO: 281 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+281, 1224, 20, 'ÇAL'
+);
+
+/* INSERT QUERY NO: 282 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+282, 1214, 20, 'BULDAN'
+);
+
+/* INSERT QUERY NO: 283 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+283, 1102, 20, 'ACIPAYAM'
+);
+
+/* INSERT QUERY NO: 284 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+284, 99126, 21, 'Diyarbakır Havalimanı'
+);
+
+/* INSERT QUERY NO: 285 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+285, 2043, 21, 'YENİŞEHİR'
+);
+
+/* INSERT QUERY NO: 286 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+286, 2042, 21, 'SUR'
+);
+
+/* INSERT QUERY NO: 287 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+287, 2041, 21, 'KAYAPINAR'
+);
+
+/* INSERT QUERY NO: 288 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+288, 2040, 21, 'BAĞLAR'
+);
+
+/* INSERT QUERY NO: 289 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+289, 1962, 21, 'KOCAKÖY'
+);
+
+/* INSERT QUERY NO: 290 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+290, 1791, 21, 'EĞİL'
+);
+
+/* INSERT QUERY NO: 291 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+291, 1624, 21, 'SİLVAN'
+);
+
+/* INSERT QUERY NO: 292 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+292, 1504, 21, 'LİCE'
+);
+
+/* INSERT QUERY NO: 293 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+293, 1490, 21, 'KULP'
+);
+
+/* INSERT QUERY NO: 294 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+294, 1389, 21, 'HAZRO'
+);
+
+/* INSERT QUERY NO: 295 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+295, 1381, 21, 'HANİ'
+);
+
+/* INSERT QUERY NO: 296 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+296, 1315, 21, 'ERGANİ'
+);
+
+/* INSERT QUERY NO: 297 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+297, 1284, 21, 'MERKEZ'
+);
+
+/* INSERT QUERY NO: 298 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+298, 1278, 21, 'DİCLE'
+);
+
+/* INSERT QUERY NO: 299 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+299, 1263, 21, 'ÇÜNGÜŞ'
+);
+
+/* INSERT QUERY NO: 300 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+300, 1253, 21, 'ÇINAR'
+);
+
+/* INSERT QUERY NO: 301 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+301, 1249, 21, 'ÇERMİK'
+);
+
+/* INSERT QUERY NO: 302 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+302, 1195, 21, 'BİSMİL'
+);
+
+/* INSERT QUERY NO: 303 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+303, 1988, 22, 'SÜLOĞLU'
+);
+
+/* INSERT QUERY NO: 304 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+304, 1705, 22, 'UZUNKÖPRÜ'
+);
+
+/* INSERT QUERY NO: 305 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+305, 1523, 22, 'MERİÇ'
+);
+
+/* INSERT QUERY NO: 306 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+306, 1502, 22, 'LALAPAŞA'
+);
+
+/* INSERT QUERY NO: 307 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+307, 1464, 22, 'KEŞAN'
+);
+
+/* INSERT QUERY NO: 308 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+308, 1412, 22, 'İPSALA'
+);
+
+/* INSERT QUERY NO: 309 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+309, 1385, 22, 'HAVSA'
+);
+
+/* INSERT QUERY NO: 310 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+310, 1307, 22, 'ENEZ'
+);
+
+/* INSERT QUERY NO: 311 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+311, 1295, 22, 'MERKEZ'
+);
+
+/* INSERT QUERY NO: 312 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+312, 99144, 23, 'Elazığ Havalimanı'
+);
+
+/* INSERT QUERY NO: 313 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+313, 1873, 23, 'ALACAKAYA'
+);
+
+/* INSERT QUERY NO: 314 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+314, 1820, 23, 'KOVANCILAR'
+);
+
+/* INSERT QUERY NO: 315 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+315, 1762, 23, 'ARICAK'
+);
+
+/* INSERT QUERY NO: 316 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+316, 1631, 23, 'SİVRİCE'
+);
+
+/* INSERT QUERY NO: 317 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+317, 1566, 23, 'PALU'
+);
+
+/* INSERT QUERY NO: 318 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+318, 1506, 23, 'MADEN'
+);
+
+/* INSERT QUERY NO: 319 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+319, 1455, 23, 'KEBAN'
+);
+
+/* INSERT QUERY NO: 320 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+320, 1438, 23, 'KARAKOÇAN'
+);
+
+/* INSERT QUERY NO: 321 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+321, 1298, 23, 'MERKEZ'
+);
+
+/* INSERT QUERY NO: 322 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+322, 1173, 23, 'BASKİL'
+);
+
+/* INSERT QUERY NO: 323 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+323, 1110, 23, 'AĞIN'
+);
+
+/* INSERT QUERY NO: 324 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+324, 99109, 24, 'Erzincan Havalimanı'
+);
+
+/* INSERT QUERY NO: 325 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+325, 1977, 24, 'OTLUKBELİ'
+);
+
+/* INSERT QUERY NO: 326 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+326, 1853, 24, 'ÜZÜMLÜ'
+);
+
+/* INSERT QUERY NO: 327 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+327, 1675, 24, 'TERCAN'
+);
+
+/* INSERT QUERY NO: 328 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+328, 1583, 24, 'REFAHİYE'
+);
+
+/* INSERT QUERY NO: 329 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+329, 1460, 24, 'KEMALİYE'
+);
+
+/* INSERT QUERY NO: 330 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+330, 1459, 24, 'KEMAH'
+);
+
+/* INSERT QUERY NO: 331 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+331, 1406, 24, 'İLİÇ'
+);
+
+/* INSERT QUERY NO: 332 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+332, 1318, 24, 'MERKEZ'
+);
+
+/* INSERT QUERY NO: 333 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+333, 1243, 24, 'ÇAYIRLI'
+);
+
+/* INSERT QUERY NO: 334 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+334, 99100, 25, 'Erzurum Havalimanı'
+);
+
+/* INSERT QUERY NO: 335 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+335, 2045, 25, 'YAKUTİYE'
+);
+
+/* INSERT QUERY NO: 336 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+336, 2044, 25, 'PALANDÖKEN'
+);
+
+/* INSERT QUERY NO: 337 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+337, 1967, 25, 'KÖPRÜKÖY'
+);
+
+/* INSERT QUERY NO: 338 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+338, 1945, 25, 'AZİZİYE'
+);
+
+/* INSERT QUERY NO: 339 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+339, 1865, 25, 'PAZARYOLU'
+);
+
+/* INSERT QUERY NO: 340 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+340, 1851, 25, 'UZUNDERE'
+);
+
+/* INSERT QUERY NO: 341 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+341, 1812, 25, 'KARAÇOBAN'
+);
+
+/* INSERT QUERY NO: 342 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+342, 1683, 25, 'TORTUM'
+);
+
+/* INSERT QUERY NO: 343 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+343, 1674, 25, 'TEKMAN'
+);
+
+/* INSERT QUERY NO: 344 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+344, 1657, 25, 'ŞENKAYA'
+);
+
+/* INSERT QUERY NO: 345 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+345, 1567, 25, 'PASİNLER'
+);
+
+/* INSERT QUERY NO: 346 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+346, 1551, 25, 'OLUR'
+);
+
+/* INSERT QUERY NO: 347 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+347, 1550, 25, 'OLTU'
+);
+
+/* INSERT QUERY NO: 348 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+348, 1540, 25, 'NARMAN'
+);
+
+/* INSERT QUERY NO: 349 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+349, 1444, 25, 'KARAYAZI'
+);
+
+/* INSERT QUERY NO: 350 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+350, 1416, 25, 'İSPİR'
+);
+
+/* INSERT QUERY NO: 351 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+351, 1396, 25, 'HORASAN'
+);
+
+/* INSERT QUERY NO: 352 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+352, 1392, 25, 'HINIS'
+);
+
+/* INSERT QUERY NO: 353 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+353, 1319, 25, 'MERKEZ'
+);
+
+/* INSERT QUERY NO: 354 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+354, 1235, 25, 'ÇAT'
+);
+
+/* INSERT QUERY NO: 355 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+355, 1153, 25, 'AŞKALE'
+);
+
+/* INSERT QUERY NO: 356 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+356, 99162, 26, 'Eskişehir Anadolu Havalimanı'
+);
+
+/* INSERT QUERY NO: 357 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+357, 2047, 26, 'TEPEBAŞI'
+);
+
+/* INSERT QUERY NO: 358 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+358, 2046, 26, 'ODUNPAZARI'
+);
+
+/* INSERT QUERY NO: 359 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+359, 1973, 26, 'MİHALGAZİ'
+);
+
+/* INSERT QUERY NO: 360 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+360, 1939, 26, 'HAN'
+);
+
+/* INSERT QUERY NO: 361 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+361, 1934, 26, 'GÜNYÜZÜ'
+);
+
+/* INSERT QUERY NO: 362 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+362, 1808, 26, 'İNÖNÜ'
+);
+
+/* INSERT QUERY NO: 363 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+363, 1777, 26, 'BEYLİKOVA'
+);
+
+/* INSERT QUERY NO: 364 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+364, 1759, 26, 'ALPU'
+);
+
+/* INSERT QUERY NO: 365 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+365, 1632, 26, 'SİVRİHİSAR'
+);
+
+/* INSERT QUERY NO: 366 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+366, 1618, 26, 'SEYİTGAZİ'
+);
+
+/* INSERT QUERY NO: 367 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+367, 1599, 26, 'SARICAKAYA'
+);
+
+/* INSERT QUERY NO: 368 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+368, 1527, 26, 'MİHALIÇÇIK'
+);
+
+/* INSERT QUERY NO: 369 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+369, 1508, 26, 'MAHMUDİYE'
+);
+
+/* INSERT QUERY NO: 370 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+370, 1322, 26, 'MERKEZ'
+);
+
+/* INSERT QUERY NO: 371 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+371, 1255, 26, 'ÇİFTELER'
+);
+
+/* INSERT QUERY NO: 372 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+372, 99101, 27, 'Gaziantep Havalimanı'
+);
+
+/* INSERT QUERY NO: 373 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+373, 2700, 27, 'MERKEZ'
+);
+
+/* INSERT QUERY NO: 374 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+374, 1974, 27, 'NURDAĞI'
+);
+
+/* INSERT QUERY NO: 375 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+375, 1956, 27, 'KARKAMIŞ'
+);
+
+/* INSERT QUERY NO: 376 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+376, 1844, 27, 'ŞEHİTKAMİL'
+);
+
+/* INSERT QUERY NO: 377 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+377, 1841, 27, 'ŞAHİNBEY'
+);
+
+/* INSERT QUERY NO: 378 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+378, 1720, 27, 'YAVUZELİ'
+);
+
+/* INSERT QUERY NO: 379 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+379, 1549, 27, 'OĞUZELİ'
+);
+
+/* INSERT QUERY NO: 380 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+380, 1546, 27, 'NİZİP'
+);
+
+/* INSERT QUERY NO: 381 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+381, 1415, 27, 'İSLAHİYE'
+);
+
+/* INSERT QUERY NO: 382 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+382, 1139, 27, 'ARABAN'
+);
+
+/* INSERT QUERY NO: 383 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+383, 1930, 28, 'GÜCE'
+);
+
+/* INSERT QUERY NO: 384 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+384, 1912, 28, 'DOĞANKENT'
+);
+
+/* INSERT QUERY NO: 385 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+385, 1894, 28, 'ÇANAKÇI'
+);
+
+/* INSERT QUERY NO: 386 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+386, 1893, 28, 'ÇAMOLUK'
+);
+
+/* INSERT QUERY NO: 387 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+387, 1854, 28, 'YAĞLIDERE'
+);
+
+/* INSERT QUERY NO: 388 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+388, 1837, 28, 'PİRAZİZ'
+);
+
+/* INSERT QUERY NO: 389 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+389, 1678, 28, 'TİREBOLU'
+);
+
+/* INSERT QUERY NO: 390 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+390, 1654, 28, 'ŞEBİNKARAHİSAR'
+);
+
+/* INSERT QUERY NO: 391 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+391, 1465, 28, 'KEŞAP'
+);
+
+/* INSERT QUERY NO: 392 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+392, 1361, 28, 'GÖRELE'
+);
+
+/* INSERT QUERY NO: 393 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+393, 1352, 28, 'MERKEZ'
+);
+
+/* INSERT QUERY NO: 394 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+394, 1324, 28, 'EYNESİL'
+);
+
+/* INSERT QUERY NO: 395 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+395, 1320, 28, 'ESPİYE'
+);
+
+/* INSERT QUERY NO: 396 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+396, 1272, 28, 'DERELİ'
+);
+
+/* INSERT QUERY NO: 397 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+397, 1212, 28, 'BULANCAK'
+);
+
+/* INSERT QUERY NO: 398 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+398, 1133, 28, 'ALUCRA'
+);
+
+/* INSERT QUERY NO: 399 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+399, 1971, 29, 'KÜRTÜN'
+);
+
+/* INSERT QUERY NO: 400 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+400, 1822, 29, 'KÖSE'
+);
+
+/* INSERT QUERY NO: 401 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+401, 1684, 29, 'TORUL'
+);
+
+/* INSERT QUERY NO: 402 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+402, 1660, 29, 'ŞİRAN'
+);
+
+/* INSERT QUERY NO: 403 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+403, 1458, 29, 'KELKİT'
+);
+
+/* INSERT QUERY NO: 404 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+404, 1369, 29, 'MERKEZ'
+);
+
+/* INSERT QUERY NO: 405 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+405, 99110, 30, 'Hakkâri Yüksekova Selahaddin Eyyubi Havalimanı'
+);
+
+/* INSERT QUERY NO: 406 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+406, 1737, 30, 'YÜKSEKOVA'
+);
+
+/* INSERT QUERY NO: 407 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+407, 1656, 30, 'ŞEMDİNLİ'
+);
+
+/* INSERT QUERY NO: 408 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+408, 1377, 30, 'MERKEZ'
+);
+
+/* INSERT QUERY NO: 409 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+409, 1261, 30, 'ÇUKURCA'
+);
+
+/* INSERT QUERY NO: 410 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+410, 99161, 31, 'Hatay Havalimanı'
+);
+
+/* INSERT QUERY NO: 411 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+411, 2083, 31, 'PAYAS'
+);
+
+/* INSERT QUERY NO: 412 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+412, 2082, 31, 'DEFNE'
+);
+
+/* INSERT QUERY NO: 413 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+413, 2081, 31, 'ARSUZ'
+);
+
+/* INSERT QUERY NO: 414 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+414, 2080, 31, 'ANTAKYA'
+);
+
+/* INSERT QUERY NO: 415 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+415, 1970, 31, 'KUMLU'
+);
+
+/* INSERT QUERY NO: 416 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+416, 1887, 31, 'BELEN'
+);
+
+/* INSERT QUERY NO: 417 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+417, 1792, 31, 'ERZİN'
+);
+
+/* INSERT QUERY NO: 418 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+418, 1721, 31, 'YAYLADAĞI'
+);
+
+/* INSERT QUERY NO: 419 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+419, 1591, 31, 'SAMANDAĞ'
+);
+
+/* INSERT QUERY NO: 420 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+420, 1585, 31, 'REYHANLI'
+);
+
+/* INSERT QUERY NO: 421 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+421, 1468, 31, 'KIRIKHAN'
+);
+
+/* INSERT QUERY NO: 422 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+422, 1413, 31, 'İSKENDERUN'
+);
+
+/* INSERT QUERY NO: 423 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+423, 1383, 31, 'MERKEZ'
+);
+
+/* INSERT QUERY NO: 424 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+424, 1382, 31, 'HASSA'
+);
+
+/* INSERT QUERY NO: 425 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+425, 1289, 31, 'DÖRTYOL'
+);
+
+/* INSERT QUERY NO: 426 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+426, 1131, 31, 'ALTINÖZÜ'
+);
+
+/* INSERT QUERY NO: 427 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+427, 99112, 32, 'Isparta Süleyman Demirel Havalimanı'
+);
+
+/* INSERT QUERY NO: 428 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+428, 2001, 32, 'YENİŞARBADEMLİ'
+);
+
+/* INSERT QUERY NO: 429 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+429, 1929, 32, 'GÖNEN'
+);
+
+/* INSERT QUERY NO: 430 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+430, 1755, 32, 'AKSU'
+);
+
+/* INSERT QUERY NO: 431 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+431, 1717, 32, 'YALVAÇ'
+);
+
+/* INSERT QUERY NO: 432 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+432, 1699, 32, 'ULUBORLU'
+);
+
+/* INSERT QUERY NO: 433 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+433, 1651, 32, 'ŞARKİKARAAĞAÇ'
+);
+
+/* INSERT QUERY NO: 434 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+434, 1648, 32, 'SÜTÇÜLER'
+);
+
+/* INSERT QUERY NO: 435 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+435, 1615, 32, 'SENİRKENT'
+);
+
+/* INSERT QUERY NO: 436 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+436, 1456, 32, 'KEÇİBORLU'
+);
+
+/* INSERT QUERY NO: 437 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+437, 1401, 32, 'MERKEZ'
+);
+
+/* INSERT QUERY NO: 438 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+438, 1341, 32, 'GELENDOST'
+);
+
+/* INSERT QUERY NO: 439 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+439, 1297, 32, 'EĞİRDİR'
+);
+
+/* INSERT QUERY NO: 440 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+440, 1154, 32, 'ATABEY'
+);
+
+/* INSERT QUERY NO: 441 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+441, 2067, 33, 'YENİŞEHİR'
+);
+
+/* INSERT QUERY NO: 442 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+442, 2066, 33, 'TOROSLAR'
+);
+
+/* INSERT QUERY NO: 443 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+443, 2065, 33, 'MEZİTLİ'
+);
+
+/* INSERT QUERY NO: 444 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+444, 2064, 33, 'AKDENİZ'
+);
+
+/* INSERT QUERY NO: 445 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+445, 1892, 33, 'ÇAMLIYAYLA'
+);
+
+/* INSERT QUERY NO: 446 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+446, 1779, 33, 'BOZYAZI'
+);
+
+/* INSERT QUERY NO: 447 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+447, 1766, 33, 'AYDINCIK'
+);
+
+/* INSERT QUERY NO: 448 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+448, 1665, 33, 'TARSUS'
+);
+
+/* INSERT QUERY NO: 449 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+449, 1621, 33, 'SİLİFKE'
+);
+
+/* INSERT QUERY NO: 450 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+450, 1536, 33, 'MUT'
+);
+
+/* INSERT QUERY NO: 451 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+451, 1402, 33, 'MERKEZ'
+);
+
+/* INSERT QUERY NO: 452 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+452, 1366, 33, 'GÜLNAR'
+);
+
+/* INSERT QUERY NO: 453 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+453, 1311, 33, 'ERDEMLİ'
+);
+
+/* INSERT QUERY NO: 454 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+454, 1135, 33, 'ANAMUR'
+);
+
+/* INSERT QUERY NO: 455 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+455, 99157, 34, 'İstanbul Havalimanı'
+);
+
+/* INSERT QUERY NO: 456 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+456, 99136, 34, 'Atatürk Havalimanı'
+);
+
+/* INSERT QUERY NO: 457 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+457, 99102, 34, 'Sabiha Gökçen Havalimanı'
+);
+
+/* INSERT QUERY NO: 458 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+458, 2055, 34, 'SULTANGAZİ'
+);
+
+/* INSERT QUERY NO: 459 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+459, 2054, 34, 'SANCAKTEPE'
+);
+
+/* INSERT QUERY NO: 460 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+460, 2053, 34, 'ESENYURT'
+);
+
+/* INSERT QUERY NO: 461 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+461, 2052, 34, 'ÇEKMEKÖY'
+);
+
+/* INSERT QUERY NO: 462 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+462, 2051, 34, 'BEYLİKDÜZÜ'
+);
+
+/* INSERT QUERY NO: 463 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+463, 2050, 34, 'BAŞAKŞEHİR'
+);
+
+/* INSERT QUERY NO: 464 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+464, 2049, 34, 'ATAŞEHİR'
+);
+
+/* INSERT QUERY NO: 465 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+465, 2048, 34, 'ARNAVUTKÖY'
+);
+
+/* INSERT QUERY NO: 466 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+466, 2016, 34, 'ESENLER'
+);
+
+/* INSERT QUERY NO: 467 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+467, 2015, 34, 'TUZLA'
+);
+
+/* INSERT QUERY NO: 468 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+468, 2014, 34, 'SULTANBEYLİ'
+);
+
+/* INSERT QUERY NO: 469 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+469, 2012, 34, 'MALTEPE'
+);
+
+/* INSERT QUERY NO: 470 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+470, 2010, 34, 'GÜNGÖREN'
+);
+
+/* INSERT QUERY NO: 471 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+471, 2005, 34, 'BAHÇELİEVLER'
+);
+
+/* INSERT QUERY NO: 472 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+472, 2004, 34, 'BAĞCILAR'
+);
+
+/* INSERT QUERY NO: 473 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+473, 2003, 34, 'AVCILAR'
+);
+
+/* INSERT QUERY NO: 474 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+474, 1886, 34, 'BAYRAMPAŞA'
+);
+
+/* INSERT QUERY NO: 475 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+475, 1852, 34, 'ÜMRANİYE'
+);
+
+/* INSERT QUERY NO: 476 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+476, 1835, 34, 'PENDİK'
+);
+
+/* INSERT QUERY NO: 477 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+477, 1823, 34, 'KÜÇÜKÇEKMECE'
+);
+
+/* INSERT QUERY NO: 478 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+478, 1810, 34, 'KAĞITHANE'
+);
+
+/* INSERT QUERY NO: 479 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+479, 1782, 34, 'BÜYÜKÇEKMECE'
+);
+
+/* INSERT QUERY NO: 480 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+480, 1739, 34, 'ZEYTİNBURNU'
+);
+
+/* INSERT QUERY NO: 481 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+481, 1708, 34, 'ÜSKÜDAR'
+);
+
+/* INSERT QUERY NO: 482 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+482, 1663, 34, 'ŞİŞLİ'
+);
+
+/* INSERT QUERY NO: 483 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+483, 1659, 34, 'ŞİLE'
+);
+
+/* INSERT QUERY NO: 484 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+484, 1622, 34, 'SİLİVRİ'
+);
+
+/* INSERT QUERY NO: 485 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+485, 1604, 34, 'SARIYER'
+);
+
+/* INSERT QUERY NO: 486 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+486, 1449, 34, 'KARTAL'
+);
+
+/* INSERT QUERY NO: 487 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+487, 1421, 34, 'KADIKÖY'
+);
+
+/* INSERT QUERY NO: 488 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+488, 1336, 34, 'GAZİOSMANPAŞA'
+);
+
+/* INSERT QUERY NO: 489 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+489, 1327, 34, 'FATİH'
+);
+
+/* INSERT QUERY NO: 490 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+490, 1325, 34, 'EYÜPSULTAN'
+);
+
+/* INSERT QUERY NO: 491 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+491, 1305, 34, 'EMİNÖNÜ'
+);
+
+/* INSERT QUERY NO: 492 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+492, 1237, 34, 'ÇATALCA'
+);
+
+/* INSERT QUERY NO: 493 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+493, 1186, 34, 'BEYOĞLU'
+);
+
+/* INSERT QUERY NO: 494 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+494, 1185, 34, 'BEYKOZ'
+);
+
+/* INSERT QUERY NO: 495 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+495, 1183, 34, 'BEŞİKTAŞ'
+);
+
+/* INSERT QUERY NO: 496 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+496, 1166, 34, 'BAKIRKÖY'
+);
+
+/* INSERT QUERY NO: 497 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+497, 1103, 34, 'ADALAR'
+);
+
+/* INSERT QUERY NO: 498 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+498, 99164, 35, 'Adnan Menderes Havalimanı'
+);
+
+/* INSERT QUERY NO: 499 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+499, 2057, 35, 'KARABAĞLAR'
+);
+
+/* INSERT QUERY NO: 500 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+500, 2056, 35, 'BAYRAKLI'
+);
+
+/* INSERT QUERY NO: 501 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+501, 2018, 35, 'GÜZELBAHÇE'
+);
+
+/* INSERT QUERY NO: 502 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+502, 2013, 35, 'NARLIDERE'
+);
+
+/* INSERT QUERY NO: 503 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+503, 2009, 35, 'GAZİEMİR'
+);
+
+/* INSERT QUERY NO: 504 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+504, 2007, 35, 'ÇİĞLİ'
+);
+
+/* INSERT QUERY NO: 505 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+505, 2006, 35, 'BALÇOVA'
+);
+
+/* INSERT QUERY NO: 506 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+506, 1826, 35, 'MENDERES'
+);
+
+/* INSERT QUERY NO: 507 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+507, 1819, 35, 'KONAK'
+);
+
+/* INSERT QUERY NO: 508 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+508, 1780, 35, 'BUCA'
+);
+
+/* INSERT QUERY NO: 509 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+509, 1776, 35, 'BEYDAĞ'
+);
+
+/* INSERT QUERY NO: 510 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+510, 1703, 35, 'URLA'
+);
+
+/* INSERT QUERY NO: 511 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+511, 1682, 35, 'TORBALI'
+);
+
+/* INSERT QUERY NO: 512 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+512, 1677, 35, 'TİRE'
+);
+
+/* INSERT QUERY NO: 513 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+513, 1612, 35, 'SELÇUK'
+);
+
+/* INSERT QUERY NO: 514 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+514, 1611, 35, 'SEFERİHİSAR'
+);
+
+/* INSERT QUERY NO: 515 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+515, 1563, 35, 'ÖDEMİŞ'
+);
+
+/* INSERT QUERY NO: 516 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+516, 1521, 35, 'MENEMEN'
+);
+
+/* INSERT QUERY NO: 517 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+517, 1477, 35, 'KİRAZ'
+);
+
+/* INSERT QUERY NO: 518 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+518, 1467, 35, 'KINIK'
+);
+
+/* INSERT QUERY NO: 519 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+519, 1461, 35, 'KEMALPAŞA'
+);
+
+/* INSERT QUERY NO: 520 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+520, 1448, 35, 'KARŞIYAKA'
+);
+
+/* INSERT QUERY NO: 521 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+521, 1432, 35, 'KARABURUN'
+);
+
+/* INSERT QUERY NO: 522 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+522, 1334, 35, 'FOÇA'
+);
+
+/* INSERT QUERY NO: 523 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+523, 1280, 35, 'DİKİLİ'
+);
+
+/* INSERT QUERY NO: 524 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+524, 1251, 35, 'ÇEŞME'
+);
+
+/* INSERT QUERY NO: 525 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+525, 1203, 35, 'BORNOVA'
+);
+
+/* INSERT QUERY NO: 526 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+526, 1181, 35, 'BERGAMA'
+);
+
+/* INSERT QUERY NO: 527 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+527, 1178, 35, 'BAYINDIR'
+);
+
+/* INSERT QUERY NO: 528 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+528, 1128, 35, 'ALİAĞA'
+);
+
+/* INSERT QUERY NO: 529 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+529, 99113, 36, 'Kars Harakani Havalimanı'
+);
+
+/* INSERT QUERY NO: 530 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+530, 1756, 36, 'AKYAKA'
+);
+
+/* INSERT QUERY NO: 531 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+531, 1645, 36, 'SUSUZ'
+);
+
+/* INSERT QUERY NO: 532 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+532, 1614, 36, 'SELİM'
+);
+
+/* INSERT QUERY NO: 533 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+533, 1601, 36, 'SARIKAMIŞ'
+);
+
+/* INSERT QUERY NO: 534 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+534, 1447, 36, 'MERKEZ'
+);
+
+/* INSERT QUERY NO: 535 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+535, 1424, 36, 'KAĞIZMAN'
+);
+
+/* INSERT QUERY NO: 536 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+536, 1279, 36, 'DİGOR'
+);
+
+/* INSERT QUERY NO: 537 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+537, 1149, 36, 'ARPAÇAY'
+);
+
+/* INSERT QUERY NO: 538 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+538, 99154, 37, 'Kastamonu Havalimanı'
+);
+
+/* INSERT QUERY NO: 539 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+539, 1984, 37, 'SEYDİLER'
+);
+
+/* INSERT QUERY NO: 540 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+540, 1940, 37, 'HANÖNÜ'
+);
+
+/* INSERT QUERY NO: 541 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+541, 1915, 37, 'DOĞANYURT'
+);
+
+/* INSERT QUERY NO: 542 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+542, 1867, 37, 'AĞLI'
+);
+
+/* INSERT QUERY NO: 543 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+543, 1845, 37, 'ŞENPAZAR'
+);
+
+/* INSERT QUERY NO: 544 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+544, 1836, 37, 'PINARBAŞI'
+);
+
+/* INSERT QUERY NO: 545 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+545, 1805, 37, 'İHSANGAZİ'
+);
+
+/* INSERT QUERY NO: 546 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+546, 1685, 37, 'TOSYA'
+);
+
+/* INSERT QUERY NO: 547 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+547, 1666, 37, 'TAŞKÖPRÜ'
+);
+
+/* INSERT QUERY NO: 548 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+548, 1499, 37, 'KÜRE'
+);
+
+/* INSERT QUERY NO: 549 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+549, 1450, 37, 'MERKEZ'
+);
+
+/* INSERT QUERY NO: 550 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+550, 1410, 37, 'İNEBOLU'
+);
+
+/* INSERT QUERY NO: 551 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+551, 1277, 37, 'DEVREKANİ'
+);
+
+/* INSERT QUERY NO: 552 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+552, 1264, 37, 'DADAY'
+);
+
+/* INSERT QUERY NO: 553 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+553, 1238, 37, 'ÇATALZEYTİN'
+);
+
+/* INSERT QUERY NO: 554 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+554, 1221, 37, 'CİDE'
+);
+
+/* INSERT QUERY NO: 555 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+555, 1208, 37, 'BOZKURT'
+);
+
+/* INSERT QUERY NO: 556 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+556, 1162, 37, 'AZDAVAY'
+);
+
+/* INSERT QUERY NO: 557 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+557, 1140, 37, 'ARAÇ'
+);
+
+/* INSERT QUERY NO: 558 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+558, 1101, 37, 'ABANA'
+);
+
+/* INSERT QUERY NO: 559 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+559, 99103, 38, 'Erkilet Havalimanı'
+);
+
+/* INSERT QUERY NO: 560 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+560, 1978, 38, 'ÖZVATAN'
+);
+
+/* INSERT QUERY NO: 561 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+561, 1936, 38, 'HACILAR'
+);
+
+/* INSERT QUERY NO: 562 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+562, 1864, 38, 'MELİKGAZİ'
+);
+
+/* INSERT QUERY NO: 563 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+563, 1863, 38, 'KOCASİNAN'
+);
+
+/* INSERT QUERY NO: 564 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+564, 1846, 38, 'TALAS'
+);
+
+/* INSERT QUERY NO: 565 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+565, 1752, 38, 'AKKIŞLA'
+);
+
+/* INSERT QUERY NO: 566 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+566, 1727, 38, 'YEŞİLHİSAR'
+);
+
+/* INSERT QUERY NO: 567 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+567, 1715, 38, 'YAHYALI'
+);
+
+/* INSERT QUERY NO: 568 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+568, 1680, 38, 'TOMARZA'
+);
+
+/* INSERT QUERY NO: 569 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+569, 1605, 38, 'SARIZ'
+);
+
+/* INSERT QUERY NO: 570 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+570, 1603, 38, 'SARIOĞLAN'
+);
+
+/* INSERT QUERY NO: 571 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+571, 1576, 38, 'PINARBAŞI'
+);
+
+/* INSERT QUERY NO: 572 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+572, 1409, 38, 'İNCESU'
+);
+
+/* INSERT QUERY NO: 573 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+573, 1330, 38, 'FELAHİYE'
+);
+
+/* INSERT QUERY NO: 574 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+574, 1275, 38, 'DEVELİ'
+);
+
+/* INSERT QUERY NO: 575 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+575, 1218, 38, 'BÜNYAN'
+);
+
+/* INSERT QUERY NO: 576 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+576, 1714, 39, 'VİZE'
+);
+
+/* INSERT QUERY NO: 577 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+577, 1577, 39, 'PINARHİSAR'
+);
+
+/* INSERT QUERY NO: 578 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+578, 1572, 39, 'PEHLİVANKÖY'
+);
+
+/* INSERT QUERY NO: 579 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+579, 1505, 39, 'LÜLEBURGAZ'
+);
+
+/* INSERT QUERY NO: 580 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+580, 1480, 39, 'KOFÇAZ'
+);
+
+/* INSERT QUERY NO: 581 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+581, 1471, 39, 'MERKEZ'
+);
+
+/* INSERT QUERY NO: 582 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+582, 1270, 39, 'DEMİRKÖY'
+);
+
+/* INSERT QUERY NO: 583 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+583, 1163, 39, 'BABAESKİ'
+);
+
+/* INSERT QUERY NO: 584 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+584, 1890, 40, 'BOZTEPE'
+);
+
+/* INSERT QUERY NO: 585 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+585, 1869, 40, 'AKÇAKENT'
+);
+
+/* INSERT QUERY NO: 586 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+586, 1754, 40, 'AKPINAR'
+);
+
+/* INSERT QUERY NO: 587 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+587, 1529, 40, 'MUCUR'
+);
+
+/* INSERT QUERY NO: 588 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+588, 1472, 40, 'MERKEZ'
+);
+
+/* INSERT QUERY NO: 589 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+589, 1429, 40, 'KAMAN'
+);
+
+/* INSERT QUERY NO: 590 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+590, 1254, 40, 'ÇİÇEKDAĞI'
+);
+
+/* INSERT QUERY NO: 591 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+591, 99155, 41, 'Cengiz Topel Havalimanı'
+);
+
+/* INSERT QUERY NO: 592 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+592, 2063, 41, 'KARTEPE'
+);
+
+/* INSERT QUERY NO: 593 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+593, 2062, 41, 'İZMİT'
+);
+
+/* INSERT QUERY NO: 594 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+594, 2061, 41, 'DİLOVASI'
+);
+
+/* INSERT QUERY NO: 595 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+595, 2060, 41, 'DARICA'
+);
+
+/* INSERT QUERY NO: 596 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+596, 2059, 41, 'ÇAYIROVA'
+);
+
+/* INSERT QUERY NO: 597 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+597, 2058, 41, 'BAŞİSKELE'
+);
+
+/* INSERT QUERY NO: 598 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+598, 2030, 41, 'DERİNCE'
+);
+
+/* INSERT QUERY NO: 599 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+599, 1821, 41, 'KÖRFEZ'
+);
+
+/* INSERT QUERY NO: 600 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+600, 1478, 41, 'MERKEZ'
+);
+
+/* INSERT QUERY NO: 601 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+601, 1440, 41, 'KARAMÜRSEL'
+);
+
+/* INSERT QUERY NO: 602 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+602, 1430, 41, 'KANDIRA'
+);
+
+/* INSERT QUERY NO: 603 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+603, 1355, 41, 'GÖLCÜK'
+);
+
+/* INSERT QUERY NO: 604 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+604, 1338, 41, 'GEBZE'
+);
+
+/* INSERT QUERY NO: 605 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+605, 99104, 42, 'Konya Havalimanı'
+);
+
+/* INSERT QUERY NO: 606 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+606, 1994, 42, 'YALIHÜYÜK'
+);
+
+/* INSERT QUERY NO: 607 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+607, 1990, 42, 'TUZLUKÇU'
+);
+
+/* INSERT QUERY NO: 608 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+608, 1937, 42, 'HALKAPINAR'
+);
+
+/* INSERT QUERY NO: 609 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+609, 1933, 42, 'GÜNEYSINIR'
+);
+
+/* INSERT QUERY NO: 610 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+610, 1920, 42, 'EMİRGAZİ'
+);
+
+/* INSERT QUERY NO: 611 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+611, 1907, 42, 'DERBENT'
+);
+
+/* INSERT QUERY NO: 612 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+612, 1902, 42, 'ÇELTİK'
+);
+
+/* INSERT QUERY NO: 613 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+613, 1868, 42, 'AHIRLI'
+);
+
+/* INSERT QUERY NO: 614 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+614, 1848, 42, 'TAŞKENT'
+);
+
+/* INSERT QUERY NO: 615 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+615, 1839, 42, 'SELÇUKLU'
+);
+
+/* INSERT QUERY NO: 616 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+616, 1827, 42, 'MERAM'
+);
+
+/* INSERT QUERY NO: 617 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+617, 1814, 42, 'KARATAY'
+);
+
+/* INSERT QUERY NO: 618 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+618, 1804, 42, 'HÜYÜK'
+);
+
+/* INSERT QUERY NO: 619 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+619, 1789, 42, 'DEREBUCAK'
+);
+
+/* INSERT QUERY NO: 620 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+620, 1760, 42, 'ALTINEKİN'
+);
+
+/* INSERT QUERY NO: 621 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+621, 1753, 42, 'AKÖREN'
+);
+
+/* INSERT QUERY NO: 622 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+622, 1735, 42, 'YUNAK'
+);
+
+/* INSERT QUERY NO: 623 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+623, 1617, 42, 'SEYDİŞEHİR'
+);
+
+/* INSERT QUERY NO: 624 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+624, 1598, 42, 'SARAYÖNÜ'
+);
+
+/* INSERT QUERY NO: 625 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+625, 1491, 42, 'KULU'
+);
+
+/* INSERT QUERY NO: 626 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+626, 1441, 42, 'KARAPINAR'
+);
+
+/* INSERT QUERY NO: 627 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+627, 1422, 42, 'KADINHANI'
+);
+
+/* INSERT QUERY NO: 628 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+628, 1400, 42, 'ILGIN'
+);
+
+/* INSERT QUERY NO: 629 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+629, 1375, 42, 'HADİM'
+);
+
+/* INSERT QUERY NO: 630 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+630, 1312, 42, 'EREĞLİ'
+);
+
+/* INSERT QUERY NO: 631 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+631, 1285, 42, 'DOĞANHİSAR'
+);
+
+/* INSERT QUERY NO: 632 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+632, 1262, 42, 'ÇUMRA'
+);
+
+/* INSERT QUERY NO: 633 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+633, 1222, 42, 'CİHANBEYLİ'
+);
+
+/* INSERT QUERY NO: 634 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+634, 1207, 42, 'BOZKIR'
+);
+
+/* INSERT QUERY NO: 635 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+635, 1188, 42, 'BEYŞEHİR'
+);
+
+/* INSERT QUERY NO: 636 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+636, 1122, 42, 'AKŞEHİR'
+);
+
+/* INSERT QUERY NO: 637 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+637, 99165, 43, 'Zafer Havalimanı'
+);
+
+/* INSERT QUERY NO: 638 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+638, 1979, 43, 'PAZARLAR'
+);
+
+/* INSERT QUERY NO: 639 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+639, 1898, 43, 'ÇAVDARHİSAR'
+);
+
+/* INSERT QUERY NO: 640 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+640, 1843, 43, 'ŞAPHANE'
+);
+
+/* INSERT QUERY NO: 641 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+641, 1802, 43, 'HİSARCIK'
+);
+
+/* INSERT QUERY NO: 642 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+642, 1790, 43, 'DUMLUPINAR'
+);
+
+/* INSERT QUERY NO: 643 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+643, 1764, 43, 'ASLANAPA'
+);
+
+/* INSERT QUERY NO: 644 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+644, 1671, 43, 'TAVŞANLI'
+);
+
+/* INSERT QUERY NO: 645 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+645, 1625, 43, 'SİMAV'
+);
+
+/* INSERT QUERY NO: 646 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+646, 1500, 43, 'MERKEZ'
+);
+
+/* INSERT QUERY NO: 647 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+647, 1339, 43, 'GEDİZ'
+);
+
+/* INSERT QUERY NO: 648 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+648, 1304, 43, 'EMET'
+);
+
+/* INSERT QUERY NO: 649 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+649, 1288, 43, 'DOMANİÇ'
+);
+
+/* INSERT QUERY NO: 650 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+650, 1132, 43, 'ALTINTAŞ'
+);
+
+/* INSERT QUERY NO: 651 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+651, 99137, 44, 'Erhaç Havalimanı'
+);
+
+/* INSERT QUERY NO: 652 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+652, 1995, 44, 'YAZIHAN'
+);
+
+/* INSERT QUERY NO: 653 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+653, 1969, 44, 'KULUNCAK'
+);
+
+/* INSERT QUERY NO: 654 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+654, 1953, 44, 'KALE'
+);
+
+/* INSERT QUERY NO: 655 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+655, 1914, 44, 'DOĞANYOL'
+);
+
+/* INSERT QUERY NO: 656 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+656, 1772, 44, 'BATTALGAZİ'
+);
+
+/* INSERT QUERY NO: 657 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+657, 1729, 44, 'YEŞİLYURT'
+);
+
+/* INSERT QUERY NO: 658 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+658, 1582, 44, 'PÜTÜRGE'
+);
+
+/* INSERT QUERY NO: 659 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+659, 1509, 44, 'MERKEZ'
+);
+
+/* INSERT QUERY NO: 660 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+660, 1390, 44, 'HEKİMHAN'
+);
+
+/* INSERT QUERY NO: 661 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+661, 1286, 44, 'DOĞANŞEHİR'
+);
+
+/* INSERT QUERY NO: 662 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+662, 1265, 44, 'DARENDE'
+);
+
+/* INSERT QUERY NO: 663 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+663, 1148, 44, 'ARGUVAN'
+);
+
+/* INSERT QUERY NO: 664 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+664, 1143, 44, 'ARAPGİR'
+);
+
+/* INSERT QUERY NO: 665 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+665, 1114, 44, 'AKÇADAĞ'
+);
+
+/* INSERT QUERY NO: 666 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+666, 2087, 45, 'YUNUSEMRE'
+);
+
+/* INSERT QUERY NO: 667 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+667, 2086, 45, 'ŞEHZADELER'
+);
+
+/* INSERT QUERY NO: 668 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+668, 1965, 45, 'KÖPRÜBAŞI'
+);
+
+/* INSERT QUERY NO: 669 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+669, 1793, 45, 'GÖLMARMARA'
+);
+
+/* INSERT QUERY NO: 670 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+670, 1751, 45, 'AHMETLİ'
+);
+
+/* INSERT QUERY NO: 671 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+671, 1689, 45, 'TURGUTLU'
+);
+
+/* INSERT QUERY NO: 672 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+672, 1634, 45, 'SOMA'
+);
+
+/* INSERT QUERY NO: 673 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+673, 1613, 45, 'SELENDİ'
+);
+
+/* INSERT QUERY NO: 674 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+674, 1606, 45, 'SARUHANLI'
+);
+
+/* INSERT QUERY NO: 675 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+675, 1600, 45, 'SARIGÖL'
+);
+
+/* INSERT QUERY NO: 676 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+676, 1590, 45, 'SALİHLİ'
+);
+
+/* INSERT QUERY NO: 677 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+677, 1513, 45, 'MERKEZ'
+);
+
+/* INSERT QUERY NO: 678 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+678, 1489, 45, 'KULA'
+);
+
+/* INSERT QUERY NO: 679 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+679, 1470, 45, 'KIRKAĞAÇ'
+);
+
+/* INSERT QUERY NO: 680 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+680, 1362, 45, 'GÖRDES'
+);
+
+/* INSERT QUERY NO: 681 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+681, 1269, 45, 'DEMİRCİ'
+);
+
+/* INSERT QUERY NO: 682 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+682, 1127, 45, 'ALAŞEHİR'
+);
+
+/* INSERT QUERY NO: 683 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+683, 1118, 45, 'AKHİSAR'
+);
+
+/* INSERT QUERY NO: 684 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+684, 99145, 46, 'Kahramanmaraş Havalimanı'
+);
+
+/* INSERT QUERY NO: 685 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+685, 2085, 46, 'ONİKİŞUBAT'
+);
+
+/* INSERT QUERY NO: 686 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+686, 2084, 46, 'DULKADİROĞLU'
+);
+
+/* INSERT QUERY NO: 687 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+687, 1975, 46, 'NURHAK'
+);
+
+/* INSERT QUERY NO: 688 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+688, 1919, 46, 'EKİNÖZÜ'
+);
+
+/* INSERT QUERY NO: 689 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+689, 1785, 46, 'ÇAĞLAYANCERİT'
+);
+
+/* INSERT QUERY NO: 690 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+690, 1694, 46, 'TÜRKOĞLU'
+);
+
+/* INSERT QUERY NO: 691 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+691, 1570, 46, 'PAZARCIK'
+);
+
+/* INSERT QUERY NO: 692 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+692, 1515, 46, 'MERKEZ'
+);
+
+/* INSERT QUERY NO: 693 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+693, 1353, 46, 'GÖKSUN'
+);
+
+/* INSERT QUERY NO: 694 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+694, 1299, 46, 'ELBİSTAN'
+);
+
+/* INSERT QUERY NO: 695 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+695, 1136, 46, 'ANDIRIN'
+);
+
+/* INSERT QUERY NO: 696 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+696, 1107, 46, 'AFŞİN'
+);
+
+/* INSERT QUERY NO: 697 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+697, 99114, 47, 'Mardin Havalimanı'
+);
+
+/* INSERT QUERY NO: 698 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+698, 2088, 47, 'ARTUKLU'
+);
+
+/* INSERT QUERY NO: 699 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+699, 2002, 47, 'YEŞİLLİ'
+);
+
+/* INSERT QUERY NO: 700 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+700, 1787, 47, 'DARGEÇİT'
+);
+
+/* INSERT QUERY NO: 701 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+701, 1609, 47, 'SAVUR'
+);
+
+/* INSERT QUERY NO: 702 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+702, 1564, 47, 'ÖMERLİ'
+);
+
+/* INSERT QUERY NO: 703 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+703, 1547, 47, 'NUSAYBİN'
+);
+
+/* INSERT QUERY NO: 704 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+704, 1526, 47, 'MİDYAT'
+);
+
+/* INSERT QUERY NO: 705 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+705, 1519, 47, 'MAZIDAĞI'
+);
+
+/* INSERT QUERY NO: 706 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+706, 1516, 47, 'MERKEZ'
+);
+
+/* INSERT QUERY NO: 707 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+707, 1474, 47, 'KIZILTEPE'
+);
+
+/* INSERT QUERY NO: 708 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+708, 1273, 47, 'DERİK'
+);
+
+/* INSERT QUERY NO: 709 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+709, 99151, 48, 'Milas-Bodrum Havalimanı'
+);
+
+/* INSERT QUERY NO: 710 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+710, 99125, 48, 'Dalaman Havalimanı'
+);
+
+/* INSERT QUERY NO: 711 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+711, 2090, 48, 'SEYDİKEMER'
+);
+
+/* INSERT QUERY NO: 712 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+712, 2089, 48, 'MENTEŞE'
+);
+
+/* INSERT QUERY NO: 713 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+713, 1958, 48, 'KAVAKLIDERE'
+);
+
+/* INSERT QUERY NO: 714 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+714, 1831, 48, 'ORTACA'
+);
+
+/* INSERT QUERY NO: 715 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+715, 1742, 48, 'DALAMAN'
+);
+
+/* INSERT QUERY NO: 716 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+716, 1719, 48, 'YATAĞAN'
+);
+
+/* INSERT QUERY NO: 717 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+717, 1695, 48, 'ULA'
+);
+
+/* INSERT QUERY NO: 718 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+718, 1532, 48, 'MERKEZ'
+);
+
+/* INSERT QUERY NO: 719 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+719, 1528, 48, 'MİLAS'
+);
+
+/* INSERT QUERY NO: 720 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+720, 1517, 48, 'MARMARİS'
+);
+
+/* INSERT QUERY NO: 721 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+721, 1488, 48, 'KÖYCEĞİZ'
+);
+
+/* INSERT QUERY NO: 722 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+722, 1331, 48, 'FETHİYE'
+);
+
+/* INSERT QUERY NO: 723 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+723, 1266, 48, 'DATÇA'
+);
+
+/* INSERT QUERY NO: 724 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+724, 1197, 48, 'BODRUM'
+);
+
+/* INSERT QUERY NO: 725 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+725, 99129, 49, 'Muş Havalimanı'
+);
+
+/* INSERT QUERY NO: 726 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+726, 1964, 49, 'KORKUT'
+);
+
+/* INSERT QUERY NO: 727 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+727, 1801, 49, 'HASKÖY'
+);
+
+/* INSERT QUERY NO: 728 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+728, 1711, 49, 'VARTO'
+);
+
+/* INSERT QUERY NO: 729 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+729, 1534, 49, 'MERKEZ'
+);
+
+/* INSERT QUERY NO: 730 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+730, 1510, 49, 'MALAZGİRT'
+);
+
+/* INSERT QUERY NO: 731 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+731, 1213, 49, 'BULANIK'
+);
+
+/* INSERT QUERY NO: 732 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+732, 99105, 50, 'Nevşehir Kapadokya Havalimanı'
+);
+
+/* INSERT QUERY NO: 733 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+733, 1749, 50, 'ACIGÖL'
+);
+
+/* INSERT QUERY NO: 734 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+734, 1707, 50, 'ÜRGÜP'
+);
+
+/* INSERT QUERY NO: 735 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+735, 1543, 50, 'MERKEZ'
+);
+
+/* INSERT QUERY NO: 736 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+736, 1485, 50, 'KOZAKLI'
+);
+
+/* INSERT QUERY NO: 737 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+737, 1374, 50, 'HACIBEKTAŞ'
+);
+
+/* INSERT QUERY NO: 738 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+738, 1367, 50, 'GÜLŞEHİR'
+);
+
+/* INSERT QUERY NO: 739 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+739, 1274, 50, 'DERİNKUYU'
+);
+
+/* INSERT QUERY NO: 740 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+740, 1155, 50, 'AVANOS'
+);
+
+/* INSERT QUERY NO: 741 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+741, 1904, 51, 'ÇİFTLİK'
+);
+
+/* INSERT QUERY NO: 742 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+742, 1876, 51, 'ALTUNHİSAR'
+);
+
+/* INSERT QUERY NO: 743 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+743, 1700, 51, 'ULUKIŞLA'
+);
+
+/* INSERT QUERY NO: 744 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+744, 1544, 51, 'MERKEZ'
+);
+
+/* INSERT QUERY NO: 745 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+745, 1225, 51, 'ÇAMARDI'
+);
+
+/* INSERT QUERY NO: 746 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+746, 1201, 51, 'BOR'
+);
+
+/* INSERT QUERY NO: 747 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+747, 99163, 52, 'Ordu-Giresun Havalimanı'
+);
+
+/* INSERT QUERY NO: 748 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+748, 2103, 52, 'ALTINORDU'
+);
+
+/* INSERT QUERY NO: 749 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+749, 1951, 52, 'KABATAŞ'
+);
+
+/* INSERT QUERY NO: 750 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+750, 1950, 52, 'KABADÜZ'
+);
+
+/* INSERT QUERY NO: 751 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+751, 1947, 52, 'İKİZCE'
+);
+
+/* INSERT QUERY NO: 752 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+752, 1900, 52, 'ÇAYBAŞI'
+);
+
+/* INSERT QUERY NO: 753 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+753, 1897, 52, 'ÇATALPINAR'
+);
+
+/* INSERT QUERY NO: 754 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+754, 1891, 52, 'ÇAMAŞ'
+);
+
+/* INSERT QUERY NO: 755 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+755, 1797, 52, 'GÜRGENTEPE'
+);
+
+/* INSERT QUERY NO: 756 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+756, 1795, 52, 'GÜLYALI'
+);
+
+/* INSERT QUERY NO: 757 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+757, 1706, 52, 'ÜNYE'
+);
+
+/* INSERT QUERY NO: 758 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+758, 1696, 52, 'ULUBEY'
+);
+
+/* INSERT QUERY NO: 759 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+759, 1573, 52, 'PERŞEMBE'
+);
+
+/* INSERT QUERY NO: 760 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+760, 1552, 52, 'MERKEZ'
+);
+
+/* INSERT QUERY NO: 761 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+761, 1525, 52, 'MESUDİYE'
+);
+
+/* INSERT QUERY NO: 762 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+762, 1493, 52, 'KUMRU'
+);
+
+/* INSERT QUERY NO: 763 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+763, 1482, 52, 'KORGAN'
+);
+
+/* INSERT QUERY NO: 764 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+764, 1358, 52, 'GÖLKÖY'
+);
+
+/* INSERT QUERY NO: 765 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+765, 1328, 52, 'FATSA'
+);
+
+/* INSERT QUERY NO: 766 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+766, 1158, 52, 'AYBASTI'
+);
+
+/* INSERT QUERY NO: 767 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+767, 1119, 52, 'AKKUŞ'
+);
+
+/* INSERT QUERY NO: 768 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+768, 1949, 53, 'İYİDERE'
+);
+
+/* INSERT QUERY NO: 769 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+769, 1943, 53, 'HEMŞİN'
+);
+
+/* INSERT QUERY NO: 770 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+770, 1908, 53, 'DEREPAZARI'
+);
+
+/* INSERT QUERY NO: 771 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+771, 1796, 53, 'GÜNEYSU'
+);
+
+/* INSERT QUERY NO: 772 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+772, 1586, 53, 'MERKEZ'
+);
+
+/* INSERT QUERY NO: 773 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+773, 1569, 53, 'PAZAR'
+);
+
+/* INSERT QUERY NO: 774 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+774, 1428, 53, 'KALKANDERE'
+);
+
+/* INSERT QUERY NO: 775 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+775, 1405, 53, 'İKİZDERE'
+);
+
+/* INSERT QUERY NO: 776 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+776, 1332, 53, 'FINDIKLI'
+);
+
+/* INSERT QUERY NO: 777 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+777, 1241, 53, 'ÇAYELİ'
+);
+
+/* INSERT QUERY NO: 778 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+778, 1228, 53, 'ÇAMLIHEMŞİN'
+);
+
+/* INSERT QUERY NO: 779 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+779, 1146, 53, 'ARDEŞEN'
+);
+
+/* INSERT QUERY NO: 780 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+780, 2071, 54, 'SERDİVAN'
+);
+
+/* INSERT QUERY NO: 781 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+781, 2070, 54, 'ERENLER'
+);
+
+/* INSERT QUERY NO: 782 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+782, 2069, 54, 'ARİFİYE'
+);
+
+/* INSERT QUERY NO: 783 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+783, 2068, 54, 'ADAPAZARI'
+);
+
+/* INSERT QUERY NO: 784 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+784, 1986, 54, 'SÖĞÜTLÜ'
+);
+
+/* INSERT QUERY NO: 785 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+785, 1955, 54, 'KARAPÜRÇEK'
+);
+
+/* INSERT QUERY NO: 786 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+786, 1925, 54, 'FERİZLİ'
+);
+
+/* INSERT QUERY NO: 787 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+787, 1847, 54, 'TARAKLI'
+);
+
+/* INSERT QUERY NO: 788 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+788, 1833, 54, 'PAMUKOVA'
+);
+
+/* INSERT QUERY NO: 789 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+789, 1818, 54, 'KOCAALİ'
+);
+
+/* INSERT QUERY NO: 790 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+790, 1595, 54, 'SAPANCA'
+);
+
+/* INSERT QUERY NO: 791 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+791, 1589, 54, 'MERKEZ'
+);
+
+/* INSERT QUERY NO: 792 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+792, 1453, 54, 'KAYNARCA'
+);
+
+/* INSERT QUERY NO: 793 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+793, 1442, 54, 'KARASU'
+);
+
+/* INSERT QUERY NO: 794 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+794, 1391, 54, 'HENDEK'
+);
+
+/* INSERT QUERY NO: 795 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+795, 1351, 54, 'GEYVE'
+);
+
+/* INSERT QUERY NO: 796 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+796, 1123, 54, 'AKYAZI'
+);
+
+/* INSERT QUERY NO: 797 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+797, 99127, 55, 'Samsun Çarşamba Havalimanı'
+);
+
+/* INSERT QUERY NO: 798 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+798, 2074, 55, 'İLKADIM'
+);
+
+/* INSERT QUERY NO: 799 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+799, 2073, 55, 'CANİK'
+);
+
+/* INSERT QUERY NO: 800 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+800, 2072, 55, 'ATAKUM'
+);
+
+/* INSERT QUERY NO: 801 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+801, 1993, 55, 'YAKAKENT'
+);
+
+/* INSERT QUERY NO: 802 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+802, 1879, 55, 'AYVACIK'
+);
+
+/* INSERT QUERY NO: 803 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+803, 1849, 55, 'TEKKEKÖY'
+);
+
+/* INSERT QUERY NO: 804 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+804, 1838, 55, 'SALIPAZARI'
+);
+
+/* INSERT QUERY NO: 805 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+805, 1830, 55, '19 MAYIS'
+);
+
+/* INSERT QUERY NO: 806 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+806, 1763, 55, 'ASARCIK'
+);
+
+/* INSERT QUERY NO: 807 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+807, 1712, 55, 'VEZİRKÖPRÜ'
+);
+
+/* INSERT QUERY NO: 808 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+808, 1676, 55, 'TERME'
+);
+
+/* INSERT QUERY NO: 809 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+809, 1593, 55, 'MERKEZ'
+);
+
+/* INSERT QUERY NO: 810 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+810, 1501, 55, 'LADİK'
+);
+
+/* INSERT QUERY NO: 811 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+811, 1452, 55, 'KAVAK'
+);
+
+/* INSERT QUERY NO: 812 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+812, 1386, 55, 'HAVZA'
+);
+
+/* INSERT QUERY NO: 813 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+813, 1234, 55, 'ÇARŞAMBA'
+);
+
+/* INSERT QUERY NO: 814 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+814, 1164, 55, 'BAFRA'
+);
+
+/* INSERT QUERY NO: 815 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+815, 1125, 55, 'ALAÇAM'
+);
+
+/* INSERT QUERY NO: 816 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+816, 99115, 56, 'Siirt Havalimanı'
+);
+
+/* INSERT QUERY NO: 817 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+817, 1878, 56, 'TİLLO'
+);
+
+/* INSERT QUERY NO: 818 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+818, 1662, 56, 'ŞİRVAN'
+);
+
+/* INSERT QUERY NO: 819 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+819, 1620, 56, 'MERKEZ'
+);
+
+/* INSERT QUERY NO: 820 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+820, 1575, 56, 'PERVARİ'
+);
+
+/* INSERT QUERY NO: 821 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+821, 1495, 56, 'KURTALAN'
+);
+
+/* INSERT QUERY NO: 822 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+822, 1317, 56, 'ERUH'
+);
+
+/* INSERT QUERY NO: 823 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+823, 1179, 56, 'BAYKAN'
+);
+
+/* INSERT QUERY NO: 824 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+824, 99116, 57, 'Sinop Havalimanı'
+);
+
+/* INSERT QUERY NO: 825 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+825, 1981, 57, 'SARAYDÜZÜ'
+);
+
+/* INSERT QUERY NO: 826 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+826, 1910, 57, 'DİKMEN'
+);
+
+/* INSERT QUERY NO: 827 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+827, 1693, 57, 'TÜRKELİ'
+);
+
+/* INSERT QUERY NO: 828 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+828, 1627, 57, 'MERKEZ'
+);
+
+/* INSERT QUERY NO: 829 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+829, 1349, 57, 'GERZE'
+);
+
+/* INSERT QUERY NO: 830 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+830, 1314, 57, 'ERFELEK'
+);
+
+/* INSERT QUERY NO: 831 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+831, 1290, 57, 'DURAĞAN'
+);
+
+/* INSERT QUERY NO: 832 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+832, 1204, 57, 'BOYABAT'
+);
+
+/* INSERT QUERY NO: 833 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+833, 1156, 57, 'AYANCIK'
+);
+
+/* INSERT QUERY NO: 834 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+834, 99117, 58, 'Sivas Nuri Demirağ Havalimanı'
+);
+
+/* INSERT QUERY NO: 835 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+835, 1991, 58, 'ULAŞ'
+);
+
+/* INSERT QUERY NO: 836 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+836, 1927, 58, 'GÖLOVA'
+);
+
+/* INSERT QUERY NO: 837 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+837, 1913, 58, 'DOĞANŞAR'
+);
+
+/* INSERT QUERY NO: 838 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+838, 1875, 58, 'ALTINYAYLA'
+);
+
+/* INSERT QUERY NO: 839 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+839, 1870, 58, 'AKINCILAR'
+);
+
+/* INSERT QUERY NO: 840 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+840, 1738, 58, 'ZARA'
+);
+
+/* INSERT QUERY NO: 841 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+841, 1731, 58, 'YILDIZELİ'
+);
+
+/* INSERT QUERY NO: 842 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+842, 1650, 58, 'ŞARKIŞLA'
+);
+
+/* INSERT QUERY NO: 843 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+843, 1646, 58, 'SUŞEHRİ'
+);
+
+/* INSERT QUERY NO: 844 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+844, 1628, 58, 'MERKEZ'
+);
+
+/* INSERT QUERY NO: 845 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+845, 1484, 58, 'KOYULHİSAR'
+);
+
+/* INSERT QUERY NO: 846 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+846, 1431, 58, 'KANGAL'
+);
+
+/* INSERT QUERY NO: 847 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+847, 1407, 58, 'İMRANLI'
+);
+
+/* INSERT QUERY NO: 848 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+848, 1376, 58, 'HAFİK'
+);
+
+/* INSERT QUERY NO: 849 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+849, 1373, 58, 'GÜRÜN'
+);
+
+/* INSERT QUERY NO: 850 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+850, 1342, 58, 'GEMEREK'
+);
+
+/* INSERT QUERY NO: 851 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+851, 1282, 58, 'DİVRİĞİ'
+);
+
+/* INSERT QUERY NO: 852 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+852, 99119, 59, 'Tekirdağ Çorlu Havalimanı'
+);
+
+/* INSERT QUERY NO: 853 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+853, 2096, 59, 'SÜLEYMANPAŞA'
+);
+
+/* INSERT QUERY NO: 854 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+854, 2095, 59, 'KAPAKLI'
+);
+
+/* INSERT QUERY NO: 855 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+855, 2094, 59, 'ERGENE'
+);
+
+/* INSERT QUERY NO: 856 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+856, 1825, 59, 'MARMARAEREĞLİSİ'
+);
+
+/* INSERT QUERY NO: 857 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+857, 1673, 59, 'MERKEZ'
+);
+
+/* INSERT QUERY NO: 858 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+858, 1652, 59, 'ŞARKÖY'
+);
+
+/* INSERT QUERY NO: 859 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+859, 1596, 59, 'SARAY'
+);
+
+/* INSERT QUERY NO: 860 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+860, 1538, 59, 'MURATLI'
+);
+
+/* INSERT QUERY NO: 861 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+861, 1511, 59, 'MALKARA'
+);
+
+/* INSERT QUERY NO: 862 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+862, 1388, 59, 'HAYRABOLU'
+);
+
+/* INSERT QUERY NO: 863 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+863, 1258, 59, 'ÇORLU'
+);
+
+/* INSERT QUERY NO: 864 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+864, 1250, 59, 'ÇERKEZKÖY'
+);
+
+/* INSERT QUERY NO: 865 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+865, 99169, 60, 'Tokat Havalimanı'
+);
+
+/* INSERT QUERY NO: 866 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+866, 1987, 60, 'SULUSARAY'
+);
+
+/* INSERT QUERY NO: 867 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+867, 1883, 60, 'BAŞÇİFTLİK'
+);
+
+/* INSERT QUERY NO: 868 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+868, 1858, 60, 'YEŞİLYURT'
+);
+
+/* INSERT QUERY NO: 869 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+869, 1834, 60, 'PAZAR'
+);
+
+/* INSERT QUERY NO: 870 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+870, 1740, 60, 'ZİLE'
+);
+
+/* INSERT QUERY NO: 871 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+871, 1690, 60, 'TURHAL'
+);
+
+/* INSERT QUERY NO: 872 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+872, 1679, 60, 'MERKEZ'
+);
+
+/* INSERT QUERY NO: 873 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+873, 1584, 60, 'REŞADİYE'
+);
+
+/* INSERT QUERY NO: 874 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+874, 1545, 60, 'NİKSAR'
+);
+
+/* INSERT QUERY NO: 875 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+875, 1308, 60, 'ERBAA'
+);
+
+/* INSERT QUERY NO: 876 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+876, 1151, 60, 'ARTOVA'
+);
+
+/* INSERT QUERY NO: 877 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+877, 1129, 60, 'ALMUS'
+);
+
+/* INSERT QUERY NO: 878 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+878, 99152, 61, 'Trabzon Havalimanı'
+);
+
+/* INSERT QUERY NO: 879 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+879, 2097, 61, 'ORTAHİSAR'
+);
+
+/* INSERT QUERY NO: 880 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+880, 1966, 61, 'KÖPRÜBAŞI'
+);
+
+/* INSERT QUERY NO: 881 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+881, 1942, 61, 'HAYRAT'
+);
+
+/* INSERT QUERY NO: 882 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+882, 1917, 61, 'DÜZKÖY'
+);
+
+/* INSERT QUERY NO: 883 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+883, 1909, 61, 'DERNEKPAZARI'
+);
+
+/* INSERT QUERY NO: 884 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+884, 1896, 61, 'ÇARŞIBAŞI'
+);
+
+/* INSERT QUERY NO: 885 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+885, 1842, 61, 'ŞALPAZARI'
+);
+
+/* INSERT QUERY NO: 886 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+886, 1775, 61, 'BEŞİKDÜZÜ'
+);
+
+/* INSERT QUERY NO: 887 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+887, 1732, 61, 'YOMRA'
+);
+
+/* INSERT QUERY NO: 888 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+888, 1709, 61, 'VAKFIKEBİR'
+);
+
+/* INSERT QUERY NO: 889 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+889, 1686, 61, 'MERKEZ'
+);
+
+/* INSERT QUERY NO: 890 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+890, 1681, 61, 'TONYA'
+);
+
+/* INSERT QUERY NO: 891 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+891, 1647, 61, 'SÜRMENE'
+);
+
+/* INSERT QUERY NO: 892 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+892, 1548, 61, 'OF'
+);
+
+/* INSERT QUERY NO: 893 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+893, 1507, 61, 'MAÇKA'
+);
+
+/* INSERT QUERY NO: 894 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+894, 1244, 61, 'ÇAYKARA'
+);
+
+/* INSERT QUERY NO: 895 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+895, 1150, 61, 'ARSİN'
+);
+
+/* INSERT QUERY NO: 896 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+896, 1141, 61, 'ARAKLI'
+);
+
+/* INSERT QUERY NO: 897 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+897, 1113, 61, 'AKÇAABAT'
+);
+
+/* INSERT QUERY NO: 898 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+898, 1688, 62, 'MERKEZ'
+);
+
+/* INSERT QUERY NO: 899 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+899, 1581, 62, 'PÜLÜMÜR'
+);
+
+/* INSERT QUERY NO: 900 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+900, 1574, 62, 'PERTEK'
+);
+
+/* INSERT QUERY NO: 901 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+901, 1562, 62, 'OVACIK'
+);
+
+/* INSERT QUERY NO: 902 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+902, 1541, 62, 'NAZIMİYE'
+);
+
+/* INSERT QUERY NO: 903 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+903, 1518, 62, 'MAZGİRT'
+);
+
+/* INSERT QUERY NO: 904 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+904, 1397, 62, 'HOZAT'
+);
+
+/* INSERT QUERY NO: 905 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+905, 1247, 62, 'ÇEMİŞGEZEK'
+);
+
+/* INSERT QUERY NO: 906 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+906, 99138, 63, 'Şanlıurfa GAP Havalimanı'
+);
+
+/* INSERT QUERY NO: 907 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+907, 2093, 63, 'KARAKÖPRÜ'
+);
+
+/* INSERT QUERY NO: 908 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+908, 2092, 63, 'HALİLİYE'
+);
+
+/* INSERT QUERY NO: 909 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+909, 2091, 63, 'EYYÜBİYE'
+);
+
+/* INSERT QUERY NO: 910 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+910, 1800, 63, 'HARRAN'
+);
+
+/* INSERT QUERY NO: 911 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+911, 1713, 63, 'VİRANŞEHİR'
+);
+
+/* INSERT QUERY NO: 912 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+912, 1702, 63, 'MERKEZ'
+);
+
+/* INSERT QUERY NO: 913 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+913, 1643, 63, 'SURUÇ'
+);
+
+/* INSERT QUERY NO: 914 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+914, 1630, 63, 'SİVEREK'
+);
+
+/* INSERT QUERY NO: 915 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+915, 1393, 63, 'HİLVAN'
+);
+
+/* INSERT QUERY NO: 916 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+916, 1378, 63, 'HALFETİ'
+);
+
+/* INSERT QUERY NO: 917 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+917, 1220, 63, 'CEYLANPINAR'
+);
+
+/* INSERT QUERY NO: 918 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+918, 1209, 63, 'BOZOVA'
+);
+
+/* INSERT QUERY NO: 919 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+919, 1194, 63, 'BİRECİK'
+);
+
+/* INSERT QUERY NO: 920 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+920, 1115, 63, 'AKÇAKALE'
+);
+
+/* INSERT QUERY NO: 921 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+921, 99120, 64, 'Uşak Havalimanı'
+);
+
+/* INSERT QUERY NO: 922 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+922, 1704, 64, 'MERKEZ'
+);
+
+/* INSERT QUERY NO: 923 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+923, 1697, 64, 'ULUBEY'
+);
+
+/* INSERT QUERY NO: 924 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+924, 1629, 64, 'SİVASLI'
+);
+
+/* INSERT QUERY NO: 925 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+925, 1436, 64, 'KARAHALLI'
+);
+
+/* INSERT QUERY NO: 926 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+926, 1323, 64, 'EŞME'
+);
+
+/* INSERT QUERY NO: 927 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+927, 1170, 64, 'BANAZ'
+);
+
+/* INSERT QUERY NO: 928 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+928, 99146, 65, 'Ferit Melen Havalimanı'
+);
+
+/* INSERT QUERY NO: 929 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+929, 2099, 65, 'TUŞBA'
+);
+
+/* INSERT QUERY NO: 930 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+930, 2098, 65, 'İPEKYOLU'
+);
+
+/* INSERT QUERY NO: 931 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+931, 1980, 65, 'SARAY'
+);
+
+/* INSERT QUERY NO: 932 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+932, 1918, 65, 'EDREMİT'
+);
+
+/* INSERT QUERY NO: 933 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+933, 1786, 65, 'ÇALDIRAN'
+);
+
+/* INSERT QUERY NO: 934 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+934, 1770, 65, 'BAHÇESARAY'
+);
+
+/* INSERT QUERY NO: 935 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+935, 1710, 65, 'MERKEZ'
+);
+
+/* INSERT QUERY NO: 936 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+936, 1565, 65, 'ÖZALP'
+);
+
+/* INSERT QUERY NO: 937 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+937, 1533, 65, 'MURADİYE'
+);
+
+/* INSERT QUERY NO: 938 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+938, 1372, 65, 'GÜRPINAR'
+);
+
+/* INSERT QUERY NO: 939 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+939, 1350, 65, 'GEVAŞ'
+);
+
+/* INSERT QUERY NO: 940 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+940, 1309, 65, 'ERCİŞ'
+);
+
+/* INSERT QUERY NO: 941 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+941, 1236, 65, 'ÇATAK'
+);
+
+/* INSERT QUERY NO: 942 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+942, 1175, 65, 'BAŞKALE'
+);
+
+/* INSERT QUERY NO: 943 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+943, 1998, 66, 'YENİFAKILI'
+);
+
+/* INSERT QUERY NO: 944 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+944, 1982, 66, 'SARAYKENT'
+);
+
+/* INSERT QUERY NO: 945 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+945, 1952, 66, 'KADIŞEHRİ'
+);
+
+/* INSERT QUERY NO: 946 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+946, 1895, 66, 'ÇANDIR'
+);
+
+/* INSERT QUERY NO: 947 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+947, 1877, 66, 'AYDINCIK'
+);
+
+/* INSERT QUERY NO: 948 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+948, 1733, 66, 'MERKEZ'
+);
+
+/* INSERT QUERY NO: 949 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+949, 1726, 66, 'YERKÖY'
+);
+
+/* INSERT QUERY NO: 950 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+950, 1655, 66, 'ŞEFAATLİ'
+);
+
+/* INSERT QUERY NO: 951 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+951, 1635, 66, 'SORGUN'
+);
+
+/* INSERT QUERY NO: 952 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+952, 1602, 66, 'SARIKAYA'
+);
+
+/* INSERT QUERY NO: 953 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+953, 1245, 66, 'ÇEKEREK'
+);
+
+/* INSERT QUERY NO: 954 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+954, 1242, 66, 'ÇAYIRALAN'
+);
+
+/* INSERT QUERY NO: 955 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+955, 1198, 66, 'BOĞAZLIYAN'
+);
+
+/* INSERT QUERY NO: 956 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+956, 1117, 66, 'AKDAĞMADENİ'
+);
+
+/* INSERT QUERY NO: 957 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+957, 99147, 67, 'Zonguldak Havalimanı'
+);
+
+/* INSERT QUERY NO: 958 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+958, 2101, 67, 'KOZLU'
+);
+
+/* INSERT QUERY NO: 959 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+959, 2100, 67, 'KİLİMLİ'
+);
+
+/* INSERT QUERY NO: 960 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+960, 1926, 67, 'GÖKÇEBEY'
+);
+
+/* INSERT QUERY NO: 961 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+961, 1758, 67, 'ALAPLI'
+);
+
+/* INSERT QUERY NO: 962 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+962, 1741, 67, 'MERKEZ'
+);
+
+/* INSERT QUERY NO: 963 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+963, 1313, 67, 'EREĞLİ'
+);
+
+/* INSERT QUERY NO: 964 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+964, 1276, 67, 'DEVREK'
+);
+
+/* INSERT QUERY NO: 965 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+965, 1240, 67, 'ÇAYCUMA'
+);
+
+/* INSERT QUERY NO: 966 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+966, 2106, 68, 'SULTANHANI'
+);
+
+/* INSERT QUERY NO: 967 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+967, 1932, 68, 'GÜLAĞAÇ'
+);
+
+/* INSERT QUERY NO: 968 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+968, 1921, 68, 'ESKİL'
+);
+
+/* INSERT QUERY NO: 969 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+969, 1866, 68, 'SARIYAHŞİ'
+);
+
+/* INSERT QUERY NO: 970 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+970, 1861, 68, 'GÜZELYURT'
+);
+
+/* INSERT QUERY NO: 971 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+971, 1860, 68, 'AĞAÇÖREN'
+);
+
+/* INSERT QUERY NO: 972 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+972, 1557, 68, 'ORTAKÖY'
+);
+
+/* INSERT QUERY NO: 973 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+973, 1120, 68, 'MERKEZ'
+);
+
+/* INSERT QUERY NO: 974 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+974, 1788, 69, 'DEMİRÖZÜ'
+);
+
+/* INSERT QUERY NO: 975 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+975, 1767, 69, 'AYDINTEPE'
+);
+
+/* INSERT QUERY NO: 976 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+976, 1176, 69, 'MERKEZ'
+);
+
+/* INSERT QUERY NO: 977 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+977, 1983, 70, 'SARIVELİLER'
+);
+
+/* INSERT QUERY NO: 978 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+978, 1884, 70, 'BAŞYAYLA'
+);
+
+/* INSERT QUERY NO: 979 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+979, 1862, 70, 'KAZIMKARABEKİR'
+);
+
+/* INSERT QUERY NO: 980 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+980, 1768, 70, 'AYRANCI'
+);
+
+/* INSERT QUERY NO: 981 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+981, 1439, 70, 'MERKEZ'
+);
+
+/* INSERT QUERY NO: 982 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+982, 1316, 70, 'ERMENEK'
+);
+
+/* INSERT QUERY NO: 983 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+983, 1992, 71, 'YAHŞİHAN'
+);
+
+/* INSERT QUERY NO: 984 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+984, 1954, 71, 'KARAKEÇİLİ'
+);
+
+/* INSERT QUERY NO: 985 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+985, 1901, 71, 'ÇELEBİ'
+);
+
+/* INSERT QUERY NO: 986 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+986, 1882, 71, 'BALIŞEYH'
+);
+
+/* INSERT QUERY NO: 987 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+987, 1880, 71, 'BAHŞİLİ'
+);
+
+/* INSERT QUERY NO: 988 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+988, 1638, 71, 'SULAKYURT'
+);
+
+/* INSERT QUERY NO: 989 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+989, 1469, 71, 'MERKEZ'
+);
+
+/* INSERT QUERY NO: 990 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+990, 1463, 71, 'KESKİN'
+);
+
+/* INSERT QUERY NO: 991 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+991, 1268, 71, 'DELİCE'
+);
+
+/* INSERT QUERY NO: 992 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+992, 99108, 72, 'Batman Havalimanı'
+);
+
+/* INSERT QUERY NO: 993 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+993, 1941, 72, 'HASANKEYF'
+);
+
+/* INSERT QUERY NO: 994 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+994, 1607, 72, 'SASON'
+);
+
+/* INSERT QUERY NO: 995 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+995, 1487, 72, 'KOZLUK'
+);
+
+/* INSERT QUERY NO: 996 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+996, 1345, 72, 'GERCÜŞ'
+);
+
+/* INSERT QUERY NO: 997 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+997, 1184, 72, 'BEŞİRİ'
+);
+
+/* INSERT QUERY NO: 998 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+998, 1174, 72, 'MERKEZ'
+);
+
+/* INSERT QUERY NO: 999 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+999, 99118, 73, 'Şırnak Şerafettin Elçi Havalimanı'
+);
+
+/* INSERT QUERY NO: 1000 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+1000, 1931, 73, 'GÜÇLÜKONAK'
+);
+
+/* INSERT QUERY NO: 1001 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+1001, 1698, 73, 'ULUDERE'
+);
+
+/* INSERT QUERY NO: 1002 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+1002, 1661, 73, 'MERKEZ'
+);
+
+/* INSERT QUERY NO: 1003 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+1003, 1623, 73, 'SİLOPİ'
+);
+
+/* INSERT QUERY NO: 1004 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+1004, 1403, 73, 'İDİL'
+);
+
+/* INSERT QUERY NO: 1005 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+1005, 1223, 73, 'CİZRE'
+);
+
+/* INSERT QUERY NO: 1006 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+1006, 1189, 73, 'BEYTÜŞŞEBAP'
+);
+
+/* INSERT QUERY NO: 1007 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+1007, 1761, 74, 'AMASRA'
+);
+
+/* INSERT QUERY NO: 1008 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+1008, 1701, 74, 'ULUS'
+);
+
+/* INSERT QUERY NO: 1009 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+1009, 1496, 74, 'KURUCAŞİLE'
+);
+
+/* INSERT QUERY NO: 1010 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+1010, 1172, 74, 'MERKEZ'
+);
+
+/* INSERT QUERY NO: 1011 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+1011, 2008, 75, 'DAMAL'
+);
+
+/* INSERT QUERY NO: 1012 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+1012, 1579, 75, 'POSOF'
+);
+
+/* INSERT QUERY NO: 1013 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+1013, 1380, 75, 'HANAK'
+);
+
+/* INSERT QUERY NO: 1014 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+1014, 1356, 75, 'GÖLE'
+);
+
+/* INSERT QUERY NO: 1015 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+1015, 1252, 75, 'ÇILDIR'
+);
+
+/* INSERT QUERY NO: 1016 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+1016, 1144, 75, 'MERKEZ'
+);
+
+/* INSERT QUERY NO: 1017 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+1017, 99111, 76, 'Iğdır Havalimanı'
+);
+
+/* INSERT QUERY NO: 1018 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+1018, 2011, 76, 'KARAKOYUNLU'
+);
+
+/* INSERT QUERY NO: 1019 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+1019, 1692, 76, 'TUZLUCA'
+);
+
+/* INSERT QUERY NO: 1020 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+1020, 1398, 76, 'MERKEZ'
+);
+
+/* INSERT QUERY NO: 1021 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+1021, 1142, 76, 'ARALIK'
+);
+
+/* INSERT QUERY NO: 1022 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+1022, 2026, 77, 'TERMAL'
+);
+
+/* INSERT QUERY NO: 1023 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+1023, 2022, 77, 'ÇİFTLİKKÖY'
+);
+
+/* INSERT QUERY NO: 1024 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+1024, 2021, 77, 'ÇINARCIK'
+);
+
+/* INSERT QUERY NO: 1025 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+1025, 2020, 77, 'ARMUTLU'
+);
+
+/* INSERT QUERY NO: 1026 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+1026, 2019, 77, 'ALTINOVA'
+);
+
+/* INSERT QUERY NO: 1027 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+1027, 1716, 77, 'MERKEZ'
+);
+
+/* INSERT QUERY NO: 1028 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+1028, 1856, 78, 'YENİCE'
+);
+
+/* INSERT QUERY NO: 1029 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+1029, 1587, 78, 'SAFRANBOLU'
+);
+
+/* INSERT QUERY NO: 1030 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+1030, 1561, 78, 'OVACIK'
+);
+
+/* INSERT QUERY NO: 1031 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+1031, 1433, 78, 'MERKEZ'
+);
+
+/* INSERT QUERY NO: 1032 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+1032, 1321, 78, 'ESKİPAZAR'
+);
+
+/* INSERT QUERY NO: 1033 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+1033, 1296, 78, 'EFLANİ'
+);
+
+/* INSERT QUERY NO: 1034 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+1034, 2025, 79, 'POLATELİ'
+);
+
+/* INSERT QUERY NO: 1035 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+1035, 2024, 79, 'MUSABEYLİ'
+);
+
+/* INSERT QUERY NO: 1036 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+1036, 2023, 79, 'ELBEYLİ'
+);
+
+/* INSERT QUERY NO: 1037 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+1037, 1476, 79, 'MERKEZ'
+);
+
+/* INSERT QUERY NO: 1038 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+1038, 2029, 80, 'TOPRAKKALE'
+);
+
+/* INSERT QUERY NO: 1039 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+1039, 2028, 80, 'SUMBAS'
+);
+
+/* INSERT QUERY NO: 1040 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+1040, 2027, 80, 'HASANBEYLİ'
+);
+
+/* INSERT QUERY NO: 1041 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+1041, 1743, 80, 'DÜZİÇİ'
+);
+
+/* INSERT QUERY NO: 1042 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+1042, 1560, 80, 'MERKEZ'
+);
+
+/* INSERT QUERY NO: 1043 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+1043, 1423, 80, 'KADİRLİ'
+);
+
+/* INSERT QUERY NO: 1044 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+1044, 1165, 80, 'BAHÇE'
+);
+
+/* INSERT QUERY NO: 1045 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+1045, 2031, 81, 'KAYNAŞLI'
+);
+
+/* INSERT QUERY NO: 1046 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+1046, 2017, 81, 'GÜMÜŞOVA'
+);
+
+/* INSERT QUERY NO: 1047 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+1047, 1905, 81, 'ÇİLİMLİ'
+);
+
+/* INSERT QUERY NO: 1048 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+1048, 1794, 81, 'GÖLYAKA'
+);
+
+/* INSERT QUERY NO: 1049 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+1049, 1784, 81, 'CUMAYERİ'
+);
+
+/* INSERT QUERY NO: 1050 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+1050, 1730, 81, 'YIĞILCA'
+);
+
+/* INSERT QUERY NO: 1051 */
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+1051, 1292, 81, 'MERKEZ'
+);
+
+INSERT INTO tez.ilce(ilce_id, ilce_mernis_kod, il_id, ilce)
+VALUES
+(
+1052, 1116, 81, 'AKÇAKOCA'
+);
+
+
+/* Business Area */
+
+INSERT INTO `tez`.`business_area` (`id`, `business_area`) VALUES ('1', 'Arge');
+INSERT INTO `tez`.`business_area` (`id`, `business_area`) VALUES ('2', 'Pazarlama');
+INSERT INTO `tez`.`business_area` (`id`, `business_area`) VALUES ('3', 'Bilgi İşlem');
+INSERT INTO `tez`.`business_area` (`id`, `business_area`) VALUES ('4', 'Bilgi Teknolojileri');
+INSERT INTO `tez`.`business_area` (`id`, `business_area`) VALUES ('5', 'Mimarlık');
+INSERT INTO `tez`.`business_area` (`id`, `business_area`) VALUES ('6', 'Mühendislik');
+INSERT INTO `tez`.`business_area` (`id`, `business_area`) VALUES ('7', 'Sağlık');
+
+/* Company Sector */
+
+INSERT INTO `tez`.`company_sector` (`id`, `company_sector`) VALUES ('1', 'Tekstil');
+INSERT INTO `tez`.`company_sector` (`id`, `company_sector`) VALUES ('2', 'Hizmet');
+INSERT INTO `tez`.`company_sector` (`id`, `company_sector`) VALUES ('3', 'Gıda');
+INSERT INTO `tez`.`company_sector` (`id`, `company_sector`) VALUES ('4', 'Sağlık');
+INSERT INTO `tez`.`company_sector` (`id`, `company_sector`) VALUES ('5', 'Yapı');
+INSERT INTO `tez`.`company_sector` (`id`, `company_sector`) VALUES ('6', 'Eğitim');
+INSERT INTO `tez`.`company_sector` (`id`, `company_sector`) VALUES ('7', 'Turizm');
+INSERT INTO `tez`.`company_sector` (`id`, `company_sector`) VALUES ('8', 'Otomotiv');
+INSERT INTO `tez`.`company_sector` (`id`, `company_sector`) VALUES ('9', 'Bilişim');
+INSERT INTO `tez`.`company_sector` (`id`, `company_sector`) VALUES ('10', 'Finans-Ekonomi');

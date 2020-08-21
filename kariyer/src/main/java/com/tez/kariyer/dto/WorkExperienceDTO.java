@@ -1,45 +1,29 @@
-package com.tez.kariyer.model.entity;
+package com.tez.kariyer.dto;
 
 import com.tez.kariyer.model.entity.address.Ulke;
 import com.tez.kariyer.model.entity.parameterTable.CompanySector;
-import com.tez.kariyer.model.entity.parameterTable.Position;
 import com.tez.kariyer.model.entity.parameterTable.WayOfWork;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import javax.persistence.*;
 import java.util.Date;
 
-@Entity
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class WorkExperience {
+public class WorkExperienceDTO {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
 
     private String firmsName;
-    @OneToOne
-    private Position position;
-
+    private String  position;
     private Date startDate;
     private Date finishDate;
     private Byte workStatus;
-
-    @OneToOne
     protected CompanySector companySector;
-
-    @OneToOne
     protected WayOfWork wayOfWork;
-
-    @OneToOne
-    protected Ulke ulke;
-    @OneToOne
-    protected User user;
-
+    protected Ulke count;
     private String jopDescription;
 
 }

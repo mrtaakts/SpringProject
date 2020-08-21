@@ -222,7 +222,7 @@
             <!--start overlay-->
             <div class="overlay toggle-menu"></div>
             <!--end overlay-->
-        </div><!-- End container-fluid-->
+        </div><!-- End container-fluid-->  <!-- İletişim Bilgileri -->
         <div class="row">
             <div class="col-lg-12">
                 <div class="card">
@@ -324,7 +324,154 @@
             <!--start overlay-->
             <div class="overlay toggle-menu"></div>
             <!--end overlay-->
-        </div><!-- End container-fluid-->
+        </div><!-- End container-fluid-->  <!-- Özel Bilgiler -->
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="card">
+                    <div class="card-header gradient-deepblue text-white  text-uppercase">İş Deneyimi</div>
+                    <div class="ribbon-content"></div>
+                    <div class="card-body">
+                        <form id="getWorkExperience">
+                            <div className="form-group">
+                                <div className="container">
+                                    <div className="row">
+
+                                        <div className="col-sm">
+                                            <label for="firmAd" class="">Firma Adı </label>
+
+                                            <input type="text" class="form-control"
+                                                   id="firmAd" name="firmAd"
+                                                   placeholder="Firma Adı Giriniz" required>
+
+                                        </div>
+                                        <div className="col-sm">
+                                            <label for="position" class="">Pozisyon</label>
+                                            <select class="form-control" id="position">
+                                                <option disabled="disabled" selected="selected"> ----- Pozisyon
+                                                    Seçiniz -----
+                                                </option>
+                                                <option th:each="city : ${citys}" th:value="${city.id}"
+                                                        th:text="${city.il}"
+                                                ></option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-4 form-group">
+                                            <label>Başlangıç Tarihi</label>
+                                            <span class="fa fa-calendar"></span>
+                                            <input type="text" id="autoclose-datepickerStart" name="startDate"
+                                                   class="form-control" >
+
+                                        </div>
+                                        <div class="col-sm-4 form-group" id="hidden">
+                                            <label>Bitiş Tarihi</label>
+                                            <span class="fa fa-calendar"></span>
+                                            <input type="text" id="autoclose-datepickerFinish" name="finishDate"
+                                                   class="form-control" >
+
+                                        </div>
+                                        <div class="col-sm-2 form-group">
+                                            <br>
+                                            <input type="checkbox" id="myCheck" onclick="hiddenFinishDate()">
+                                            <label for="inline-radio-success">Hala Çalışıyorum</label>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm"-6>
+                                            <label for="companySector" class="">Firma Sektörü</label>
+                                            <select class="form-control" id="companySector">
+                                                <option disabled="disabled" selected="selected"> ----- Firma Sektörü
+                                                    Seçiniz -----
+                                                </option>
+                                                <option th:each="city : ${citys}" th:value="${city.id}"
+                                                        th:text="${city.il}"
+                                                ></option>
+                                            </select>
+                                        </div>
+                                        <div class="col-sm"-6>
+                                            <label>Doğum Tarİhİ</label>
+                                            <span class="fa fa-calendar"></span>
+                                            <input type="text" id="businessarea" name="businessarea"
+                                                   class="form-control" placeholder="Varsa Doğum Tarihi Alanını Giriniz">
+                                        </div>
+                                    </div>
+                                    <div className="row">
+                                        <div className="col-sm-6">
+                                            <label for="telefon" class="">Çalışma Şekli </label>
+
+                                            <select class="form-control" id="companySector">
+                                                <option disabled="disabled" selected="selected"> ----- Çalışma Şekli
+                                                    Seçiniz -----
+                                                </option>
+                                                <option th:each="city : ${citys}" th:value="${city.id}"
+                                                        th:text="${city.il}"
+                                                ></option>
+                                            </select>
+                                        </div>
+
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-group" th:if="${personel == null}">
+                                                <label for="selectCity" class="">İl</label>
+                                                <select class="form-control" id="selectCity">
+                                                    <option disabled="disabled" selected="selected"> ----- Şehir
+                                                        Seçiniz -----
+                                                    </option>
+                                                    <option th:each="city : ${citys}" th:value="${city.id}"
+                                                            th:text="${city.il}"
+                                                    ></option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group" th:if="${personel == null}">
+                                                <label for="selectDistrict" style="text-align: center" class="">İlçe</label>
+                                                <select class="form-control"
+                                                        id="selectDistrict">
+                                                    <option disabled="disabled" selected="selected"> ----- İlçe
+                                                        Seçiniz -----
+                                                    </option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div className="row">
+                                        <div className="col-sm-6">
+                                            <label for="web" class="">Web Sayfam </label>
+
+                                            <input type="text" class="form-control"
+                                                   id="web" name="web"
+                                                   placeholder="Web Sayfanızı giriniz" required>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                            <br>
+
+                            <button type="submit" class="btn btn-success"><i
+                                    class="fa fa-check-square-o"></i>
+                                Kaydet
+                            </button>
+                            <a href="/anasayfa" class="btn btn-danger"><i
+                                    class="zmdi zmdi-block-alt"></i>
+                                İptal
+
+                            </a>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <!--start overlay-->
+            <div class="overlay toggle-menu"></div>
+            <!--end overlay-->
+        </div>
     </div><!--End content-wrapper-->
     <!--Start Back To Top Button-->
     <a href="javaScript:void(0);" class="back-to-top"><i class="fa fa-angle-double-up"></i> </a>
@@ -371,39 +518,19 @@
             format: 'dd/mm/yyyy',
             language: 'tr',
         });
+        $('#autoclose-datepickerStart').datepicker({
+            format: 'dd/mm/yyyy',
+            language: 'tr',
+        });
+        $('#autoclose-datepickerFinish').datepicker({
+            format: 'dd/mm/yyyy',
+            language: 'tr',
+        });
         $('#autoclose-datepicker').datepicker('setDate', today);
         $('#autoclose-datepicker2').datepicker({
             format: 'dd/mm/yyyy',
             language: 'tr',
         });
-    });
-    var ilkkez = 1;
-    $("#autoclose-datepicker").change(function () {
-        var input = $('#autoclose-datepicker').val();
-        var pattern = /^([0-9]{2})\/([0-9]{2})\/([0-9]{4})$/;
-        var sonuc = pattern.test(input);
-        console.log("Sonuc: " + sonuc);
-        if (ilkkez > 2) {
-            console.log("ilk if girdi.");
-            if (sonuc = "true") {
-                console.log("sonuc if girdi.");
-                console.log("Age Checker Worked...")
-                var year = Number(input.substr(6, 4));
-                console.log("Year: " + year);
-                var month = Number(input.substr(3, 2) - 1);
-                console.log("Month: " + month);
-                var day = Number(input.substr(0, 2));
-                console.log("Day: " + day);
-                var age = today.getFullYear() - year;
-                console.log("Age: " + age);
-                personyas = age;
-            } else {
-                inf_msg(msg = "Personel Yaşı Tarihi İstenilen Formatta Giriniz.");
-            }
-        } else {
-            ilkkez = 4;
-            console.log(ilkkez);
-        }
     });
     $("#autoclose-datepicker2").change(function () {
         var input2 = $('#autoclose-datepicker2').val();
@@ -427,6 +554,19 @@
             inf_msg(msg = "Personel Yaşı Tarihi İstenilen Formatta Giriniz.");
         }
     });
+</script>
+<script>
+    function hiddenFinishDate() {
+
+        var checkBox = document.getElementById("myCheck");
+        var text = document.getElementById("hidden");
+        if (checkBox.checked == true){
+            text.style.display = "none";
+        } else {
+            text.style.display = "block";
+        }
+    }
+
 </script>
 
 </body>

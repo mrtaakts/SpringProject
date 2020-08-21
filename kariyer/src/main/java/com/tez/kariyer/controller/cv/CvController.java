@@ -39,12 +39,6 @@ public class CvController {
         return ResponseEntity.ok(responseItem);
     }
 
-    @GetMapping("/mert")
-    public ModelAndView Show(){
-        ModelAndView modelAndView= new ModelAndView("KayitOl");
-        return modelAndView;
-    }
-
     @PostMapping("/ozet")
     @ResponseBody
     public ResponseEntity<ResponseItem> saveSummaryInfo(@RequestBody SummaryInfo summaryInfo){
@@ -54,7 +48,8 @@ public class CvController {
     }
 
     @PostMapping("/deneyim")
-    public ResponseEntity<ResponseItem> saveWorkExperience(@RequestParam WorkExperience workExperience){
+    @ResponseBody
+    public ResponseEntity<ResponseItem> saveWorkExperience(@RequestBody WorkExperience workExperience){
         ResponseItem responseItem = new ResponseItem();
         responseItem = cvService.saveWorkExperience(workExperience);
         return ResponseEntity.ok(responseItem);

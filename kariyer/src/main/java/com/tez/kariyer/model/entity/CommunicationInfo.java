@@ -1,6 +1,6 @@
 package com.tez.kariyer.model.entity;
 
-import com.tez.kariyer.model.entity.address.Country;
+import com.tez.kariyer.model.entity.address.Ulke;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -25,7 +25,7 @@ public class CommunicationInfo {
     private Date birthDate;
     private String phone;
     @OneToOne
-    protected Country country;
+    protected Ulke ulke;
     @OneToOne
     protected User user;
 

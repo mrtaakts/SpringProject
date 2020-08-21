@@ -1,6 +1,6 @@
 package com.tez.kariyer.model.entity;
 
-import com.tez.kariyer.model.entity.address.Country;
+import com.tez.kariyer.model.entity.address.Ulke;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -8,8 +8,6 @@ import lombok.NoArgsConstructor;
 import javax.persistence.*;
 import java.io.Serializable;
 import java.util.Date;
-import java.util.List;
-import java.util.Set;
 
 @Entity
 @Data
@@ -23,7 +21,7 @@ public class UserPrivateInfo implements Serializable {
     private int id;
     private String gender;
     @OneToOne
-    private Country country;
+    private Ulke ulke;
 
 //    @OneToMany(mappedBy = "userPrivateInfo", fetch = FetchType.LAZY,
 //            cascade = CascadeType.PERSIST)

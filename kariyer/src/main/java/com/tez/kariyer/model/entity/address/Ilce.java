@@ -10,15 +10,18 @@ import javax.persistence.*;
 @NoArgsConstructor
 @AllArgsConstructor
 @Data
-public class District {
+public class Ilce {
     @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)
+    @Column(name = "ilce_id")
     private  int id;
-    private String district;
+    private String ilce;
 
     @ManyToOne(fetch = FetchType.LAZY)
-    private City city;
+    @JoinColumn(name = "il_id", nullable = false)
+    private Il city;
 
+    private int ilceMernisKod;
 
 
 }
