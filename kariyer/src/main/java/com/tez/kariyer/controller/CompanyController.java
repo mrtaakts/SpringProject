@@ -65,7 +65,7 @@ public class CompanyController {
 
     @PostMapping("/save")
     @ResponseBody
-    public ResponseItem saveCompany(@RequestBody JobPostDTO jobPostDTO, Model model){
+    public ResponseItem saveCompany(@RequestBody JobPostDTO jobPostDTO){
         ResponseItem responseItem = new ResponseItem();
 
 

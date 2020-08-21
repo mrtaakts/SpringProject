@@ -54,7 +54,7 @@
             <div class="card-header gradient-deepblue text-white  text-uppercase">İş İlanı</div>
             <div class="ribbon-content"></div>
             <div class="card-body">
-                <form>
+                <form id="FormSave">
                     <div className="form-group">
                         <div className="container">
 
@@ -190,6 +190,7 @@
 
                         </div>
                     </div>
+                    <button type="submit" class="btn btn-primary btn-block waves-effect waves-light">İlan Oluştur</button>
                 </form>
 
             </div>
@@ -197,6 +198,32 @@
     </div>
 </div>
 
+
+<!-- Bootstrap core JavaScript-->
+<script th:src="@{/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js}"></script>
+
+
+<!-- Bootstrap core JavaScript-->
+<script th:src="@{/js/jquery.min.js}"></script>
+<script th:src="@{/js/popper.min.js}"></script>
+<script th:src="@{/js/bootstrap.min.js}"></script>
+<script th:src="@{/js/bildirim.js}"></script>
+
+<!-- simplebar js -->
+<script th:src="@{/plugins/simplebar/js/simplebar.js}"></script>
+<!-- sidebar-menu js -->
+<script th:src="@{/js/sidebar-menu.js}"></script>
+
+<!-- Custom scripts -->
+<script th:src="@{/js/app-script.js}"></script>
+
+<script th:src="@{/plugins/notifications/js/lobibox.min.js}"></script>
+<script th:src="@{/plugins/notifications/js/notifications.min.js}"></script>
+<script th:src="@{/plugins/notifications/js/notification-custom-script.js}"></script>
+<!--Form Validatin Script-->
+<script th:src="@{/plugins/jquery-validation/js/jquery.validate.min.js}"></script>
+<script th:src="@{/js/jquery-serialize.min.js}"></script>
+<script type="application/javascript" th:src="@{/js/JobPost.js}"></script>
 
 </body>
 </html>

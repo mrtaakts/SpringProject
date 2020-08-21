@@ -1,7 +1,7 @@
 
 $(document).ready(function () {
 
-    $("#JobPost").validate({
+    $("#FormSave").validate({
 
         submitHandler: function (form) {
             $('#loading-screen').fadeIn();
@@ -27,7 +27,7 @@ $(document).ready(function () {
             $.ajax({
                 type: "POST",
                 contentType: "application/json",
-                url: "/uyelik/save", // buraya kendi path'in gelecek
+                url: "/firma/save", // buraya kendi path'in gelecek
                 data: JSON.stringify(formData),
                 dataType: 'json',
                 cache: false,
