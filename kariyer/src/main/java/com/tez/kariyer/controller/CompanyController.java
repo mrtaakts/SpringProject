@@ -3,15 +3,16 @@ package com.tez.kariyer.controller;
 import com.tez.kariyer.dto.CompanyDTO;
 import com.tez.kariyer.dto.JobAdvertiDTO;
 import com.tez.kariyer.dto.JobPostDTO;
-import com.tez.kariyer.dto.UlkeDTO;
+import com.tez.kariyer.model.entity.WorkExperience;
 import com.tez.kariyer.model.entity.address.Il;
 import com.tez.kariyer.model.entity.address.Ilce;
 import com.tez.kariyer.model.entity.address.Ulke;
-import com.tez.kariyer.model.entity.parameterTable.DriverLicense;
+import com.tez.kariyer.model.entity.parameterTable.*;
+import com.tez.kariyer.model.repository.WorkExperienceRepository;
 import com.tez.kariyer.model.repository.addressRepository.CityRepository;
 import com.tez.kariyer.model.repository.addressRepository.CountryRepository;
 import com.tez.kariyer.model.repository.addressRepository.DistrictRepository;
-import com.tez.kariyer.model.repository.parameterTableRepository.DriverLicenseRepository;
+import com.tez.kariyer.model.repository.parameterTableRepository.*;
 import com.tez.kariyer.response.ResponseItem;
 import com.tez.kariyer.service.JobPostingService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -36,6 +37,16 @@ public class CompanyController {
     DistrictRepository districtRepository;
     @Autowired
     DriverLicenseRepository driverLicenseRepository;
+    @Autowired
+    CompanySectorRepository companySectorRepository;
+    @Autowired
+    BusinessAreaRepository businessAreaRepository;
+    @Autowired
+    PositionRepository positionRepository;
+    @Autowired
+    WayOfWorkRepository wayOfWorkRepository;
+    @Autowired
+    WorkExperienceRepository workExperienceRepository;
 
 
     @GetMapping("/profil")
@@ -50,10 +61,18 @@ public class CompanyController {
             List<Il> city = (List<Il>) cityRepository.findAll();
             List<Ilce> district = (List<Ilce>) districtRepository.findAll();
             List<DriverLicense> driverLicences = (List<DriverLicense>) driverLicenseRepository.findAll();
+            List<CompanySector> companySectors= (List<CompanySector>) companySectorRepository.findAll();
+            List<BusinessArea> businessAreas = (List<BusinessArea>) businessAreaRepository.findAll();
+            List<Position> position = (List<Position>) positionRepository.findAll();
+            List<WayOfWork> wayOfWork= (List<WayOfWork>) wayOfWorkRepository.findAll();
             model.addAttribute("country",country);
             model.addAttribute("city",city);
             model.addAttribute("district",district);
             model.addAttribute("licence",driverLicences);
+            model.addAttribute("companysector",companySectors);
+            model.addAttribute("businessArea",businessAreas);
+            model.addAttribute("position",position);
+            model.addAttribute("wayofwork",wayOfWork);
             return mav;                                        // ilan ekleme sayfası
         }
         @GetMapping("/ilanlarim")

@@ -108,6 +108,8 @@
                                             <option disabled="disabled" selected="selected"> ----- Firma
                                                 Sektörü Seçiniz-----
                                             </option>
+                                            <option th:each="sektor : ${companysector}" th:value="${sektor.id}"
+                                                    th:text="${sektor.companySector}"></option>
 
                                         </select>
                                     </div>
@@ -120,6 +122,8 @@
                                             <option disabled="disabled" selected="selected"> ----- İş
                                                 Alanını Seçiniz -----
                                             </option>
+                                            <option th:each="isAlan : ${businessArea}" th:value="${isAlan.id}"
+                                            th:text="${isAlan.businessArea}"></option>
                                         </select>
                                     </div>
                                 </div>
@@ -133,6 +137,8 @@
                                             <option disabled="disabled" selected="selected"> ----- Pozisyonu
                                                 Seçiniz-----
                                             </option>
+                                            <option th:each="poz : ${position}" th:value="${poz.id}"
+                                                    th:text="${poz.positions}"></option>
 
                                         </select>
                                     </div>
@@ -145,6 +151,8 @@
                                             <option disabled="disabled" selected="selected"> ----- Çalışma
                                                 Şeklini Seçiniz -----
                                             </option>
+                                            <option th:each="calismasekli : ${wayofwork}" th:value="${calismasekli.id}"
+                                                    th:text="${calismasekli.wayOfWork}"></option>
                                         </select>
                                     </div>
                                 </div>
@@ -153,13 +161,8 @@
                             <div class="row">
                                 <div class="col-md-6 nopad">
                                     <div class="form-group">
-                                        <label for="selectWorkExperience" class="">İş Deneyimi</label>
-                                        <select class="form-control" id="selectWorkExperience">
-                                            <option disabled="disabled" selected="selected"> ----- İş Deneyimini
-                                                Seçiniz-----
-                                            </option>
-
-                                        </select>
+                                        <label for="WorkExperience">İş Deneyimi Beklentiniz</label>
+                                        <input type="text" id="WorkExperience" class="form-control"  aria-describedby="emailHelp" placeholder="İş Deneyimi">
                                     </div>
                                 </div>
                                 <div class="col-md-6 nopad">

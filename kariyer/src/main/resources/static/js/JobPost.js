@@ -15,7 +15,7 @@ $(document).ready(function () {
                     "businessArea": $('#selectBusinessArea option:selected').html(),
                     "position": $('#selectPosition option:selected').html(),
                     "wayOfWork": $('#selectWayOfWork option:selected').html(),
-                    "workExperience": $('#selectWorkExperience option:selected').html(),
+                    "workExperience": $("#selectWorkExperience").val(),
                     "DriverLicence": $('#selectDriverLicense option:selected').html(),
                     "Information": $("#information").val()
 
