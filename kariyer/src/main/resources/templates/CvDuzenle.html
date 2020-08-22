@@ -107,39 +107,39 @@
                     <div class="card-header gradient-deepblue text-white  text-uppercase">İletişim Bilgileri</div>
                     <div class="ribbon-content"></div>
                     <div class="card-body">
-                        <form>
+                        <form id="getFormCommunication">
                             <div className="form-group">
                                 <div className="container">
                                     <div className="row">
 
                                         <div className="col-sm">
-                                            <label for="isim" class="">İsim </label>
+                                            <label for="name" class="">İsim </label>
 
                                             <input type="text" class="form-control"
-                                                   id="isim" name="isim"
+                                                   id="name" name="name"
                                                    placeholder="İsim giriniz" required>
 
                                         </div>
                                         <div className="col-sm">
-                                            <label for="soyisim" class="">Soyisim </label>
+                                            <label for="surname" class="">Soyisim </label>
 
                                             <input type="text" class="form-control"
-                                                   id="soyisim" name="soyisim"
+                                                   id="surname" name="surname"
                                                    placeholder="Soyisim giriniz" required>
                                         </div>
                                     </div>
                                     <div className="row">
                                         <div className="col-sm-6">
-                                            <label for="unvan" class="">Unvan </label>
+                                            <label for="tittle" class="">Unvan </label>
 
                                             <input type="text" class="form-control"
-                                                   id="unvan" name="unvan"
+                                                   id="tittle" name="tittle"
                                                    placeholder="Unvan giriniz" required>
                                         </div>
                                     </div>
                                     <div className="row">
                                         <div className="col-sm">
-                                            <label for="unvan" class="">Email </label>
+                                            <label for="email" class="">Email </label>
 
                                             <input type="text" class="form-control"
                                                    id="email" name="email"
@@ -148,7 +148,7 @@
                                         <div className="col-sm">
                                             <label>Doğum Tarİhİ</label>
                                             <span class="fa fa-calendar"></span>
-                                            <input type="text" id="autoclose-datepicker" name="dogumT"
+                                            <input type="text" id="autoclose-datepicker" name="birthDateStr"
                                                    class="form-control" placeholder="Varsa Doğum Tarihi Alanını Giriniz">
                                         </div>
                                     </div>
@@ -157,16 +157,16 @@
                                             <label for="telefon" class="">Telefon </label>
 
                                             <input type="text" class="form-control"
-                                                   id="telefon" name="telefon"
+                                                   id="telefon" name="phone"
                                                    placeholder="Telefon giriniz" required>
                                         </div>
 
                                     </div>
                                             <div class="row">
                                                 <div class="col-md-6">
-                                                    <div class="form-group" th:if="${personel == null}">
+                                                    <div class="form-group" >
                                                         <label for="selectCity" class="">İl</label>
-                                                        <select class="form-control" id="selectCity">
+                                                        <select class="form-control" id="selectCity" name="city">
                                                             <option disabled="disabled" selected="selected"> ----- Şehir
                                                                 Seçiniz -----
                                                             </option>
@@ -177,10 +177,10 @@
                                                     </div>
                                             </div>
                                                 <div class="col-md-6">
-                                                    <div class="form-group" th:if="${personel == null}">
+                                                    <div class="form-group">
                                                         <label for="selectDistrict" style="text-align: center" class="">İlçe</label>
                                                         <select class="form-control"
-                                                                id="selectDistrict">
+                                                                id="selectDistrict" name="ilce">
                                                             <option disabled="disabled" selected="selected"> ----- İlçe
                                                                 Seçiniz -----
                                                             </option>
@@ -466,7 +466,7 @@
             <!--start overlay-->
             <div class="overlay toggle-menu"></div>
             <!--end overlay-->
-        </div>
+        </div> <!-- İş Deneyimi -->
     </div><!--End content-wrapper-->
     <!--Start Back To Top Button-->
     <a href="javaScript:void(0);" class="back-to-top"><i class="fa fa-angle-double-up"></i> </a>
@@ -499,9 +499,9 @@
 <!--Form Validatin Script-->
 <script th:src="@{/plugins/jquery-validation/js/jquery.validate.min.js}"></script>
 <script th:src="@{/js/jquery-serialize.min.js}"></script>
-<script type="application/javascript" th:src="@{/js/CvEdit.js}">
+<script type="application/javascript" th:src="@{/js/CvEdit.js}"></script>
 
-</script>
+<script th:src="@{/js/jquery-serialize.min.js}"></script>
 <!--Bootstrap Datepicker Js-->
 <script th:src="@{/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js}"></script>
 <script>

@@ -1,5 +1,6 @@
 package com.tez.kariyer.service.cvService;
 
+import com.tez.kariyer.dto.CommunicationInfoDTO;
 import com.tez.kariyer.dto.WorkExperienceDTO;
 import com.tez.kariyer.model.entity.*;
 import com.tez.kariyer.model.entity.parameterTable.Position;
@@ -42,10 +43,14 @@ public class CvService {
     @Autowired
     protected DistrictRepository districtRepository;
 
-    public ResponseItem saveCommunicationInfo(CommunicationInfo communicationInfo){
+    public ResponseItem saveCommunicationInfo(CommunicationInfoDTO communicationInfoDTO){
         ResponseItem responseItem = new ResponseItem();
+        CommunicationInfo communicationInfo = new CommunicationInfo();
         User user = SessionInfo.getInstance().getUser();
         try {
+            communicationInfoDTO.setBirthDate(new SimpleDateFormat("dd/MM/yyyy").parse(communicationInfoDTO.getBirthDateStr()));
+            communicationInfo = modelMapper.map(communicationInfoDTO, CommunicationInfo.class);
+            communicationInfo.setIlce(districtRepository.findByIdd(communicationInfoDTO.getIlce()));
             communicationInfo.setUser(user);
             responseItem.setResult(true);
             responseItem.setMessage("İşlem Başarılı!");

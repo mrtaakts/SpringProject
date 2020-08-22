@@ -43,10 +43,11 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
                 .antMatchers("/SifreUnuttum.html").permitAll()
                 .antMatchers("/403.html").permitAll()
                 .antMatchers("/FirmaBasvuru/**").permitAll()
-                .antMatchers("/profile/**").hasAnyRole("USER,ADMIN,FIRMA")
+                .antMatchers("/profile/**").hasAnyRole("USER","ADMIN","FIRMA")
 
                 .antMatchers("/").authenticated()
                 .antMatchers("/cv/**").authenticated()
+                .antMatchers("/anasayfa/**").authenticated()
 
                 .and()
                 .formLogin().loginPage("/index.html")

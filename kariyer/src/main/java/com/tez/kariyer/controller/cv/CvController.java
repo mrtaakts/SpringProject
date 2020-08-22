@@ -1,5 +1,6 @@
 package com.tez.kariyer.controller.cv;
 
+import com.tez.kariyer.dto.CommunicationInfoDTO;
 import com.tez.kariyer.dto.WorkExperienceDTO;
 import com.tez.kariyer.model.entity.*;
 import com.tez.kariyer.model.entity.address.Il;
@@ -40,6 +41,7 @@ public class CvController {
 
     @GetMapping("/duzenle")
     public ModelAndView showCv(Model model){
+        User user = SessionInfo.getInstance().getUser();
         ModelAndView modelAndView =new ModelAndView("CvDuzenle");
         List<WayOfWork> wayOfWorkList = (List<WayOfWork>) wayOfWorkRepository.findAll();
         List<CompanySector> companySectorList = (List<CompanySector>) companySectorRepository.findAll();
@@ -53,9 +55,10 @@ public class CvController {
     }
 
     @PostMapping("/iletisim")
-    public ResponseEntity<ResponseItem> saveCommunicationInfo(@RequestParam CommunicationInfo communicationInfo){
+    @ResponseBody
+    public ResponseEntity<ResponseItem> saveCommunicationInfo(@RequestBody CommunicationInfoDTO communicationInfoDTO){
         ResponseItem responseItem = new ResponseItem();
-        responseItem = cvService.saveCommunicationInfo(communicationInfo);
+        responseItem = cvService.saveCommunicationInfo(communicationInfoDTO);
         return ResponseEntity.ok(responseItem);
     }
 
