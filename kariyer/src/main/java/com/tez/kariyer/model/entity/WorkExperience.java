@@ -1,5 +1,6 @@
 package com.tez.kariyer.model.entity;
 
+import com.tez.kariyer.model.entity.address.Ilce;
 import com.tez.kariyer.model.entity.address.Ulke;
 import com.tez.kariyer.model.entity.parameterTable.CompanySector;
 import com.tez.kariyer.model.entity.parameterTable.Position;
@@ -36,7 +37,7 @@ public class WorkExperience {
     protected WayOfWork wayOfWork;
 
     @OneToOne
-    protected Ulke ulke;
+    protected Ilce ilce;
     @OneToOne
     protected User user;
 

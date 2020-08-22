@@ -15,21 +15,21 @@ public class AddressController {
     @Autowired
     AddressService addressService;
 
-    @PostMapping(value = "/listcity")
+    @RequestMapping(value = "/listcity/{id}", method = RequestMethod.GET)
     @ResponseBody
-    public List<Il> showcities(@RequestBody Integer countryid)
+    public List<Il> showcities(@PathVariable Integer countryid)
     {
 
         List<Il> cities= addressService.showcities(countryid);
         return cities;
     }
 
-    @PostMapping(value = "/listdistrict")
+    @RequestMapping(value = "/listdistrict/{id}", method = RequestMethod.GET)
     @ResponseBody
-    public List<Ilce> showdistricts()
+    public List<Ilce> showdistricts(@PathVariable int id)
     {
 
-        List<Ilce> ilces = addressService.showdistricts(1);
+        List<Ilce> ilces = addressService.showdistricts(id);
         return ilces;
     }
 

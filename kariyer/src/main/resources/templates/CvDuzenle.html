@@ -395,7 +395,7 @@
                                         <div className="col-sm-6">
                                             <label for="telefon" class="">Çalışma Şekli </label>
 
-                                            <select class="form-control" id="companySector">
+                                            <select class="form-control" id="wayOfWork">
                                                 <option disabled="disabled" selected="selected"> ----- Çalışma Şekli
                                                     Seçiniz -----
                                                 </option>
@@ -410,7 +410,7 @@
                                         <div class="col-md-6">
                                             <div class="form-group">
                                                 <label for="selectCity" class="">İl</label>
-                                                <select class="form-control" id="selectCity">
+                                                <select class="form-control" id="selectCityWork">
                                                     <option disabled="disabled" selected="selected"> ----- Şehir
                                                         Seçiniz -----
                                                     </option>
@@ -421,10 +421,10 @@
                                             </div>
                                         </div>
                                         <div class="col-md-6">
-                                            <div class="form-group" th:if="${personel == null}">
+                                            <div class="form-group">
                                                 <label for="selectDistrict" style="text-align: center" class="">İlçe</label>
                                                 <select class="form-control"
-                                                        id="selectDistrict">
+                                                        id="selectDistrictWork">
                                                     <option disabled="disabled" selected="selected"> ----- İlçe
                                                         Seçiniz -----
                                                     </option>
@@ -438,7 +438,7 @@
                                             <label for="web" class="">Web Sayfam </label>
 
                                             <input type="text" class="form-control"
-                                                   id="web" name="web"
+                                                   id="webSite" name="web"
                                                    placeholder="Web Sayfanızı giriniz" required>
                                         </div>
 
@@ -499,7 +499,7 @@
 <!--Form Validatin Script-->
 <script th:src="@{/plugins/jquery-validation/js/jquery.validate.min.js}"></script>
 <script th:src="@{/js/jquery-serialize.min.js}"></script>
-<script type="application/javascript" th:src="@{/js/form-kontrol.js}">
+<script type="application/javascript" th:src="@{/js/CvEdit.js}">
 
 </script>
 <!--Bootstrap Datepicker Js-->
@@ -562,6 +562,59 @@
         }
     }
 
+</script>
+<script>
+    $("#selectCity").change(function() {
+        var cityId = this.value;
+        console.log(cityId)
+        $.ajax({
+            url: "/address/listdistrict/"+cityId,
+            type: "get",
+            //data: {ulkeId: cityId},
+            success: function (response) {
+
+                $('#loading-screen').fadeOut('slow');
+                $('#selectDistrict').find('option').remove().end().append('<option disabled selected> ----- İlçe Seçiniz ----- </option>').val('');
+
+                var i;
+                for (i = 0; i < response.length; ++i) {
+                    $('#selectDistrict').append(new Option(response[i].ilce, response[i].id));
+                }
+
+                $("#selectDistrict").val($("#selectDistrict option:first").val());
+
+            },
+            error: function(jqXHR, textStatus, errorThrown) {
+
+            }
+        });
+    });
+
+    $("#selectCityWork").change(function() {
+        var cityId = this.value;
+        console.log(cityId)
+        $.ajax({
+            url: "/address/listdistrict/"+cityId,
+            type: "get",
+            //data: {ulkeId: cityId},
+            success: function (response) {
+
+                $('#loading-screen').fadeOut('slow');
+                $('#selectDistrictWork').find('option').remove().end().append('<option disabled selected> ----- İlçe Seçiniz ----- </option>').val('');
+
+                var i;
+                for (i = 0; i < response.length; ++i) {
+                    $('#selectDistrictWork').append(new Option(response[i].ilce, response[i].id));
+                }
+
+                $("#selectDistrictWork").val($("#selectDistrictWork option:first").val());
+
+            },
+            error: function(jqXHR, textStatus, errorThrown) {
+
+            }
+        });
+    });
 </script>
 
 </body>

@@ -20,7 +20,7 @@ $(document).ready(function () {
 
         submitHandler: function (form) {
             $('#loading-screen').fadeIn();
-             var id = getUrlParameter('id');
+            var id = getUrlParameter('id');
             if(id==null){
                 var formData = {
                     "name": $("#ad").val(),
@@ -33,7 +33,7 @@ $(document).ready(function () {
 
             }
             console.log(formData);
-           $.ajax({
+            $.ajax({
                 type: "POST",
                 contentType: "application/json",
                 url: "/uyelik/save",
