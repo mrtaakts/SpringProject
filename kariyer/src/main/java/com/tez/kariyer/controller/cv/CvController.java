@@ -7,6 +7,7 @@ import com.tez.kariyer.model.entity.address.Il;
 import com.tez.kariyer.model.entity.parameterTable.CompanySector;
 import com.tez.kariyer.model.entity.parameterTable.Position;
 import com.tez.kariyer.model.entity.parameterTable.WayOfWork;
+import com.tez.kariyer.model.repository.WorkExperienceRepository;
 import com.tez.kariyer.model.repository.addressRepository.CityRepository;
 import com.tez.kariyer.model.repository.parameterTableRepository.CompanySectorRepository;
 import com.tez.kariyer.model.repository.parameterTableRepository.PositionRepository;
@@ -38,6 +39,8 @@ public class CvController {
     protected WayOfWorkRepository wayOfWorkRepository;
     @Autowired
     protected CityRepository cityRepository;
+    @Autowired
+    protected WorkExperienceRepository workExperienceRepository;
 
     @GetMapping("/duzenle")
     public ModelAndView showCv(Model model){

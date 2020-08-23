@@ -99,9 +99,130 @@
 
 
         </div>
+<!--        <div class="row" id="iletisimInfo">-->
+<!--            <div class="col-lg-12">-->
+<!--                <div class="card">-->
+<!--                    <div class="card-header gradient-deepblue text-white  text-uppercase">İletişim Bilgileri</div>-->
+<!--                    <div class="ribbon-content"></div>-->
+<!--                    <div class="card-body">-->
+<!--                        <form id="getFormCommunicationInfo">-->
+<!--                            <div className="form-group">-->
+<!--                                <div className="container">-->
+<!--                                    <div className="row">-->
 
+<!--                                        <div className="col-sm">-->
+<!--                                            <label for="name" class="">İsim </label>-->
 
-        <div class="row">
+<!--                                            <input type="text" class="form-control"-->
+<!--                                                   id="name" name="name"-->
+<!--                                                   placeholder="İsim giriniz" required>-->
+
+<!--                                        </div>-->
+<!--                                        <div className="col-sm">-->
+<!--                                            <label for="surname" class="">Soyisim </label>-->
+
+<!--                                            <input type="text" class="form-control"-->
+<!--                                                   id="surname" name="surname"-->
+<!--                                                   placeholder="Soyisim giriniz" required>-->
+<!--                                        </div>-->
+<!--                                    </div>-->
+<!--                                    <div className="row">-->
+<!--                                        <div className="col-sm-6">-->
+<!--                                            <label for="tittle" class="">Unvan </label>-->
+
+<!--                                            <input type="text" class="form-control"-->
+<!--                                                   id="tittle" name="tittle"-->
+<!--                                                   placeholder="Unvan giriniz" required>-->
+<!--                                        </div>-->
+<!--                                    </div>-->
+<!--                                    <div className="row">-->
+<!--                                        <div className="col-sm">-->
+<!--                                            <label for="email" class="">Email </label>-->
+
+<!--                                            <input type="text" class="form-control"-->
+<!--                                                   id="email" name="email"-->
+<!--                                                   placeholder="Email giriniz" required>-->
+<!--                                        </div>-->
+<!--                                        <div className="col-sm">-->
+<!--                                            <label>Doğum Tarİhİ</label>-->
+<!--                                            <span class="fa fa-calendar"></span>-->
+<!--                                            <input type="text" id="autoclose-datepicker" name="birthDateStr"-->
+<!--                                                   class="form-control" placeholder="Varsa Doğum Tarihi Alanını Giriniz">-->
+<!--                                        </div>-->
+<!--                                    </div>-->
+<!--                                    <div className="row">-->
+<!--                                        <div className="col-sm-6">-->
+<!--                                            <label for="telefon" class="">Telefon </label>-->
+
+<!--                                            <input type="text" class="form-control"-->
+<!--                                                   id="telefon" name="phone"-->
+<!--                                                   placeholder="Telefon giriniz" required>-->
+<!--                                        </div>-->
+
+<!--                                    </div>-->
+<!--                                    <div class="row">-->
+<!--                                        <div class="col-md-6">-->
+<!--                                            <div class="form-group" >-->
+<!--                                                <label for="selectCity" class="">İl</label>-->
+<!--                                                <select class="form-control" id="selectCity" name="city">-->
+<!--                                                    <option disabled="disabled" selected="selected"> -&#45;&#45;&#45;&#45; Şehir-->
+<!--                                                        Seçiniz -&#45;&#45;&#45;&#45;-->
+<!--                                                    </option>-->
+<!--                                                    <option th:each="city : ${citys}" th:value="${city.id}"-->
+<!--                                                            th:text="${city.il}"-->
+<!--                                                    ></option>-->
+<!--                                                </select>-->
+<!--                                            </div>-->
+<!--                                        </div>-->
+<!--                                        <div class="col-md-6">-->
+<!--                                            <div class="form-group">-->
+<!--                                                <label for="selectDistrict" style="text-align: center" class="">İlçe</label>-->
+<!--                                                <select class="form-control"-->
+<!--                                                        id="selectDistrict" name="ilce">-->
+<!--                                                    <option disabled="disabled" selected="selected"> -&#45;&#45;&#45;&#45; İlçe-->
+<!--                                                        Seçiniz -&#45;&#45;&#45;&#45;-->
+<!--                                                    </option>-->
+<!--                                                </select>-->
+<!--                                            </div>-->
+<!--                                        </div>-->
+<!--                                    </div>-->
+
+<!--                                    <div className="row">-->
+<!--                                        <div className="col-sm-6">-->
+<!--                                            <label for="web" class="">Web Sayfam </label>-->
+
+<!--                                            <input type="text" class="form-control"-->
+<!--                                                   id="web" name="web"-->
+<!--                                                   placeholder="Web Sayfanızı giriniz" required>-->
+<!--                                        </div>-->
+
+<!--                                    </div>-->
+
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                            <br>-->
+
+<!--                            <button type="submit" class="btn btn-success"><i-->
+<!--                                    class="fa fa-check-square-o"></i>-->
+<!--                                Kaydet-->
+<!--                            </button>-->
+<!--                            <a href="/anasayfa" class="btn btn-danger"><i-->
+<!--                                    class="zmdi zmdi-block-alt"></i>-->
+<!--                                İptal-->
+
+<!--                            </a>-->
+
+<!--                        </form>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+
+<!--            &lt;!&ndash;start overlay&ndash;&gt;-->
+<!--            <div class="overlay toggle-menu"></div>-->
+<!--            &lt;!&ndash;end overlay&ndash;&gt;-->
+<!--        </div>&lt;!&ndash; End container-fluid&ndash;&gt;  &lt;!&ndash; İletişim Bilgileri Input &ndash;&gt;-->
+
+        <div class="row" id="iletisimInput">
             <div class="col-lg-12">
                 <div class="card">
                     <div class="card-header gradient-deepblue text-white  text-uppercase">İletişim Bilgileri</div>
@@ -222,7 +343,7 @@
             <!--start overlay-->
             <div class="overlay toggle-menu"></div>
             <!--end overlay-->
-        </div><!-- End container-fluid-->  <!-- İletişim Bilgileri -->
+        </div><!-- End container-fluid-->  <!-- İletişim Bilgileri Input -->
         <div class="row">
             <div class="col-lg-12">
                 <div class="card">
@@ -616,6 +737,8 @@
         });
     });
 </script>
+
+
 
 </body>
 </html>
