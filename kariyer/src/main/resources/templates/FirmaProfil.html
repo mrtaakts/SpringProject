@@ -31,7 +31,7 @@
     <link th:href="@{/css/skins.css}" rel="stylesheet"/>
     <!--Bootstrap Datepicker-->
     <link th:href="@{/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css}" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" th:href="@{/plugins/notifications/css/lobibox.min.css}"/>
 
@@ -50,14 +50,14 @@
     <div class="col-lg-12">
         <div class="card" style="width:90%;margin: auto">
             <div class="card-header gradient-deepblue text-white  text-uppercase">
-            <h1 th:text="${company.companyName}">  </h1>
+            <h1 class="align-middle" style="margin: 0;" th:text="${company.companyName}">  </h1>
             </div>
             <div class="ribbon-content"></div>
             <div class="card-body">
                 <div class="row">
             <div class="col-lg-6">
-                <div style="font-family: 'Do Hyeon', sans-serif;font-size: x-large;margin-bottom: 2vh;color: black" > Firmamız Hakkında </div>
-                <div class="bg-light"><span th:text="${company.about}" style="font-family: 'Do Hyeon', sans-serif;font-size:20px;margin-top: 4vh">
+                <div style="font-family: 'Oswald', sans-serif;;font-size: x-large;margin-bottom: 2vh;color: black" > Firmamız Hakkında </div>
+                <div class="bg-light"><span th:text="${company.about}" style="font-family: 'Oswald', sans-serif;font-size:20px;margin-top: 4vh">
                 </span></div>
 
             </div>
@@ -66,13 +66,13 @@
 
                 <div class="col-lg-2">
 
-                     <label style="font-family: 'Do Hyeon', sans-serif;font-size: large;margin-right: 5vh;color: black">Foundation Year:</label>
+                     <label style="font-family: 'Oswald', sans-serif;font-size: large;margin-right: 5vh;color: black">Kuruluş Yılı:</label>
 
 
                     </div>
 
                     <div class="col-lg-10">
-                        <div class="bg-light" style="font-family: 'Do Hyeon', sans-serif;font-size: medium;margin-top:2vh;margin-left: 1vh"><span th:text="${company.foundationYear}"> </span></div>
+                        <div class="bg-light" style="font-family: 'Oswald', sans-serif;font-size: medium;margin-top:2vh;margin-left: 1vh"><span th:text="${company.foundationYear}"> </span></div>
 
                     </div>
                         </div>
@@ -80,13 +80,13 @@
 
                             <div class="col-lg-2">
 
-                                <label style="font-family: 'Do Hyeon', sans-serif;font-size: large;margin-right: 5vh;color: black">Employees Number:</label>
+                                <label style="font-family: 'Oswald', sans-serif;font-size: large;margin-right: 5vh;color: black">Çalışan Sayısı:</label>
 
 
                             </div>
 
                             <div class="col-lg-10">
-                                <div class="bg-light" style="font-family: 'Do Hyeon', sans-serif;font-size: medium;margin-top:2vh;margin-left: 1vh"><span th:text="${company.employeesNumber}"> </span></div>
+                                <div class="bg-light" style="font-family: 'Oswald', sans-serif;font-size: medium;margin-top:2vh;margin-left: 1vh"><span th:text="${company.employeesNumber}"> </span></div>
 
                             </div>
                         </div>
@@ -95,12 +95,12 @@
 
                             <div class="col-lg-2">
 
-                                <label style="font-family: 'Do Hyeon', sans-serif;font-size: large;margin-right: 5vh;margin-top: 3vh;color: black">Address:</label>
+                                <label style="font-family: 'Oswald', sans-serif;font-size: large;margin-right: 5vh;margin-top: 3vh;color: black">Adres:</label>
 
                             </div>
 
                             <div class="col-lg-10">
-                                <div class="bg-light" style="font-family: 'Do Hyeon', sans-serif;font-size: medium;margin-top: 3vh"><span th:text="${company.address}"> </span> </div>
+                                <div class="bg-light" style="font-family: 'Oswald', sans-serif;font-size: medium;margin-top: 3vh"><span th:text="${company.address}"> </span> </div>
 
                             </div>
                         </div>
@@ -108,12 +108,12 @@
 
                             <div class="col-lg-2">
 
-                               <label style="font-family: 'Do Hyeon', sans-serif;font-size: large;margin-right: 5vh;margin-top: 3vh;color: black">Sector:</label>
+                               <label style="font-family: 'Oswald', sans-serif;font-size: large;margin-right: 5vh;margin-top: 3vh;color: black">Sektör:</label>
 
                             </div>
 
                             <div class="col-lg-10">
-                                <div class="bg-light" style="font-family: 'Do Hyeon', sans-serif;font-size: medium;margin-top: 3vh"><span th:text="${company.sektor}" ></span></div>
+                                <div class="bg-light" style="font-family: 'Oswald', sans-serif;font-size: medium;margin-top: 3vh"><span th:text="${company.sektor}" ></span></div>
 
                             </div>
                         </div>
@@ -121,12 +121,12 @@
 
                             <div class="col-lg-2">
 
-                                <label style="font-family: 'Do Hyeon', sans-serif;font-size: large;margin-right: 5vh;margin-top: 3vh;color: black">WebSite:</label>
+                                <label style="font-family: 'Oswald', sans-serif;font-size: large;margin-right: 5vh;margin-top: 3vh;color: black">Web Sayfası:</label>
 
                             </div>
 
                             <div class="col-lg-10">
-                               <div class="bg-light" style="font-family: 'Do Hyeon', sans-serif;font-size: medium;margin-top: 3vh"><span th:text="${company.website}"></span></div>
+                               <div class="bg-light" style="font-family: 'Oswald', sans-serif;font-size: medium;margin-top: 3vh"><span th:text="${company.website}"></span></div>
 
                             </div>
                         </div>
@@ -139,7 +139,7 @@
 
                     </div>
                     <div class="col-md-6" style="margin-top: 2vh">
-                        <div class="bg-light"> <a href="/firma/ilanver" class="btn btn-primary btn-block waves-effect waves-light text-white"> İlan Oluştur</a></div>
+                        <div style="font-family: 'Oswald', sans-serif;" class="bg-light"> <a href="/firma/ilanver" class="btn btn-primary btn-block waves-effect waves-light text-white"> İlan Oluştur</a></div>
                     </div>
                     <div class="col-md-3">
 
