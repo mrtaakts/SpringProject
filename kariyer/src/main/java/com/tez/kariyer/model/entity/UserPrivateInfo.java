@@ -1,6 +1,7 @@
 package com.tez.kariyer.model.entity;
 
 import com.tez.kariyer.model.entity.address.Ulke;
+import com.tez.kariyer.model.entity.parameterTable.SoldierStatus;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -28,8 +29,8 @@ public class UserPrivateInfo implements Serializable {
     private String driverLicense;
 
     private String salaryExpectation;
-    private Date salaryExpectationDate;
-
+    @OneToOne
+    private SoldierStatus soldierStatus;
     @OneToOne
     private User user;
 

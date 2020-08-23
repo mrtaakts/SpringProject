@@ -17,7 +17,7 @@ var getUrlParameter = function getUrlParameter(sParam) {
 $(document).ready(function () {
 
         // $("#iletisimInput").hide();
-
+    $('#hide').hide();
 
     $("#getFormCommunication").validate({
 

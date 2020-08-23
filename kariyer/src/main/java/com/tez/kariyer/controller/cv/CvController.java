@@ -1,6 +1,7 @@
 package com.tez.kariyer.controller.cv;
 
 import com.tez.kariyer.dto.CommunicationInfoDTO;
+import com.tez.kariyer.dto.UserPrivateInfoDTO;
 import com.tez.kariyer.dto.WorkExperienceDTO;
 import com.tez.kariyer.model.entity.*;
 import com.tez.kariyer.model.entity.address.Il;
@@ -66,9 +67,10 @@ public class CvController {
     }
 
     @PostMapping("/ozel")
-    public ResponseEntity<ResponseItem> saveUserPrivateInfo(@RequestParam UserPrivateInfo userPrivateInfo){
+    @ResponseBody
+    public ResponseEntity<ResponseItem> saveUserPrivateInfo(@RequestBody UserPrivateInfoDTO userPrivateInfoDTO){
         ResponseItem responseItem = new ResponseItem();
-        responseItem = cvService.saveUserPrivateInfo(userPrivateInfo);
+        responseItem = cvService.saveUserPrivateInfo(userPrivateInfoDTO);
         return ResponseEntity.ok(responseItem);
     }
 

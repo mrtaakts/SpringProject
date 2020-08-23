@@ -224,22 +224,19 @@
 
         <div class="row" id="iletisimInput">
             <div class="col-lg-12">
-=======
-
 
         <div class="row">
             <div  class="col-lg-12">
->>>>>>> 2256af4ac1ef4289997e923c7ce1ac46658368f4
                 <div class="card">
                     <div class="card-header gradient-deepblue text-white  text-uppercase">İletişim Bilgileri</div>
                     <div class="ribbon-content"></div>
                     <div class="card-body">
                         <form id="getFormCommunication">
-                            <div className="form-group">
-                                <div className="container">
-                                    <div className="row">
+                            <div class="form-group">
+                                <div class="container">
+                                    <div class="row">
 
-                                        <div className="col-sm">
+                                        <div class="col-sm">
                                             <label for="name" class="">İsim </label>
 
                                             <input type="text" class="form-control"
@@ -247,7 +244,7 @@
                                                    placeholder="İsim giriniz" required>
 
                                         </div>
-                                        <div className="col-sm">
+                                        <div class="col-sm">
                                             <label for="surname" class="">Soyisim </label>
 
                                             <input type="text" class="form-control"
@@ -255,8 +252,8 @@
                                                    placeholder="Soyisim giriniz" required>
                                         </div>
                                     </div>
-                                    <div className="row">
-                                        <div className="col-sm-6">
+                                    <div class="row">
+                                        <div class="col-sm-6">
                                             <label for="tittle" class="">Unvan </label>
 
                                             <input type="text" class="form-control"
@@ -264,23 +261,23 @@
                                                    placeholder="Unvan giriniz" required>
                                         </div>
                                     </div>
-                                    <div className="row">
-                                        <div className="col-sm">
+                                    <div class="row">
+                                        <div class="col-sm">
                                             <label for="email" class="">Email </label>
 
                                             <input type="text" class="form-control"
                                                    id="email" name="email"
                                                    placeholder="Email giriniz" required>
                                         </div>
-                                        <div className="col-sm">
+                                        <div class="col-sm">
                                             <label>Doğum Tarİhİ</label>
                                             <span class="fa fa-calendar"></span>
                                             <input type="text" id="autoclose-datepicker" name="birthDateStr"
                                                    class="form-control" placeholder="Varsa Doğum Tarihi Alanını Giriniz">
                                         </div>
                                     </div>
-                                    <div className="row">
-                                        <div className="col-sm-6">
+                                    <div class="row">
+                                        <div class="col-sm-6">
                                             <label for="telefon" class="">Telefon </label>
 
                                             <input type="text" class="form-control"
@@ -364,55 +361,74 @@
                                             <div className="col-sm-3">
                                                 <label>Cinsiyet </label>
                                             </div>
-                                            <div className="form check form-check-inline">
-                                                <input className="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"></input>
-                                                <label className="form-check-label" name="inlineRadioOptions" id="inlineRadio2" value="option2">Erkek</label>
+                                            <div class="icheck-material-success icheck-inline">
+                                                <input type="radio" id="inline-radio-success" name="durum"
+                                                       checked value=1>
+                                                <label for="inline-radio-success">Erkek</label>
                                             </div>
-                                            <div className="form check form-check-inline">
-                                                <input className="form-check-input" type="radio"></input>
-                                                <label className="form-check-label">Kadın</label>
+                                            <div class="icheck-material-primary icheck-inline">
+                                                <input type="radio" id="inline-radio-primary" name="durum"
+                                                       value=2>
+                                                <label for="inline-radio-primary">Kadın</label>
                                             </div>
                                         </div>
                                         <div className="col-sm-6">
-                                            <label>Sürücü Belgesi Sınıfı</label>
-                                            <select placeholder='Sürücü Belgesi' className="form-control">
-                                                <option></option>
+                                            <label for="driverLicense" style="text-align: center" class="">Sürücü Belgesi Sınıfı</label>
+                                            <select class="form-control"
+                                                    id="driverLicense" name="driverLicense">
+                                                <option disabled="disabled" selected="selected"> ----- Sürücü Belgesi
+                                                    Seçiniz -----
+                                                </option>
                                             </select>
                                         </div>
                                     </div>
                                     <div className="row">
                                         <div className="col-sm-6">
-                                            <label>Uyruk</label>
-                                            <select placeholder='Uyruk' className="form-control">
-                                                <option></option>
+                                            <label for="ulke" style="text-align: center" class="">Uyruk</label>
+                                            <select class="form-control"
+                                                    id="ulke" name="ulke">
+                                                <option disabled="disabled" selected="selected"> ----- Uyruk
+                                                    Seçiniz -----
+                                                </option>
                                             </select>
                                         </div>
                                     </div>
                                     <div className="row">
                                         <div className="col-sm-6">
-                                            <label>Net Maaş Beklentisi</label>
-                                            <select placeholder='Net Maaş' className="form-control">
-                                                <option></option>
-                                            </select>
+                                            <label for="salaryExpectation" style="text-align: center" class="">Uyruk</label>
+                                            <input type="text" class="form-control"
+                                                   id="salaryExpectation" name="salaryExpectation"
+                                                   placeholder="Telefon giriniz" required>
                                         </div>
                                     </div>
-                                    <div className="row">
-                                        <div className="col-sm-6">
+                                    <div class="row">
+                                        <div class="col-sm-6">
                                             <label>Askerlik Durumu</label>
-                                            <select placeholder='Askerlik Durumu' className="form-control">
-                                                <option></option>
+                                            <select class="form-control"
+                                                    id="soldierStatus" name="soldierStatus">
+                                                <option disabled="disabled" value="0" selected="selected"> ----- Askerlik Durumu
+                                                    Seçiniz -----
+                                                </option>
+                                                <option  value="1" > ----- Askerlik Durumu
+                                                    Seçiniz -----
+                                                </option>
+                                                <option  value="2" > ----- Askerlik Durumu
+                                                    Seçiniz -----
+                                                </option>
                                             </select>
                                         </div>
 
                                     </div>
 
-                                    <div className="row">
-                                        <div className="col-sm-6">
+                                    <div class="row" id="hide">
+                                        <div class="col-sm-6">
                                             <label>Tecil Tarihi</label>
-                                            <input placeholder='Tecil Tarihi' type="date" className="form-control"></input>                                                                    </div>
+                                            <span class="fa fa-calendar"></span>
+                                            <input type="text" id="autoclose-datepickerSoldier" name="startDate"
+                                                   class="form-control" >                                                                    </div>
 
                                     </div>
-                                    <div className="row">
+                                    <div class="row">
                                         <div id="engellabel">
                                             <label >Engelliyseniz lütfen bunu belirtin. Böylece size sağlanan ayrıcalıklı istihdam olanaklarından faydalanabilirsiniz.</label>
                                         </div>
@@ -452,6 +468,7 @@
             <div class="overlay toggle-menu"></div>
             <!--end overlay-->
         </div><!-- End container-fluid-->  <!-- Özel Bilgiler -->
+
         <div class="row">
             <div class="col-lg-12">
                 <div class="card">
@@ -687,7 +704,17 @@
         } else {
             text.style.display = "block";
         }
-    }
+    };
+
+    $("#soldierStatus").change(function() {
+        var asd =$('#soldierStatus option:selected').val();
+        console.log(asd);
+        if(asd == 1){
+            $('#hide').show();
+        }else {
+            $('#hide').hide();
+        }
+    });
 
 </script>
 <script>

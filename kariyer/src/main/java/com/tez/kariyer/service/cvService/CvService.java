@@ -1,6 +1,7 @@
 package com.tez.kariyer.service.cvService;
 
 import com.tez.kariyer.dto.CommunicationInfoDTO;
+import com.tez.kariyer.dto.UserPrivateInfoDTO;
 import com.tez.kariyer.dto.WorkExperienceDTO;
 import com.tez.kariyer.model.entity.*;
 import com.tez.kariyer.model.entity.parameterTable.Position;
@@ -9,6 +10,7 @@ import com.tez.kariyer.model.repository.*;
 import com.tez.kariyer.model.repository.addressRepository.DistrictRepository;
 import com.tez.kariyer.model.repository.parameterTableRepository.CompanySectorRepository;
 import com.tez.kariyer.model.repository.parameterTableRepository.PositionRepository;
+import com.tez.kariyer.model.repository.parameterTableRepository.SoldierStatusRepository;
 import com.tez.kariyer.model.repository.parameterTableRepository.WayOfWorkRepository;
 import com.tez.kariyer.response.ResponseItem;
 import com.tez.kariyer.security.SessionInfo;
@@ -42,6 +44,8 @@ public class CvService {
     protected WayOfWorkRepository wayOfWorkRepository;
     @Autowired
     protected DistrictRepository districtRepository;
+    @Autowired
+    protected SoldierStatusRepository soldierStatusRepository;
 
     public ResponseItem saveCommunicationInfo(CommunicationInfoDTO communicationInfoDTO){
         ResponseItem responseItem = new ResponseItem();
@@ -62,10 +66,15 @@ public class CvService {
         }
         return responseItem;
     }
-    public ResponseItem saveUserPrivateInfo(UserPrivateInfo userPrivateInfo){
+    public ResponseItem saveUserPrivateInfo(UserPrivateInfoDTO userPrivateInfoDTO){
         ResponseItem responseItem = new ResponseItem();
+        User user = SessionInfo.getInstance().getUser();
 
         try {
+
+            UserPrivateInfo userPrivateInfo = modelMapper.map(userPrivateInfoDTO, UserPrivateInfo.class);
+            userPrivateInfo.setSoldierStatus(soldierStatusRepository.findByIdd(userPrivateInfoDTO.getSoldierStatus()));
+            userPrivateInfo.setUser(user);
             responseItem.setResult(true);
             responseItem.setMessage("İşlem Başarılı!");
             userPrivateInfoRepository.save(userPrivateInfo);
