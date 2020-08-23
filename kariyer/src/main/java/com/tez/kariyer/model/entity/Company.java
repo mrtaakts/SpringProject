@@ -33,6 +33,8 @@ public class Company {
 
     @OneToOne
     protected Il city;
+    @OneToOne
+    protected User user;
 
 
 }
