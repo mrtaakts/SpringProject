@@ -1,27 +1,29 @@
 package com.tez.kariyer.controller;
 
-import com.tez.kariyer.dto.CompanyDTO;
-import com.tez.kariyer.dto.JobAdvertiDTO;
 import com.tez.kariyer.dto.JobPostDTO;
-import com.tez.kariyer.model.entity.WorkExperience;
+import com.tez.kariyer.model.entity.Company;
+import com.tez.kariyer.model.entity.User;
 import com.tez.kariyer.model.entity.address.Il;
 import com.tez.kariyer.model.entity.address.Ilce;
 import com.tez.kariyer.model.entity.address.Ulke;
 import com.tez.kariyer.model.entity.parameterTable.*;
+import com.tez.kariyer.model.repository.CompanyRepository;
+import com.tez.kariyer.model.repository.UserRepository;
 import com.tez.kariyer.model.repository.WorkExperienceRepository;
 import com.tez.kariyer.model.repository.addressRepository.CityRepository;
 import com.tez.kariyer.model.repository.addressRepository.CountryRepository;
 import com.tez.kariyer.model.repository.addressRepository.DistrictRepository;
 import com.tez.kariyer.model.repository.parameterTableRepository.*;
 import com.tez.kariyer.response.ResponseItem;
+import com.tez.kariyer.security.SessionInfo;
 import com.tez.kariyer.service.JobPostingService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 
-import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 
 @RestController
 @RequestMapping(value = "/firma")
@@ -47,11 +49,17 @@ public class CompanyController {
     WayOfWorkRepository wayOfWorkRepository;
     @Autowired
     WorkExperienceRepository workExperienceRepository;
-
+    @Autowired
+    CompanyRepository companyRepository;
+    @Autowired
+    UserRepository userRepository;
 
     @GetMapping("/profil")
     public ModelAndView getprofile(Model model){
-        ModelAndView mav = new ModelAndView("KayitOl");
+        User user = SessionInfo.getInstance().getUser();
+        Company company = companyRepository.findByUser(user.getId());
+        model.addAttribute("company",company);
+        ModelAndView mav = new ModelAndView("FirmaProfil");
         return mav;                                        // firması bilgisi sayfası
     }
     @GetMapping("/ilanver")
