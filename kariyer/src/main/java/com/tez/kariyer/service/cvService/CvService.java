@@ -4,14 +4,14 @@ import com.tez.kariyer.dto.CommunicationInfoDTO;
 import com.tez.kariyer.dto.UserPrivateInfoDTO;
 import com.tez.kariyer.dto.WorkExperienceDTO;
 import com.tez.kariyer.model.entity.*;
+import com.tez.kariyer.model.entity.address.Ulke;
+import com.tez.kariyer.model.entity.parameterTable.DriverLicense;
 import com.tez.kariyer.model.entity.parameterTable.Position;
 import com.tez.kariyer.model.entity.parameterTable.WayOfWork;
 import com.tez.kariyer.model.repository.*;
+import com.tez.kariyer.model.repository.addressRepository.CountryRepository;
 import com.tez.kariyer.model.repository.addressRepository.DistrictRepository;
-import com.tez.kariyer.model.repository.parameterTableRepository.CompanySectorRepository;
-import com.tez.kariyer.model.repository.parameterTableRepository.PositionRepository;
-import com.tez.kariyer.model.repository.parameterTableRepository.SoldierStatusRepository;
-import com.tez.kariyer.model.repository.parameterTableRepository.WayOfWorkRepository;
+import com.tez.kariyer.model.repository.parameterTableRepository.*;
 import com.tez.kariyer.response.ResponseItem;
 import com.tez.kariyer.security.SessionInfo;
 import org.modelmapper.ModelMapper;
@@ -46,6 +46,10 @@ public class CvService {
     protected DistrictRepository districtRepository;
     @Autowired
     protected SoldierStatusRepository soldierStatusRepository;
+    @Autowired
+    protected CountryRepository countryRepository;
+    @Autowired
+    protected DriverLicenseRepository driverLicenseRepository;
 
     public ResponseItem saveCommunicationInfo(CommunicationInfoDTO communicationInfoDTO){
         ResponseItem responseItem = new ResponseItem();
@@ -71,9 +75,11 @@ public class CvService {
         User user = SessionInfo.getInstance().getUser();
 
         try {
-
+            DriverLicense driverLicense = driverLicenseRepository.findByIdd(userPrivateInfoDTO.getDriverLicense());
             UserPrivateInfo userPrivateInfo = modelMapper.map(userPrivateInfoDTO, UserPrivateInfo.class);
+            userPrivateInfo.setUlke(countryRepository.findByIdd(userPrivateInfoDTO.getUlke()));
             userPrivateInfo.setSoldierStatus(soldierStatusRepository.findByIdd(userPrivateInfoDTO.getSoldierStatus()));
+            userPrivateInfo.setDriverLicense(driverLicense.getLicence());
             userPrivateInfo.setUser(user);
             responseItem.setResult(true);
             responseItem.setMessage("İşlem Başarılı!");

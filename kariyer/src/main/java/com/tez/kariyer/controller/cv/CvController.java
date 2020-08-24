@@ -5,12 +5,16 @@ import com.tez.kariyer.dto.UserPrivateInfoDTO;
 import com.tez.kariyer.dto.WorkExperienceDTO;
 import com.tez.kariyer.model.entity.*;
 import com.tez.kariyer.model.entity.address.Il;
+import com.tez.kariyer.model.entity.address.Ulke;
 import com.tez.kariyer.model.entity.parameterTable.CompanySector;
+import com.tez.kariyer.model.entity.parameterTable.DriverLicense;
 import com.tez.kariyer.model.entity.parameterTable.Position;
 import com.tez.kariyer.model.entity.parameterTable.WayOfWork;
 import com.tez.kariyer.model.repository.WorkExperienceRepository;
 import com.tez.kariyer.model.repository.addressRepository.CityRepository;
+import com.tez.kariyer.model.repository.addressRepository.CountryRepository;
 import com.tez.kariyer.model.repository.parameterTableRepository.CompanySectorRepository;
+import com.tez.kariyer.model.repository.parameterTableRepository.DriverLicenseRepository;
 import com.tez.kariyer.model.repository.parameterTableRepository.PositionRepository;
 import com.tez.kariyer.model.repository.parameterTableRepository.WayOfWorkRepository;
 import com.tez.kariyer.response.ResponseItem;
@@ -42,6 +46,10 @@ public class CvController {
     protected CityRepository cityRepository;
     @Autowired
     protected WorkExperienceRepository workExperienceRepository;
+    @Autowired
+    protected CountryRepository countryRepository;
+    @Autowired
+    protected DriverLicenseRepository driverLicenseRepository;
 
     @GetMapping("/duzenle")
     public ModelAndView showCv(Model model){
@@ -51,7 +59,11 @@ public class CvController {
         List<CompanySector> companySectorList = (List<CompanySector>) companySectorRepository.findAll();
         List<Position> positions = (List<Position>) positionRepository.findAll();
         List<Il> ilList = (List<Il>) cityRepository.findAll();
+        List<Ulke> ulkeList = (List<Ulke>) countryRepository.findAll();
+        List<DriverLicense> driverLicenseList = (List<DriverLicense>) driverLicenseRepository.findAll();
         model.addAttribute("position", positions);
+        model.addAttribute("ulkeList", ulkeList);
+        model.addAttribute("driverLicenseList", driverLicenseList);
         model.addAttribute("companySector", companySectorList);
         model.addAttribute("wayOfWork", wayOfWorkList);
         model.addAttribute("citys", ilList);

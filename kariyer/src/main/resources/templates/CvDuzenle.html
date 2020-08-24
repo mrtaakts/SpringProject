@@ -98,7 +98,7 @@
 
 
         </div>
-<<<<<<< HEAD
+
 <!--        <div class="row" id="iletisimInfo">-->
 <!--            <div class="col-lg-12">-->
 <!--                <div class="card">-->
@@ -222,8 +222,8 @@
 <!--            &lt;!&ndash;end overlay&ndash;&gt;-->
 <!--        </div>&lt;!&ndash; End container-fluid&ndash;&gt;  &lt;!&ndash; İletişim Bilgileri Input &ndash;&gt;-->
 
-        <div class="row" id="iletisimInput">
-            <div class="col-lg-12">
+<!--        <div class="row" id="iletisimInput">-->
+<!--            <div class="col-lg-12">-->
 
         <div class="row">
             <div  class="col-lg-12">
@@ -353,49 +353,51 @@
                     <div class="card-header gradient-deepblue text-white  text-uppercase">Özel Bilgiler</div>
                     <div class="ribbon-content"></div>
                     <div class="card-body">
-                        <form>
-                            <div className="form-group">
-                                <div className="container">
-                                    <div className="row">
-                                        <div className="col-sm-6">
-                                            <div className="col-sm-3">
-                                                <label>Cinsiyet </label>
-                                            </div>
+                        <form id="getuserPrivateInfo">
+                            <div class="form-group">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <label>Cinsiyet </label>
                                             <div class="icheck-material-success icheck-inline">
-                                                <input type="radio" id="inline-radio-success" name="durum"
-                                                       checked value=1>
+                                                <input type="radio" id="inline-radio-success" name="gender"
+                                                       checked value="Erkek">
                                                 <label for="inline-radio-success">Erkek</label>
                                             </div>
                                             <div class="icheck-material-primary icheck-inline">
-                                                <input type="radio" id="inline-radio-primary" name="durum"
-                                                       value=2>
+                                                <input type="radio" id="inline-radio-primary" name="gender"
+                                                       value="Kadın">
                                                 <label for="inline-radio-primary">Kadın</label>
                                             </div>
                                         </div>
-                                        <div className="col-sm-6">
+                                        <div>
                                             <label for="driverLicense" style="text-align: center" class="">Sürücü Belgesi Sınıfı</label>
                                             <select class="form-control"
                                                     id="driverLicense" name="driverLicense">
                                                 <option disabled="disabled" selected="selected"> ----- Sürücü Belgesi
                                                     Seçiniz -----
                                                 </option>
+                                                <option th:each="license : ${driverLicenseList}" th:value="${license.id}"
+                                                        th:text="${license.licence}"></option>
                                             </select>
                                         </div>
                                     </div>
-                                    <div className="row">
-                                        <div className="col-sm-6">
+                                    <div class="row">
+                                        <div class="col-sm-6">
                                             <label for="ulke" style="text-align: center" class="">Uyruk</label>
                                             <select class="form-control"
                                                     id="ulke" name="ulke">
                                                 <option disabled="disabled" selected="selected"> ----- Uyruk
                                                     Seçiniz -----
                                                 </option>
+                                                <option th:each="ulke : ${ulkeList}" th:value="${ulke.id}"
+                                                        th:text="${ulke.ulke}"></option>
                                             </select>
                                         </div>
                                     </div>
-                                    <div className="row">
-                                        <div className="col-sm-6">
-                                            <label for="salaryExpectation" style="text-align: center" class="">Uyruk</label>
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <label for="salaryExpectation" style="text-align: center" class="">Maaş Beklentisi</label>
                                             <input type="text" class="form-control"
                                                    id="salaryExpectation" name="salaryExpectation"
                                                    placeholder="Telefon giriniz" required>
@@ -435,11 +437,11 @@
 
 
                                     </div>
-                                    <div className="form-check">
-                                        <input className="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
 
                                         </input>
-                                        <label className="form-check-label" for="defaultCheck1">
+                                        <label class="form-check-label" for="defaultCheck1">
                                             Engelliyim
                                         </label>
                                     </div>
@@ -449,11 +451,10 @@
 
                                 </div>
                             </div>
-                            <a href="/anasayfa" class="btn btn-success"><i
+                            <button type="submit" class="btn btn-success"><i
                                     class="fa fa-check-square-o"></i>
                                 Kaydet
-
-                            </a>
+                            </button>
                             <a href="/anasayfa" class="btn btn-danger"><i
                                     class="zmdi zmdi-block-alt"></i>
                                 İptal

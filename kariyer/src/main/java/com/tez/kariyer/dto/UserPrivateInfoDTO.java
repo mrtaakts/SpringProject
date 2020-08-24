@@ -12,7 +12,7 @@ public class UserPrivateInfoDTO {
     private int id;
     private String gender;
     private int ulke;
-    private String driverLicense;
+    private int driverLicense;
     private String salaryExpectation;
     private int soldierStatus;
 
