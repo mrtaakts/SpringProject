@@ -10,6 +10,8 @@ import com.tez.kariyer.model.entity.parameterTable.CompanySector;
 import com.tez.kariyer.model.entity.parameterTable.DriverLicense;
 import com.tez.kariyer.model.entity.parameterTable.Position;
 import com.tez.kariyer.model.entity.parameterTable.WayOfWork;
+import com.tez.kariyer.model.repository.CommunicationInfoRepository;
+import com.tez.kariyer.model.repository.UserPrivateInfoRepository;
 import com.tez.kariyer.model.repository.WorkExperienceRepository;
 import com.tez.kariyer.model.repository.addressRepository.CityRepository;
 import com.tez.kariyer.model.repository.addressRepository.CountryRepository;
@@ -50,11 +52,26 @@ public class CvController {
     protected CountryRepository countryRepository;
     @Autowired
     protected DriverLicenseRepository driverLicenseRepository;
+    @Autowired
+    protected CommunicationInfoRepository communicationInfoRepository;
+    @Autowired
+    protected UserPrivateInfoRepository userPrivateInfoRepository;
+
 
     @GetMapping("/duzenle")
     public ModelAndView showCv(Model model){
         User user = SessionInfo.getInstance().getUser();
-        ModelAndView modelAndView =new ModelAndView("CvDuzenle");
+
+        ModelAndView modelAndView = new ModelAndView("CvDuzenle");
+        if (communicationInfoRepository.findByUserId(user.getId()) != null) {
+            model.addAttribute("cominfo", communicationInfoRepository.findByUserId(user.getId()));
+        }
+        if (userPrivateInfoRepository.findByUserId(user.getId()) != null) {
+            model.addAttribute("userinfo", userPrivateInfoRepository.findByUserId(user.getId()));
+        }
+        if (workExperienceRepository.findByUserId(user.getId()) != null) {
+            model.addAttribute("workinfo", workExperienceRepository.findByUserId(user.getId()));
+        }
         List<WayOfWork> wayOfWorkList = (List<WayOfWork>) wayOfWorkRepository.findAll();
         List<CompanySector> companySectorList = (List<CompanySector>) companySectorRepository.findAll();
         List<Position> positions = (List<Position>) positionRepository.findAll();

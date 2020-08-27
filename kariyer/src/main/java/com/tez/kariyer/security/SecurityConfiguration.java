@@ -42,7 +42,6 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
                 .antMatchers(resources).permitAll()
                 .antMatchers("/SifreUnuttum.html").permitAll()
                 .antMatchers("/403.html").permitAll()
-                .antMatchers("/FirmaBasvuru/**").permitAll()
                 .antMatchers("/profile/**").hasAnyRole("USER","ADMIN","FIRMA")
 
                 .antMatchers("/").authenticated()

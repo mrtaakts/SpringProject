@@ -20,6 +20,7 @@ public class CommunicationInfoDTO {
     private String  birthDateStr;
     private Date birthDate;
     private String phone;
+    private String web;
     protected int ilce;
 
 }

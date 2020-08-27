@@ -19,6 +19,9 @@ $(document).ready(function () {
         // $("#iletisimInput").hide();
     $('#hide').hide();
 
+    $('#iletisimInput').hide();
+    $('#ozelbilgiInput').hide();
+
     $("#getFormCommunication").validate({
 
         submitHandler: function (form) {
@@ -43,7 +46,7 @@ $(document).ready(function () {
                         console.log(data);
                         success_noti_custom(data.message);
                         setTimeout(function () {
-                            window.location.replace("/uyelik/olustur");
+                            window.location.replace("/cv/duzenle");
                         }, 2000);
                     } else {
                         error_noti_yuk(data.message)
@@ -89,7 +92,7 @@ $(document).ready(function () {
                         console.log(data);
                         success_noti_custom(data.message);
                         setTimeout(function () {
-                            window.location.replace("/uyelik/olustur");
+                            window.location.replace("/cv/duzenle");
                         }, 2000);
                     } else {
                         error_noti_yuk(data.message)
@@ -147,7 +150,7 @@ $(document).ready(function () {
                         console.log(data);
                         success_noti_custom(data.message);
                         setTimeout(function() {
-                            window.location.replace("/anasayfa");
+                            window.location.replace("/cv/duzenle");
                         }, 2000);
                     }
                     else{

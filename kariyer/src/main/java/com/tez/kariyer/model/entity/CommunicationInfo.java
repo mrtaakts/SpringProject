@@ -29,5 +29,6 @@ public class CommunicationInfo {
     protected Ilce ilce;
     @OneToOne
     protected User user;
+    private String web;
 
 }

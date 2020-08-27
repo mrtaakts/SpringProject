@@ -21,4 +21,6 @@ public class SoldierStatus {
 
     private String status;
 
+    private String date;
+
 }
