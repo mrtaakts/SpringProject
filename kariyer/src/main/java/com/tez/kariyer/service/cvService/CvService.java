@@ -77,6 +77,7 @@ public class CvService {
         try {
             DriverLicense driverLicense = driverLicenseRepository.findByIdd(userPrivateInfoDTO.getDriverLicense());
             UserPrivateInfo userPrivateInfo = modelMapper.map(userPrivateInfoDTO, UserPrivateInfo.class);
+            userPrivateInfo.setId(userPrivateInfoDTO.getId());
             userPrivateInfo.setUlke(countryRepository.findByIdd(userPrivateInfoDTO.getUlke()));
             userPrivateInfo.setSoldierStatus(soldierStatusRepository.findByIdd(userPrivateInfoDTO.getSoldierStatus()));
             userPrivateInfo.setDriverLicense(driverLicense.getLicence());

@@ -6,19 +6,13 @@ import com.tez.kariyer.dto.WorkExperienceDTO;
 import com.tez.kariyer.model.entity.*;
 import com.tez.kariyer.model.entity.address.Il;
 import com.tez.kariyer.model.entity.address.Ulke;
-import com.tez.kariyer.model.entity.parameterTable.CompanySector;
-import com.tez.kariyer.model.entity.parameterTable.DriverLicense;
-import com.tez.kariyer.model.entity.parameterTable.Position;
-import com.tez.kariyer.model.entity.parameterTable.WayOfWork;
+import com.tez.kariyer.model.entity.parameterTable.*;
 import com.tez.kariyer.model.repository.CommunicationInfoRepository;
 import com.tez.kariyer.model.repository.UserPrivateInfoRepository;
 import com.tez.kariyer.model.repository.WorkExperienceRepository;
 import com.tez.kariyer.model.repository.addressRepository.CityRepository;
 import com.tez.kariyer.model.repository.addressRepository.CountryRepository;
-import com.tez.kariyer.model.repository.parameterTableRepository.CompanySectorRepository;
-import com.tez.kariyer.model.repository.parameterTableRepository.DriverLicenseRepository;
-import com.tez.kariyer.model.repository.parameterTableRepository.PositionRepository;
-import com.tez.kariyer.model.repository.parameterTableRepository.WayOfWorkRepository;
+import com.tez.kariyer.model.repository.parameterTableRepository.*;
 import com.tez.kariyer.response.ResponseItem;
 import com.tez.kariyer.security.SessionInfo;
 import com.tez.kariyer.service.cvService.CvService;
@@ -56,6 +50,8 @@ public class CvController {
     protected CommunicationInfoRepository communicationInfoRepository;
     @Autowired
     protected UserPrivateInfoRepository userPrivateInfoRepository;
+    @Autowired
+    protected SoldierStatusRepository soldierStatusRepository;
 
 
     @GetMapping("/duzenle")
@@ -78,12 +74,14 @@ public class CvController {
         List<Il> ilList = (List<Il>) cityRepository.findAll();
         List<Ulke> ulkeList = (List<Ulke>) countryRepository.findAll();
         List<DriverLicense> driverLicenseList = (List<DriverLicense>) driverLicenseRepository.findAll();
+        List<SoldierStatus> soldierStatusList = (List<SoldierStatus>) soldierStatusRepository.findAll();
         model.addAttribute("position", positions);
         model.addAttribute("ulkeList", ulkeList);
         model.addAttribute("driverLicenseList", driverLicenseList);
         model.addAttribute("companySector", companySectorList);
         model.addAttribute("wayOfWork", wayOfWorkList);
         model.addAttribute("citys", ilList);
+        model.addAttribute("soldier", soldierStatusList);
         return modelAndView;
     }
 

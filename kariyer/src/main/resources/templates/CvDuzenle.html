@@ -593,12 +593,8 @@
                                                 <option disabled="disabled" value="0" selected="selected"> ----- Askerlik Durumu
                                                     Seçiniz -----
                                                 </option>
-                                                <option  value="1" > ----- Askerlik Durumu
-                                                    Seçiniz -----
-                                                </option>
-                                                <option  value="2" > ----- Askerlik Durumu
-                                                    Seçiniz -----
-                                                </option>
+                                                <option th:each="sol : ${soldier}" th:value="${sol.id}"
+                                                        th:text="${sol.status}"></option>
                                             </select>
                                         </div>
 
@@ -632,6 +628,9 @@
 
                                 </div>
                             </div>
+                            <input type="hidden" class="form-control"
+                                   id="idd" name="id"
+                                   th:value="${userinfo.id}">
                             <button type="submit" class="btn btn-success"><i
                                     class="fa fa-check-square-o"></i>
                                 Kaydet
@@ -688,8 +687,7 @@
 
                                     </div>
                             </div>
-                            <input type="hidden" id="id" name="id"
-                                   class="form-control" th:value="${userinfo.id}" >
+                            </div>
                         </form>
                     </div>
                 </div>
