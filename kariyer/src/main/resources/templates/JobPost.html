@@ -68,7 +68,7 @@
                                     <label for="tittle" class="">İlan Başlığı </label>
 
                                     <input type="text" class="form-control"
-                                           id="tittle" name="tittle"
+                                           id="tittle" name="title"
                                            placeholder="İlan Başlığını giriniz" required>
 
                                 </div>
@@ -78,7 +78,7 @@
                                 <div class="col-md-6 nopad">
                                     <div class="form-group">
                                         <label for="selectCountry" class="">Ülke</label>
-                                        <select class="form-control" id="selectCountry">
+                                        <select class="form-control" id="selectCountry" name="country">
                                             <option disabled="disabled" selected="selected"> ----- Ülke
                                                 Seçiniz -----
                                             </option>
@@ -92,7 +92,7 @@
                                     <div class="form-group" >
                                         <label for="selectCity" style="text-align: center" class="">İl</label>
                                         <select class="form-control"
-                                                id="selectCity">
+                                                id="selectCity" name="city">
                                             <option disabled="disabled" selected="selected"> ----- Şehir
                                                 Seçiniz -----
                                             </option>
@@ -108,7 +108,7 @@
                                 <div class="col-md-6 nopad">
                                     <div class="form-group">
                                         <label for="selectCompanySector" class="">Sektör</label>
-                                        <select class="form-control" id="selectCompanySector">
+                                        <select class="form-control" id="selectCompanySector" name="companySector">
                                             <option disabled="disabled" selected="selected"> ----- Firma
                                                 Sektörü Seçiniz-----
                                             </option>
@@ -122,7 +122,8 @@
                                     <div class="form-group" >
                                         <label for="selectBusinessArea" style="text-align: center" class="">İş Alanı</label>
                                         <select class="form-control"
-                                                id="selectBusinessArea">
+                                                id="selectBusinessArea"
+                                        name="businessArea">
                                             <option disabled="disabled" selected="selected"> ----- İş
                                                 Alanını Seçiniz -----
                                             </option>
@@ -137,7 +138,7 @@
                                 <div class="col-md-6 nopad">
                                     <div class="form-group">
                                         <label for="selectPosition" class="">Pozisyon</label>
-                                        <select class="form-control" id="selectPosition">
+                                        <select class="form-control" id="selectPosition" name="position">
                                             <option disabled="disabled" selected="selected"> ----- Pozisyonu
                                                 Seçiniz-----
                                             </option>
@@ -151,7 +152,8 @@
                                     <div class="form-group" >
                                         <label for="selectWayOfWork" style="text-align: center" class="">Çalışma Şekli</label>
                                         <select class="form-control"
-                                                id="selectWayOfWork">
+                                                id="selectWayOfWork"
+                                        name="wayOfWork">
                                             <option disabled="disabled" selected="selected"> ----- Çalışma
                                                 Şeklini Seçiniz -----
                                             </option>
@@ -166,14 +168,15 @@
                                 <div class="col-md-6 nopad">
                                     <div class="form-group">
                                         <label for="WorkExperience">İş Deneyimi Beklentiniz</label>
-                                        <input type="text" id="WorkExperience" name="WorkExperience" class="form-control"  aria-describedby="emailHelp" placeholder="İş Deneyimi">
+                                        <input type="text" id="WorkExperience" name="workExperience" class="form-control"  aria-describedby="emailHelp" placeholder="İş Deneyimi">
                                     </div>
                                 </div>
                                 <div class="col-md-6 nopad">
                                     <div class="form-group" >
                                         <label for="selectDriverLicense" style="text-align: center" class="">Sürücü Belgesi</label>
                                         <select class="form-control"
-                                                id="selectDriverLicense">
+                                                id="selectDriverLicense"
+                                        name="driverLicence">
                                             <option disabled="disabled" selected="selected"> ----- Sürücü
                                                 Belgesini Seçiniz -----
                                             </option>
@@ -188,7 +191,7 @@
                             <div className="row">
                                 <div className="col-sm-6 ">
                                     <div class="form-group">
-                                        <label for="information">İş Hakkında Ek Bilgi</label>
+                                        <label for="information" >İş Hakkında Ek Bilgi</label>
                                         <input class="form-control" name="information" id="information" rows="3"></input>
                                     </div>
                                 </div>

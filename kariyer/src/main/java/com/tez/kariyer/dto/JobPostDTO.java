@@ -19,7 +19,7 @@ public class JobPostDTO {
     private String position;
     private String wayOfWork;
     private String workExperience;
-    private String DriverLicence;
+    private String driverLicence;
     private String information;
     private String startDate;
 

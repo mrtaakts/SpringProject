@@ -16,6 +16,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import javax.mail.Session;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 @Service
 public class JobPostingService {
@@ -48,13 +51,13 @@ public class JobPostingService {
             jobPosting.setCompany(companyRepository.findByUser(user.getId()));
 
             jobPosting.setTittle(jobPostDTO.getTitle()); //todo : Bu kadar
-            jobPosting.setCity(cityRepository.findByIl(jobPostDTO.getCity()));
-            jobPosting.setCompanySector(companySectorRepository.findByCompanySector(jobPostDTO.getCompanySector()));
-            jobPosting.setBusinessArea(businessAreaRepository.findByBusinessArea(jobPostDTO.getBusinessArea()));
-            jobPosting.setPosition(positionRepository.findByPositions(jobPostDTO.getPosition()));
-            jobPosting.setWayOfWork(wayOfWorkRepository.findByWayOfWork(jobPostDTO.getWayOfWork()));
+            jobPosting.setCity(cityRepository.findById((Integer.parseInt(jobPostDTO.getCity()))).get());
+            jobPosting.setCompanySector(companySectorRepository.findById(Integer.parseInt(jobPostDTO.getCompanySector())).get());
+            jobPosting.setBusinessArea(businessAreaRepository.findById(Integer.parseInt(jobPostDTO.getBusinessArea())).get());
+            jobPosting.setPosition(positionRepository.findById(Integer.parseInt(jobPostDTO.getPosition())).get());
+            jobPosting.setWayOfWork(wayOfWorkRepository.findById(Integer.parseInt(jobPostDTO.getWayOfWork())).get());
             jobPosting.setWorkexp(jobPostDTO.getWorkExperience());
-            jobPosting.setDriverLicense(driverLicenseRepository.findByLicence(jobPostDTO.getDriverLicence()));
+            jobPosting.setDriverLicense(driverLicenseRepository.findById(Integer.parseInt(jobPostDTO.getDriverLicence())).get());
             jobPosting.setInformation(jobPostDTO.getInformation());
             jobPostingRepository.save(jobPosting);
             responseItem.setMessage("İşlem Başarılı");
@@ -67,6 +70,20 @@ public class JobPostingService {
             return responseItem;
         }
     }
+ public void expiredJobs()  {
 
+     try {
+         SimpleDateFormat sf = new SimpleDateFormat("yyyy-MM-dd");
+         Date current = sf.parse(sf.format(new Date()));
+
+         System.out.println(current);
+         jobPostingRepository.deletejobsss(current);
+     }
+     catch (Exception e){
+         System.out.println(e);
+     }
+
+     System.out.println("job tamamlandı");
+ }
 
 }

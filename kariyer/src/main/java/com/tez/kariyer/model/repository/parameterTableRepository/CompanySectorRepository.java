@@ -13,4 +13,5 @@ public interface CompanySectorRepository extends CrudRepository<CompanySector, I
 
     @Query("select company from CompanySector company where company.id=:id")
     CompanySector findByIdd(@Param("id") Integer id);
+
 }

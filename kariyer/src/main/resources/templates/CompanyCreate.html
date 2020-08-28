@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en
+" xmlns:th="http://www.thymeleaf.org"
+>
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content=" initial-scale=1, maximum-scale-1, shrink-to-fit=yes"/>
+    <meta name="description" content=""/>
+    <meta name="author" content=""/>
+    <title>TEZ | Firma Kayıt</title>
+    <link th:href="@{/css/pace.min.css}" rel="stylesheet"/>
+    <script th:src="@{/js/pace.min.js}"></script>
+    <!--favicon-->
+    <link rel="icon" style="width: 400px;height: 400px" th:href="@{/images/logo.png}" type="image/x-icon">
+    <!-- Bootstrap core CSS-->
+    <link th:href="@{/css/bootstrap.min.css}" rel="stylesheet"/>
+    <!-- animate CSS-->
+    <link th:href="@{/css/animate.css}" rel="stylesheet" type="text/css"/>
+    <!-- Icons CSS-->
+    <link th:href="@{/css/icons.css}" rel="stylesheet" type="text/css"/>
+    <!-- Custom Style-->
+    <link th:href="@{/css/app-style.css}" rel="stylesheet"/>
+</head>
+<body>
+
+
+<!-- Start wrapper-->
+<div id="wrapper">
+
+    <div class="height-100v d-flex align-items-center justify-content-center">
+        <div class="card-authentication2">
+            <div class="card-group">
+                <!--                <div class="card mb-0">-->
+                <!--                    <div class="bg-reset-password2 hidden-xs"></div>-->
+                <!--                    <div class="card-img-overlay rounded-left my-2 js-tilt" data-tilt>-->
+                <!--                    </div>-->
+                <!--                </div>-->
+
+                <div class="card mb-0 ">
+                    <div class="card-body">
+                        <div class="card-content p-3">
+                            <div class="text-center js-tilt" data-tilt>
+                                <img th:src="@{/images/logo.jpg}" alt="IMG">
+                            </div>
+                            <div class="card-title text-uppercase text-center py-3">Kayıt Ol</div>
+                            <form id="FormCompany">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label >Firma İsmi</label>
+                                            <input type="text" name="companyName" class="form-control" placeholder="Firma İsmi">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label >Firmanın Sektörü</label>
+                                            <input type="text" name="sektor" class="form-control" placeholder="Firma Sektörü">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label >Kuruluş Yılı</label>
+                                            <input type="email" name="foundationYear" class="form-control" placeholder="Kuruluş Yılı">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label >Adresi</label>
+                                            <input type="text" name="address" class="form-control" placeholder="Adresi">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label >Çalışan Sayısı</label>
+                                    <input type="text" class="form-control" name="employeesNumber" placeholder="Çalışan Sayısı">
+                                </div>
+                                <div class="form-group">
+                                    <label >Web Sayfası</label>
+                                    <input type="text" class="form-control" name="website" placeholder="Web Sayfası">
+                                </div>
+                                <div class="form-group">
+                                    <label >Firma Hakkında</label>
+                                    <input type="text" class="form-control" placeholder="Hakkınızda">
+                                </div>
+                                <div class="col-md-6 nopad">
+                                    <div class="form-group" >
+                                        <label for="selectCity" style="text-align: center" class="">İl</label>
+                                        <select class="form-control"
+                                                id="selectCity" name="city">
+                                            <option disabled="disabled" selected="selected"> ----- Şehir
+                                                Seçiniz -----
+                                            </option>
+                                            <option th:each="sehir : ${city}" th:value="${sehir.id}"
+                                                    th:text="${sehir.il}"></option>
+                                        </select>
+                                    </div>
+                                </div>
+
+
+
+                                <button type="submit" class="btn btn-primary btn-block waves-effect waves-light">Firma Kayıt</button>
+                            </form>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Start Back To Top Button-->
+    <a href="javaScript:void(0);" class="back-to-top"><i class="fa fa-angle-double-up"></i> </a>
+    <!--End Back To Top Button-->
+
+</div><!--wrapper-->
+
+
+
+
+
+<!-- Bootstrap core JavaScript-->
+<script th:src="@{/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js}"></script>
+
+
+<!-- Bootstrap core JavaScript-->
+<script th:src="@{/js/jquery.min.js}"></script>
+<script th:src="@{/js/popper.min.js}"></script>
+<script th:src="@{/js/bootstrap.min.js}"></script>
+<script th:src="@{/js/bildirim.js}"></script>
+
+<!-- simplebar js -->
+<script th:src="@{/plugins/simplebar/js/simplebar.js}"></script>
+<!-- sidebar-menu js -->
+<script th:src="@{/js/sidebar-menu.js}"></script>
+
+<!-- Custom scripts -->
+<script th:src="@{/js/app-script.js}"></script>
+
+<script th:src="@{/plugins/notifications/js/lobibox.min.js}"></script>
+<script th:src="@{/plugins/notifications/js/notifications.min.js}"></script>
+<script th:src="@{/plugins/notifications/js/notification-custom-script.js}"></script>
+<!--Form Validatin Script-->
+<script th:src="@{/plugins/jquery-validation/js/jquery.validate.min.js}"></script>
+<script th:src="@{/js/jquery-serialize.min.js}"></script>
+<script type="application/javascript" th:src="@{/js/form-kontrol.js}"></script>
+</body>
+</html>

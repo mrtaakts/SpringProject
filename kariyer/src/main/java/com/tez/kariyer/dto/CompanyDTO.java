@@ -24,5 +24,7 @@ public class CompanyDTO {
     private String website;
 
     private String about;
+    private String User;
+    private String City;
 
 }

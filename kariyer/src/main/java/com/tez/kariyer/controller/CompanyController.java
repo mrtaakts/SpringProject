@@ -22,6 +22,8 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 
+import java.time.LocalDateTime;
+import java.util.Date;
 import java.util.List;
 import java.util.Optional;
 
@@ -89,14 +91,22 @@ public class CompanyController {
             return mav;                                        // ilanlar listeleme sayfası
         }
 
+    @GetMapping("/kayıt")
+    public ModelAndView CompanyCreate(Model model){
+        ModelAndView mav = new ModelAndView("CompanyCreate");
+        List<Il> city = (List<Il>) cityRepository.findAll();
+        model.addAttribute("city",city);
+        return mav;                                        // ilanlar listeleme sayfası
+    }
+
 
     @PostMapping("/save")
     @ResponseBody
-    public ResponseItem saveCompany(@RequestBody JobPostDTO jobPostDTO){
+    public ResponseItem saveJobPost(@RequestBody JobPostDTO jobPostDTO){
         ResponseItem responseItem = new ResponseItem();
-
-
+        Date date= new Date();
         try {
+            jobPostDTO.setStartDate(date.toString());
             jobPostingService.saveJobPost(jobPostDTO);
             responseItem.setMessage("İşlem Başarılı!");
             responseItem.setResult(true);

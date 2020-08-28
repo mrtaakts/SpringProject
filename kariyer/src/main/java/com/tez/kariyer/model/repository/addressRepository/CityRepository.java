@@ -10,5 +10,5 @@ import java.util.List;
 public interface CityRepository extends CrudRepository<Il, Integer> {
 
     List<Il> findByUlke(Integer id);
-    Il findByIl(String city);
+
 }

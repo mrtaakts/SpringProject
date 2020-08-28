@@ -17,13 +17,13 @@ var getUrlParameter = function getUrlParameter(sParam) {
 
 $(document).ready(function () {
 
-    $("#FormSave").validate({
+    $("#FormCompany").validate({
 
         submitHandler: function (form) {
 
             $('#loading-screen').fadeIn();
 
-            var postData = $('#FormSave').serializeJSON();
+            var postData = $('#FormCompany').serializeJSON();
 
             console.log(postData);
             $.ajax({

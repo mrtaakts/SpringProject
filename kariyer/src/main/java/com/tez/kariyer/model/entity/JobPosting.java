@@ -47,4 +47,5 @@ public class JobPosting {
 
     private Date startDate;
 
+
 }
