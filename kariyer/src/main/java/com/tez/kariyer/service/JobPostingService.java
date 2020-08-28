@@ -4,14 +4,18 @@ import com.tez.kariyer.dto.CompanyDTO;
 import com.tez.kariyer.dto.JobPostDTO;
 import com.tez.kariyer.model.entity.Company;
 import com.tez.kariyer.model.entity.JobPosting;
+import com.tez.kariyer.model.entity.User;
 import com.tez.kariyer.model.repository.CompanyRepository;
 import com.tez.kariyer.model.repository.JobPostingRepository;
 import com.tez.kariyer.model.repository.WorkExperienceRepository;
 import com.tez.kariyer.model.repository.addressRepository.CityRepository;
 import com.tez.kariyer.model.repository.parameterTableRepository.*;
 import com.tez.kariyer.response.ResponseItem;
+import com.tez.kariyer.security.SessionInfo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
+import javax.mail.Session;
 
 @Service
 public class JobPostingService {
@@ -31,11 +35,18 @@ public class JobPostingService {
     WorkExperienceRepository workExperienceRepository;
     @Autowired
     DriverLicenseRepository driverLicenseRepository;
+    @Autowired
+    CompanyRepository companyRepository;
 
     public ResponseItem saveJobPost(JobPostDTO jobPostDTO) {
         ResponseItem responseItem = new ResponseItem();
+        User user = SessionInfo.getInstance().getUser();
         try {
+
             JobPosting jobPosting = new JobPosting();
+
+            jobPosting.setCompany(companyRepository.findByUser(user.getId()));
+
             jobPosting.setTittle(jobPostDTO.getTitle()); //todo : Bu kadar
             jobPosting.setCity(cityRepository.findByIl(jobPostDTO.getCity()));
             jobPosting.setCompanySector(companySectorRepository.findByCompanySector(jobPostDTO.getCompanySector()));

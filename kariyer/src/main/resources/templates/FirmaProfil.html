@@ -8,13 +8,13 @@
     <meta name="viewport" content=" initial-scale=1, maximum-scale-1, shrink-to-fit=yes"/>
     <meta name="description" content=""/>
     <meta name="author" content=""/>
-    <title>Firma Profili</title>
+    <title>TEZ | Firma Profili</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
     <link rel="stylesheet" th:href="@{/css/pace.min.css}"/>
     <script th:src="@{/js/pace.min.js}"></script>
     <!--favicon-->
-    <link rel="icon" th:href="@{/images/favicon.ico}" type="image/x-icon">
+    <link rel="icon" th:href="@{/images/logo.png}" type="image/x-icon">
     <!-- simplebar CSS-->
     <link th:href="@{/plugins/simplebar/css/simplebar.css}" rel="stylesheet"/>
     <!-- Bootstrap core CSS-->
@@ -36,7 +36,9 @@
     <link rel="stylesheet" th:href="@{/plugins/notifications/css/lobibox.min.css}"/>
 
  <style>
-
+     html{
+         overflow-x: hidden;
+     }
  </style>
 
 
@@ -56,7 +58,7 @@
             <div class="card-body">
                 <div class="row">
             <div class="col-lg-6">
-                <div style="font-family: 'Oswald', sans-serif;;font-size: x-large;margin-bottom: 2vh;color: black" > Firmamız Hakkında </div>
+                <div style="font-family: 'Oswald', sans-serif;font-size: x-large;margin-bottom: 2vh;color: black" > Firmamız Hakkında </div>
                 <div class="bg-light"><span th:text="${company.about}" style="font-family: 'Oswald', sans-serif;font-size:20px;margin-top: 4vh">
                 </span></div>
 

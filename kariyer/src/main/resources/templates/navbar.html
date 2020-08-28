@@ -9,13 +9,13 @@
     <meta name="viewport" content=" initial-scale=1, maximum-scale-1, shrink-to-fit=yes"/>
     <meta name="description" content=""/>
     <meta name="author" content=""/>
-    <title>U-ETDS | Personel Ekle</title>
+    <title>TEZ | Navbar</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
     <link rel="stylesheet" th:href="@{/css/pace.min.css}"/>
     <script th:src="@{/js/pace.min.js}"></script>
     <!--favicon-->
-    <link rel="icon" th:href="@{/images/favicon.ico}" type="image/x-icon">
+    <link rel="icon" th:href="@{/images/logo.png}" type="image/x-icon">
     <!-- simplebar CSS-->
     <link th:href="@{/plugins/simplebar/css/simplebar.css}" rel="stylesheet"/>
     <!-- Bootstrap core CSS-->
@@ -39,18 +39,28 @@
 <body>
 <!-- Navigation -->
 <nav  th:fragment="navbar" class="navbar navbar-expand-lg navbar-white bg-white">
-    <a class="navbar-brand" href="/anasayfa">  <img style="width: 40px;height: 40px" th:src="@{/images/logo.jpg}" alt="IMG">
+    <a class="navbar-brand" href="/anasayfa">  <img style="width: 40px;height: 40px" th:src="@{/images/logo.png}" alt="IMG">
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="dropdown" style="position: absolute;right: 1vh">
-            <button style="background-color: #82503f" class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <button style="background-color: #82503f" class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <span sec:authentication="name" ></span>
             </button>
             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                 <a class="dropdown-item" href="/cv/duzenle">Profil</a>
+                <a class="dropdown-item" href="#">Çıkış</a>
+            </div>
+        </div>
+        <div class="dropdown" style="position: absolute;right: 15vh">
+            <button style="background-color: #82503f" class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span>Google</span>
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="/firma/profil">Firma Profili</a>
+                <a class="dropdown-item" href="/firma/ilanver">İlan Oluştur</a>
                 <a class="dropdown-item" href="#">Çıkış</a>
             </div>
         </div>
@@ -61,5 +71,38 @@
 
 
 </nav>
+
+
+<!-- Bootstrap core JavaScript-->
+<script th:src="@{/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js}"></script>
+
+
+<!-- Bootstrap core JavaScript-->
+<script th:src="@{/js/jquery.min.js}"></script>
+<script th:src="@{/js/popper.min.js}"></script>
+<script th:src="@{/js/bootstrap.min.js}"></script>
+<script th:src="@{/js/bildirim.js}"></script>
+
+<!-- simplebar js -->
+<script th:src="@{/plugins/simplebar/js/simplebar.js}"></script>
+<!-- sidebar-menu js -->
+<script th:src="@{/js/sidebar-menu.js}"></script>
+
+<!-- Custom scripts -->
+<script th:src="@{/js/app-script.js}"></script>
+
+<script th:src="@{/plugins/notifications/js/lobibox.min.js}"></script>
+<script th:src="@{/plugins/notifications/js/notifications.min.js}"></script>
+<script th:src="@{/plugins/notifications/js/notification-custom-script.js}"></script>
+<!--Form Validatin Script-->
+<script th:src="@{/plugins/jquery-validation/js/jquery.validate.min.js}"></script>
+<script th:src="@{/js/jquery-serialize.min.js}"></script>
+
+<script>
+    $(document).ready(function() {
+        $(".dropdown-toggle").dropdown();
+    });
+</script>
 </body>
+
 </html>

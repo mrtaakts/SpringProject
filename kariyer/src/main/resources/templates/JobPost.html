@@ -8,13 +8,13 @@
     <meta name="viewport" content=" initial-scale=1, maximum-scale-1, shrink-to-fit=yes"/>
     <meta name="description" content=""/>
     <meta name="author" content=""/>
-    <title>İş İlanı Oluşturma</title>
+    <title>TEZ | İlan Oluşturma</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
     <link rel="stylesheet" th:href="@{/css/pace.min.css}"/>
     <script th:src="@{/js/pace.min.js}"></script>
     <!--favicon-->
-    <link rel="icon" th:href="@{/images/favicon.ico}" type="image/x-icon">
+    <link rel="icon" th:href="@{/images/logo.png}" type="image/x-icon">
     <!-- simplebar CSS-->
     <link th:href="@{/plugins/simplebar/css/simplebar.css}" rel="stylesheet"/>
     <!-- Bootstrap core CSS-->
@@ -38,6 +38,10 @@
         .nopad{
             padding: 1vh;
         }
+
+         html{
+             overflow-x:hidden ;
+         }
 
 
     </style>
@@ -162,7 +166,7 @@
                                 <div class="col-md-6 nopad">
                                     <div class="form-group">
                                         <label for="WorkExperience">İş Deneyimi Beklentiniz</label>
-                                        <input type="text" id="WorkExperience" class="form-control"  aria-describedby="emailHelp" placeholder="İş Deneyimi">
+                                        <input type="text" id="WorkExperience" name="WorkExperience" class="form-control"  aria-describedby="emailHelp" placeholder="İş Deneyimi">
                                     </div>
                                 </div>
                                 <div class="col-md-6 nopad">
@@ -185,7 +189,7 @@
                                 <div className="col-sm-6 ">
                                     <div class="form-group">
                                         <label for="information">İş Hakkında Ek Bilgi</label>
-                                        <textarea class="form-control" id="information" rows="3"></textarea>
+                                        <input class="form-control" name="information" id="information" rows="3"></input>
                                     </div>
                                 </div>
 
