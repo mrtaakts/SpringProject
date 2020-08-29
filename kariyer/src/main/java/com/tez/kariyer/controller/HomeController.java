@@ -37,4 +37,11 @@ public class HomeController {
         ModelAndView modelAndView = new ModelAndView("index");
         return modelAndView;
     }
+
+    @GetMapping("/password")
+    public ModelAndView passwordReset(){
+        ModelAndView modelAndView = new ModelAndView("PasswordReset");
+
+        return modelAndView;
+    }
 }

@@ -12,4 +12,7 @@ public interface UserRepository extends CrudRepository<User, Integer> {
 
     @Query("select user from User user where user.id=:id")
     User findByID(@Param("id") Integer id);
+
+    @Query("select email from User email where email.email=:email")
+    User getEmail(@Param("email") String email);
 }
