@@ -11,7 +11,7 @@ import org.springframework.scheduling.annotation.Scheduled;
 public class ShTask {
     @Autowired
     JobPostingService jobPostingService;
-    @Scheduled(cron="*/10 * * * * *") //hergün  1:01 çalışır
+    @Scheduled(cron = "0 1 1 * * *", zone="Europe/Istanbul") //hergün  1:01 çalışır
     public void task(){
         System.out.printf("selam");
         jobPostingService.expiredJobs();

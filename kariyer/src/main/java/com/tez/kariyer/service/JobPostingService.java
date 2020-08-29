@@ -45,11 +45,12 @@ public class JobPostingService {
         ResponseItem responseItem = new ResponseItem();
         User user = SessionInfo.getInstance().getUser();
         try {
-
+            SimpleDateFormat sf = new SimpleDateFormat("yyyy-MM-dd");
+            Date current = sf.parse(sf.format(new Date()));
             JobPosting jobPosting = new JobPosting();
 
             jobPosting.setCompany(companyRepository.findByUser(user.getId()));
-
+            jobPosting.setStartDate(current);
             jobPosting.setTittle(jobPostDTO.getTitle()); //todo : Bu kadar
             jobPosting.setCity(cityRepository.findById((Integer.parseInt(jobPostDTO.getCity()))).get());
             jobPosting.setCompanySector(companySectorRepository.findById(Integer.parseInt(jobPostDTO.getCompanySector())).get());
