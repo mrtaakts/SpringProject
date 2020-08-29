@@ -43,4 +43,6 @@ public class WorkExperience {
 
     private String jopDescription;
 
+    private String web;
+
 }

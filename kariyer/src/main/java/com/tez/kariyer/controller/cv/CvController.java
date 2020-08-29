@@ -61,9 +61,13 @@ public class CvController {
         ModelAndView modelAndView = new ModelAndView("CvDuzenle");
         if (communicationInfoRepository.findByUserId(user.getId()) != null) {
             model.addAttribute("cominfo", communicationInfoRepository.findByUserId(user.getId()));
+        }else {
+            model.addAttribute("cominfo", null);
         }
         if (userPrivateInfoRepository.findByUserId(user.getId()) != null) {
             model.addAttribute("userinfo", userPrivateInfoRepository.findByUserId(user.getId()));
+        }else {
+            model.addAttribute("userinfo", null);
         }
         if (workExperienceRepository.findByUserId(user.getId()) != null) {
             model.addAttribute("workinfo", workExperienceRepository.findByUserId(user.getId()));

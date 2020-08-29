@@ -25,6 +25,6 @@ public class WorkExperienceDTO {
     protected int wayOfWork;
     protected int district;
     private String jopDescription;
-    private String webSite;
+    private String web;
 
 }

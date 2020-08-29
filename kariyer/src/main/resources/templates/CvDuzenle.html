@@ -99,132 +99,6 @@
 
         </div>
 
-<!--        <div class="row" id="iletisimInfo">-->
-<!--            <div class="col-lg-12">-->
-<!--                <div class="card">-->
-<!--                    <div class="card-header gradient-deepblue text-white  text-uppercase">İletişim Bilgileri</div>-->
-<!--                    <div class="ribbon-content"></div>-->
-<!--                    <div class="card-body">-->
-<!--                        <form id="getFormCommunicationInfo">-->
-<!--                            <div className="form-group">-->
-<!--                                <div className="container">-->
-<!--                                    <div className="row">-->
-
-<!--                                        <div className="col-sm">-->
-<!--                                            <label for="name" class="">İsim </label>-->
-
-<!--                                            <input type="text" class="form-control"-->
-<!--                                                   id="name" name="name"-->
-<!--                                                   placeholder="İsim giriniz" required>-->
-
-<!--                                        </div>-->
-<!--                                        <div className="col-sm">-->
-<!--                                            <label for="surname" class="">Soyisim </label>-->
-
-<!--                                            <input type="text" class="form-control"-->
-<!--                                                   id="surname" name="surname"-->
-<!--                                                   placeholder="Soyisim giriniz" required>-->
-<!--                                        </div>-->
-<!--                                    </div>-->
-<!--                                    <div className="row">-->
-<!--                                        <div className="col-sm-6">-->
-<!--                                            <label for="tittle" class="">Unvan </label>-->
-
-<!--                                            <input type="text" class="form-control"-->
-<!--                                                   id="tittle" name="tittle"-->
-<!--                                                   placeholder="Unvan giriniz" required>-->
-<!--                                        </div>-->
-<!--                                    </div>-->
-<!--                                    <div className="row">-->
-<!--                                        <div className="col-sm">-->
-<!--                                            <label for="email" class="">Email </label>-->
-
-<!--                                            <input type="text" class="form-control"-->
-<!--                                                   id="email" name="email"-->
-<!--                                                   placeholder="Email giriniz" required>-->
-<!--                                        </div>-->
-<!--                                        <div className="col-sm">-->
-<!--                                            <label>Doğum Tarİhİ</label>-->
-<!--                                            <span class="fa fa-calendar"></span>-->
-<!--                                            <input type="text" id="autoclose-datepicker" name="birthDateStr"-->
-<!--                                                   class="form-control" placeholder="Varsa Doğum Tarihi Alanını Giriniz">-->
-<!--                                        </div>-->
-<!--                                    </div>-->
-<!--                                    <div className="row">-->
-<!--                                        <div className="col-sm-6">-->
-<!--                                            <label for="telefon" class="">Telefon </label>-->
-
-<!--                                            <input type="text" class="form-control"-->
-<!--                                                   id="telefon" name="phone"-->
-<!--                                                   placeholder="Telefon giriniz" required>-->
-<!--                                        </div>-->
-
-<!--                                    </div>-->
-<!--                                    <div class="row">-->
-<!--                                        <div class="col-md-6">-->
-<!--                                            <div class="form-group" >-->
-<!--                                                <label for="selectCity" class="">İl</label>-->
-<!--                                                <select class="form-control" id="selectCity" name="city">-->
-<!--                                                    <option disabled="disabled" selected="selected"> -&#45;&#45;&#45;&#45; Şehir-->
-<!--                                                        Seçiniz -&#45;&#45;&#45;&#45;-->
-<!--                                                    </option>-->
-<!--                                                    <option th:each="city : ${citys}" th:value="${city.id}"-->
-<!--                                                            th:text="${city.il}"-->
-<!--                                                    ></option>-->
-<!--                                                </select>-->
-<!--                                            </div>-->
-<!--                                        </div>-->
-<!--                                        <div class="col-md-6">-->
-<!--                                            <div class="form-group">-->
-<!--                                                <label for="selectDistrict" style="text-align: center" class="">İlçe</label>-->
-<!--                                                <select class="form-control"-->
-<!--                                                        id="selectDistrict" name="ilce">-->
-<!--                                                    <option disabled="disabled" selected="selected"> -&#45;&#45;&#45;&#45; İlçe-->
-<!--                                                        Seçiniz -&#45;&#45;&#45;&#45;-->
-<!--                                                    </option>-->
-<!--                                                </select>-->
-<!--                                            </div>-->
-<!--                                        </div>-->
-<!--                                    </div>-->
-
-<!--                                    <div className="row">-->
-<!--                                        <div className="col-sm-6">-->
-<!--                                            <label for="web" class="">Web Sayfam </label>-->
-
-<!--                                            <input type="text" class="form-control"-->
-<!--                                                   id="web" name="web"-->
-<!--                                                   placeholder="Web Sayfanızı giriniz" required>-->
-<!--                                        </div>-->
-
-<!--                                    </div>-->
-
-<!--                                </div>-->
-<!--                            </div>-->
-<!--                            <br>-->
-
-<!--                            <button type="submit" class="btn btn-success"><i-->
-<!--                                    class="fa fa-check-square-o"></i>-->
-<!--                                Kaydet-->
-<!--                            </button>-->
-<!--                            <a href="/anasayfa" class="btn btn-danger"><i-->
-<!--                                    class="zmdi zmdi-block-alt"></i>-->
-<!--                                İptal-->
-
-<!--                            </a>-->
-
-<!--                        </form>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--            </div>-->
-
-<!--            &lt;!&ndash;start overlay&ndash;&gt;-->
-<!--            <div class="overlay toggle-menu"></div>-->
-<!--            &lt;!&ndash;end overlay&ndash;&gt;-->
-<!--        </div>&lt;!&ndash; End container-fluid&ndash;&gt;  &lt;!&ndash; İletişim Bilgileri Input &ndash;&gt;-->
-
-<!--        <div class="row" id="iletisimInput">-->
-<!--            <div class="col-lg-12">-->
-
         <div class="row">
             <div  class="col-lg-12">
                 <div class="card">
@@ -284,7 +158,7 @@
 
                                             <input type="text" class="form-control"
                                                    id="tittle" name="tittle"
-                                                   th:value="${cominfo.tittle}">
+                                                   th:value="${cominfo.tittle}" required>
                                         </div>
                                     </div>
                                     <div class="row">
@@ -300,19 +174,19 @@
 
                                             <input type="text" class="form-control"
                                                    id="email" name="email"
-                                                   th:value="${cominfo.email}">
+                                                   th:value="${cominfo.email}" required>
                                         </div>
                                         <div class="col-sm" th:if="${cominfo == null}">
                                             <label>Doğum Tarİhİ</label>
                                             <span class="fa fa-calendar"></span>
                                             <input type="text" id="autoclose-datepicker" name="birthDateStr"
-                                                   class="form-control" placeholder="Varsa Doğum Tarihi Alanını Giriniz">
+                                                   class="form-control" placeholder="Varsa Doğum Tarihi Alanını Giriniz" required>
                                         </div>
                                         <div class="col-sm" th:if="${cominfo != null}">
                                             <label>Doğum Tarİhİ</label>
                                             <span class="fa fa-calendar"></span>
                                             <input type="text" id="autoclose-datepicker" name="birthDateStr"
-                                                   class="form-control" th:value="${cominfo.birthDate.toString()}">
+                                                   class="form-control" th:value="${cominfo.birthDate.toString()}" required>
                                         </div>
                                     </div>
                                     <div class="row">
@@ -328,7 +202,7 @@
 
                                             <input type="text" class="form-control"
                                                    id="telefon" name="phone"
-                                                   th:value="${cominfo.phone}">
+                                                   th:value="${cominfo.phone}" required>
                                         </div>
 
                                     </div>
@@ -336,7 +210,7 @@
                                                 <div class="col-md-6">
                                                     <div class="form-group" >
                                                         <label for="selectCity" class="">İl</label>
-                                                        <select class="form-control" id="selectCity" name="city">
+                                                        <select class="form-control" id="selectCity" name="city" required>
                                                             <option disabled="disabled" selected="selected"> ----- Şehir
                                                                 Seçiniz -----
                                                             </option>
@@ -350,7 +224,7 @@
                                                     <div class="form-group">
                                                         <label for="selectDistrict" style="text-align: center" class="">İlçe</label>
                                                         <select class="form-control"
-                                                                id="selectDistrict" name="ilce">
+                                                                id="selectDistrict" name="ilce" required>
                                                             <option disabled="disabled" selected="selected"> ----- İlçe
                                                                 Seçiniz -----
                                                             </option>
@@ -362,7 +236,7 @@
                                                 <div class="col-md-6">
                                                     <div class="form-group" >
                                                         <label for="selectCity" class="">İl</label>
-                                                        <select class="form-control" id="selectCity" name="city">
+                                                        <select class="form-control" id="selectCity" name="city" required>
                                                             <option disabled="disabled" selected="selected"> ----- Şehir
                                                                 Seçiniz -----
                                                             </option>
@@ -375,7 +249,7 @@
                                                 <div class="col-md-6">
                                                     <div class="form-group">
                                                         <label for="selectDistrict" style="text-align: center" class="">İlçe</label>
-                                                        <select class="form-control"
+                                                        <select class="form-control" required
                                                                 id="selectDistrict" name="ilce">
                                                             <option disabled="disabled" selected="selected"> ----- İlçe
                                                                 Seçiniz -----
@@ -398,7 +272,7 @@
 
                                             <input type="text" class="form-control"
                                                    id="web" name="web"
-                                                   th:value="${cominfo.web}">
+                                                   th:value="${cominfo.web}" required>
                                         </div>
 
                                     </div>
@@ -416,15 +290,17 @@
                                 İptal
 
                             </a>
-                            <input type="hidden" class="form-control"
-                                   id="id" name="id"
-                                   th:value="${cominfo.id}">
+                            <div th:if="${cominfo!=null}">
+                                <input type="hidden" class="form-control"
+                                       id="id" name="id"
+                                       th:value="${cominfo.id}">
+                            </div>
                         </form>
                     </div>
 
                     <div class="card-body" id="iletisimOutput">
-                        <form id="getFormCommunication">
-                            <div class="form-group">
+                        <form id="getFormCommunication" >
+                            <div class="form-group" th:if="${cominfo != null}">
                                 <div class="container">
                                     <div class="row">
 
@@ -518,6 +394,13 @@
 
                                 </div>
                             </div>
+                            <div class="form-group" th:if="${cominfo == null}">
+                                <div class="container">
+                                    <div class="row">
+                                        <p>İletişim verilerinizi girmek için tıklayınız !!!  </p>
+                                    </div>
+                                </div>
+                            </div>
                             <br>
                         </form>
                     </div>
@@ -552,10 +435,10 @@
                                                 <label for="inline-radio-primary">Kadın</label>
                                             </div>
                                         </div>
-                                        <div>
+                                        <div th:if="${userinfo == null}">
                                             <label for="driverLicense" style="text-align: center" class="">Sürücü Belgesi Sınıfı</label>
                                             <select class="form-control"
-                                                    id="driverLicense" name="driverLicense">
+                                                    id="driverLicense" name="driverLicense" required>
                                                 <option disabled="disabled" selected="selected"> ----- Sürücü Belgesi
                                                     Seçiniz -----
                                                 </option>
@@ -563,12 +446,36 @@
                                                         th:text="${license.licence}"></option>
                                             </select>
                                         </div>
+                                        <div th:if="${userinfo != null}">
+                                            <label for="driverLicense" style="text-align: center" class="">Sürücü Belgesi Sınıfı</label>
+                                            <select class="form-control"
+                                                    id="driverLicense" name="driverLicense" required>
+                                                <option disabled="disabled" selected="selected"> ----- Sürücü Belgesi
+                                                    Seçiniz -----
+                                                </option>
+                                                <option th:each="license : ${driverLicenseList}" th:value="${license.id}"
+                                                        th:text="${license.licence}" th:selected="${license.licence} == ${userinfo.driverLicense}"></option>
+                                            </select>
+                                        </div>
                                     </div>
-                                    <div class="row">
+                                    <div class="row" th:if="${userinfo != null}">
                                         <div class="col-sm-6">
                                             <label for="ulke" style="text-align: center" class="">Uyruk</label>
                                             <select class="form-control"
-                                                    id="ulke" name="ulke">
+                                                    id="ulke" name="ulke" required>
+                                                <option disabled="disabled" selected="selected"> ----- Uyruk
+                                                    Seçiniz -----
+                                                </option>
+                                                <option th:each="ulke : ${ulkeList}" th:value="${ulke.id}"
+                                                        th:text="${ulke.ulke}" th:selected="${ulke.id} == ${userinfo.ulke.id}"></option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="row" th:if="${userinfo==null}">
+                                        <div class="col-sm-6">
+                                            <label for="ulke" style="text-align: center" class="">Uyruk</label>
+                                            <select class="form-control"
+                                                    id="ulke" name="ulke" required>
                                                 <option disabled="disabled" selected="selected"> ----- Uyruk
                                                     Seçiniz -----
                                                 </option>
@@ -577,24 +484,43 @@
                                             </select>
                                         </div>
                                     </div>
-                                    <div class="row">
+                                    <div class="row" th:if="${userinfo != null}">
+                                        <div class="col-sm-6">
+                                            <label for="salaryExpectation" style="text-align: center" class="">Maaş Beklentisi</label>
+                                            <input type="text" class="form-control"
+                                                   id="salaryExpectation" name="salaryExpectation" th:value="${userinfo.salaryExpectation}" required>
+                                        </div>
+                                    </div>
+                                    <div class="row" th:if="${userinfo == null}">
                                         <div class="col-sm-6">
                                             <label for="salaryExpectation" style="text-align: center" class="">Maaş Beklentisi</label>
                                             <input type="text" class="form-control"
                                                    id="salaryExpectation" name="salaryExpectation"
-                                                   placeholder="Telefon giriniz" required>
+                                                   placeholder="Maaş beklentisi giriniz" required>
                                         </div>
                                     </div>
                                     <div class="row">
-                                        <div class="col-sm-6">
+                                        <div class="col-sm-6" th:if="${userinfo == null}">
                                             <label>Askerlik Durumu</label>
                                             <select class="form-control"
-                                                    id="soldierStatus" name="soldierStatus">
+                                                    id="soldierStatus" name="soldierStatus" required>
                                                 <option disabled="disabled" value="0" selected="selected"> ----- Askerlik Durumu
                                                     Seçiniz -----
                                                 </option>
                                                 <option th:each="sol : ${soldier}" th:value="${sol.id}"
                                                         th:text="${sol.status}"></option>
+                                            </select>
+                                        </div>
+
+                                        <div class="col-sm-6" th:if="${userinfo != null}">
+                                            <label>Askerlik Durumu</label>
+                                            <select class="form-control"
+                                                    id="soldierStatus" name="soldierStatus" required>
+                                                <option disabled="disabled" value="0" selected="selected"> ----- Askerlik Durumu
+                                                    Seçiniz -----
+                                                </option>
+                                                <option th:each="sol : ${soldier}" th:value="${sol.id}"
+                                                        th:text="${sol.status}" th:selected="${sol.id} == ${userinfo.soldierStatus.id}"></option>
                                             </select>
                                         </div>
 
@@ -605,7 +531,7 @@
                                             <label>Tecil Tarihi</label>
                                             <span class="fa fa-calendar"></span>
                                             <input type="text" id="autoclose-datepickerSoldier" name="startDate"
-                                                   class="form-control" >
+                                                   class="form-control" required>
                                         </div>
 
                                     </div>
@@ -628,9 +554,11 @@
 
                                 </div>
                             </div>
-                            <input type="hidden" class="form-control"
-                                   id="idd" name="id"
-                                   th:value="${userinfo.id}">
+                            <div th:if="${userinfo != null}">
+                                <input type="hidden" class="form-control"
+                                       id="idd" name="id"
+                                       th:value="${userinfo.id}">
+                            </div>
                             <button type="submit" class="btn btn-success"><i
                                     class="fa fa-check-square-o"></i>
                                 Kaydet
@@ -647,7 +575,7 @@
                     <div class="card-body" id="ozelbilgiOutput">
                         <form id="getuserPrivateInfo">
                             <div class="form-group">
-                                <div class="container">
+                                <div class="container" th:if="${userinfo != null}">
                                     <div class="row">
                                         <div class="col-sm-6">
                                             <label>Cinsiyet </label>
@@ -687,6 +615,9 @@
 
                                     </div>
                             </div>
+                                <div class="container" th:if="${userinfo == null}">
+                                    <p> Özel bilgilerinizi giriniz !!!</p>
+                                </div>
                             </div>
                         </form>
                     </div>
@@ -703,13 +634,96 @@
                 <div class="card">
                     <div class="card-header gradient-deepblue text-white  text-uppercase">İş Deneyimi</div>
                     <div class="ribbon-content"></div>
-                    <div class="card-body">
+                    <div class="card-body" id="isdeneyimOutput">
                         <form id="getWorkExperience">
-                            <div className="form-group">
-                                <div className="container">
-                                    <div className="row">
+                            <div class="form-group">
+                                <div class="container">
+                                    <div class="row">
 
-                                        <div className="col-sm">
+                                        <div class="col-sm" th:if="${workinfo != null}">
+                                            <label for="firmAd" class="">Firma Adı </label>
+
+                                            <label id="firmAd" name="firmAd"
+                                                   placeholder="Firma Adı Giriniz" th:value="${workinfo.firmsName}"/>
+
+                                        </div>
+                                        <div class="col-sm" th:if="${workinfo != null}">
+                                            <label for="position" class="">Pozisyon</label>
+                                            <label th:text="${workinfo.position.positions}"></label>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-4 form-group" th:if="${workinfo != null}">
+                                            <label>Başlangıç Tarihi</label>
+                                            <span class="fa fa-calendar"></span>
+                                            <label type="text" id="autoclose-datepickerStart" name="startDate"
+                                                   th:text="${workinfo.startDate.toString()}"/>
+
+                                        </div>
+                                        <div class="col-sm-4 form-group" id="hidden" th:if="${workinfo != null}">
+                                            <label>Bitiş Tarihi</label>
+                                            <span class="fa fa-calendar"></span>
+                                            <label th:text="${workinfo.finishDate.toString()}"/>
+
+                                        </div>
+                                        <div class="col-sm-2 form-group">
+                                            <br>
+                                            <input type="checkbox" id="myCheck" onclick="hiddenFinishDate()">
+                                            <label for="inline-radio-success">Hala Çalışıyorum</label>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm">
+                                            <label for="companySector" class="">Firma Sektörü</label>
+                                            <label th:text="${workinfo.companySector.companySector}"></label>
+                                        </div>
+
+                                    </div>
+                                    <div className="row">
+                                        <div className="col-sm-6">
+                                            <label for="telefon" class="">Çalışma Şekli </label>
+                                            <label th:text="${workinfo.wayOfWork.wayOfWork}"></label>
+                                        </div>
+
+                                    </div>
+                                    <div class="row" th:if="${workinfo != null}">
+                                        <label> Il / Ilce</label>
+                                        <label th:text="${workinfo.ilce.city.il} + ' / ' +${workinfo.ilce.ilce} "></label>
+                                    </div>
+
+                                    <div className="row" th:if="${workinfo != null}">
+                                        <div className="col-sm-6">
+                                            <label for="web" class="">Web Sayfam </label>
+
+                                            <label id="webSite" name="web"
+                                                   th:text="${workinfo.web}"/>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                            <br>
+
+                        </form>
+                    </div>
+
+
+                    <div class="card-body" id="isdeneyimInput">
+                        <form id="getWorkExperience">
+                            <div class="form-group">
+                                <div class="container">
+                                    <div class="row">
+
+                                        <div class="col-sm" th:if="${workinfo != null}">
+                                            <label for="firmAd" class="">Firma Adı </label>
+
+                                            <input type="text" class="form-control"
+                                                   id="firmAd" name="firmAd"
+                                                   placeholder="Firma Adı Giriniz" th:value="${workinfo.firmsName}" required>
+
+                                        </div>
+                                        <div class="col-sm" th:if="${workinfo == null}">
                                             <label for="firmAd" class="">Firma Adı </label>
 
                                             <input type="text" class="form-control"
@@ -717,7 +731,18 @@
                                                    placeholder="Firma Adı Giriniz" required>
 
                                         </div>
-                                        <div className="col-sm">
+                                        <div class="col-sm" th:if="${workinfo != null}">
+                                            <label for="position" class="">Pozisyon</label>
+                                            <select class="form-control" id="position">
+                                                <option disabled="disabled" selected="selected"> ----- Pozisyon
+                                                    Seçiniz -----
+                                                </option>
+                                                <option th:each="position : ${position}" th:value="${position.id}"
+                                                        th:text="${position.positions}" th:selected="${position.id} == ${workinfo.position.id}"
+                                                ></option>
+                                            </select>
+                                        </div>
+                                        <div class="col-sm" th:if="workinfo == null">
                                             <label for="position" class="">Pozisyon</label>
                                             <select class="form-control" id="position">
                                                 <option disabled="disabled" selected="selected"> ----- Pozisyon
@@ -730,18 +755,32 @@
                                         </div>
                                     </div>
                                     <div class="row">
-                                        <div class="col-sm-4 form-group">
+                                        <div class="col-sm-4 form-group" th:if="${workinfo == null}">
                                             <label>Başlangıç Tarihi</label>
                                             <span class="fa fa-calendar"></span>
                                             <input type="text" id="autoclose-datepickerStart" name="startDate"
                                                    class="form-control" >
 
                                         </div>
-                                        <div class="col-sm-4 form-group" id="hidden">
+                                        <div class="col-sm-4 form-group" th:if="${workinfo != null}">
+                                            <label>Başlangıç Tarihi</label>
+                                            <span class="fa fa-calendar"></span>
+                                            <input type="text" id="autoclose-datepickerStart" name="startDate"
+                                                   class="form-control" th:value="${workinfo.startDate.toString()}" >
+
+                                        </div>
+                                        <div class="col-sm-4 form-group" id="hidden" th:if="${workinfo == null}">
                                             <label>Bitiş Tarihi</label>
                                             <span class="fa fa-calendar"></span>
                                             <input type="text" id="autoclose-datepickerFinish" name="finishDate"
                                                    class="form-control" >
+
+                                        </div>
+                                        <div class="col-sm-4 form-group" id="hidden" th:if="${workinfo != null}">
+                                            <label>Bitiş Tarihi</label>
+                                            <span class="fa fa-calendar"></span>
+                                            <input type="text" id="autoclose-datepickerFinish" name="finishDate"
+                                                   class="form-control" th:value="${workinfo.finishDate.toString()}">
 
                                         </div>
                                         <div class="col-sm-2 form-group">
@@ -833,6 +872,7 @@
 
                         </form>
                     </div>
+
                 </div>
             </div>
 

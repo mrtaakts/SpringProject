@@ -21,6 +21,7 @@ $(document).ready(function () {
 
     $('#iletisimInput').hide();
     $('#ozelbilgiInput').hide();
+    $('#isdeneyimInput').hide();
 
     $("#getFormCommunication").validate({
 
