@@ -24,10 +24,11 @@ $(document).ready(function () {
             if(id==null){
                 var formData = {
                     "name": $("#ad").val(),
-                    "surname": $("#soyAdi").val(),
+                    "surname": $("#soyad").val(),
                     "email": $("#email").val(),
                     "username": $("#username").val(),
                     "password": $("#password").val(),
+                    "roles" : $("#roles").val(),
 
                 }
 

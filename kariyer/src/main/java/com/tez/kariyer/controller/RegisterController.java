@@ -33,6 +33,10 @@ public class RegisterController {
         try {
             User user = new User();
             user.setEmail(userDTO.getEmail());
+            if (userDTO.getRoles().equals("1")) {
+                user.setRoles("BIREYSEL_ROLE");
+            }else
+                user.setRoles("KURUMSAL_ROLE");
             user.setName(userDTO.getName());
             user.setSurname(userDTO.getSurname());
             user.setUsername(userDTO.getUsername());
