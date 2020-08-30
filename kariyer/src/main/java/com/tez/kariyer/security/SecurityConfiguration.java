@@ -40,12 +40,12 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
                 .csrf().disable()
                 .authorizeRequests()
                 .antMatchers(resources).permitAll()
-                .antMatchers("/SifreUnuttum.html").permitAll()
                 .antMatchers("/403.html").permitAll()
                 .antMatchers("/profile/**").hasAnyRole("BIREYSEL_ROLE","ADMIN","KURUMSAL_ROLE")
 
                 .antMatchers("/").authenticated()
                 .antMatchers("/cv/**").hasAnyRole("BIREYSEL_ROLE","ADMIN")
+                .antMatchers("/firma/**").hasAnyRole("KURUMSAL_ROLE","ADMIN")
                 .antMatchers("/anasayfa/**").authenticated()
 
                 .and()

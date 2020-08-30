@@ -16,6 +16,13 @@ var getUrlParameter = function getUrlParameter(sParam) {
 
 $(document).ready(function () {
 
+    var checked ;
+    if(document.getElementById("inline-radio-primary").checked = true){
+        checked=2;
+    }else {
+        checked=1
+    }
+
     $("#FormSave").validate({
 
         submitHandler: function (form) {
@@ -28,7 +35,7 @@ $(document).ready(function () {
                     "email": $("#email").val(),
                     "username": $("#username").val(),
                     "password": $("#password").val(),
-                    "roles" : $("#roles").val(),
+                    "roles" : checked,
 
                 }
 

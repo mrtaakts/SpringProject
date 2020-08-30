@@ -644,11 +644,11 @@
                                             <label for="firmAd" class="">Firma Adı </label>
 
                                             <label id="firmAd" name="firmAd"
-                                                   placeholder="Firma Adı Giriniz" th:value="${workinfo.firmsName}"/>
+                                                   placeholder="Firma Adı Giriniz" th:text="${workinfo.firmsName}"/>
 
                                         </div>
                                         <div class="col-sm" th:if="${workinfo != null}">
-                                            <label for="position" class="">Pozisyon</label>
+                                         kay   <label for="position" class="">Pozisyon</label>
                                             <label th:text="${workinfo.position.positions}"></label>
                                         </div>
                                     </div>
@@ -666,33 +666,30 @@
                                             <label th:text="${workinfo.finishDate.toString()}"/>
 
                                         </div>
-                                        <div class="col-sm-2 form-group">
-                                            <br>
-                                            <input type="checkbox" id="myCheck" onclick="hiddenFinishDate()">
-                                            <label for="inline-radio-success">Hala Çalışıyorum</label>
-                                        </div>
                                     </div>
-                                    <div class="row">
+                                    <div class="row" th:if="${workinfo != null}">
                                         <div class="col-sm">
                                             <label for="companySector" class="">Firma Sektörü</label>
                                             <label th:text="${workinfo.companySector.companySector}"></label>
                                         </div>
 
                                     </div>
-                                    <div className="row">
-                                        <div className="col-sm-6">
+                                    <div class="row" th:if="${workinfo != null}">
+                                        <div class="col-sm-6">
                                             <label for="telefon" class="">Çalışma Şekli </label>
                                             <label th:text="${workinfo.wayOfWork.wayOfWork}"></label>
                                         </div>
 
                                     </div>
                                     <div class="row" th:if="${workinfo != null}">
-                                        <label> Il / Ilce</label>
-                                        <label th:text="${workinfo.ilce.city.il} + ' / ' +${workinfo.ilce.ilce} "></label>
+                                        <div class="col-sm-6">
+                                            <label> Il / Ilce</label>
+                                            <label th:text="${workinfo.ilce.city.il} + ' / ' +${workinfo.ilce.ilce} "></label>
+                                        </div>
                                     </div>
 
-                                    <div className="row" th:if="${workinfo != null}">
-                                        <div className="col-sm-6">
+                                    <div class="row" th:if="${workinfo != null}">
+                                        <div class="col-sm-6">
                                             <label for="web" class="">Web Sayfam </label>
 
                                             <label id="webSite" name="web"
