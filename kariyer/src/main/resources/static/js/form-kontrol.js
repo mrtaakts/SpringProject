@@ -17,17 +17,18 @@ var getUrlParameter = function getUrlParameter(sParam) {
 $(document).ready(function () {
 
     var checked ;
-    if(document.getElementById("inline-radio-primary").checked = true){
-        checked=2;
-    }else {
-        checked=1
-    }
 
     $("#FormSave").validate({
 
         submitHandler: function (form) {
             $('#loading-screen').fadeIn();
+            console.log(checked);
              var id = getUrlParameter('id');
+            if(document.getElementById("inline-radio-primary").checked){
+                checked=2;
+            }else if(document.getElementById("inline-radio-success").checked) {
+                checked=1;
+            }
             if(id==null){
                 var formData = {
                     "name": $("#ad").val(),

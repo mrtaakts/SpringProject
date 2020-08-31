@@ -2,6 +2,7 @@ package com.tez.kariyer.controller;
 
 import com.tez.kariyer.dto.JobPostDTO;
 import com.tez.kariyer.model.entity.Company;
+import com.tez.kariyer.model.entity.JobPosting;
 import com.tez.kariyer.model.entity.User;
 import com.tez.kariyer.model.entity.address.Il;
 import com.tez.kariyer.model.entity.address.Ilce;
@@ -16,6 +17,7 @@ import com.tez.kariyer.model.repository.addressRepository.DistrictRepository;
 import com.tez.kariyer.model.repository.parameterTableRepository.*;
 import com.tez.kariyer.response.ResponseItem;
 import com.tez.kariyer.security.SessionInfo;
+import com.tez.kariyer.service.CompanyService;
 import com.tez.kariyer.service.JobPostingService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.ui.Model;
@@ -55,12 +57,16 @@ public class CompanyController {
     CompanyRepository companyRepository;
     @Autowired
     UserRepository userRepository;
+    @Autowired
+    CompanyService companyService;
 
     @GetMapping("/profil")
     public ModelAndView getprofile(Model model){
         User user = SessionInfo.getInstance().getUser();
         Company company = companyRepository.findByUser(user.getId());
         model.addAttribute("company",company);
+        List<JobPosting> jobPosting= companyService.getCompanysJobPosts();
+        model.addAttribute("jobposting",jobPosting);
         ModelAndView mav = new ModelAndView("FirmaProfil");
         return mav;                                        // firması bilgisi sayfası
     }
@@ -85,11 +91,7 @@ public class CompanyController {
             model.addAttribute("wayofwork",wayOfWork);
             return mav;                                        // ilan ekleme sayfası
         }
-        @GetMapping("/ilanlarim")
-        public ModelAndView JobPostings(Model model){
-            ModelAndView mav = new ModelAndView("KayitOl");
-            return mav;                                        // ilanlar listeleme sayfası
-        }
+
 
     @GetMapping("/kayıt")
     public ModelAndView CompanyCreate(Model model){

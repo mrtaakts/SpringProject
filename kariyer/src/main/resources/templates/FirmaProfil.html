@@ -155,8 +155,50 @@
     <!--start overlay-->
     <div class="overlay toggle-menu"></div>
     <!--end overlay-->
-</div><!-- End container-fluid-->  <!-- İletişim Bilgileri -->
+</div><!-- End container-fluid-->  <!-- Company Profil -->
 
+
+<div style="margin-bottom: 2vh;margin-top:4vh" class="col-lg-12">
+    <div class="row">
+
+        <div th:each="jobposting : ${jobposting}" class="col-lg-4">
+
+            <div class="card" style="width:90%;margin: auto">
+                <div class="card-header gradient-deepblue text-white  text-uppercase" th:text="${jobposting.getTittle()}"></div>
+                <div class="ribbon-content"></div>
+                <div class="card-body">
+
+                    <div class="row">
+                        <p style="font-family: 'Oswald', sans-serif;color: black;font-size: large;margin-right: 3px;">Firma İsmi:  </p>
+                        <p style="font-family: 'Oswald', sans-serif;font-size: large" th:text="${jobposting.company.companyName}" class="card-text"></p>
+                    </div>
+
+                    <div class="row">
+                        <p style="font-family: 'Oswald', sans-serif;color: black;font-size: large;margin-right: 3px;">Pozisyon:  </p>
+                        <p style="font-family: 'Oswald', sans-serif;font-size: large" th:text="${jobposting.position.positions}" class="card-text"></p>
+                    </div>
+                    <div class="row">
+                        <p style="font-family: 'Oswald', sans-serif;color: black;font-size: large;margin-right: 3px;">Çalışma Şekli:  </p>
+                        <p style="font-family: 'Oswald', sans-serif;font-size: large" th:text="${jobposting.wayOfWork.wayOfWork}" class="card-text"></p>
+                    </div>
+                    <div class="row">
+                        <p style="font-family: 'Oswald', sans-serif;color: black;font-size: large;margin-right: 3px;">Şehir:  </p>
+                        <p style="font-family: 'Oswald', sans-serif;font-size: large" th:text="${jobposting.city.getIl()}" class="card-text"></p>
+                    </div>
+
+
+
+                    <div class="row">
+                        <p style="font-family: 'Oswald', sans-serif;font-size: large" th:text="${jobposting.information}" class="card-footer"></p>
+                    </div>
+
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
 
 
 
