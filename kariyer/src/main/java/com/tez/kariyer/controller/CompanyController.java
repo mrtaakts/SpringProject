@@ -25,9 +25,7 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 
 import java.time.LocalDateTime;
-import java.util.Date;
-import java.util.List;
-import java.util.Optional;
+import java.util.*;
 
 @RestController
 @RequestMapping(value = "/firma")
@@ -89,6 +87,7 @@ public class CompanyController {
             model.addAttribute("businessArea",businessAreas);
             model.addAttribute("position",position);
             model.addAttribute("wayofwork",wayOfWork);
+            
             return mav;                                        // ilan ekleme sayfası
         }
 
