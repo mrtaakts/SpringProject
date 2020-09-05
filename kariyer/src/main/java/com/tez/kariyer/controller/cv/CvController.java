@@ -5,6 +5,7 @@ import com.tez.kariyer.dto.UserPrivateInfoDTO;
 import com.tez.kariyer.dto.WorkExperienceDTO;
 import com.tez.kariyer.model.entity.*;
 import com.tez.kariyer.model.entity.address.Il;
+import com.tez.kariyer.model.entity.address.Ilce;
 import com.tez.kariyer.model.entity.address.Ulke;
 import com.tez.kariyer.model.entity.parameterTable.*;
 import com.tez.kariyer.model.repository.CommunicationInfoRepository;
@@ -12,6 +13,7 @@ import com.tez.kariyer.model.repository.UserPrivateInfoRepository;
 import com.tez.kariyer.model.repository.WorkExperienceRepository;
 import com.tez.kariyer.model.repository.addressRepository.CityRepository;
 import com.tez.kariyer.model.repository.addressRepository.CountryRepository;
+import com.tez.kariyer.model.repository.addressRepository.DistrictRepository;
 import com.tez.kariyer.model.repository.parameterTableRepository.*;
 import com.tez.kariyer.response.ResponseItem;
 import com.tez.kariyer.security.SessionInfo;
@@ -52,6 +54,8 @@ public class CvController {
     protected UserPrivateInfoRepository userPrivateInfoRepository;
     @Autowired
     protected SoldierStatusRepository soldierStatusRepository;
+    @Autowired
+    protected DistrictRepository districtRepository;
 
 
     @GetMapping("/duzenle")
@@ -76,9 +80,11 @@ public class CvController {
         List<CompanySector> companySectorList = (List<CompanySector>) companySectorRepository.findAll();
         List<Position> positions = (List<Position>) positionRepository.findAll();
         List<Il> ilList = (List<Il>) cityRepository.findAll();
+        List<Ilce> ilceList = (List<Ilce>) districtRepository.findAll();
         List<Ulke> ulkeList = (List<Ulke>) countryRepository.findAll();
         List<DriverLicense> driverLicenseList = (List<DriverLicense>) driverLicenseRepository.findAll();
         List<SoldierStatus> soldierStatusList = (List<SoldierStatus>) soldierStatusRepository.findAll();
+        model.addAttribute("ilce", ilceList);
         model.addAttribute("position", positions);
         model.addAttribute("ulkeList", ulkeList);
         model.addAttribute("driverLicenseList", driverLicenseList);

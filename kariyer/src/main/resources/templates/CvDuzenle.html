@@ -255,7 +255,7 @@
                                                                 Seçiniz -----
                                                             </option>
                                                             <option th:each="city : ${citys}" th:value="${city.id}"
-                                                                    th:text="${city.il}"
+                                                                    th:text="${city.il}" th:selected="${city.id} == ${cominfo.ilce.city.id}"
                                                             ></option>
                                                         </select>
                                                     </div>
@@ -268,6 +268,9 @@
                                                             <option disabled="disabled" selected="selected"> ----- İlçe
                                                                 Seçiniz -----
                                                             </option>
+                                                            <option th:each="ilce : ${ilce}" th:value="${ilce.id}"
+                                                                    th:text="${ilce.ilce}" th:selected="${ilce.id} == ${cominfo.ilce.id}"
+                                                            ></option>
                                                         </select>
                                                     </div>
                                                 </div>
@@ -360,16 +363,10 @@
                                     </div>
                                     <div class="row">
                                         <div class="col-md-6">
-                                            <div class="form-group" >
-                                                <label for="selectCity" class="label1">İl:</label>
-                                                <select class="form-control" id="selectCity" name="city">
-                                                    <option disabled="disabled" selected="selected"> ----- Şehir
-                                                        Seçiniz -----
-                                                    </option>
-                                                    <option th:each="city : ${citys}" th:value="${city.id}"
-                                                            th:text="${city.il}"
-                                                    ></option>
-                                                </select>
+                                            <div class="form-group">
+                                                <label for="selectDistrict" style="text-align: center" class="label1">İlçe:</label>
+                                                <label th:text="${cominfo.ilce.city.il}" class="label2">
+                                                </label>
                                             </div>
                                         </div>
                                         <div class="col-md-6">
@@ -987,6 +984,10 @@
     $('#ozelbilgiOutput').click(function(){
         $(this).hide();
         $('#ozelbilgiInput').show();
+    });
+    $('#isdeneyimOutput').click(function(){
+        $(this).hide();
+        $('#isdeneyimInput').show();
     });
 
 </script>
