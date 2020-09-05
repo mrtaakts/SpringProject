@@ -128,13 +128,14 @@ $(document).ready(function () {
                     "startDate": $("#autoclose-datepickerStart").val(),
                     "finishDate": $("#autoclose-datepickerFinish").val(),
                     "workStatus": $("#myCheck").val(),
-                    "webSite": $("#webSite").val(),
+                    "web": $("#webSite").val(),
                     "companySector": $('#companySector option:selected').val(),
                     "wayOfWork": $('#wayOfWork option:selected').val(),
 
                 }
 
             }
+
             console.log(formData);
             $.ajax({
                 type: "POST",

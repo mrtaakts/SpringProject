@@ -107,6 +107,7 @@ public class CvService {
         }
         return responseItem;
     }
+
     public ResponseItem saveWorkExperience(WorkExperienceDTO workExperienceDTO){
         ResponseItem responseItem = new ResponseItem();
         User user = SessionInfo.getInstance().getUser();
@@ -118,7 +119,7 @@ public class CvService {
             workExperience.setWayOfWork(wayOfWorkRepository.findByIdd(workExperienceDTO.getWayOfWork()));
             workExperience.setIlce(districtRepository.findByIdd(workExperienceDTO.getDistrict()));
             workExperience.setStartDate(new SimpleDateFormat("dd/MM/yyyy").parse(workExperienceDTO.getStartDate()));
-            if (workExperienceDTO.getFinishDate()!=null) {
+            if (workExperienceDTO.getFinishDate()!=null && !workExperienceDTO.getFinishDate().equals("")) {
                 workExperience.setFinishDate(new SimpleDateFormat("dd/MM/yyyy").parse(workExperienceDTO.getFinishDate()));
             }
             workExperience.setFirmsName(workExperienceDTO.getFirmsName());

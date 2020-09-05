@@ -34,8 +34,17 @@ public class HomeController {
         model.addAttribute("job",jobPosting);
         User user = userRepository.findByUsername(authentication.getName());
         SessionInfo.getInstance().setUser(user);
-        ModelAndView modelAndView = new ModelAndView("index");
-        return modelAndView;
+        if (user.getRoles().equals("BIREYSEL_ROLE")) {
+            ModelAndView modelAndView = new ModelAndView("index");
+            return modelAndView;
+        }else if (user.getRoles().equals("BIREYSEL_ROLE")){
+            ModelAndView modelAndView = new ModelAndView("CompanyCreate");
+            return modelAndView;
+        } else {
+            ModelAndView modelAndView = new ModelAndView("ADMIN");
+            return modelAndView;
+        }
+
     }
 
     @GetMapping("/password")

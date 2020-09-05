@@ -630,7 +630,7 @@
                     <div class="card-header gradient-deepblue text-white  text-uppercase">İş Deneyimi</div>
                     <div class="ribbon-content"></div>
                     <div class="card-body" id="isdeneyimOutput">
-                        <form id="getWorkExperience">
+                        <form id="getWorkExperienceOutpu">
                             <div class="form-group">
                                 <div class="container">
                                     <div class="row">
@@ -643,7 +643,7 @@
 
                                         </div>
                                         <div class="col-sm" th:if="${workinfo != null}">
-                                         kay   <label for="position" class="">Pozisyon</label>
+                                            <label for="position" class="">Pozisyon</label>
                                             <label th:text="${workinfo.position.positions}"></label>
                                         </div>
                                     </div>
@@ -734,7 +734,7 @@
                                                 ></option>
                                             </select>
                                         </div>
-                                        <div class="col-sm" th:if="workinfo == null">
+                                        <div class="col-sm" th:if="${workinfo == null}">
                                             <label for="position" class="">Pozisyon</label>
                                             <select class="form-control" id="position">
                                                 <option disabled="disabled" selected="selected"> ----- Pozisyon
@@ -782,7 +782,7 @@
                                         </div>
                                     </div>
                                     <div class="row">
-                                        <div class="col-sm">
+                                        <div class="col-sm" th:if="${workinfo == null}">
                                             <label for="companySector" class="">Firma Sektörü</label>
                                             <select class="form-control" id="companySector">
                                                 <option disabled="disabled" selected="selected"> ----- Firma Sektörü
@@ -793,10 +793,21 @@
                                                 ></option>
                                             </select>
                                         </div>
+                                        <div class="col-sm" th:if="${workinfo != null}">
+                                            <label for="companySector" class="">Firma Sektörü</label>
+                                            <select class="form-control" id="companySector">
+                                                <option disabled="disabled" selected="selected"> ----- Firma Sektörü
+                                                    Seçiniz -----
+                                                </option>
+                                                <option th:each="companySector : ${companySector}" th:value="${companySector.id}"
+                                                        th:text="${companySector.companySector}" th:selected="${companySector.id} == ${workinfo.companySector.id}"
+                                                ></option>
+                                            </select>
+                                        </div>
 
                                     </div>
                                     <div className="row">
-                                        <div className="col-sm-6">
+                                        <div className="col-sm-6" th:if="${workinfo == null}">
                                             <label for="telefon" class="">Çalışma Şekli </label>
 
                                             <select class="form-control" id="wayOfWork">
@@ -805,6 +816,18 @@
                                                 </option>
                                                 <option th:each="wayOfWork : ${wayOfWork}" th:value="${wayOfWork.id}"
                                                         th:text="${wayOfWork.wayOfWork}"
+                                                ></option>
+                                            </select>
+                                        </div>
+                                        <div className="col-sm-6" th:if="${workinfo != null}">
+                                            <label for="telefon" class="">Çalışma Şekli </label>
+
+                                            <select class="form-control" id="wayOfWork">
+                                                <option disabled="disabled" selected="selected"> ----- Çalışma Şekli
+                                                    Seçiniz -----
+                                                </option>
+                                                <option th:each="wayOfWork : ${wayOfWork}" th:value="${wayOfWork.id}"
+                                                        th:text="${wayOfWork.wayOfWork}" th:selected="${wayOfWork.id} == ${workinfo.wayOfWork.id}"
                                                 ></option>
                                             </select>
                                         </div>
@@ -824,6 +847,33 @@
                                                 </select>
                                             </div>
                                         </div>
+                                        <div class="col-md-6" th:if="${workinfo == null}">
+                                            <div class="form-group">
+                                                <label for="selectDistrict" style="text-align: center" class="">İlçe</label>
+                                                <select class="form-control"
+                                                        id="selectDistrictWork">
+                                                    <option disabled="disabled" selected="selected"> ----- İlçe
+                                                        Seçiniz -----
+                                                    </option>
+                                                    <option th:each="city : ${ilce}" th:value="${city.id}"
+                                                            th:text="${city.il}"
+                                                    ></option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6" th:if="${workinfo != null}">
+                                            <div class="form-group">
+                                                <label for="selectCity" class="">İl</label>
+                                                <select class="form-control" id="selectCityWork">
+                                                    <option disabled="disabled" selected="selected"> ----- Şehir
+                                                        Seçiniz -----
+                                                    </option>
+                                                    <option th:each="city : ${citys}" th:value="${city.id}"
+                                                            th:text="${city.il}" th:selected="${city.id} == ${workinfo.ilce.city.id}"
+                                                    ></option>
+                                                </select>
+                                            </div>
+                                        </div>
                                         <div class="col-md-6">
                                             <div class="form-group">
                                                 <label for="selectDistrict" style="text-align: center" class="">İlçe</label>
@@ -832,6 +882,9 @@
                                                     <option disabled="disabled" selected="selected"> ----- İlçe
                                                         Seçiniz -----
                                                     </option>
+                                                    <option th:each="city : ${ilce}" th:value="${city.id}"
+                                                            th:text="${city.ilce}" th:selected="${city.id} == ${workinfo.ilce.id}"
+                                                    ></option>
                                                 </select>
                                             </div>
                                         </div>
