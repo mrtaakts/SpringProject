@@ -2,6 +2,7 @@ package com.tez.kariyer.controller;
 
 import com.tez.kariyer.model.entity.JobPosting;
 import com.tez.kariyer.model.entity.User;
+import com.tez.kariyer.model.repository.CompanyRepository;
 import com.tez.kariyer.model.repository.JobPostingRepository;
 import com.tez.kariyer.model.repository.UserRepository;
 import com.tez.kariyer.security.SessionInfo;
@@ -21,6 +22,8 @@ public class HomeController {
     UserRepository userRepository;
     @Autowired
     JobPostingRepository jobPostingRepository;
+    @Autowired
+    CompanyRepository companyRepository;
 
     @GetMapping({ "/", "/login" })
     public ModelAndView login(HttpServletRequest request){
@@ -38,8 +41,14 @@ public class HomeController {
             ModelAndView modelAndView = new ModelAndView("index");
             return modelAndView;
         }else if (user.getRoles().equals("BIREYSEL_ROLE")){
-            ModelAndView modelAndView = new ModelAndView("CompanyCreate");
-            return modelAndView;
+            if (companyRepository.findByUser(user.getId())==null) {
+                ModelAndView modelAndView = new ModelAndView("CompanyCreate");
+                return modelAndView;
+            }else {
+                ModelAndView modelAndView = new ModelAndView("index");
+                return modelAndView;
+            }
+
         } else {
             ModelAndView modelAndView = new ModelAndView("ADMIN");
             return modelAndView;
