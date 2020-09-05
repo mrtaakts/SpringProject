@@ -2,9 +2,13 @@ package com.tez.kariyer.controller;
 
 import com.tez.kariyer.model.entity.JobPosting;
 import com.tez.kariyer.model.entity.User;
+import com.tez.kariyer.model.entity.address.Il;
+import com.tez.kariyer.model.entity.parameterTable.CompanySector;
 import com.tez.kariyer.model.repository.CompanyRepository;
 import com.tez.kariyer.model.repository.JobPostingRepository;
 import com.tez.kariyer.model.repository.UserRepository;
+import com.tez.kariyer.model.repository.addressRepository.CityRepository;
+import com.tez.kariyer.model.repository.parameterTableRepository.CompanySectorRepository;
 import com.tez.kariyer.security.SessionInfo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.Authentication;
@@ -24,6 +28,10 @@ public class HomeController {
     JobPostingRepository jobPostingRepository;
     @Autowired
     CompanyRepository companyRepository;
+    @Autowired
+    CityRepository cityRepository;
+    @Autowired
+    CompanySectorRepository companySectorRepository;
 
     @GetMapping({ "/", "/login" })
     public ModelAndView login(HttpServletRequest request){
@@ -33,6 +41,10 @@ public class HomeController {
 
     @GetMapping("/anasayfa")
     public ModelAndView showMainPAage(Authentication authentication, Model model){
+        List<Il> city = (List<Il>) cityRepository.findAll();
+        List<CompanySector> sectors= (List<CompanySector>) companySectorRepository.findAll();
+        model.addAttribute("city",city);
+        model.addAttribute("sectors",sectors);
         List<JobPosting> jobPosting= (List<JobPosting>) jobPostingRepository.findAll();
         model.addAttribute("job",jobPosting);
         User user = userRepository.findByUsername(authentication.getName());
@@ -40,7 +52,7 @@ public class HomeController {
         if (user.getRoles().equals("BIREYSEL_ROLE")) {
             ModelAndView modelAndView = new ModelAndView("index");
             return modelAndView;
-        }else if (user.getRoles().equals("BIREYSEL_ROLE")){
+        }else if (user.getRoles().equals("KURUMSAL_ROLE")){
             if (companyRepository.findByUser(user.getId())==null) {
                 ModelAndView modelAndView = new ModelAndView("CompanyCreate");
                 return modelAndView;
