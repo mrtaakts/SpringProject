@@ -51,19 +51,25 @@ public class CompanyService {
         User user = SessionInfo.getInstance().getUser();
 
         try {
-            Company company= new Company();
-            company.setUser(user);
-            company.setWebsite(companyDTO.getWebsite());
-            company.setSektor(companySectorRepository.findById(Integer.parseInt(companyDTO.getSektor())).get());
-            company.setFoundationYear(companyDTO.getFoundationYear());
-            company.setEmployeesNumber(companyDTO.getEmployeesNumber());
-            company.setAddress(companyDTO.getAddress());
-            company.setAbout(companyDTO.getAbout());
-            company.setCompanyName(companyDTO.getCompanyName());
-            company.setCity(cityRepository.findById((Integer.parseInt(companyDTO.getCity()))).get());
-            companyRepository.save(company);
-            responseItem.setMessage("İşlem Başarılı");
-            responseItem.setResult(true);
+            if(companyRepository.findByUser(user.getId())==null ) {
+                Company company = new Company();
+                company.setUser(user);
+                company.setWebsite(companyDTO.getWebsite());
+                company.setSektor(companySectorRepository.findById(Integer.parseInt(companyDTO.getSektor())).get());
+                company.setFoundationYear(companyDTO.getFoundationYear());
+                company.setEmployeesNumber(companyDTO.getEmployeesNumber());
+                company.setAddress(companyDTO.getAddress());
+                company.setAbout(companyDTO.getAbout());
+                company.setCompanyName(companyDTO.getCompanyName());
+                company.setCity(cityRepository.findById((Integer.parseInt(companyDTO.getCity()))).get());
+                companyRepository.save(company);
+                responseItem.setMessage("İşlem Başarılı");
+                responseItem.setResult(true);
+            }
+            else {
+                responseItem.setMessage("Zaten bir firmanız bulunmakta");
+                responseItem.setResult(false);
+            }
 
             return responseItem;
         }catch (Exception e){

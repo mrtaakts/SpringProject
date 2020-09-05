@@ -108,9 +108,9 @@ public class CompanyController {
         ResponseItem responseItem = new ResponseItem();// ilanlar listeleme sayfası
         try
         {
-            companyService.saveCompany(companyDTO);
-            responseItem.setResult(true);
-            responseItem.setMessage("İşlem Başarılı");
+
+            responseItem=companyService.saveCompany(companyDTO);
+
             return responseItem;
         }
         catch (Exception e){
