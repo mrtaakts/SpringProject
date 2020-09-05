@@ -1,5 +1,6 @@
 package com.tez.kariyer.controller;
 
+import com.tez.kariyer.dto.CompanyDTO;
 import com.tez.kariyer.dto.JobPostDTO;
 import com.tez.kariyer.model.entity.Company;
 import com.tez.kariyer.model.entity.JobPosting;
@@ -93,11 +94,33 @@ public class CompanyController {
 
 
     @GetMapping("/kayıt")
-    public ModelAndView CompanyCreate(Model model){
+    public ModelAndView CompanyCreateGet(Model model){
         ModelAndView mav = new ModelAndView("CompanyCreate");
         List<Il> city = (List<Il>) cityRepository.findAll();
+        List<CompanySector> sectors= (List<CompanySector>) companySectorRepository.findAll();
         model.addAttribute("city",city);
+        model.addAttribute("sectors",sectors);
         return mav;                                        // ilanlar listeleme sayfası
+    }
+
+    @PostMapping("/kayıt")
+    public ResponseItem CompanyCreatePost(@RequestBody CompanyDTO companyDTO){
+        ResponseItem responseItem = new ResponseItem();// ilanlar listeleme sayfası
+        try
+        {
+            companyService.saveCompany(companyDTO);
+            responseItem.setResult(true);
+            responseItem.setMessage("İşlem Başarılı");
+            return responseItem;
+        }
+        catch (Exception e){
+            responseItem.setMessage("İşlem Başarısız");
+            responseItem.setResult(false);
+            e.printStackTrace();
+            return responseItem;
+        }
+
+
     }
 
 

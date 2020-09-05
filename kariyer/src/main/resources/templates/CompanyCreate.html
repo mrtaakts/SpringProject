@@ -41,7 +41,7 @@
                     <div class="card-body">
                         <div class="card-content p-3">
                             <div class="text-center js-tilt" data-tilt>
-                                <img th:src="@{/images/logo.jpg}" alt="IMG">
+                                <img style="width: 400px;height: 400px" th:src="@{/images/logo.png}" alt="IMG">
                             </div>
                             <div class="card-title text-uppercase text-center py-3">Kayıt Ol</div>
                             <form id="FormCompany">
@@ -55,7 +55,14 @@
                                     <div class="col-md-6">
                                         <div class="form-group">
                                             <label >Firmanın Sektörü</label>
-                                            <input type="text" name="sektor" class="form-control" placeholder="Firma Sektörü">
+                                            <select class="form-control"
+                                                    id="selectCity" name="sektor">
+                                                <option disabled="disabled" selected="selected"> ----- Sektör
+                                                    Seçiniz -----
+                                                </option>
+                                                <option th:each="sec : ${sectors}" th:value="${sec.id}"
+                                                        th:text="${sec.companySector}"></option>
+                                            </select>
                                         </div>
                                     </div>
                                 </div>
@@ -63,7 +70,7 @@
                                     <div class="col-md-6">
                                         <div class="form-group">
                                             <label >Kuruluş Yılı</label>
-                                            <input type="email" name="foundationYear" class="form-control" placeholder="Kuruluş Yılı">
+                                            <input type="text" name="foundationYear" class="form-control" placeholder="Kuruluş Yılı">
                                         </div>
                                     </div>
                                     <div class="col-md-6">
@@ -84,7 +91,7 @@
                                 </div>
                                 <div class="form-group">
                                     <label >Firma Hakkında</label>
-                                    <input type="text" class="form-control" placeholder="Hakkınızda">
+                                    <input type="text" class="form-control" name="about" placeholder="Hakkınızda">
                                 </div>
                                 <div class="col-md-6 nopad">
                                     <div class="form-group" >
@@ -146,6 +153,6 @@
 <!--Form Validatin Script-->
 <script th:src="@{/plugins/jquery-validation/js/jquery.validate.min.js}"></script>
 <script th:src="@{/js/jquery-serialize.min.js}"></script>
-<script type="application/javascript" th:src="@{/js/form-kontrol.js}"></script>
+<script type="application/javascript" th:src="@{/js/CompanyCreate.js}"></script>
 </body>
 </html>

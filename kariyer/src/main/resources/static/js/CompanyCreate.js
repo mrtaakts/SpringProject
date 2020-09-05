@@ -29,7 +29,7 @@ $(document).ready(function () {
             $.ajax({
                 type: "POST",
                 contentType: "application/json",
-                url: "/firma/save",
+                url: "/firma/kayıt",
                 data: postData,
                 dataType: 'json',
                 cache: false,
