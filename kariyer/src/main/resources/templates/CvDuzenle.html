@@ -834,7 +834,7 @@
 
                                     </div>
                                     <div class="row">
-                                        <div class="col-md-6">
+                                        <div class="col-md-6" th:if="${workinfo == null}">
                                             <div class="form-group">
                                                 <label for="selectCity" class="">İl</label>
                                                 <select class="form-control" id="selectCityWork">
@@ -847,7 +847,7 @@
                                                 </select>
                                             </div>
                                         </div>
-                                        <div class="col-md-6" th:if="${workinfo == null}">
+                                        <div class="col-md-6"  th:if="${workinfo == null}">
                                             <div class="form-group">
                                                 <label for="selectDistrict" style="text-align: center" class="">İlçe</label>
                                                 <select class="form-control"
@@ -874,7 +874,7 @@
                                                 </select>
                                             </div>
                                         </div>
-                                        <div class="col-md-6">
+                                        <div class="col-md-6" th:if="${workinfo != null}">
                                             <div class="form-group">
                                                 <label for="selectDistrict" style="text-align: center" class="">İlçe</label>
                                                 <select class="form-control"
@@ -891,11 +891,18 @@
                                     </div>
 
                                     <div className="row">
-                                        <div className="col-sm-6">
+                                        <div className="col-sm-6" th:if="${workinfo == null}">
                                             <label for="web" class="">Web Sayfam </label>
 
                                             <input type="text" class="form-control"
                                                    id="webSite" name="web"
+                                                   placeholder="Web Sayfanızı giriniz" required>
+                                        </div>
+                                        <div className="col-sm-6" th:if="${workinfo!=null}">
+                                            <label for="web" class="">Web Sayfam </label>
+
+                                            <input type="text" class="form-control"
+                                                   id="webSite" name="web" th:value="${workinfo.web}"
                                                    placeholder="Web Sayfanızı giriniz" required>
                                         </div>
 
@@ -925,6 +932,320 @@
             <div class="overlay toggle-menu"></div>
             <!--end overlay-->
         </div> <!-- İş Deneyimi -->
+
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="card">
+                    <div class="card-header gradient-deepblue text-white  text-uppercase">Eğitim Bilgiler</div>
+                    <div class="ribbon-content"></div>
+                    <div class="card-body" id="egitimbilgiInput">
+                        <form id="egitimInfo">
+                            <div class="form-group">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <label>Cinsiyet </label>
+                                            <div class="icheck-material-success icheck-inline">
+                                                <input type="radio" id="inline-radio-success" name="gender"
+                                                       checked value="Erkek">
+                                                <label for="inline-radio-success">Erkek</label>
+                                            </div>
+                                            <div class="icheck-material-primary icheck-inline">
+                                                <input type="radio" id="inline-radio-primary" name="gender"
+                                                       value="Kadın">
+                                                <label for="inline-radio-primary">Kadın</label>
+                                            </div>
+                                        </div>
+                                        <div th:if="${userinfo == null}">
+                                            <label for="driverLicense" style="text-align: center" class="">Sürücü Belgesi Sınıfı</label>
+                                            <select class="form-control"
+                                                    id="driverLicense" name="driverLicense" required>
+                                                <option disabled="disabled" selected="selected"> ----- Sürücü Belgesi
+                                                    Seçiniz -----
+                                                </option>
+                                                <option th:each="license : ${driverLicenseList}" th:value="${license.id}"
+                                                        th:text="${license.licence}"></option>
+                                            </select>
+                                        </div>
+                                        <div th:if="${userinfo != null}">
+                                            <label for="driverLicense" style="text-align: center" class="">Sürücü Belgesi Sınıfı</label>
+                                            <select class="form-control"
+                                                    id="driverLicense" name="driverLicense" required>
+                                                <option disabled="disabled" selected="selected"> ----- Sürücü Belgesi
+                                                    Seçiniz -----
+                                                </option>
+                                                <option th:each="license : ${driverLicenseList}" th:value="${license.id}"
+                                                        th:text="${license.licence}" th:selected="${license.licence} == ${userinfo.driverLicense}"></option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="row" th:if="${userinfo != null}">
+                                        <div class="col-sm-6">
+                                            <label for="ulke" style="text-align: center" class="">Uyruk</label>
+                                            <select class="form-control"
+                                                    id="ulke" name="ulke" required>
+                                                <option disabled="disabled" selected="selected"> ----- Uyruk
+                                                    Seçiniz -----
+                                                </option>
+                                                <option th:each="ulke : ${ulkeList}" th:value="${ulke.id}"
+                                                        th:text="${ulke.ulke}" th:selected="${ulke.id} == ${userinfo.ulke.id}"></option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="row" th:if="${userinfo==null}">
+                                        <div class="col-sm-6">
+                                            <label for="ulke" style="text-align: center" class="">Uyruk</label>
+                                            <select class="form-control"
+                                                    id="ulke" name="ulke" required>
+                                                <option disabled="disabled" selected="selected"> ----- Uyruk
+                                                    Seçiniz -----
+                                                </option>
+                                                <option th:each="ulke : ${ulkeList}" th:value="${ulke.id}"
+                                                        th:text="${ulke.ulke}"></option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="row" th:if="${userinfo != null}">
+                                        <div class="col-sm-6">
+                                            <label for="salaryExpectation" style="text-align: center" class="">Maaş Beklentisi</label>
+                                            <input type="text" class="form-control"
+                                                   id="salaryExpectation" name="salaryExpectation" th:value="${userinfo.salaryExpectation}" required>
+                                        </div>
+                                    </div>
+                                    <div class="row" th:if="${userinfo == null}">
+                                        <div class="col-sm-6">
+                                            <label for="salaryExpectation" style="text-align: center" class="">Maaş Beklentisi</label>
+                                            <input type="text" class="form-control"
+                                                   id="salaryExpectation" name="salaryExpectation"
+                                                   placeholder="Maaş beklentisi giriniz" required>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-6" th:if="${userinfo == null}">
+                                            <label>Askerlik Durumu</label>
+                                            <select class="form-control"
+                                                    id="soldierStatus" name="soldierStatus" required>
+                                                <option disabled="disabled" value="0" selected="selected"> ----- Askerlik Durumu
+                                                    Seçiniz -----
+                                                </option>
+                                                <option th:each="sol : ${soldier}" th:value="${sol.id}"
+                                                        th:text="${sol.status}"></option>
+                                            </select>
+                                        </div>
+
+                                        <div class="col-sm-6" th:if="${userinfo != null}">
+                                            <label>Askerlik Durumu</label>
+                                            <select class="form-control"
+                                                    id="soldierStatus" name="soldierStatus" required>
+                                                <option disabled="disabled" value="0" selected="selected"> ----- Askerlik Durumu
+                                                    Seçiniz -----
+                                                </option>
+                                                <option th:each="sol : ${soldier}" th:value="${sol.id}"
+                                                        th:text="${sol.status}" th:selected="${sol.id} == ${userinfo.soldierStatus.id}"></option>
+                                            </select>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="row" id="hide">
+                                        <div class="col-sm-6">
+                                            <label>Tecil Tarihi</label>
+                                            <span class="fa fa-calendar"></span>
+                                            <input type="text" id="autoclose-datepickerSoldier" name="startDate"
+                                                   class="form-control" required>
+                                        </div>
+
+                                    </div>
+                                    <div class="row">
+                                        <div id="engellabel">
+                                            <label >Engelliyseniz lütfen bunu belirtin. Böylece size sağlanan ayrıcalıklı istihdam olanaklarından faydalanabilirsiniz.</label>
+                                        </div>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+
+                                        </input>
+                                        <label class="form-check-label" for="defaultCheck1">
+                                            Engelliyim
+                                        </label>
+                                    </div>
+
+
+
+
+                                </div>
+                            </div>
+                            <div th:if="${userinfo != null}">
+                                <input type="hidden" class="form-control"
+                                       id="idd" name="id"
+                                       th:value="${userinfo.id}">
+                            </div>
+                            <button type="submit" class="btn btn-success"><i
+                                    class="fa fa-check-square-o"></i>
+                                Kaydet
+                            </button>
+                            <a href="/anasayfa" class="btn btn-danger"><i
+                                    class="zmdi zmdi-block-alt"></i>
+                                İptal
+
+                            </a>
+                        </form>
+                    </div>
+
+
+                    <div class="card-body" id="ozelbilgiOutput">
+                        <form id="getuserPrivateInfo">
+                            <div class="form-group">
+                                <div class="container" th:if="${userinfo != null}">
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <label class="label1" >Cinsiyet: </label>
+                                            <label class="label2" th:text="${userinfo.gender}"></label>
+                                        </div>
+                                        <div>
+                                            <label for="driverLicense" class="label1">Sürücü Belgesi Sınıfı:</label>
+                                            <label class="label2" th:text="${userinfo.driverLicense}"></label>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <label  for="ulke" class="label1">Uyruk:</label>
+                                            <label class="label2" th:text="${userinfo.ulke.ulke}"></label>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <label for="salaryExpectation"  class="label1">Maaş Beklentisi:</label>
+                                            <label class="label2" th:text="${userinfo.salaryExpectation}"></label>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <label class="label1">Askerlik Durumu:</label>
+                                            <label class="label2" th:text="${userinfo.soldierStatus.status}"></label>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="row" id="hide">
+                                        <div class="col-sm-6">
+                                            <label class="label1" >Tecil Tarihi:</label>
+                                            <span class="fa fa-calendar"></span>
+                                            <label class="label2" th:text="${userinfo.soldierStatus.date}"></label>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="container" th:if="${userinfo == null}">
+                                    <p style="font-family: 'Oswald', sans-serif;font-size: x-large;color: black"> Özel bilgilerinizi giriniz !!!</p>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <!--start overlay-->
+            <div class="overlay toggle-menu"></div>
+            <!--end overlay-->
+        </div> <!-- Eğitim Bilgiler -->
+
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="card">
+                    <div class="card-header gradient-deepblue text-white  text-uppercase">Özet Bilgiler</div>
+                    <div class="ribbon-content"></div>
+                    <div class="card-body" id="ozetbilgiInput">
+                        <form id="ozetInfo">
+                            <div class="form-group">
+                                <div class="container">
+                                    <div th:if="${summary == null}">
+                                        <textarea  class="form-control" style="resize:none;" rows="3" maxlength="255"
+                                               id="ozet" name="target">
+                                        </textarea>
+                                    </div>
+                                <div th:if="${summary != null}">
+                                    <textarea class="form-control" style="resize:none;" rows="3" maxlength="255"
+                                           id="ozet" name="target"
+                                              th:value="${summary.target}">
+                                    </textarea>
+                                </div>
+                                </div>
+                            </div>
+                            <div th:if="${summary != null}">
+                                <input type="hidden" class="form-control"
+                                       id="idd" name="id"
+                                       th:value="${summary.id}">
+                            </div>
+                            <button type="submit" class="btn btn-success"><i
+                                    class="fa fa-check-square-o"></i>
+                                Kaydet
+                            </button>
+                            <a href="/anasayfa" class="btn btn-danger"><i
+                                    class="zmdi zmdi-block-alt"></i>
+                                İptal
+
+                            </a>
+                        </form>
+                    </div>
+
+
+                    <div class="card-body" id="ozelbilgiOutput">
+                        <form id="getuserPrivateInfo">
+                            <div class="form-group">
+                                <div class="container" th:if="${userinfo != null}">
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <label class="label1" >Cinsiyet: </label>
+                                            <label class="label2" th:text="${userinfo.gender}"></label>
+                                        </div>
+                                        <div>
+                                            <label for="driverLicense" class="label1">Sürücü Belgesi Sınıfı:</label>
+                                            <label class="label2" th:text="${userinfo.driverLicense}"></label>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <label  for="ulke" class="label1">Uyruk:</label>
+                                            <label class="label2" th:text="${userinfo.ulke.ulke}"></label>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <label for="salaryExpectation"  class="label1">Maaş Beklentisi:</label>
+                                            <label class="label2" th:text="${userinfo.salaryExpectation}"></label>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <label class="label1">Askerlik Durumu:</label>
+                                            <label class="label2" th:text="${userinfo.soldierStatus.status}"></label>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="row" id="hide">
+                                        <div class="col-sm-6">
+                                            <label class="label1" >Tecil Tarihi:</label>
+                                            <span class="fa fa-calendar"></span>
+                                            <label class="label2" th:text="${userinfo.soldierStatus.date}"></label>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="container" th:if="${userinfo == null}">
+                                    <p style="font-family: 'Oswald', sans-serif;font-size: x-large;color: black"> Özel bilgilerinizi giriniz !!!</p>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <!--start overlay-->
+            <div class="overlay toggle-menu"></div>
+            <!--end overlay-->
+        </div> <!-- Özet Bilgiler -->
     </div><!--End content-wrapper-->
     <!--Start Back To Top Button-->
     <a href="javaScript:void(0);" class="back-to-top"><i class="fa fa-angle-double-up"></i> </a>

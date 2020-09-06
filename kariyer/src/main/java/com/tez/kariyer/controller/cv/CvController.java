@@ -9,6 +9,7 @@ import com.tez.kariyer.model.entity.address.Ilce;
 import com.tez.kariyer.model.entity.address.Ulke;
 import com.tez.kariyer.model.entity.parameterTable.*;
 import com.tez.kariyer.model.repository.CommunicationInfoRepository;
+import com.tez.kariyer.model.repository.SummaryInfoRepository;
 import com.tez.kariyer.model.repository.UserPrivateInfoRepository;
 import com.tez.kariyer.model.repository.WorkExperienceRepository;
 import com.tez.kariyer.model.repository.addressRepository.CityRepository;
@@ -56,6 +57,8 @@ public class CvController {
     protected SoldierStatusRepository soldierStatusRepository;
     @Autowired
     protected DistrictRepository districtRepository;
+    @Autowired
+    protected SummaryInfoRepository summaryInfoRepository;
 
 
     @GetMapping("/duzenle")
@@ -75,6 +78,13 @@ public class CvController {
         }
         if (workExperienceRepository.findByUserId(user.getId()) != null) {
             model.addAttribute("workinfo", workExperienceRepository.findByUserId(user.getId()));
+        }else{
+            model.addAttribute("workinfo", null);
+        }
+        if (summaryInfoRepository.findByUserId(user.getId()) != null){
+            model.addAttribute("summary", summaryInfoRepository.findByUserId(user.getId()));
+        }else {
+            model.addAttribute("summary", null);
         }
         List<WayOfWork> wayOfWorkList = (List<WayOfWork>) wayOfWorkRepository.findAll();
         List<CompanySector> companySectorList = (List<CompanySector>) companySectorRepository.findAll();

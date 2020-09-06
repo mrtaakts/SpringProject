@@ -123,6 +123,7 @@ public class CvService {
                 workExperience.setFinishDate(new SimpleDateFormat("dd/MM/yyyy").parse(workExperienceDTO.getFinishDate()));
             }
             workExperience.setFirmsName(workExperienceDTO.getFirmsName());
+            workExperience.setWeb(workExperienceDTO.getWeb());
             responseItem.setResult(true);
             responseItem.setMessage("İşlem Başarılı!");
             workExperienceRepository.save(workExperience);

@@ -169,6 +169,49 @@ $(document).ready(function () {
         }
     });
 
+    $("#getFormCommunication").validate({
 
+        submitHandler: function (form) {
+
+            $('#loading-screen').fadeIn();
+
+            var postData = $('#getFormCommunication').serializeJSON();
+
+            console.log(postData);
+            $.ajax({
+                type: "POST",
+                contentType: "application/json",
+                url: "/cv/ozet",
+                data: postData,
+                dataType: 'json',
+                cache: false,
+                timeout: 600000,
+
+                success: function (data) {
+                    $('#loading-screen').fadeOut('slow');
+                    if (data.result) {
+                        console.log(data);
+                        success_noti_custom(data.message);
+                        setTimeout(function () {
+                            window.location.replace("/cv/duzenle");
+                        }, 2000);
+                    } else {
+                        error_noti_yuk(data.message)
+                    }
+
+                },
+
+                error: function (e) {
+
+                    console.log("ERROR : ", e);
+                    error_noti_yuk("Teknik Bir Sorun Oluştu Lütfen Bize Bildiriniz!")
+                    $("#btn-login").prop("disabled", false);
+
+                }
+            });
+
+            return false; // required to block normal submit since you used ajax
+        }
+    });
 
 });
