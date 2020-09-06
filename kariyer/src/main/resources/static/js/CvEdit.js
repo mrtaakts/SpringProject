@@ -22,6 +22,7 @@ $(document).ready(function () {
     $('#iletisimInput').hide();
     $('#ozelbilgiInput').hide();
     $('#isdeneyimInput').hide();
+    $('#ozetbilgiInput').hide();
 
     $("#getFormCommunication").validate({
 
@@ -169,13 +170,13 @@ $(document).ready(function () {
         }
     });
 
-    $("#getFormCommunication").validate({
+    $("#getSummaryInfo").validate({
 
         submitHandler: function (form) {
 
             $('#loading-screen').fadeIn();
 
-            var postData = $('#getFormCommunication').serializeJSON();
+            var postData = $('#getSummaryInfo').serializeJSON();
 
             console.log(postData);
             $.ajax({

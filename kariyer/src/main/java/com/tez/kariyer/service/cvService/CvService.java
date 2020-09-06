@@ -1,6 +1,7 @@
 package com.tez.kariyer.service.cvService;
 
 import com.tez.kariyer.dto.CommunicationInfoDTO;
+import com.tez.kariyer.dto.SummaryInfoDTO;
 import com.tez.kariyer.dto.UserPrivateInfoDTO;
 import com.tez.kariyer.dto.WorkExperienceDTO;
 import com.tez.kariyer.model.entity.*;
@@ -92,14 +93,19 @@ public class CvService {
         }
         return responseItem;
     }
-    public ResponseItem saveSummaryInfo(SummaryInfo summaryInfo){
+    public ResponseItem saveSummaryInfo(SummaryInfoDTO summaryInfo){
         ResponseItem responseItem = new ResponseItem();
         User user = SessionInfo.getInstance().getUser();
         try {
+            SummaryInfo summaryInfo1 = new SummaryInfo();
             responseItem.setResult(true);
             responseItem.setMessage("İşlem Başarılı!");
-            summaryInfo.setUser(user);
-            summaryInfoRepository.save(summaryInfo);
+            if (summaryInfo.getId()!=0){
+                summaryInfo1.setId(summaryInfo.getId());
+            }
+            summaryInfo1.setUser(user);
+            summaryInfo1.setTarget(summaryInfo.getTarget());
+            summaryInfoRepository.save(summaryInfo1);
         }catch (Exception e){
             responseItem.setResult(false);
             responseItem.setMessage("İşlem Başarısız!");

@@ -1,6 +1,7 @@
 package com.tez.kariyer.controller.cv;
 
 import com.tez.kariyer.dto.CommunicationInfoDTO;
+import com.tez.kariyer.dto.SummaryInfoDTO;
 import com.tez.kariyer.dto.UserPrivateInfoDTO;
 import com.tez.kariyer.dto.WorkExperienceDTO;
 import com.tez.kariyer.model.entity.*;
@@ -123,7 +124,7 @@ public class CvController {
 
     @PostMapping("/ozet")
     @ResponseBody
-    public ResponseEntity<ResponseItem> saveSummaryInfo(@RequestBody SummaryInfo summaryInfo){
+    public ResponseEntity<ResponseItem> saveSummaryInfo(@RequestBody SummaryInfoDTO summaryInfo){
         ResponseItem responseItem = new ResponseItem();
         responseItem = cvService.saveSummaryInfo(summaryInfo);
         return ResponseEntity.ok(responseItem);

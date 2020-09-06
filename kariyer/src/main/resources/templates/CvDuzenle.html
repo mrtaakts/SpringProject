@@ -523,9 +523,7 @@
                                                         th:text="${sol.status}" th:selected="${sol.id} == ${userinfo.soldierStatus.id}"></option>
                                             </select>
                                         </div>
-
                                     </div>
-
                                     <div class="row" id="hide">
                                         <div class="col-sm-6">
                                             <label>Tecil Tarihi</label>
@@ -533,7 +531,6 @@
                                             <input type="text" id="autoclose-datepickerSoldier" name="startDate"
                                                    class="form-control" required>
                                         </div>
-
                                     </div>
                                     <div class="row">
                                         <div id="engellabel">
@@ -548,10 +545,6 @@
                                             Engelliyim
                                         </label>
                                     </div>
-
-
-
-
                                 </div>
                             </div>
                             <div th:if="${userinfo != null}">
@@ -1161,7 +1154,7 @@
                     <div class="card-header gradient-deepblue text-white  text-uppercase">Özet Bilgiler</div>
                     <div class="ribbon-content"></div>
                     <div class="card-body" id="ozetbilgiInput">
-                        <form id="ozetInfo">
+                        <form id="getSummaryInfo">
                             <div class="form-group">
                                 <div class="container">
                                     <div th:if="${summary == null}">
@@ -1171,8 +1164,7 @@
                                     </div>
                                 <div th:if="${summary != null}">
                                     <textarea class="form-control" style="resize:none;" rows="3" maxlength="255"
-                                           id="ozet" name="target"
-                                              th:value="${summary.target}">
+                                           id="ozet" name="target" th:text="${summary.target}">
                                     </textarea>
                                 </div>
                                 </div>
@@ -1195,50 +1187,18 @@
                     </div>
 
 
-                    <div class="card-body" id="ozelbilgiOutput">
-                        <form id="getuserPrivateInfo">
+                    <div class="card-body" id="ozetbilgiOutput">
+                        <form id="getSummaryInfoOut">
                             <div class="form-group">
-                                <div class="container" th:if="${userinfo != null}">
+                                <div class="container" th:if="${summary != null}">
                                     <div class="row">
-                                        <div class="col-sm-6">
-                                            <label class="label1" >Cinsiyet: </label>
-                                            <label class="label2" th:text="${userinfo.gender}"></label>
+                                        <div class="col-sm-6" >
+                                            <p style="font-family: 'Oswald', sans-serif;font-size: x-large;color: black"> Özet Bilgileriniz:  </p>
+                                            <label class="label2" th:text="${summary.target}"></label>
                                         </div>
-                                        <div>
-                                            <label for="driverLicense" class="label1">Sürücü Belgesi Sınıfı:</label>
-                                            <label class="label2" th:text="${userinfo.driverLicense}"></label>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-sm-6">
-                                            <label  for="ulke" class="label1">Uyruk:</label>
-                                            <label class="label2" th:text="${userinfo.ulke.ulke}"></label>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-sm-6">
-                                            <label for="salaryExpectation"  class="label1">Maaş Beklentisi:</label>
-                                            <label class="label2" th:text="${userinfo.salaryExpectation}"></label>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-sm-6">
-                                            <label class="label1">Askerlik Durumu:</label>
-                                            <label class="label2" th:text="${userinfo.soldierStatus.status}"></label>
-                                        </div>
-
-                                    </div>
-
-                                    <div class="row" id="hide">
-                                        <div class="col-sm-6">
-                                            <label class="label1" >Tecil Tarihi:</label>
-                                            <span class="fa fa-calendar"></span>
-                                            <label class="label2" th:text="${userinfo.soldierStatus.date}"></label>
-                                        </div>
-
                                     </div>
                                 </div>
-                                <div class="container" th:if="${userinfo == null}">
+                                <div class="container" th:if="${summary == null}">
                                     <p style="font-family: 'Oswald', sans-serif;font-size: x-large;color: black"> Özel bilgilerinizi giriniz !!!</p>
                                 </div>
                             </div>
@@ -1367,6 +1327,10 @@
     $('#isdeneyimOutput').click(function(){
         $(this).hide();
         $('#isdeneyimInput').show();
+    });
+    $('#ozetbilgiOutput').click(function(){        //todo: aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+        $(this).hide();
+        $('#ozetbilgiInput').show();
     });
 
 </script>
