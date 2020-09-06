@@ -1,15 +1,14 @@
 package com.tez.kariyer.service.cvService;
 
-import com.tez.kariyer.dto.CommunicationInfoDTO;
-import com.tez.kariyer.dto.SummaryInfoDTO;
-import com.tez.kariyer.dto.UserPrivateInfoDTO;
-import com.tez.kariyer.dto.WorkExperienceDTO;
+import com.tez.kariyer.dto.*;
 import com.tez.kariyer.model.entity.*;
+import com.tez.kariyer.model.entity.address.Il;
 import com.tez.kariyer.model.entity.address.Ulke;
 import com.tez.kariyer.model.entity.parameterTable.DriverLicense;
 import com.tez.kariyer.model.entity.parameterTable.Position;
 import com.tez.kariyer.model.entity.parameterTable.WayOfWork;
 import com.tez.kariyer.model.repository.*;
+import com.tez.kariyer.model.repository.addressRepository.CityRepository;
 import com.tez.kariyer.model.repository.addressRepository.CountryRepository;
 import com.tez.kariyer.model.repository.addressRepository.DistrictRepository;
 import com.tez.kariyer.model.repository.parameterTableRepository.*;
@@ -51,6 +50,10 @@ public class CvService {
     protected CountryRepository countryRepository;
     @Autowired
     protected DriverLicenseRepository driverLicenseRepository;
+    @Autowired
+    protected EducationInfoRepository educationInfoRepository;
+    @Autowired
+    protected CityRepository cityRepository;
 
     public ResponseItem saveCommunicationInfo(CommunicationInfoDTO communicationInfoDTO){
         ResponseItem responseItem = new ResponseItem();
@@ -113,7 +116,6 @@ public class CvService {
         }
         return responseItem;
     }
-
     public ResponseItem saveWorkExperience(WorkExperienceDTO workExperienceDTO){
         ResponseItem responseItem = new ResponseItem();
         User user = SessionInfo.getInstance().getUser();
@@ -139,5 +141,26 @@ public class CvService {
             e.printStackTrace();
         }
         return responseItem;
-    }  //todo: TAMAMLANDI
+    }
+    public ResponseItem saveEducation(EducationInfoDTO educationInfoDTO){
+        ResponseItem responseItem = new ResponseItem();
+        User user = SessionInfo.getInstance().getUser();
+        try {
+            EducationInfo educationInfo = modelMapper.map(educationInfoDTO,EducationInfo.class);
+            educationInfo.setUser(user);
+            if (educationInfoDTO.getId()!=0){
+                educationInfo.setId(educationInfoDTO.getId());
+            }
+            Il city =cityRepository.findById(educationInfoDTO.getIl()).get();
+            educationInfo.setCity(city);
+            educationInfoRepository.save(educationInfo);
+            responseItem.setResult(true);
+            responseItem.setMessage("İşlem Başarılı!");
+        }catch (Exception e){
+            responseItem.setResult(false);
+            responseItem.setMessage("İşlem Başarısız!");
+            e.printStackTrace();
+        }
+        return responseItem;
+    }
 }

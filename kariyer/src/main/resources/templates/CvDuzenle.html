@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en
 " xmlns:th="http://www.thymeleaf.org"
->
+      xmlns:text="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
@@ -937,135 +937,152 @@
                     <div class="card-header gradient-deepblue text-white  text-uppercase">Eğitim Bilgiler</div>
                     <div class="ribbon-content"></div>
                     <div class="card-body" id="egitimbilgiInput">
-                        <form id="egitimInfo">
+                        <form id="getEducation">
                             <div class="form-group">
                                 <div class="container">
                                     <div class="row">
-                                        <div class="col-sm-6">
-                                            <label>Cinsiyet </label>
-                                            <div class="icheck-material-success icheck-inline">
-                                                <input type="radio" id="inline-radio-success" name="gender"
-                                                       checked value="Erkek">
-                                                <label for="inline-radio-success">Erkek</label>
-                                            </div>
-                                            <div class="icheck-material-primary icheck-inline">
-                                                <input type="radio" id="inline-radio-primary" name="gender"
-                                                       value="Kadın">
-                                                <label for="inline-radio-primary">Kadın</label>
-                                            </div>
-                                        </div>
-                                        <div th:if="${userinfo == null}">
-                                            <label for="driverLicense" style="text-align: center" class="">Sürücü Belgesi Sınıfı</label>
+
+                                        <div th:if="${eduinfo == null}">
+                                            <label for="driverLicense" style="text-align: center" class="">Eğitim Seviyesi</label>
                                             <select class="form-control"
-                                                    id="driverLicense" name="driverLicense" required>
+                                                    id="educationStatus" name="educationStatus" required>
                                                 <option disabled="disabled" selected="selected"> ----- Sürücü Belgesi
                                                     Seçiniz -----
                                                 </option>
-                                                <option th:each="license : ${driverLicenseList}" th:value="${license.id}"
-                                                        th:text="${license.licence}"></option>
+                                                <option value="ÖnLisans"> ÖnLisans </option>
+                                                <option value="Lisans"> Lisans </option>
+                                                <option value="Yüksek Lisans"> Yüksek Lisans </option>
+                                                <option value="Doktora"> Doktora </option>
                                             </select>
                                         </div>
-                                        <div th:if="${userinfo != null}">
-                                            <label for="driverLicense" style="text-align: center" class="">Sürücü Belgesi Sınıfı</label>
+                                        <div th:if="${eduinfo != null}">
+                                            <label for="driverLicense" style="text-align: center" class="">Eğitim Seviyesi</label>
                                             <select class="form-control"
-                                                    id="driverLicense" name="driverLicense" required>
+                                                    id="educationStatus" name="educationStatus" th:selected="${eduinfo.educationStatus}" required>
                                                 <option disabled="disabled" selected="selected"> ----- Sürücü Belgesi
                                                     Seçiniz -----
                                                 </option>
-                                                <option th:each="license : ${driverLicenseList}" th:value="${license.id}"
-                                                        th:text="${license.licence}" th:selected="${license.licence} == ${userinfo.driverLicense}"></option>
+                                                <option value="ÖnLisans"> ÖnLisans </option>
+                                                <option value="Lisans"> Lisans </option>
+                                                <option value="Yüksek Lisans"> Yüksek Lisans </option>
+                                                <option value="Doktora"> Doktora </option>
                                             </select>
                                         </div>
                                     </div>
-                                    <div class="row" th:if="${userinfo != null}">
-                                        <div class="col-sm-6">
-                                            <label for="ulke" style="text-align: center" class="">Uyruk</label>
-                                            <select class="form-control"
-                                                    id="ulke" name="ulke" required>
-                                                <option disabled="disabled" selected="selected"> ----- Uyruk
-                                                    Seçiniz -----
-                                                </option>
-                                                <option th:each="ulke : ${ulkeList}" th:value="${ulke.id}"
-                                                        th:text="${ulke.ulke}" th:selected="${ulke.id} == ${userinfo.ulke.id}"></option>
-                                            </select>
+                                    <div class="row" >
+                                        <div class="col-sm-6" th:if="${eduinfo != null}">
+                                                <label>Okula Başlama Tarihi</label>
+                                                <span class="fa fa-calendar"></span>
+                                                <input type="text" id="autoclose-datepickerSoldier" name="startDate"
+                                                       class="form-control" th:value="${startDate}" required>
+                                        </div>
+                                        <div class="col-sm-6" th:if="${eduinfo == null}">
+                                                <label>Okula Başlama Tarihi</label>
+                                                <span class="fa fa-calendar"></span>
+                                                <input type="text" id="autoclose-datepickerSoldier" name="startDate"
+                                                       class="form-control" required>
+                                        </div>
+                                        <div class="col-sm-6" th:if="${eduinfo==null}">
+                                                <label>Okulu Bitirme Tarihi</label>
+                                                <span class="fa fa-calendar"></span>
+                                                <input type="text" id="autoclose-datepickerSoldier" name="finishDate"
+                                                       class="form-control" required>
+                                        </div>
+                                        <div class="col-sm-6" th:if="${eduinfo!=null}">
+                                                <label>Okulu Bitirme Tarihi</label>
+                                                <span class="fa fa-calendar"></span>
+                                                <input type="text" id="autoclose-datepickerSoldier" name="finishDate"
+                                                       class="form-control"  th:value="${finishDate}" required>
                                         </div>
                                     </div>
-                                    <div class="row" th:if="${userinfo==null}">
-                                        <div class="col-sm-6">
-                                            <label for="ulke" style="text-align: center" class="">Uyruk</label>
-                                            <select class="form-control"
-                                                    id="ulke" name="ulke" required>
-                                                <option disabled="disabled" selected="selected"> ----- Uyruk
-                                                    Seçiniz -----
-                                                </option>
-                                                <option th:each="ulke : ${ulkeList}" th:value="${ulke.id}"
-                                                        th:text="${ulke.ulke}"></option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="row" th:if="${userinfo != null}">
-                                        <div class="col-sm-6">
-                                            <label for="salaryExpectation" style="text-align: center" class="">Maaş Beklentisi</label>
+                                    <div class="row" th:if="${eduinfo != null}">
+                                            <label for="salaryExpectation" style="text-align: center" class="">Not Ortalaması</label>
                                             <input type="text" class="form-control"
-                                                   id="salaryExpectation" name="salaryExpectation" th:value="${userinfo.salaryExpectation}" required>
-                                        </div>
+                                                   id="salaryExpectation" name="notOrt" th:value="${eduinfo.notOrt}" required>
                                     </div>
-                                    <div class="row" th:if="${userinfo == null}">
-                                        <div class="col-sm-6">
-                                            <label for="salaryExpectation" style="text-align: center" class="">Maaş Beklentisi</label>
+                                    <div class="row" th:if="${eduinfo == null}">
+                                            <label for="salaryExpectation" style="text-align: center" class="">Not Ortalaması</label>
                                             <input type="text" class="form-control"
-                                                   id="salaryExpectation" name="salaryExpectation"
+                                                   id="salaryExpectation" name="notOrt"
                                                    placeholder="Maaş beklentisi giriniz" required>
+                                    </div>
+
+                                    <div class="form-group" >
+                                        <label for="selectCity" class="">İl</label>
+                                        <select class="form-control" id="selectCity" name="il" required>
+                                            <option disabled="disabled" selected="selected"> ----- Şehir
+                                                Seçiniz -----
+                                            </option>
+                                            <option th:each="city : ${citys}" th:value="${city.id}"
+                                                    th:text="${city.il}"
+                                            ></option>
+                                        </select>
+                                    </div>
+
+                                    <div class="row">
+                                        <div th:if="${eduinfo == null}">
+                                            <label>Üniversite Bilgisi</label>
+                                            <input type="text" class="form-control"
+                                                   id="salaryExpectation" name="university"
+                                                   placeholder="Üniversite bilgisi giriniz" required>
                                         </div>
+
+                                        <div th:if="${eduinfo != null}">
+                                            <label>Üniversite Bilgisi</label>
+                                            <input type="text" class="form-control"
+                                                   id="salaryExpectation" name="university" th:value="${eduinfo.university}"
+                                                   placeholder="Üniversite Bilgisi giriniz" required>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="row">
+                                        <div th:if="${eduinfo == null}">
+                                            <label>Fakülte Bilgisi</label>
+                                            <input type="text" class="form-control"
+                                                   id="salaryExpectation" name="fakulte"
+                                                   placeholder="Fakülte bilgisi giriniz" required>
+                                        </div>
+
+                                        <div th:if="${eduinfo != null}">
+                                            <label>Fakülte Bilgisi</label>
+                                            <input type="text" class="form-control"
+                                                   id="salaryExpectation" name="fakulte" th:value="${eduinfo.fakulte}"
+                                                   placeholder="Fakülte Bilgisi giriniz" required>
+                                        </div>
+
                                     </div>
                                     <div class="row">
-                                        <div class="col-sm-6" th:if="${userinfo == null}">
-                                            <label>Askerlik Durumu</label>
-                                            <select class="form-control"
-                                                    id="soldierStatus" name="soldierStatus" required>
-                                                <option disabled="disabled" value="0" selected="selected"> ----- Askerlik Durumu
-                                                    Seçiniz -----
-                                                </option>
-                                                <option th:each="sol : ${soldier}" th:value="${sol.id}"
-                                                        th:text="${sol.status}"></option>
-                                            </select>
+                                        <div th:if="${eduinfo == null}">
+                                            <label>Bölüm Bilgisi</label>
+                                            <input type="text" class="form-control"
+                                                   id="salaryExpectation" name="bolum"
+                                                   placeholder="Bölüm bilgisi giriniz" required>
                                         </div>
 
-                                        <div class="col-sm-6" th:if="${userinfo != null}">
-                                            <label>Askerlik Durumu</label>
-                                            <select class="form-control"
-                                                    id="soldierStatus" name="soldierStatus" required>
-                                                <option disabled="disabled" value="0" selected="selected"> ----- Askerlik Durumu
-                                                    Seçiniz -----
-                                                </option>
-                                                <option th:each="sol : ${soldier}" th:value="${sol.id}"
-                                                        th:text="${sol.status}" th:selected="${sol.id} == ${userinfo.soldierStatus.id}"></option>
-                                            </select>
-                                        </div>
-
-                                    </div>
-
-                                    <div class="row" id="hide">
-                                        <div class="col-sm-6">
-                                            <label>Tecil Tarihi</label>
-                                            <span class="fa fa-calendar"></span>
-                                            <input type="text" id="autoclose-datepickerSoldier" name="startDate"
-                                                   class="form-control" required>
+                                        <div th:if="${eduinfo != null}">
+                                            <label>Bölüm Bilgisi</label>
+                                            <input type="text" class="form-control"
+                                                   id="salaryExpectation" name="bolum" th:value="${eduinfo.bolum}"
+                                                   placeholder="Bölüm Bilgisi giriniz" required>
                                         </div>
 
                                     </div>
                                     <div class="row">
-                                        <div id="engellabel">
-                                            <label >Engelliyseniz lütfen bunu belirtin. Böylece size sağlanan ayrıcalıklı istihdam olanaklarından faydalanabilirsiniz.</label>
+                                        <div th:if="${eduinfo == null}">
+                                            <label>Yabancı Dil Bilgisi</label>
+                                            <input type="text" class="form-control"
+                                                   id="salaryExpectation" name="dil"
+                                                   placeholder="Yabancı Dil bilgisi giriniz" required>
                                         </div>
-                                    </div>
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
 
-                                        </input>
-                                        <label class="form-check-label" for="defaultCheck1">
-                                            Engelliyim
-                                        </label>
+                                        <div th:if="${eduinfo != null}">
+                                            <label>Yabancı Dil Bilgisi</label>
+                                            <input type="text" class="form-control"
+                                                   id="salaryExpectation" name="dil" th:value="${eduinfo.dil}"
+                                                   placeholder="Yabancı Dil Bilgisi giriniz" required>
+                                        </div>
+
                                     </div>
 
 
@@ -1073,10 +1090,10 @@
 
                                 </div>
                             </div>
-                            <div th:if="${userinfo != null}">
+                            <div th:if="${eduinfo != null}">
                                 <input type="hidden" class="form-control"
                                        id="idd" name="id"
-                                       th:value="${userinfo.id}">
+                                       th:value="${eduinfo.id}">
                             </div>
                             <button type="submit" class="btn btn-success"><i
                                     class="fa fa-check-square-o"></i>
@@ -1091,7 +1108,7 @@
                     </div>
 
 
-                    <div class="card-body" id="ozelbilgiOutput">
+                    <div class="card-body" id="egitimbilgiOutput">
                         <form id="getuserPrivateInfo">
                             <div class="form-group">
                                 <div class="container" th:if="${userinfo != null}">
@@ -1328,9 +1345,13 @@
         $(this).hide();
         $('#isdeneyimInput').show();
     });
-    $('#ozetbilgiOutput').click(function(){        //todo: aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+    $('#ozetbilgiOutput').click(function(){
         $(this).hide();
         $('#ozetbilgiInput').show();
+    });
+    $('#egitimbilgiOutput').click(function(){
+        $(this).hide();
+        $('#egitimbilgiInput').show();
     });
 
 </script>

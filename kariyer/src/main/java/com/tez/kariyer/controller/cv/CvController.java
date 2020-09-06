@@ -1,18 +1,12 @@
 package com.tez.kariyer.controller.cv;
 
-import com.tez.kariyer.dto.CommunicationInfoDTO;
-import com.tez.kariyer.dto.SummaryInfoDTO;
-import com.tez.kariyer.dto.UserPrivateInfoDTO;
-import com.tez.kariyer.dto.WorkExperienceDTO;
+import com.tez.kariyer.dto.*;
 import com.tez.kariyer.model.entity.*;
 import com.tez.kariyer.model.entity.address.Il;
 import com.tez.kariyer.model.entity.address.Ilce;
 import com.tez.kariyer.model.entity.address.Ulke;
 import com.tez.kariyer.model.entity.parameterTable.*;
-import com.tez.kariyer.model.repository.CommunicationInfoRepository;
-import com.tez.kariyer.model.repository.SummaryInfoRepository;
-import com.tez.kariyer.model.repository.UserPrivateInfoRepository;
-import com.tez.kariyer.model.repository.WorkExperienceRepository;
+import com.tez.kariyer.model.repository.*;
 import com.tez.kariyer.model.repository.addressRepository.CityRepository;
 import com.tez.kariyer.model.repository.addressRepository.CountryRepository;
 import com.tez.kariyer.model.repository.addressRepository.DistrictRepository;
@@ -27,6 +21,8 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
 import java.util.List;
 
 @RestController
@@ -60,6 +56,8 @@ public class CvController {
     protected DistrictRepository districtRepository;
     @Autowired
     protected SummaryInfoRepository summaryInfoRepository;
+    @Autowired
+    protected EducationInfoRepository educationInfoRepository;
 
 
     @GetMapping("/duzenle")
@@ -86,6 +84,15 @@ public class CvController {
             model.addAttribute("summary", summaryInfoRepository.findByUserId(user.getId()));
         }else {
             model.addAttribute("summary", null);
+        }
+        if(educationInfoRepository.findByUserId(user.getId()) != null){
+            EducationInfo educationInfo = educationInfoRepository.findByUserId(user.getId());
+            model.addAttribute("eduinfo", educationInfo);
+            DateFormat dateFormat = new SimpleDateFormat("dd//MM//yyyy");
+            model.addAttribute("finishDate", educationInfo.getFinishDate());
+            model.addAttribute("startDate" , educationInfo.getStartDate());
+        }else{
+            model.addAttribute("eduinfo", null);
         }
         List<WayOfWork> wayOfWorkList = (List<WayOfWork>) wayOfWorkRepository.findAll();
         List<CompanySector> companySectorList = (List<CompanySector>) companySectorRepository.findAll();
@@ -135,6 +142,14 @@ public class CvController {
     public ResponseEntity<ResponseItem> saveWorkExperience(@RequestBody WorkExperienceDTO workExperienceDTO){
         ResponseItem responseItem = new ResponseItem();
         responseItem = cvService.saveWorkExperience(workExperienceDTO);
+        return ResponseEntity.ok(responseItem);
+    }
+
+    @PostMapping("/egitim")
+    @ResponseBody
+    public ResponseEntity<ResponseItem> saveEducation(@RequestBody EducationInfoDTO educationInfoDTO){
+        ResponseItem responseItem = new ResponseItem();
+        responseItem = cvService.saveEducation(educationInfoDTO);
         return ResponseEntity.ok(responseItem);
     }
 
