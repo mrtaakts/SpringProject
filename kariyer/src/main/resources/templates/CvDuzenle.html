@@ -47,6 +47,11 @@
             font-family: 'Oswald', sans-serif;
             font-size:large;
         }
+        .hoverclas:hover
+        {
+            border:10px solid black;
+            border-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='100' height='100' viewBox='0 0 100 100' fill='none' xmlns='http://www.w3.org/2000/svg'%3E %3Cstyle%3Epath%7Banimation:stroke 5s infinite linear%3B%7D%40keyframes stroke%7Bto%7Bstroke-dashoffset:776%3B%7D%7D%3C/style%3E%3ClinearGradient id='g' x1='0%25' y1='0%25' x2='0%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%232d3561' /%3E%3Cstop offset='25%25' stop-color='%23c05c7e' /%3E%3Cstop offset='50%25' stop-color='%23f3826f' /%3E%3Cstop offset='100%25' stop-color='%23ffb961' /%3E%3C/linearGradient%3E %3Cpath d='M1.5 1.5 l97 0l0 97l-97 0 l0 -97' stroke-linecap='square' stroke='url(%23g)' stroke-width='3' stroke-dasharray='388'/%3E %3C/svg%3E") 1;
+        }
     </style>
 
 </head>
@@ -315,7 +320,7 @@
                         </form>
                     </div>
 
-                    <div class="card-body" id="iletisimOutput">
+                    <div class="card-body hoverclas" id="iletisimOutput">
                         <form id="getFormCommunication" >
                             <div class="form-group" th:if="${cominfo != null}">
                                 <div class="container">
@@ -567,7 +572,7 @@
                     </div>
 
 
-                    <div class="card-body" id="ozelbilgiOutput">
+                    <div class="card-body hoverclas" id="ozelbilgiOutput">
                         <form id="getuserPrivateInfo">
                             <div class="form-group">
                                 <div class="container" th:if="${userinfo != null}">
@@ -629,65 +634,65 @@
                 <div class="card">
                     <div class="card-header gradient-deepblue text-white  text-uppercase">İş Deneyimi</div>
                     <div class="ribbon-content"></div>
-                    <div class="card-body" id="isdeneyimOutput">
+                    <div class="card-body hoverclas" id="isdeneyimOutput">
                         <form id="getWorkExperienceOutpu">
                             <div class="form-group">
                                 <div class="container">
                                     <div class="row">
 
                                         <div class="col-sm" th:if="${workinfo != null}">
-                                            <label for="firmAd" class="">Firma Adı </label>
+                                            <label for="firmAd" class="label1">Firma Adı </label>
 
-                                            <label id="firmAd" name="firmAd"
+                                            <label class="label2" id="firmAd" name="firmAd"
                                                    placeholder="Firma Adı Giriniz" th:text="${workinfo.firmsName}"/>
 
                                         </div>
                                         <div class="col-sm" th:if="${workinfo != null}">
-                                            <label for="position" class="">Pozisyon</label>
-                                            <label th:text="${workinfo.position.positions}"></label>
+                                            <label for="position" class="label1">Pozisyon</label>
+                                            <label class="label2" th:text="${workinfo.position.positions}"></label>
                                         </div>
                                     </div>
                                     <div class="row">
                                         <div class="col-sm-4 form-group" th:if="${workinfo != null}">
-                                            <label>Başlangıç Tarihi</label>
+                                            <label class="label1">Başlangıç Tarihi</label>
                                             <span class="fa fa-calendar"></span>
-                                            <label type="text" id="autoclose-datepickerStart" name="startDate"
+                                            <label class="label2" type="text" id="autoclose-datepickerStart" name="startDate"
                                                    th:text="${workinfo.startDate.toString()}"/>
 
                                         </div>
                                         <div class="col-sm-4 form-group" id="hidden" th:if="${workinfo != null}">
-                                            <label>Bitiş Tarihi</label>
+                                            <label class="label1">Bitiş Tarihi</label>
                                             <span class="fa fa-calendar"></span>
-                                            <label th:text="${workinfo.finishDate.toString()}"/>
+                                            <label class="label2" th:text="${workinfo.finishDate.toString()}"/>
 
                                         </div>
                                     </div>
                                     <div class="row" th:if="${workinfo != null}">
                                         <div class="col-sm">
-                                            <label for="companySector" class="">Firma Sektörü</label>
-                                            <label th:text="${workinfo.companySector.companySector}"></label>
+                                            <label for="companySector" class="label1">Firma Sektörü</label>
+                                            <label class="label2" th:text="${workinfo.companySector.companySector}"></label>
                                         </div>
 
                                     </div>
                                     <div class="row" th:if="${workinfo != null}">
                                         <div class="col-sm-6">
-                                            <label for="telefon" class="">Çalışma Şekli </label>
-                                            <label th:text="${workinfo.wayOfWork.wayOfWork}"></label>
+                                            <label class="label1" for="telefon" >Çalışma Şekli </label>
+                                            <label class="label2" th:text="${workinfo.wayOfWork.wayOfWork}"></label>
                                         </div>
 
                                     </div>
                                     <div class="row" th:if="${workinfo != null}">
                                         <div class="col-sm-6">
-                                            <label> Il / Ilce</label>
-                                            <label th:text="${workinfo.ilce.city.il} + ' / ' +${workinfo.ilce.ilce} "></label>
+                                            <label class="label1"> Il / Ilce</label>
+                                            <label class="label2" th:text="${workinfo.ilce.city.il} + ' / ' +${workinfo.ilce.ilce} "></label>
                                         </div>
                                     </div>
 
                                     <div class="row" th:if="${workinfo != null}">
                                         <div class="col-sm-6">
-                                            <label for="web" class="">Web Sayfam </label>
+                                            <label class="label1" for="web" >Web Sayfam </label>
 
-                                            <label id="webSite" name="web"
+                                            <label class="label2" id="webSite" name="web"
                                                    th:text="${workinfo.web}"/>
                                         </div>
 
@@ -806,8 +811,8 @@
                                         </div>
 
                                     </div>
-                                    <div className="row">
-                                        <div className="col-sm-6" th:if="${workinfo == null}">
+                                    <div class="row">
+                                        <div class="col-sm-6" th:if="${workinfo == null}">
                                             <label for="telefon" class="">Çalışma Şekli </label>
 
                                             <select class="form-control" id="wayOfWork">
@@ -819,7 +824,7 @@
                                                 ></option>
                                             </select>
                                         </div>
-                                        <div className="col-sm-6" th:if="${workinfo != null}">
+                                        <div class="col-sm-6" th:if="${workinfo != null}">
                                             <label for="telefon" class="">Çalışma Şekli </label>
 
                                             <select class="form-control" id="wayOfWork">
@@ -855,8 +860,8 @@
                                                     <option disabled="disabled" selected="selected"> ----- İlçe
                                                         Seçiniz -----
                                                     </option>
-                                                    <option th:each="city : ${ilce}" th:value="${city.id}"
-                                                            th:text="${city.il}"
+                                                    <option th:each="ilce : ${ilce}" th:value="${ilce.id}"
+                                                            th:text="${ilce.ilce}"
                                                     ></option>
                                                 </select>
                                             </div>
@@ -890,15 +895,15 @@
                                         </div>
                                     </div>
 
-                                    <div className="row">
-                                        <div className="col-sm-6" th:if="${workinfo == null}">
+                                    <div class="row">
+                                        <div class="col-sm-6" th:if="${workinfo == null}">
                                             <label for="web" class="">Web Sayfam </label>
 
                                             <input type="text" class="form-control"
                                                    id="webSite" name="web"
                                                    placeholder="Web Sayfanızı giriniz" required>
                                         </div>
-                                        <div className="col-sm-6" th:if="${workinfo!=null}">
+                                        <div class="col-sm-6" th:if="${workinfo!=null}">
                                             <label for="web" class="">Web Sayfam </label>
 
                                             <input type="text" class="form-control"
