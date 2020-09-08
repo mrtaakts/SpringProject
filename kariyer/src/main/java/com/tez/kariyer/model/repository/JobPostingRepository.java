@@ -17,4 +17,5 @@ public interface JobPostingRepository extends CrudRepository<JobPosting,Integer>
     void deletejobsss(@Param("current")Date currentDate);
 
     List<JobPosting> findByCompanyId(int id);
+
 }

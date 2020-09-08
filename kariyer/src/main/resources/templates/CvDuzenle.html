@@ -52,6 +52,12 @@
             border:10px solid black;
             border-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='100' height='100' viewBox='0 0 100 100' fill='none' xmlns='http://www.w3.org/2000/svg'%3E %3Cstyle%3Epath%7Banimation:stroke 5s infinite linear%3B%7D%40keyframes stroke%7Bto%7Bstroke-dashoffset:776%3B%7D%7D%3C/style%3E%3ClinearGradient id='g' x1='0%25' y1='0%25' x2='0%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%232d3561' /%3E%3Cstop offset='25%25' stop-color='%23c05c7e' /%3E%3Cstop offset='50%25' stop-color='%23f3826f' /%3E%3Cstop offset='100%25' stop-color='%23ffb961' /%3E%3C/linearGradient%3E %3Cpath d='M1.5 1.5 l97 0l0 97l-97 0 l0 -97' stroke-linecap='square' stroke='url(%23g)' stroke-width='3' stroke-dasharray='388'/%3E %3C/svg%3E") 1;
         }
+        div.col-sm, div.col-sm-6, div.col-md-6, div.col-sm-4, div.col-sm-12{
+            padding: 1vh;
+        }
+
+
+
     </style>
 
 </head>
@@ -423,6 +429,7 @@
                                 <div class="container">
                                     <div class="row">
                                         <div class="col-sm-6">
+
                                             <label>Cinsiyet </label>
                                             <div class="icheck-material-success icheck-inline">
                                                 <input type="radio" id="inline-radio-success" name="gender"
@@ -434,8 +441,9 @@
                                                        value="Kadın">
                                                 <label for="inline-radio-primary">Kadın</label>
                                             </div>
+
                                         </div>
-                                        <div th:if="${userinfo == null}">
+                                        <div class="col-sm-6" th:if="${userinfo == null}">
                                             <label for="driverLicense" style="text-align: center" class="">Sürücü Belgesi Sınıfı</label>
                                             <select class="form-control"
                                                     id="driverLicense" name="driverLicense" required>
@@ -446,7 +454,7 @@
                                                         th:text="${license.licence}"></option>
                                             </select>
                                         </div>
-                                        <div th:if="${userinfo != null}">
+                                        <div class="col-sm-6" th:if="${userinfo != null}">
                                             <label for="driverLicense" style="text-align: center" class="">Sürücü Belgesi Sınıfı</label>
                                             <select class="form-control"
                                                     id="driverLicense" name="driverLicense" required>
@@ -574,7 +582,7 @@
                                             <label class="label1" >Cinsiyet: </label>
                                             <label class="label2" th:text="${userinfo.gender}"></label>
                                         </div>
-                                        <div>
+                                        <div class="col-sm-6">
                                             <label for="driverLicense" class="label1">Sürücü Belgesi Sınıfı:</label>
                                             <label class="label2" th:text="${userinfo.driverLicense}"></label>
                                         </div>
@@ -942,11 +950,11 @@
                                 <div class="container">
                                     <div class="row">
 
-                                        <div th:if="${eduinfo == null}">
+                                        <div class="col-sm-6" th:if="${eduinfo == null}">
                                             <label for="driverLicense" style="text-align: center" class="">Eğitim Seviyesi</label>
                                             <select class="form-control"
                                                     id="educationStatus" name="educationStatus" required>
-                                                <option disabled="disabled" selected="selected"> ----- Sürücü Belgesi
+                                                <option disabled="disabled" selected="selected"> ----- Eğitim Seviyesi
                                                     Seçiniz -----
                                                 </option>
                                                 <option value="ÖnLisans"> ÖnLisans </option>
@@ -1020,31 +1028,28 @@
                                     </div>
 
                                     <div class="row">
-                                        <div th:if="${eduinfo == null}">
+                                        <div class="col-sm-6" th:if="${eduinfo == null}">
                                             <label>Üniversite Bilgisi</label>
                                             <input type="text" class="form-control"
                                                    id="salaryExpectation" name="university"
                                                    placeholder="Üniversite bilgisi giriniz" required>
                                         </div>
 
-                                        <div th:if="${eduinfo != null}">
+                                        <div class="col-sm-6" th:if="${eduinfo != null}">
                                             <label>Üniversite Bilgisi</label>
                                             <input type="text" class="form-control"
                                                    id="salaryExpectation" name="university" th:value="${eduinfo.university}"
                                                    placeholder="Üniversite Bilgisi giriniz" required>
                                         </div>
 
-                                    </div>
-
-                                    <div class="row">
-                                        <div th:if="${eduinfo == null}">
+                                        <div class="col-sm-6" th:if="${eduinfo == null}">
                                             <label>Fakülte Bilgisi</label>
                                             <input type="text" class="form-control"
                                                    id="salaryExpectation" name="fakulte"
                                                    placeholder="Fakülte bilgisi giriniz" required>
                                         </div>
 
-                                        <div th:if="${eduinfo != null}">
+                                        <div class="col-sm-6" th:if="${eduinfo != null}">
                                             <label>Fakülte Bilgisi</label>
                                             <input type="text" class="form-control"
                                                    id="salaryExpectation" name="fakulte" th:value="${eduinfo.fakulte}"
@@ -1052,31 +1057,31 @@
                                         </div>
 
                                     </div>
+
+
                                     <div class="row">
-                                        <div th:if="${eduinfo == null}">
+                                        <div class="col-sm-6" th:if="${eduinfo == null}">
                                             <label>Bölüm Bilgisi</label>
                                             <input type="text" class="form-control"
                                                    id="salaryExpectation" name="bolum"
                                                    placeholder="Bölüm bilgisi giriniz" required>
                                         </div>
 
-                                        <div th:if="${eduinfo != null}">
+                                        <div class="col-sm-6" th:if="${eduinfo != null}">
                                             <label>Bölüm Bilgisi</label>
                                             <input type="text" class="form-control"
                                                    id="salaryExpectation" name="bolum" th:value="${eduinfo.bolum}"
                                                    placeholder="Bölüm Bilgisi giriniz" required>
                                         </div>
 
-                                    </div>
-                                    <div class="row">
-                                        <div th:if="${eduinfo == null}">
+                                        <div class="col-sm-6" th:if="${eduinfo == null}">
                                             <label>Yabancı Dil Bilgisi</label>
                                             <input type="text" class="form-control"
                                                    id="salaryExpectation" name="dil"
                                                    placeholder="Yabancı Dil bilgisi giriniz" required>
                                         </div>
 
-                                        <div th:if="${eduinfo != null}">
+                                        <div class="col-sm-6" th:if="${eduinfo != null}">
                                             <label>Yabancı Dil Bilgisi</label>
                                             <input type="text" class="form-control"
                                                    id="salaryExpectation" name="dil" th:value="${eduinfo.dil}"
@@ -1084,6 +1089,7 @@
                                         </div>
 
                                     </div>
+
 
 
 
@@ -1108,7 +1114,7 @@
                     </div>
 
 
-                    <div class="card-body" id="egitimbilgiOutput">
+                    <div class="card-body hoverclas" id="egitimbilgiOutput">
                         <form id="getuserPrivateInfo">
                             <div class="form-group">
                                 <div class="container" th:if="${userinfo != null}">
@@ -1117,7 +1123,7 @@
                                             <label class="label1" >Cinsiyet: </label>
                                             <label class="label2" th:text="${userinfo.gender}"></label>
                                         </div>
-                                        <div>
+                                        <div class="col-sm-6">
                                             <label for="driverLicense" class="label1">Sürücü Belgesi Sınıfı:</label>
                                             <label class="label2" th:text="${userinfo.driverLicense}"></label>
                                         </div>
@@ -1204,7 +1210,7 @@
                     </div>
 
 
-                    <div class="card-body" id="ozetbilgiOutput">
+                    <div class="card-body hoverclas" id="ozetbilgiOutput">
                         <form id="getSummaryInfoOut">
                             <div class="form-group">
                                 <div class="container" th:if="${summary != null}">
