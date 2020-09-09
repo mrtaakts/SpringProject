@@ -60,9 +60,8 @@ public class HomeController {
                 ModelAndView modelAndView = new ModelAndView("index");
                 return modelAndView;
             }
-
         } else {
-            ModelAndView modelAndView = new ModelAndView("ADMIN");
+            ModelAndView modelAndView = new ModelAndView("Admin");
             return modelAndView;
         }
 

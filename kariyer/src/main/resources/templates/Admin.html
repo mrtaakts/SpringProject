@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en
+" xmlns:th="http://www.thymeleaf.org"
+>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>TEZ | Admin </title>
+    <!-- Bootstrap core CSS -->
+    <link th:href="@{/css/bootstrap.min.css}" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- Custom styles for this template -->
+    <link th:href="@{/css/landing-page.min.css}" rel="stylesheet">
+
+    <link th:href="@{/css/sidebar-menu.css}" rel="stylesheet"/>
+
+    <link rel="stylesheet" th:href="@{/css/pace.min.css}"/>
+    <script th:src="@{/js/pace.min.js}"></script>
+    <!--favicon-->
+    <link rel="icon" th:href="@{/images/logo.png}" type="image/x-icon">
+    <!-- simplebar CSS-->
+    <link th:href="@{/plugins/simplebar/css/simplebar.css}" rel="stylesheet"/>
+    <!-- Bootstrap core CSS-->
+    <link th:href="@{/css/bootstrap.min.css}" rel="stylesheet"/>
+    <!-- animate CSS-->
+    <link th:href="@{/css/animate.css}" rel="stylesheet" type="text/css"/>
+    <!-- Icons CSS-->
+    <link th:href="@{/css/icons.css}" rel="stylesheet" type="text/css"/>
+    <!-- Sidebar CSS-->
+    <link th:href="@{/css/sidebar-menu.css}" rel="stylesheet"/>
+    <!-- Custom Style-->
+    <link th:href="@{/css/app-style_edit.css}" rel="stylesheet"/>
+    <!-- skins CSS-->
+    <link th:href="@{/css/skins.css}" rel="stylesheet"/>
+    <!--Bootstrap Datepicker-->
+    <link th:href="@{/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css}" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" th:href="@{/plugins/notifications/css/lobibox.min.css}"/>
+</head>
+<body>
+<div id="wrapper">
+<div th:replace="navbar :: navbar"> </div>
+
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="card">
+                <div class="card-header gradient-deepblue text-white  text-uppercase">Kullanıcı Takip</div>
+                <div class="ribbon-content"></div>
+                <div class="card-body">
+                    <!-- Form Başlangıç-->
+                    <form id="FormSave">
+                        <div class="form-group row">
+                            <div class="col-md-12 card-header"><i class="fa fa-table"></i>&nbsp;Kullanıcı Takip
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="table-responsive">
+                                <table id="user" class="table table-bordered">
+                                    <thead>
+                                    <tr>
+                                        <th>ID</th>
+                                        <th>Adı</th>
+                                        <th>Soyadı</th>
+                                        <th>Mail</th>
+                                        <th>Kullanıcı Adı</th>
+                                        <th>Role</th>
+                                        <th>İşlem</th>
+                                    </tr>
+                                    </thead>
+                                </table>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- End Row-->
+        <div class="modal animated rollIn" id="confirmDeleteModal">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Araç Tablo</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Silmek istediğinizden emin misiniz?</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-dark" data-dismiss="modal"><i class="fa fa-times"></i>İptal
+                        </button>
+                        <button type="button" class="btn btn-primary" id="btnDelete"><i
+                                class="fa fa-check-square-o"></i> Sil
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<!--Data Tables -->
+<link th:href="@{/plugins/bootstrap-datatable/css/dataTables.bootstrap4.min.css}" rel="stylesheet" type="text/css">
+<link th:href="@{/plugins/bootstrap-datatable/css/buttons.bootstrap4.min.css}" rel="stylesheet" type="text/css">
+
+<script th:src="@{/plugins/bootstrap-datatable/js/jquery.dataTables.min.js}"></script>
+<script th:src="@{/plugins/bootstrap-datatable/js/dataTables.bootstrap4.min.js}"></script>
+<script th:src="@{/plugins/bootstrap-datatable/js/dataTables.buttons.min.js}"></script>
+<script th:src="@{/plugins/bootstrap-datatable/js/buttons.bootstrap4.min.js}"></script>
+<script th:src="@{/plugins/bootstrap-datatable/js/jszip.min.js}"></script>
+<script th:src="@{/plugins/bootstrap-datatable/js/pdfmake.min.js}"></script>
+<script th:src="@{/plugins/bootstrap-datatable/js/vfs_fonts.js}"></script>
+<script th:src="@{/plugins/bootstrap-datatable/js/buttons.html5.min.js}"></script>
+<script th:src="@{/plugins/bootstrap-datatable/js/buttons.print.min.js}"></script>
+<script th:src="@{/plugins/bootstrap-datatable/js/buttons.colVis.min.js}"></script>
+<script>
+    $(document).ready(function () {
+        var userTable = $('#user').DataTable({
+                lengthChange: false,
+                dom: 'Bfrtip',
+                buttons: [
+                    {
+                        extend: 'copyHtml5',
+                        exportOptions: {
+                            columns: ':visible',
+                            footer: true,
+                        }
+                    },
+                    {
+                        extend: 'excelHtml5',
+                        exportOptions: {
+                            columns: ':visible',
+                            footer: true,
+                        }
+                    },
+                    {
+                        extend: 'csvHtml5',
+                        exportOptions: {
+                            columns: ':visible',
+                            footer: true,
+                        }
+                    },
+                    {
+                        extend: 'pdfHtml5',
+                        exportOptions: {
+                            columns: ':visible',
+                            footer: true,
+                        }
+                    },
+                    {
+                        extend: 'print',
+                        exportOptions: {
+                            columns: ':visible',
+                            footer: true,
+                        }
+                    },
+                    'colvis',
+                ],
+                processing: false,
+                serverSide: false,
+                ajax: {
+                    "url": "/admin/data",
+                    "type": "POST",
+                    "dataSrc": function (response) {
+                        return JSON.parse(JSON.stringify(response));
+                    }
+                },
+                columns: [
+                    {"data": "id", "visible": true },
+                    {"data": "name"},
+                    {"data": "surname"},
+                    {"data": "email"},
+                    {"data": "username"},
+                    {"data": "roles"},
+                    {
+                        data: "id", render: function (data, type, row) {
+                            return "<div class='btn-group'>" +
+                                "<a href='#' data-id='" + row.id + "' class='btnConfirmDelete btn btn-outline-danger btn-sm btn-icon-split float-right'>" +
+                                "<span class='icon text-danger-50'>" +
+                                "<i class='fa fa-trash fa-fw'></i>" +
+                                "</span>" +
+                                "<span class='text delete-btn'>&nbsp;Sil</span>" +
+                                "</a>" +
+                                "<a href='/arac/update/?id=" + row.id + "' class='btn btn-outline-primary  btn-sm btn-icon-split  float-right'>" +
+                                "<span class='icon text-primary-50'>" +
+                                "<i class='fa fa-edit fa-fw'></i>" +
+                                "</span>" +
+                                "<span class='text add-model-btn'>&nbsp;Düzenle</span>" +
+                                "</a>" +
+                            "</div>";
+
+                        }
+                    },
+
+                ],
+                language: {
+                    "sDecimal": ",",
+                    "sEmptyTable": "Tabloda herhangi bir veri mevcut değil",
+                    "sInfo": "_TOTAL_ kayıttan _START_ - _END_ arasındaki kayıtlar gösteriliyor",
+                    "sInfoEmpty": "Kayıt yok",
+                    "sInfoFiltered": "(_MAX_ kayıt içerisinden bulunan)",
+                    "sInfoPostFix": "",
+                    "sInfoThousands": ".",
+                    "sLengthMenu": "Sayfada _MENU_ kayıt göster",
+                    "sLoadingRecords": "Yükleniyor...",
+                    "sProcessing": "İşleniyor...",
+                    "sSearch": "Ara:",
+                    "sZeroRecords": "Eşleşen kayıt bulunamadı",
+                    "oPaginate": {
+                        "sFirst": "İlk",
+                        "sLast": "Son",
+                        "sNext": "Sonraki",
+                        "sPrevious": "Önceki"
+                    },
+                    "oAria": {
+                        "sSortAscending": ": artan sütun sıralamasını aktifleştir",
+                        "sSortDescending": ": azalan sütun sıralamasını aktifleştir"
+                    },
+                    "select": {
+                        "rows": {
+                            "_": "%d kayıt seçildi",
+                            "0": "",
+                            "1": "1 kayıt seçildi"
+                        }
+                    }
+                }
+            }
+        );
+
+        var dataID;
+        $(document).on('click', '.btnConfirmDelete', function () {
+
+            dataID = $(this).data('id');
+            $('#confirmDeleteModal').modal('show');
+        });
+
+        $("#btnDelete").click(function () {
+            $('#loading-screen').fadeIn();
+
+            $.ajax({
+                url: "/arac/delete",
+                type: "post",
+                data: {id: dataID},
+                success: function (response) {
+                    $('#loading-screen').fadeOut('slow');
+                    table.ajax.reload();
+                    $('#confirmDeleteModal').modal('hide');
+                    // if (response.result) {
+                    //     success_noti2();
+                    // }
+                    // else {
+                    //     error_noti();
+                    // }
+
+                },
+                error: function (jqXHR, textStatus, errorThrown) {
+                    console.log(textStatus, errorThrown);
+                }
+            });
+
+        });
+        userTable.buttons().container()
+            .appendTo('#example_wrapper .col-md-6:eq(0)');
+
+    });
+</script>
+</body>
+</html>

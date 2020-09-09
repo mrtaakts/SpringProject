@@ -45,7 +45,7 @@
         <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="dropdown" style="position: absolute;right: 1vh">
+        <div class="dropdown" sec:authorize="hasRole('BIREYSEL_ROLE')" style="position: absolute;right: 1vh">
             <button style="background-color: #82503f" class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <span sec:authentication="name" ></span>
             </button>
@@ -54,7 +54,7 @@
                 <a class="dropdown-item" href="#">Çıkış</a>
             </div>
         </div>
-        <div class="dropdown" style="position: absolute;right: 15vh">
+        <div class="dropdown" sec:authorize="hasRole('KURUMSAL_ROLE')" style="position: absolute;right: 1vh">
             <button style="background-color: #82503f" class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <span>Google</span>
             </button>
