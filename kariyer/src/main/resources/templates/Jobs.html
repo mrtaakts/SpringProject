@@ -10,7 +10,7 @@
     <meta name="author" content=""/>
     <title>TEZ | Firma Profili</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" th:href="@{/css/pace.min.css}"/>
     <script th:src="@{/js/pace.min.js}"></script>
     <!--favicon-->
@@ -139,21 +139,55 @@
                     </div>
 
                 </div>
+                <form id="fSave">
                 <div class="row">
                     <div class="col-md-3">
-
+                        <input style="border: none" type="hidden" class="form-control"
+                                name="jobPosting" th:value="${jobs.id}"/>
                     </div>
                     <div class="col-md-6" style="margin-top: 2vh">
-                        <div style="font-family: 'Oswald', sans-serif;" class="bg-light"> <a href="/firma/ilanver" class="btn btn-primary btn-block waves-effect waves-light text-white"> Başvur</a></div>
+                        <button style="width: 50%;margin:auto" type="submit" class="btn btn-primary btn-block waves-effect waves-light">Başvur</button>
                     </div>
                     <div class="col-md-3">
 
                     </div>
                 </div>
+                </form>
 
-            </div>        </div>
+    </div>
+</div>
     </div>
 </div>
 
+
+
+<!-- Bootstrap core JavaScript-->
+<script th:src="@{/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js}"></script>
+
+
+<!-- Bootstrap core JavaScript-->
+<script th:src="@{/js/jquery.min.js}"></script>
+<script th:src="@{/js/popper.min.js}"></script>
+<script th:src="@{/js/bootstrap.min.js}"></script>
+<script th:src="@{/js/bildirim.js}"></script>
+
+<!-- simplebar js -->
+<script th:src="@{/plugins/simplebar/js/simplebar.js}"></script>
+<!-- sidebar-menu js -->
+<script th:src="@{/js/sidebar-menu.js}"></script>
+
+<!-- Custom scripts -->
+<script th:src="@{/js/app-script.js}"></script>
+
+<script th:src="@{/plugins/notifications/js/lobibox.min.js}"></script>
+<script th:src="@{/plugins/notifications/js/notifications.min.js}"></script>
+<script th:src="@{/plugins/notifications/js/notification-custom-script.js}"></script>
+<!--Form Validatin Script-->
+<script th:src="@{/plugins/jquery-validation/js/jquery.validate.min.js}"></script>
+<script th:src="@{/js/jquery-serialize.min.js}"></script>
+
+
+
+<script type="application/javascript" th:src="@{/js/JobApply.js}"></script>
 </body>
 </html>
