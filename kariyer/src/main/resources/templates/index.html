@@ -135,6 +135,7 @@
     <div th:each="jobposting : ${job}" class="col-lg-4">
 
       <div class="card">
+        <a href="/is/ilan/" th:href="'/is/ilan/'+${jobposting.id}">
         <div class="card-header gradient-deepblue text-white  text-uppercase" th:text="${jobposting.getTittle()}"></div>
         <div class="ribbon-content"></div>
         <div class="card-body">
@@ -165,6 +166,7 @@
 
 
         </div>
+        </a>
       </div>
 
     </div>

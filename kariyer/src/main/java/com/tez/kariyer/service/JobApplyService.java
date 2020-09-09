@@ -1,8 +1,6 @@
 package com.tez.kariyer.service;
 
-import com.tez.kariyer.dto.CompanyDTO;
 import com.tez.kariyer.dto.JobApplyDTO;
-import com.tez.kariyer.model.entity.Company;
 import com.tez.kariyer.model.entity.JobApply;
 import com.tez.kariyer.model.entity.User;
 import com.tez.kariyer.model.repository.JobApplyRepository;
@@ -17,23 +15,31 @@ public class JobApplyService {
     @Autowired
     JobApplyRepository jobApplyRepository;
 
-    public ResponseItem saveJobApply(JobApplyDTO jobApplyDTO){
+    public ResponseItem saveJobApply(JobApplyDTO jobApplyDTO) {
         ResponseItem responseItem = new ResponseItem();
         User user = SessionInfo.getInstance().getUser();
 
-        try {
-            JobApply jobApply= new JobApply();
-            jobApply.setJobPosting(jobApplyDTO.getJobPosting());
-            jobApply.setUser(user.getId());
-            jobApplyRepository.save(jobApply);
-
-            return responseItem;
-        }catch (Exception e){
-            responseItem.setResult(false);
-            responseItem.setMessage("İşlem Başarısız");
+            try {
+                if (jobApplyRepository.findx(user.getId(), jobApplyDTO.getJobPosting()) == null) {
+                    JobApply jobApply = new JobApply();
+                    jobApply.setJobPosting(jobApplyDTO.getJobPosting());
+                    jobApply.setUser(user.getId());
+                    jobApplyRepository.save(jobApply);
+                    responseItem.setResult(true);
+                    responseItem.setMessage("Başvurunuz gerçekleştirilmiştir");
+                    return responseItem;
+                }
+                else {
+                    responseItem.setResult(false);
+                    responseItem.setMessage("Daha önce bir iş başvurusunda bulunmuşsunuz");
+                }
+            } catch (Exception e) {
+                responseItem.setResult(false);
+                responseItem.setMessage("İşlem Başarısız");
+                return responseItem;
+            }
             return responseItem;
         }
 
     }
 
-}
