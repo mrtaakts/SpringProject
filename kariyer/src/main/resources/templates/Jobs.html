@@ -27,18 +27,132 @@
     <link th:href="@{/css/sidebar-menu.css}" rel="stylesheet"/>
     <!-- Custom Style-->
     <link th:href="@{/css/app-style_edit.css}" rel="stylesheet"/>
-    <!-- skins CSS-->
-    <link th:href="@{/css/skins.css}" rel="stylesheet"/>
-    <!--Bootstrap Datepicker-->
-    <link th:href="@{/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css}" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
+<!-- skins CSS-->
+<link th:href="@{/css/skins.css}" rel="stylesheet"/>
+<!--Bootstrap Datepicker-->
+<link th:href="@{/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css}" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" th:href="@{/plugins/notifications/css/lobibox.min.css}"/>
+<link rel="stylesheet" th:href="@{/plugins/notifications/css/lobibox.min.css}"/>
 
 </head>
 <body>
-<div>
-    <h1 th:text="${jobs.tittle.toString()}">hello world</h1>
+<div class="row" style="margin-top: 4vh">
+    <div class="col-lg-12">
+        <div class="card">
+            <div class="card-header gradient-deepblue text-white  ">
+                <h1 class="align-middle text-uppercase" style="margin: 0;" th:text="${jobs.tittle}" > </h1>
+                <div class="row">
+                    <div class="col-md-8">
+                        <h4 class="align-middle text-white" style="margin: 0;padding: 0" th:text="${'İlan Tarihi: '+date}"> </h4>
+                        <h4 class="align-middle text-white" style="margin: 0;padding: 0" th:text="${'Şehir: '+jobs.city.il}"> </h4>
+
+                    </div>
+                    <div class="col-md-4">
+                        <h4 class="-align-right text-white" style="margin: 0;right: 0" th:text="${'Firma: '+jobs.company.companyName}"></h4>
+                        <h4 class="align-middle text-white" style="margin: 0;right: 0" th:text="${'Sektör: '+jobs.companySector.companySector}"> </h4>
+
+                    </div>
+                </div>
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div style="font-family: 'Oswald', sans-serif;font-size: x-large;margin-bottom: 2vh;color: black" > İŞ DETAY </div>
+
+                        <div class="bg-light"><span th:text="${jobs.information}" style="font-family: 'Oswald', sans-serif;font-size:20px;margin-top: 4vh">
+
+
+                </span></div>
+
+                    </div>
+                    <div class="col-lg-6" style="padding: 0">
+                        <div class="row">
+
+                            <div class="col-lg-2">
+
+                                <label style="font-family: 'Oswald', sans-serif;font-size: large;margin-right: 5vh;color: black">Pozisyon:</label>
+
+
+                            </div>
+
+                            <div class="col-lg-10">
+                                <div class="bg-light" style="font-family: 'Oswald', sans-serif;font-size: large;margin-left: 1vh" ><span th:text="${jobs.position.positions}"> </span></div>
+
+                            </div>
+                        </div>
+                        <div class="row">
+
+                            <div class="col-lg-2">
+
+                                <label style="font-family: 'Oswald', sans-serif;font-size: large;margin-right: 5vh;color: black" >İstenilen Deneyim:</label>
+
+
+                            </div>
+
+                            <div class="col-lg-10">
+                                <div class="bg-light" style="font-family: 'Oswald', sans-serif;font-size: large;margin-left: 1vh" ><span th:text="${jobs.workexp}"> </span></div>
+
+                            </div>
+                        </div>
+
+                        <div class="row">
+
+                            <div class="col-lg-2">
+
+                                <label style="font-family: 'Oswald', sans-serif;font-size: large;margin-right: 5vh;color: black">Çalışma Şekli:</label>
+
+                            </div>
+
+                            <div class="col-lg-10">
+                                <div class="bg-light" style="font-family: 'Oswald', sans-serif;font-size: large;"><span th:text="${jobs.wayOfWork.wayOfWork}" > </span> </div>
+
+                            </div>
+                        </div>
+                        <div class="row">
+
+                            <div class="col-lg-2">
+
+                                <label style="font-family: 'Oswald', sans-serif;font-size: large;margin-right: 5vh;color: black">Website:</label>
+
+                            </div>
+
+                            <div class="col-lg-10">
+                                <div class="bg-light" style="font-family: 'Oswald', sans-serif;font-size: large;"><span th:text="${jobs.company.website}"  ></span></div>
+
+                            </div>
+                        </div>
+                        <div class="row">
+
+                            <div class="col-lg-2">
+
+                                <label style="font-family: 'Oswald', sans-serif;font-size: large;margin-right: 5vh;color: black">Sürücü Belgesi:</label>
+
+                            </div>
+
+                            <div class="col-lg-10">
+                                <div class="bg-light" style="font-family: 'Oswald', sans-serif;font-size: large;"><span th:text="${jobs.driverLicense.licence}"></span></div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="col-md-3">
+
+                    </div>
+                    <div class="col-md-6" style="margin-top: 2vh">
+                        <div style="font-family: 'Oswald', sans-serif;" class="bg-light"> <a href="/firma/ilanver" class="btn btn-primary btn-block waves-effect waves-light text-white"> Başvur</a></div>
+                    </div>
+                    <div class="col-md-3">
+
+                    </div>
+                </div>
+
+            </div>        </div>
+    </div>
 </div>
 
 </body>

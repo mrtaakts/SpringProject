@@ -44,11 +44,16 @@ public class JobAdvertiController {
         return modelAndView;
     }
 
-    @RequestMapping(value = "/is/ilan/{id}", method = RequestMethod.GET)
+    @RequestMapping(value = "/ilan/{id}", method = RequestMethod.GET)
     public ModelAndView JobwithId(Model model,@PathVariable("id") Integer id){
         ModelAndView modelAndView= new ModelAndView("Jobs");
-        Optional<JobPosting> job= jobPostingRepository.findById(id);
+        JobPosting job= jobPostingRepository.findById(id).get();
+        DateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy");
+        model.addAttribute("date",dateFormat.format(job.getStartDate()));
         model.addAttribute("jobs",job);
         return modelAndView;
     }
+
+
+
 }
