@@ -31,6 +31,7 @@ public class User {
     private String roles = "";
     private String permissions = "";
     private int active = 1;
+    private int status;
 
     public List<String> getRoleList(){
         if(this.roles.length() > 0){
