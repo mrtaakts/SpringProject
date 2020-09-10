@@ -21,13 +21,21 @@ public class JobApplyService {
 
             try {
                 if (jobApplyRepository.findx(user.getId(), jobApplyDTO.getJobPosting()) == null) {
-                    JobApply jobApply = new JobApply();
-                    jobApply.setJobPosting(jobApplyDTO.getJobPosting());
-                    jobApply.setUser(user.getId());
-                    jobApplyRepository.save(jobApply);
-                    responseItem.setResult(true);
-                    responseItem.setMessage("Başvurunuz gerçekleştirilmiştir");
-                    return responseItem;
+                    if (user.getRoles().equals("BIREYSEL_ROLE"))
+                    {
+                        JobApply jobApply = new JobApply();
+                        jobApply.setJobPosting(jobApplyDTO.getJobPosting());
+                        jobApply.setUser(user.getId());
+                        jobApplyRepository.save(jobApply);
+                        responseItem.setResult(true);
+                        responseItem.setMessage("Başvurunuz gerçekleştirilmiştir");
+                        return responseItem;
+                    }
+                    else {
+                        responseItem.setResult(false);
+                        responseItem.setMessage("Kurumsal Profille Başvuru yapamazsınız");
+                        return responseItem;
+                    }
                 }
                 else {
                     responseItem.setResult(false);
