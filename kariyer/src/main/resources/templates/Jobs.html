@@ -8,7 +8,7 @@
     <meta name="viewport" content=" initial-scale=1, maximum-scale-1, shrink-to-fit=yes"/>
     <meta name="description" content=""/>
     <meta name="author" content=""/>
-    <title>TEZ | Firma Profili</title>
+    <title th:text="${'TEZ | Firma Profili'}"></title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" th:href="@{/css/pace.min.css}"/>
@@ -37,6 +37,11 @@
 
 </head>
 <body>
+
+<!--Start sidebar-topbar-wrapper-->
+<div th:replace="navbar :: navbar"> </div>
+<!--End sidebar-topbar-wrapper-->
+
 <div class="row" style="margin-top: 4vh">
     <div class="col-lg-12">
         <div class="card">
