@@ -11,6 +11,7 @@ INSERT INTO `tez`.`position` (`id`, `positions`) VALUES ('7', 'Elektrik Elektron
 INSERT INTO `tez`.`position` (`id`, `positions`) VALUES ('8', 'Ön Muhasebe Elemanı');
 INSERT INTO `tez`.`position` (`id`, `positions`) VALUES ('9', 'Satış Temsilcisi');
 INSERT INTO `tez`.`position` (`id`, `positions`) VALUES ('10', 'Özel Şoför');
+INSERT INTO `tez`.`position` (`id`, `positions`) VALUES ('11', 'Endüstri Mühendisi');
 
 /* Soldier Status Tablosu */
 
