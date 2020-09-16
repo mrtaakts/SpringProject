@@ -3,11 +3,11 @@ package com.tez.kariyer.controller;
 import com.tez.kariyer.dto.JobAdvertiDTO;
 import com.tez.kariyer.dto.JobApplyDTO;
 import com.tez.kariyer.dto.JobPostDTO;
+import com.tez.kariyer.model.entity.EducationInfo;
 import com.tez.kariyer.model.entity.JobApply;
 import com.tez.kariyer.model.entity.JobPosting;
 import com.tez.kariyer.model.entity.User;
-import com.tez.kariyer.model.repository.JobApplyRepository;
-import com.tez.kariyer.model.repository.JobPostingRepository;
+import com.tez.kariyer.model.repository.*;
 import com.tez.kariyer.response.ResponseItem;
 import com.tez.kariyer.security.SessionInfo;
 import com.tez.kariyer.service.JobApplyService;
@@ -31,6 +31,14 @@ public class JobAdvertiController {
     JobPostingRepository jobPostingRepository;
     @Autowired
     JobApplyService jobApplyService;
+    @Autowired
+    JobApplyRepository jobApplyRepository;
+    @Autowired
+    UserRepository userRepository;
+    @Autowired
+    EducationInfoRepository educationInfoRepository;
+    @Autowired
+    UserPrivateInfoRepository userPrivateInfoRepository;
 
     @GetMapping("/ilanlari")
     public ModelAndView show(Model model){
@@ -83,6 +91,30 @@ public class JobAdvertiController {
             return responseItem;
         }
     }
+
+    @GetMapping("/basvuranlar")
+    public ModelAndView showJob(Model model, int id){
+        ModelAndView modelAndView = new ModelAndView("Basvuranlar");
+        List<JobApply> jobApplies = jobApplyRepository.findJob(id);
+        List<User> userList = new ArrayList<>();
+        for (int i=0; i<jobApplies.size(); i++ ){
+            User user = userRepository.findById(jobApplies.get(i).getUser()).get();
+            userList.add(user);
+        }
+        model.addAttribute("basvuranlar", userList);
+        return modelAndView;
+    }
+
+    @GetMapping("/basvuranlar/detay")
+    public ModelAndView showUserDetay(Model model ,int id){
+        ModelAndView modelAndView = new ModelAndView("UserDetail");
+        EducationInfo educationInfo = educationInfoRepository.findByUserId(id);
+        model.addAttribute("eduinfo", educationInfo);
+
+        model.addAttribute("userinfo", userPrivateInfoRepository.findByUserId(id));
+        return modelAndView;
+    }
+
 
 
 

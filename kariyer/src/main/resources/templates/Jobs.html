@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en
 " xmlns:th="http://www.thymeleaf.org"
->
+      xmlns:sec="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
@@ -153,8 +153,8 @@
                     <div class="col-md-6" style="margin-top: 2vh">
                         <button style="width: 50%;margin:auto" type="submit" class="btn btn-primary btn-block waves-effect waves-light">Başvur</button>
                     </div>
-                    <div class="col-md-3">
-
+                    <div class="col-md-3" style="margin-top: 2vh">
+                        <a style="width: 50%;margin:auto" th:href="@{/is/basvuranlar(id=${jobs.id})}" type="button" class="btn btn-primary btn-block waves-effect waves-light" sec:authorize="hasRole('KURUMSAL_ROLE')">Başvuranlar</a>
                     </div>
                 </div>
                 </form>
@@ -168,8 +168,32 @@
 
 <!-- Bootstrap core JavaScript-->
 <script th:src="@{/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js}"></script>
+<script>
+function gonder() {
+    console.log(postData);
+    $.ajax({
+        type: "GET",
+        contentType: "application/json",
+        url: "/is/basvuranlar",
+        dataType: 'json',
+        cache: false,
+        timeout: 600000,
 
+        success: function () {
+            $('#loading-screen').fadeOut('slow');
+                success_noti()
+        },
 
+        error: function (e) {
+
+            console.log("ERROR : ", e);
+            error_noti_yuk("Teknik Bir Sorun Oluştu Lütfen Bize Bildiriniz!")
+            $("#btn-login").prop("disabled", false);
+
+        }
+    });
+}
+</script>
 <!-- Bootstrap core JavaScript-->
 <script th:src="@{/js/jquery.min.js}"></script>
 <script th:src="@{/js/popper.min.js}"></script>
