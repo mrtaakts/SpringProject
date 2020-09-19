@@ -700,6 +700,9 @@
                                     </div>
 
                                 </div>
+                                <div class="container" th:if="${workinfo == null}">
+                                    <p style="font-family: 'Oswald', sans-serif;font-size: x-large;color: black"> İş Deneyimi Bilgilerinizi Giriniz !!!</p>
+                                </div>
                             </div>
                             <br>
 
@@ -1117,7 +1120,7 @@
                     <div class="card-body hoverclas" id="egitimbilgiOutput">
                         <form id="getuserPrivateInfo">
                             <div class="form-group">
-                                <div class="container" th:if="${userinfo != null}">
+                                <div class="container" th:if="${eduinfo != null}">
                                     <div class="row">
                                         <div class="col-sm-6">
                                             <label class="label1" >Cinsiyet: </label>
@@ -1157,8 +1160,8 @@
 
                                     </div>
                                 </div>
-                                <div class="container" th:if="${userinfo == null}">
-                                    <p style="font-family: 'Oswald', sans-serif;font-size: x-large;color: black"> Özel bilgilerinizi giriniz !!!</p>
+                                <div class="container" th:if="${eduinfo == null}">
+                                    <p style="font-family: 'Oswald', sans-serif;font-size: x-large;color: black"> Eğitim bilgilerinizi giriniz !!!</p>
                                 </div>
                             </div>
                         </form>
@@ -1225,7 +1228,7 @@
                                     </div>
                                 </div>
                                 <div class="container" th:if="${summary == null}">
-                                    <p style="font-family: 'Oswald', sans-serif;font-size: x-large;color: black"> Özel bilgilerinizi giriniz !!!</p>
+                                    <p style="font-family: 'Oswald', sans-serif;font-size: x-large;color: black"> Özet bilgilerinizi giriniz !!!</p>
                                 </div>
                             </div>
                         </form>
